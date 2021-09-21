@@ -86,8 +86,8 @@ function App() {
           <ul className="dynamic-txts">
             <li><span>Web Developer</span></li>
             <li><span>Java Developer</span></li>
-            <li><span>React Developer</span></li>
-            <li><span>😉#Full-Stack Developer </span></li>
+            <li><span>ReactJS Dev</span></li>
+            <li><span>😉#Full-Stack Dev</span></li>
           </ul>
         </div>
         {socialIcons}
@@ -196,7 +196,7 @@ function App() {
       <h1>Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
       <div id="firstIncontactMe">
         <div><img src={contactPic} alt="That's me with certificate" /></div>
-        <div id="aboutContact" style={{ padding: '0px' }}>
+        <div id="aboutContact" style={{ padding: '16px 0 0 0', minHeight: '160px' }}>
           <div>
             <div>
               <i className="fas fa-envelope"> </i>

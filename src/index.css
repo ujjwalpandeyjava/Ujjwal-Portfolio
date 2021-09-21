@@ -133,6 +133,7 @@ body {
     overflow: hidden;
     border-radius: 26% 88px 0px;
     cursor: grabbing;
+    display: inline-block;
 }
 #myAvatar > img {
     width: 100%;
@@ -374,7 +375,8 @@ body {
     padding: 12px;
     margin-bottom: 50px;
     width: 100%;
-    min-height: 65vh;
+    /* min-height: 65vh; */
+    /* min-height: 600px; */
     text-align: center;
     border-radius: 12px;
     display: flex;
@@ -386,7 +388,7 @@ body {
 }
 #workExamplesSection,
 #contactMeSection {
-    min-height: 40vh;
+    min-height: 20vh;
 }
 #aboutSection > h1,
 #educationSection > h1,
@@ -569,7 +571,7 @@ body {
 #aboutEducation {
     background-color: #241f30;
     padding: 25px;
-    width: 80%;
+    width: 83%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
@@ -603,20 +605,20 @@ body {
     border-right: 2px solid rgb(153 94 7 / 99%);
     box-shadow: inset 9px 9px 10px 0 black, inset -3px -35px #ffffff00;
 }
-#aboutEducation > div > h1 {
-    color: #95b0f5;
-}
 #aboutEducation > div {
     border-left: 1px solid white;
     min-height: 65px;
-    margin: 0 0 0 18px;
-    padding: 6px 2px 6px 45px;
+    margin: 0 0 0 5px;
+    padding: 6px 2px 6px 20px;
     position: relative;
     display: flex;
     align-items: center;
     text-align: start;
     cursor: grab;
     transition: border 0.3s ease-in-out, margin 0.3s ease-out;
+}
+#aboutEducation > div > h1 {
+    color: #95b0f5;
 }
 #aboutEducation > div:hover {
     border-left: 3px solid rgb(112, 97, 245);
@@ -647,7 +649,8 @@ body {
     border: 1px solid white;
     background-color: #241f30;
     min-width: 90%;
-    min-height: 20vh;
+    height: auto;
+    min-height: 10vh;
     display: flex;
     padding: 19px;
     flex-direction: row;
@@ -785,7 +788,7 @@ body {
 @media (max-width: 970px) {
     .firstView {
         flex-direction: column;
-        min-height: 90vh;
+        min-height: 80vh;
     }
     .firstView > div {
         height: 50%;
@@ -830,11 +833,27 @@ body {
         font-size: small;
     }
 }
+@media (max-width: 500px) {
+    #myAvatar {
+        display: none;
+    }
+    .firstView,
+    .firstView > div,
+    .firstView > div > .wrapper {
+        padding: 0;
+    }
+    .wrapper .static-txt {
+        font-size: small;
+    }
+}
 @media (max-width: 400px) {
     .navbar > h1 {
         font-size: x-large;
     }
     #aboutSection > h1 {
+        font-size: x-large;
+    }
+    #aboutEducation > div > h1 {
         font-size: x-large;
     }
 }
