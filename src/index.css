@@ -723,7 +723,9 @@ body {
     box-shadow: 0 0 4px #c9fffe, inset 0 0 3px #ffffff;
 }
 /* About example work ends */
-
+#aboutContact {
+    position: relative;
+}
 #aboutContact > div {
     display: flex;
     width: 50%;
@@ -735,10 +737,27 @@ body {
     align-items: center;
     justify-content: space-around;
     font-size: medium;
+    word-break: break-all;
+    padding: 1px;
     cursor: pointer;
+    position: relative;
 }
 #aboutContact:hover {
     min-width: 100%;
+}
+#aboutContact::before {
+    position: absolute;
+    content: "Contact view";
+    top: 5px;
+    width: 90%;
+    left: 50%;
+    color: white;
+    padding: 7px;
+    height: auto;
+    background-color: #241f30;
+    transform: translateX(-50%);
+    z-index: 12;
+    border-bottom: 1px solid gray;
 }
 #aboutContact > div > div > a {
     text-decoration: none;

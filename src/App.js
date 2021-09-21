@@ -55,9 +55,9 @@ function App() {
       <h1>IAM<span style={colorOrangeRed}>UJJWALPANDEY</span></h1>
       <div className="hamburger">
         <input type="checkbox" id="check" />
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
+        <label htmlFor="check">
+          <i className="fas fa-bars" id="btn"></i>
+          <i className="fas fa-times" id="cancel"></i>
         </label>
         <div className="sidebar">
           <h3><a href="#firstView">Home</a></h3>
@@ -76,7 +76,6 @@ function App() {
       </div>
     </div>
   </Fragment>
-
   const firstView = <Fragment>
     <div className="firstView" id="firstView">
       <div className="whoIAm">
@@ -197,7 +196,7 @@ function App() {
       <h1>Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
       <div id="firstIncontactMe">
         <div><img src={contactPic} alt="That's me with certificate" /></div>
-        <div id="aboutContact">
+        <div id="aboutContact" style={{ padding: '0px' }}>
           <div>
             <div>
               <i className="fas fa-envelope"> </i>
