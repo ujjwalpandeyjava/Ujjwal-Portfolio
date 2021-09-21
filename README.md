@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+# What I did to host this ReactJs app on Github (how to use gh-pages)
+1. Install and save the 'gh-pages' dependency in directory using 
+    - npm install gh-pages --save-dev
+2. Create a new branch with name "gh-page" *(It is must)*
+3. Add **"homepage": "https://{myusername}.github.io/{repo-name}"**
+    - userName: ujjwalpandeyjava
+    - repo-name: Ujjwal-Portfolio\
+    In project’s 'package.json'.
+4. Add 
+    1. **"predeploy": "npm run build",**
+    2. **"deploy": "gh-pages -d build",**\
+        in package.json's "scripts" first line.
+5. change the branch to gh-pages and upload all the files.
+6. Run **"npm run deploy"** in terminal/cmd of local pc.
+
+7. Done.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -70,19 +89,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-# What I did to host this ReactJs app on Github (how to use gh-pages)
-1. Install and save the 'gh-pages' dependency in directory using 
-    - npm install gh-pages --save-dev
-2. Create a new branch with name "gh-page" *(It is must)*
-3. Add **"homepage": "https://{myusername}.github.io/{repo-name}"**
-    - userName: ujjwalpandeyjava
-    - repo-name: Ujjwal-Portfolio\
-    In project’s 'package.json'.
-4. Add 
-    1. **"predeploy": "npm run build",**
-    2. **"deploy": "gh-pages -d build",**\
-        in package.json's "scripts" first line.
-5. change the branch to gh-pages and upload all the files.
-6. Run **"npm run deploy"** in terminal/cmd of local pc.
-
-7. Done.
