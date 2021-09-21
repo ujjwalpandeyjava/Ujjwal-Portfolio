@@ -20,7 +20,7 @@ jobs: # This workflow contains a single job called "build"
         uses: actions/checkout@v2
     
       - name: Install and build #Install and build the app to deploy
-        run: npm install && npm build
+        run: npm install && npm run build
       #Deploy the app
       - name: Deploying the app
         uses: JamesIves/github-pages-deploy-action@4.1.5
