@@ -881,7 +881,7 @@ body {
     transition: all 0.5s ease;
 }
 .sidebar h3 a {
-    display: inline-block;
+    /* display: inline-block; */
     height: 100%;
     width: 100%;
     line-height: 65px;
