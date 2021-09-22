@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.9cf2f576.chunk.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.7e636a65.chunk.js",
-    "main.js.map": "/Ujjwal-Portfolio/static/js/main.7e636a65.chunk.js.map",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.24f3ac3a.chunk.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.96c5935a.chunk.js",
+    "main.js.map": "/Ujjwal-Portfolio/static/js/main.96c5935a.chunk.js.map",
     "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js",
     "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js.map",
     "static/js/2.e3f0fd64.chunk.js": "/Ujjwal-Portfolio/static/js/2.e3f0fd64.chunk.js",
@@ -10,12 +10,23 @@
     "static/js/3.230aa679.chunk.js": "/Ujjwal-Portfolio/static/js/3.230aa679.chunk.js",
     "static/js/3.230aa679.chunk.js.map": "/Ujjwal-Portfolio/static/js/3.230aa679.chunk.js.map",
     "index.html": "/Ujjwal-Portfolio/index.html",
-    "static/css/main.9cf2f576.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.9cf2f576.chunk.css.map",
+    "static/css/main.24f3ac3a.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.24f3ac3a.chunk.css.map",
     "static/js/2.e3f0fd64.chunk.js.LICENSE.txt": "/Ujjwal-Portfolio/static/js/2.e3f0fd64.chunk.js.LICENSE.txt",
+    "static/media/AdvancedJava.07f4f78e.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.07f4f78e.jfif",
     "static/media/IMG-20210325-WA0006.b8ea8c79.jpg": "/Ujjwal-Portfolio/static/media/IMG-20210325-WA0006.b8ea8c79.jpg",
+    "static/media/ReactJS.ed14d8e6.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.ed14d8e6.jpg",
     "static/media/Ujjwal_Resume.1f8cde73.pdf": "/Ujjwal-Portfolio/static/media/Ujjwal_Resume.1f8cde73.pdf",
     "static/media/contact.5c08eab5.png": "/Ujjwal-Portfolio/static/media/contact.5c08eab5.png",
+    "static/media/css.a049d90c.jpg": "/Ujjwal-Portfolio/static/media/css.a049d90c.jpg",
+    "static/media/dsalog.4141c0b4.jfif": "/Ujjwal-Portfolio/static/media/dsalog.4141c0b4.jfif",
+    "static/media/etc.96fd65fe.jfif": "/Ujjwal-Portfolio/static/media/etc.96fd65fe.jfif",
+    "static/media/git.ada2db5e.jfif": "/Ujjwal-Portfolio/static/media/git.ada2db5e.jfif",
+    "static/media/html.afaf0b16.jpg": "/Ujjwal-Portfolio/static/media/html.afaf0b16.jpg",
+    "static/media/js.02860b49.jpg": "/Ujjwal-Portfolio/static/media/js.02860b49.jpg",
+    "static/media/msOffice.257f1854.jfif": "/Ujjwal-Portfolio/static/media/msOffice.257f1854.jfif",
     "static/media/projectPic.7dc8fb94.png": "/Ujjwal-Portfolio/static/media/projectPic.7dc8fb94.png",
+    "static/media/restAPI.a735624d.jfif": "/Ujjwal-Portfolio/static/media/restAPI.a735624d.jfif",
+    "static/media/spring.f32d6fbe.jpg": "/Ujjwal-Portfolio/static/media/spring.f32d6fbe.jpg",
     "static/media/ujjwalAvatar1Copy.e09b21c1.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar1Copy.e09b21c1.png",
     "static/media/ujjwalAvatar3.a0f8260c.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.a0f8260c.png",
     "static/media/ujjwalAvatarEducation.11714c83.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.11714c83.png"
@@ -23,7 +34,7 @@
   "entrypoints": [
     "static/js/runtime-main.11480f91.js",
     "static/js/2.e3f0fd64.chunk.js",
-    "static/css/main.9cf2f576.chunk.css",
-    "static/js/main.7e636a65.chunk.js"
+    "static/css/main.24f3ac3a.chunk.css",
+    "static/js/main.96c5935a.chunk.js"
   ]
 }
