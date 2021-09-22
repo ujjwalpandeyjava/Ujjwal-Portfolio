@@ -6,6 +6,25 @@ import contactPic from './images/contact.png'
 import projectsPic from './images/projectPic.png'
 import UjjwalResume from './Ujjwal_Resume.pdf'
 import myPicture from './images/IMG-20210325-WA0006.jpg'
+// work lang images
+import htmlImage from './images/html.jpg'
+import cssImage from './images/css.jpg'
+import jsImage from './images/js.jpg'
+import msOfficeImage from './images/msOffice.jfif'
+import reactImage from './images/ReactJS.jpg'
+import restAPIImage from './images/restAPI.jfif'
+import javaImage from './images/java.png'
+import AdJavaImage from './images/AdvancedJava.jfif'
+import MySQLImage from './images/mySQL.png'
+import monogDBImage from './images/mongoDB.png'
+import GAEImage from './images/GAE.png'
+import gitImage from './images/git.jfif'
+import springImage from './images/spring.jpg'
+import hibernateImage from './images/hibernate.png'
+import dsAlgoImage from './images/dsalog.jfif'
+import etcImage from './images/etc.jfif'
+
+// work lang images end
 import './App.css';
 import Frag from './frag';
 
@@ -86,8 +105,8 @@ function App() {
           <ul className="dynamic-txts">
             <li><span>Web Developer</span></li>
             <li><span>Java Developer</span></li>
-            <li><span>ReactJS Dev</span></li>
-            <li><span>😉#Full-Stack Dev</span></li>
+            <li><span>ReactJS Dev.</span></li>
+            <li><span>😉Full-Stack Dev.</span></li>
           </ul>
         </div>
         {socialIcons}
@@ -118,7 +137,7 @@ function App() {
               <br /><br />My <strong>"area of Interest"</strong> includes "Full-stack Web app Development" and working with different technologies.
               I am looking to connect with engineers and company to work with and on same field of interest.
             </div>
-            <div id="downloadCV"><a href={UjjwalResume} download='file.pdf'>Download CV</a></div>
+            <div id="downloadCV"><a href={UjjwalResume} download='Ujjwal-resume.pdf'>Download CV</a></div>
           </div>
           <div id="bars">
             <div ><p>How good I am in?</p><hr /></div>
@@ -172,10 +191,7 @@ function App() {
       <div id="firstInExamples">
         <div><img src={projectsPic} alt="That's me with certificate" /></div>
         <div id="aboutExamples" className='container'>
-          <p>
-            Work Examples<br />
-            <sub><i>( Hover/Touch here )</i></sub>
-          </p>
+          <p>Work Examples<br /><sub><i>( Hover/Touch here )</i></sub></p>
           <div className="overlay" id="overlayID">
             <div className="details">
               Click eye to see all the projects in one project "links".
@@ -228,8 +244,34 @@ function App() {
     </div>
   </Fragment>
   const workingLanguages = <Fragment>
-    <div className="workingWith">working Languages</div>
-  </Fragment>
+    <div className="workingWith">
+      <h2 id="workH3">I work with</h2>
+      <div id="aboutExamples" className='workWith' style={{
+        maxHeight: "300px", overflow: "auto",
+        boxShadow: "inset 0 -3px 7px #969696",
+        borderRadius: "12px",
+        alignItems: "baseline",
+        alignContent: "flex-start"
+      }}>
+        <div><a href="http://www.google.com/search?q=HTML" target="_blank" rel="noreferrer"><img src={htmlImage} alt="HTML" /></a></div>
+        <div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noreferrer"><img src={cssImage} alt="CSS" /></a></div>
+        <div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
+        <div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
+        <div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noreferrer"><img src={msOfficeImage} alt="MS Office image" /></a></div>
+        <div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
+        <div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noreferrer"><img src={javaImage} alt="Java" /></a></div>
+        <div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
+        <div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
+        <div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
+        <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div>
+        <div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noreferrer"><img src={springImage} alt="Spring" /></a></div>
+        <div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noreferrer"><img src={gitImage} alt="Git" /></a></div>
+        <div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
+        <div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>
+        <div><a target="_blank" rel="noreferrer"><img src={etcImage} alt="others on need" /></a></div>
+      </div>
+    </div>
+  </Fragment >
   return (
     <Fragment>
       {navbar}
