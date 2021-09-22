@@ -40,6 +40,7 @@ body {
     color: white;
     padding: 15px 25px;
     top: 0;
+    left: 0;
     background-color: black;
     width: 100%;
     height: 70px;
@@ -133,7 +134,7 @@ body {
     overflow: hidden;
     border-radius: 26% 88px 0px;
     cursor: grabbing;
-    display: inline-block;
+    /* display: inline-block; */
 }
 #myAvatar > img {
     width: 100%;
@@ -650,7 +651,7 @@ body {
     background-color: #241f30;
     min-width: 90%;
     height: auto;
-    min-height: 10vh;
+    min-height: 220px !important;
     display: flex;
     padding: 19px;
     flex-direction: row;
@@ -677,6 +678,7 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
+    /* min-height: 1000px; */
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.507);
@@ -881,7 +883,7 @@ body {
     transition: all 0.5s ease;
 }
 .sidebar h3 a {
-    /* display: inline-block; */
+    display: inline-block;
     height: 100%;
     width: 100%;
     line-height: 65px;
@@ -898,6 +900,7 @@ h3 a:hover {
     padding-left: 50px;
     text-shadow: 1px 1px 1px #4bb1b3a6, 0px 0px 1px #ffffff;
 }
+
 #check {
     position: absolute;
     display: none;

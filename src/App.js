@@ -228,7 +228,7 @@ function App() {
     </div>
   </Fragment>
   const workingLanguages = <Fragment>
-    Working Languages.
+    <div className="workingWith">working Languages</div>
   </Fragment>
   return (
     <Fragment>
