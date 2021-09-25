@@ -753,7 +753,7 @@ body {
 }
 #aboutContact::before {
     position: absolute;
-    content: "Contact view";
+    content: "Contact through";
     top: 5px;
     width: 90%;
     left: 50%;
@@ -897,7 +897,7 @@ body {
     transition: 0.4s;
     text-decoration: none;
 }
-h3 a:hover {
+.move h3 a:hover {
     padding-left: 50px;
     text-shadow: 1px 1px 1px #4bb1b3a6, 0px 0px 1px #ffffff;
 }
@@ -953,7 +953,7 @@ label #cancel {
 /*Small screen navbar end*/
 
 /*  Working languages section.*/
-.workingWith{
+.workingWith {
     display: block;
 }
 .workWith {

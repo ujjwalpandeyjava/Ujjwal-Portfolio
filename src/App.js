@@ -13,13 +13,13 @@ import jsImage from './images/js.jpg'
 import msOfficeImage from './images/msOffice.jfif'
 import reactImage from './images/ReactJS.jpg'
 import restAPIImage from './images/restAPI.jfif'
-import javaImage from './images/java.png'
+import javaImage from './images/java.jpg'
 import AdJavaImage from './images/AdvancedJava.jfif'
-import MySQLImage from './images/mySQL.png'
+import MySQLImage from './images/mySQL.jpg'
 import monogDBImage from './images/mongoDB.png'
-import GAEImage from './images/GAE.png'
+import GAEImage from './images/GAE.jpg'
 import gitImage from './images/git.jfif'
-import springImage from './images/spring.jpg'
+import springImage from './images/spring1.jpg'
 import hibernateImage from './images/hibernate.png'
 import dsAlgoImage from './images/dsalog.jfif'
 import etcImage from './images/etc.jfif'
@@ -78,7 +78,7 @@ function App() {
           <i className="fas fa-bars" id="btn"></i>
           <i className="fas fa-times" id="cancel"></i>
         </label>
-        <div className="sidebar">
+        <div className="sidebar move" >
           <h3><a href="#firstView">Home</a></h3>
           <h3><a href="#aboutSection">About</a></h3>
           <h3><a href="#educationSection">Education</a></h3>
@@ -253,21 +253,21 @@ function App() {
         alignItems: "baseline",
         alignContent: "flex-start"
       }}>
-        <div><a href="http://www.google.com/search?q=HTML" target="_blank" rel="noreferrer"><img src={htmlImage} alt="HTML" /></a></div>
-        <div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noreferrer"><img src={cssImage} alt="CSS" /></a></div>
+        <div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noreferrer"><img src={javaImage} alt="Java" /></a></div>
+        <div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
         <div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
         <div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
-        <div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noreferrer"><img src={msOfficeImage} alt="MS Office" /></a></div>
         <div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
-        <div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noreferrer"><img src={javaImage} alt="Java" /></a></div>
-        <div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
-        <div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
-        <div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
         <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div>
         <div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noreferrer"><img src={springImage} alt="Spring" /></a></div>
-        <div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noreferrer"><img src={gitImage} alt="Git" /></a></div>
         <div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
+        <div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noreferrer"><img src={gitImage} alt="Git" /></a></div>
         <div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>
+        <div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
+        <div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
+        <div><a href="http://www.google.com/search?q=HTML" target="_blank" rel="noreferrer"><img src={htmlImage} alt="HTML" /></a></div>
+        <div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noreferrer"><img src={cssImage} alt="CSS" /></a></div>
+        <div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noreferrer"><img src={msOfficeImage} alt="MS Office" /></a></div>
         <div><a href="http://www.google.com/search?q=front+and+back+end+frameworks" target="_blank" rel="noreferrer"><img src={etcImage} alt="others on need" /></a></div>
       </div>
     </div>
