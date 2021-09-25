@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Ujjwal-Portfolio/static/css/main.e54fe1a4.chunk.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.3eb4d14f.chunk.js",
-    "main.js.map": "/Ujjwal-Portfolio/static/js/main.3eb4d14f.chunk.js.map",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.237a39b9.chunk.js",
+    "main.js.map": "/Ujjwal-Portfolio/static/js/main.237a39b9.chunk.js.map",
     "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js",
     "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js.map",
     "static/js/2.e3f0fd64.chunk.js": "/Ujjwal-Portfolio/static/js/2.e3f0fd64.chunk.js",
@@ -12,32 +12,29 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/css/main.e54fe1a4.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.e54fe1a4.chunk.css.map",
     "static/js/2.e3f0fd64.chunk.js.LICENSE.txt": "/Ujjwal-Portfolio/static/js/2.e3f0fd64.chunk.js.LICENSE.txt",
-    "static/media/AdvancedJava.07f4f78e.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.07f4f78e.jfif",
-    "static/media/GAE.eb25c600.jpg": "/Ujjwal-Portfolio/static/media/GAE.eb25c600.jpg",
-    "static/media/IMG-20210325-WA0006.b8ea8c79.jpg": "/Ujjwal-Portfolio/static/media/IMG-20210325-WA0006.b8ea8c79.jpg",
-    "static/media/ReactJS.1baf13b8.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.1baf13b8.jpg",
+    "static/media/AdvancedJava.4ecb15db.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15db.jfif",
+    "static/media/IMG-20210325-WA0006.0064b60c.jpg": "/Ujjwal-Portfolio/static/media/IMG-20210325-WA0006.0064b60c.jpg",
+    "static/media/ReactJS.1dc468c4.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.1dc468c4.jpg",
     "static/media/Ujjwal_Resume.4e9691ce.pdf": "/Ujjwal-Portfolio/static/media/Ujjwal_Resume.4e9691ce.pdf",
     "static/media/contact.5c08eab5.png": "/Ujjwal-Portfolio/static/media/contact.5c08eab5.png",
     "static/media/css.a049d90c.jpg": "/Ujjwal-Portfolio/static/media/css.a049d90c.jpg",
     "static/media/dsalog.4141c0b4.jfif": "/Ujjwal-Portfolio/static/media/dsalog.4141c0b4.jfif",
     "static/media/etc.96fd65fe.jfif": "/Ujjwal-Portfolio/static/media/etc.96fd65fe.jfif",
-    "static/media/git.9e9c0aeb.jfif": "/Ujjwal-Portfolio/static/media/git.9e9c0aeb.jfif",
+    "static/media/git.350109b9.jfif": "/Ujjwal-Portfolio/static/media/git.350109b9.jfif",
     "static/media/html.afaf0b16.jpg": "/Ujjwal-Portfolio/static/media/html.afaf0b16.jpg",
-    "static/media/java.be0bdfaa.jpg": "/Ujjwal-Portfolio/static/media/java.be0bdfaa.jpg",
     "static/media/js.3229b2b2.jpg": "/Ujjwal-Portfolio/static/media/js.3229b2b2.jpg",
     "static/media/msOffice.257f1854.jfif": "/Ujjwal-Portfolio/static/media/msOffice.257f1854.jfif",
-    "static/media/mySQL.5f93f872.jpg": "/Ujjwal-Portfolio/static/media/mySQL.5f93f872.jpg",
     "static/media/projectPic.7dc8fb94.png": "/Ujjwal-Portfolio/static/media/projectPic.7dc8fb94.png",
-    "static/media/restAPI.a735624d.jfif": "/Ujjwal-Portfolio/static/media/restAPI.a735624d.jfif",
-    "static/media/spring1.d3e323d0.jpg": "/Ujjwal-Portfolio/static/media/spring1.d3e323d0.jpg",
+    "static/media/restAPI.491a40f2.jfif": "/Ujjwal-Portfolio/static/media/restAPI.491a40f2.jfif",
+    "static/media/spring1.28619a99.jpg": "/Ujjwal-Portfolio/static/media/spring1.28619a99.jpg",
     "static/media/ujjwalAvatar1Copy.e09b21c1.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar1Copy.e09b21c1.png",
-    "static/media/ujjwalAvatar3.a0f8260c.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.a0f8260c.png",
+    "static/media/ujjwalAvatar3.055f67c7.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.055f67c7.png",
     "static/media/ujjwalAvatarEducation.11714c83.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.11714c83.png"
   },
   "entrypoints": [
     "static/js/runtime-main.11480f91.js",
     "static/js/2.e3f0fd64.chunk.js",
     "static/css/main.e54fe1a4.chunk.css",
-    "static/js/main.3eb4d14f.chunk.js"
+    "static/js/main.237a39b9.chunk.js"
   ]
 }
