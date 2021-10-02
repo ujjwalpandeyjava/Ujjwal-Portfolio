@@ -173,7 +173,7 @@ function App() {
         <div><img src={educationPic} alt="That's me with certificate" /></div>
         <div id="aboutEducation">
           <div><h1>ACADEMIC</h1></div>
-          <div><p><span>2018-Present</span> <br />GNIIT in Clound and Mobile Software Engineering from NIIT</p></div>
+          <div><p><span>2019-Present</span> <br />GNIIT in Cloud and Mobile Software Engineering from NIIT</p></div>
           <div><p><span>2018-Present</span> <br />BCA from IGNOU</p></div>
           <div><p><span>2017</span> <br />12th from CBSE</p></div>
           <div><p><span>2015</span> <br />10th from CBSE</p></div>
