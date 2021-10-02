@@ -137,7 +137,7 @@ function App() {
               <br /><br />My <strong>"area of Interest"</strong> includes "Full-stack Web app Development" and working with different technologies.
               I am looking to connect with engineers and company to work with and on same field of interest.
             </div>
-            <div id="downloadCV"><a href={UjjwalResume} download='Ujjwal-resume.pdf'>Download CV</a></div>
+            <div id="downloadCV"><a href={UjjwalResume} download='Ujjwal-resume.pdf'>Download Resume</a></div>
           </div>
           <div id="bars">
             <div ><p>How good I am in?</p><hr /></div>
@@ -240,12 +240,12 @@ function App() {
   </Fragment>
   const footer = <Fragment>
     <div className="footer">
-      Created by: <i>Ujjwal Pandey</i> for <i>Ujjwal Pandey</i> using ReactJs
+      Created by: <i>Ujjwal Pandey</i> using ReactJs.
     </div>
   </Fragment>
   const workingLanguages = <Fragment>
     <div className="workingWith">
-      <h2 id="workH3">I work with</h2>
+      <h2 id="workH3">I work with <sub><i>Click to get details</i></sub></h2>
       <div id="aboutExamples" className='workWith' style={{
         maxHeight: "300px", overflow: "auto",
         boxShadow: "inset 0 -3px 7px #969696",
@@ -255,10 +255,10 @@ function App() {
       }}>
         <div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noreferrer"><img src={javaImage} alt="Java" /></a></div>
         <div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
-        <div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
         <div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
-        <div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
+        <div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
         <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div>
+        <div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
         <div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noreferrer"><img src={springImage} alt="Spring" /></a></div>
         <div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
         <div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noreferrer"><img src={gitImage} alt="Git" /></a></div>
