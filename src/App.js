@@ -4,7 +4,7 @@ import aboutImage from './images/ujjwalAvatar3.png'
 import educationPic from './images/ujjwalAvatarEducation.png'
 import contactPic from './images/contact.png'
 import projectsPic from './images/projectPic.png'
-import UjjwalResume from './Ujjwal_Resume.pdf'
+import UjjwalResume from './Ujjwal_Pandey_Resume.pdf'
 import myPicture from './images/IMG-20210325-WA0006.jpg'
 // work lang images
 import htmlImage from './images/html.jpg'
