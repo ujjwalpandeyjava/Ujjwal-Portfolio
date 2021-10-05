@@ -158,7 +158,7 @@ function App() {
               <section><Frag percent="100%" /></section>
             </div>
             <div className='group'>
-              <p><span>Competative Coding</span><span>60%</span></p>
+              <p><span>Competitive programming</span><span>60%</span></p>
               <section><Frag percent="60%" /></section>
             </div>
           </div>
