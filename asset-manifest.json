@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Ujjwal-Portfolio/static/css/main.02ce03cf.chunk.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.7a8597da.chunk.js",
-    "main.js.map": "/Ujjwal-Portfolio/static/js/main.7a8597da.chunk.js.map",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.ff708561.chunk.js",
+    "main.js.map": "/Ujjwal-Portfolio/static/js/main.ff708561.chunk.js.map",
     "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js",
     "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.11480f91.js.map",
     "static/js/2.e3f0fd64.chunk.js": "/Ujjwal-Portfolio/static/js/2.e3f0fd64.chunk.js",
@@ -15,7 +15,7 @@
     "static/media/AdvancedJava.4ecb15db.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15db.jfif",
     "static/media/IMG-20210325-WA0006.0064b60c.jpg": "/Ujjwal-Portfolio/static/media/IMG-20210325-WA0006.0064b60c.jpg",
     "static/media/ReactJS.1dc468c4.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.1dc468c4.jpg",
-    "static/media/Ujjwal_Pandey_Resume.223e03fd.pdf": "/Ujjwal-Portfolio/static/media/Ujjwal_Pandey_Resume.223e03fd.pdf",
+    "static/media/Ujjwal_Pandey_Resume.5793159e.pdf": "/Ujjwal-Portfolio/static/media/Ujjwal_Pandey_Resume.5793159e.pdf",
     "static/media/contact.5c08eab5.png": "/Ujjwal-Portfolio/static/media/contact.5c08eab5.png",
     "static/media/css.a049d90c.jpg": "/Ujjwal-Portfolio/static/media/css.a049d90c.jpg",
     "static/media/dsalog.4141c0b4.jfif": "/Ujjwal-Portfolio/static/media/dsalog.4141c0b4.jfif",
@@ -23,7 +23,7 @@
     "static/media/git.350109b9.jfif": "/Ujjwal-Portfolio/static/media/git.350109b9.jfif",
     "static/media/html.afaf0b16.jpg": "/Ujjwal-Portfolio/static/media/html.afaf0b16.jpg",
     "static/media/js.3229b2b2.jpg": "/Ujjwal-Portfolio/static/media/js.3229b2b2.jpg",
-    "static/media/msOffice.257f1854.jfif": "/Ujjwal-Portfolio/static/media/msOffice.257f1854.jfif",
+    "static/media/msOffice.bec21a4d.jfif": "/Ujjwal-Portfolio/static/media/msOffice.bec21a4d.jfif",
     "static/media/projectPic.7dc8fb94.png": "/Ujjwal-Portfolio/static/media/projectPic.7dc8fb94.png",
     "static/media/restAPI.7110900e.jfif": "/Ujjwal-Portfolio/static/media/restAPI.7110900e.jfif",
     "static/media/spring1.28619a99.jpg": "/Ujjwal-Portfolio/static/media/spring1.28619a99.jpg",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.11480f91.js",
     "static/js/2.e3f0fd64.chunk.js",
     "static/css/main.02ce03cf.chunk.css",
-    "static/js/main.7a8597da.chunk.js"
+    "static/js/main.ff708561.chunk.js"
   ]
 }
