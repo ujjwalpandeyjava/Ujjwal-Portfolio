@@ -5,9 +5,10 @@ function profileSummary(props) {
 	return (
 		<Fragment >
 			<div style={{ border: '1px solid red' }}>
-				daf lorem45m jkgdf fiukckhdckythd ktd cktc km ckuf k
-				<br /><br />
-				Will add after adding download previewing section
+				{/* daf lorem45m jkgdf fiukckhdckythd ktd cktc km ckuf k */}
+				{/* <br /><br /> */}
+				Profile Summary Card<br />
+				Will add soon, after deploying download previewing section
 			</div>
 		</Fragment>
 	)
