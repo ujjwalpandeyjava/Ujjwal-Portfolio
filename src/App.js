@@ -1,32 +1,31 @@
 import React, { Fragment, useState } from 'react'
-import floatingImage from './images/ujjwalAvatar1Copy.png'
-import aboutImage from './images/ujjwalAvatar3.png'
-import educationPic from './images/ujjwalAvatarEducation.png'
-import contactPic from './images/contact.png'
-import projectsPic from './images/projectPic.png'
-import UjjwalResume from './Ujjwal_Pandey_Resume.pdf'
-import myPicture from './images/IMG-20210325-WA0006.jpg'
-// work lang images
-import htmlImage from './images/html.jpg'
-import cssImage from './images/css.jpg'
-import jsImage from './images/js.jpg'
-import reactImage from './images/ReactJS.jpg'
-import restAPIImage from './images/restAPI.jfif'
-import javaImage from './images/java.jpg'
+import AboutSection from './aboutSection'
+// work lang images end
+import './App.css'
 import AdJavaImage from './images/AdvancedJava.jfif'
-import MySQLImage from './images/mySQL.jpg'
-import monogDBImage from './images/mongoDB.png'
-import GAEImage from './images/GAE.jpg'
-import gitImage from './images/git.jfif'
-import springImage from './images/spring1.jpg'
-import hibernateImage from './images/hibernate.png'
-import msOfficeImage from './images/msOffice.jfif'
+import contactPic from './images/contact.png'
+import cssImage from './images/css.jpg'
 import dsAlgoImage from './images/dsalog.jfif'
 import etcImage from './images/etc.jfif'
+import GAEImage from './images/GAE.jpg'
+import gitImage from './images/git.jfif'
+import hibernateImage from './images/hibernate.png'
+// work lang images
+import htmlImage from './images/html.jpg'
+import myPicture from './images/IMG-20210325-WA0006.jpg'
+import javaImage from './images/java.jpg'
+import jsImage from './images/js.jpg'
+import monogDBImage from './images/mongoDB.png'
+import msOfficeImage from './images/msOffice.jfif'
+import MySQLImage from './images/mySQL.jpg'
+import projectsPic from './images/projectPic.png'
+import reactImage from './images/ReactJS.jpg'
+import restAPIImage from './images/restAPI.jfif'
+import springImage from './images/spring1.jpg'
+import floatingImage from './images/ujjwalAvatar1Copy.png'
+import educationPic from './images/ujjwalAvatarEducation.png'
+import ProfileSummary from './profileSummary'
 
-// work lang images end
-import './App.css';
-import Frag from './frag';
 
 function App() {
   let [scrollerDisplaying, setScrollerDisplaying] = useState("flex")  // "flex"/"none"
@@ -123,49 +122,6 @@ function App() {
       </section>
     </div>
   </Fragment>
-  const aboutSection = <Fragment>
-    <div id="aboutSection">
-      <h1>About me</h1>
-      <div id="firstInAbout">
-        <div><img src={aboutImage} alt="That's me" /></div>
-        <div id="aboutMe">
-          <div>
-            <div>Hi, my name is Ujjwal Pandey, I am pursuing graduation in:<br /><span>GNIIT</span> from<span> NIIT</span>,
-              and <span>BCA</span> from<span> IGNOU</span><br /><br />
-              I am a Full Stack Web Developer,
-              I work with Java, Advanced-Java, JavaScript, React, MySQL, MongoDB, and so on... according to the projects I am working on.
-              <br /><br />My "<strong>Area of Interest</strong> includes "Full-stack Web app Development" and working with different technologies.
-              I am looking to connect with engineers and company to work with and on same field of interest.
-            </div>
-            <div id="downloadCV"><a href={UjjwalResume} download='Ujjwal-resume.pdf'>Download Resume</a></div>
-          </div>
-          <div id="bars">
-            <div ><p>How good I am in?</p><hr /></div>
-            <div className='group'>
-              <p><span>Back-end Development</span><span>85%</span></p>
-              <section><Frag percent="85%" /></section>
-            </div>
-            <div className='group'>
-              <p><span>Front-end Development</span><span>90%</span></p>
-              <section><Frag percent="90%" /></section>
-            </div>
-            <div className='group'>
-              <p><span>ReactJs app Development</span><span>80%</span></p>
-              <section><Frag percent="80%" /></section>
-            </div>
-            <div className='group'>
-              <p> <span>Full-Stack app Development</span><span>100%</span></p>
-              <section><Frag percent="100%" /></section>
-            </div>
-            <div className='group'>
-              <p><span>Competitive programming</span><span>60%</span></p>
-              <section><Frag percent="60%" /></section>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Fragment>
   const educationSection = <Fragment>
     <div id="educationSection">
       <h1>Education Journey</h1>
@@ -174,7 +130,8 @@ function App() {
         <div id="aboutEducation">
           <div><h1>ACADEMIC</h1></div>
           <div><p><span>2019-Present</span> <br />GNIIT in Cloud and Mobile Software Engineering from NIIT</p></div>
-          <div><p><span>2018-Present</span> <br />BCA from IGNOU</p></div>
+          {/* <div><p><span>2018-Present</span> <br />1<sup>st</sup> division BCA Graduate</p></div> */}
+          <div><p><span>2018-Present</span> <br />Qualified BCA Graduate</p></div>
           <div><p><span>2017</span> <br />12th from CBSE</p></div>
           <div><p><span>2015</span> <br />10th from CBSE</p></div>
           <div><h1>Educational Work</h1></div>
@@ -205,6 +162,7 @@ function App() {
           </div>
         </div>
       </div>
+      <ProfileSummary />
     </div>
   </Fragment>
   const contactMe = <Fragment>
@@ -278,7 +236,7 @@ function App() {
       {navbar}
       <div className="main">
         {firstView}
-        {aboutSection}
+        <AboutSection />
         {educationSection}
         {workExample}
         {workingLanguages}
