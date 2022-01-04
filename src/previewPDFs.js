@@ -13,6 +13,7 @@ export default function PreviewPDFs(props) {
 		<Fragment>
 			<div id="previews" className={previewCSS.previewsFullPage} onClick={() => props.viewPreview(false)}>
 				<div className={previewCSS.previewssection} onClick={(e) => e.stopPropagation()}>
+					<div className={previewCSS.closeBtn} onClick={() => props.viewPreview(false)}>X</div>
 					<div>
 						<div><img className={previewCSS.previewImage} src={resumePreview} alt="Resume preview" /></div>
 						<div>Resume in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
