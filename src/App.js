@@ -1,7 +1,9 @@
 import React, { Fragment, useState } from 'react'
 import AboutSection from './aboutSection'
-// work lang images end
+import ProfileSummary from './profileSummary'
 import './App.css'
+
+// work lang images
 import AdJavaImage from './images/AdvancedJava.jfif'
 import contactPic from './images/contact.png'
 import cssImage from './images/css.jpg'
@@ -10,7 +12,6 @@ import etcImage from './images/etc.jfif'
 import GAEImage from './images/GAE.jpg'
 import gitImage from './images/git.jfif'
 import hibernateImage from './images/hibernate.png'
-// work lang images
 import htmlImage from './images/html.jpg'
 import myPicture from './images/IMG-20210325-WA0006.jpg'
 import javaImage from './images/java.jpg'
@@ -24,7 +25,6 @@ import restAPIImage from './images/restAPI.jfif'
 import springImage from './images/spring1.jpg'
 import floatingImage from './images/ujjwalAvatar1Copy.png'
 import educationPic from './images/ujjwalAvatarEducation.png'
-import ProfileSummary from './profileSummary'
 
 
 function App() {
