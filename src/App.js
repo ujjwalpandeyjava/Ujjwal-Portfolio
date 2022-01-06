@@ -25,6 +25,7 @@ import restAPIImage from './images/restAPI.jfif'
 import springImage from './images/spring1.jpg'
 import floatingImage from './images/ujjwalAvatar1Copy.png'
 import educationPic from './images/ujjwalAvatarEducation.png'
+import Iframe from 'react-iframe'
 
 
 function App() {
@@ -146,9 +147,9 @@ function App() {
     <div id="workExamplesSection">
       <h1>Projects by me</h1>
       <div id="firstInExamples">
-        <div><img src={projectsPic} alt="That's me with certificate" /></div>
-        <div id="aboutExamples" className='container'>
-          <p>Work Examples<br /><sub><i>( Hover/Touch here )</i></sub></p>
+        <div><img src={projectsPic} alt="Me with certificate" /></div>
+        <div id="aboutExamples" className='container' >
+          {/* <p>Work Examples<br /><sub><i>( Hover/Touch here )</i></sub></p>
           <div className="overlay" id="overlayID">
             <div className="details">
               Click eye to see all the projects in one project "links".
@@ -159,10 +160,13 @@ function App() {
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Iframe src="https://ujjwalpandeyjava.github.io/Links/examples.html" width="100%" height="600" ></Iframe>
+          {/* <Iframe src="http://127.0.0.1:5501/examples.html" width="100%" height="650" ></Iframe> */}
+
         </div>
       </div>
-      <ProfileSummary />
+      {/* <ProfileSummary /> */}
     </div>
   </Fragment>
   const contactMe = <Fragment>

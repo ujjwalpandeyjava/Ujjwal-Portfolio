@@ -670,16 +670,15 @@ body {
 
 #aboutExamples,
 #aboutContact {
-    border: 1px solid white;
-    background-color: #241f30;
-    min-width: 90%;
-    height: auto;
-    min-height: 220px !important;
     display: flex;
-    padding: 19px;
     flex-direction: row;
     flex-wrap: wrap;
-    /* align-content: center; */
+    padding: 19px;
+    background-color: #241f30;
+    min-width: 90%;
+    min-height: 220px !important;
+    height: auto;
+    border: 1px solid white;
     align-content: space-around;
     align-items: center;
     justify-content: space-around;
@@ -1032,4 +1031,7 @@ label #cancel {
 }
 .workWith::-webkit-scrollbar {
     visibility: hidden;
+}
+#aboutExamples {
+    padding: 0 !important;
 }
