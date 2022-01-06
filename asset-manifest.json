@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.abb684e7.chunk.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.88adeca6.chunk.js",
-    "main.js.map": "/Ujjwal-Portfolio/static/js/main.88adeca6.chunk.js.map",
-    "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.c92d6484.js",
-    "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.c92d6484.js.map",
-    "static/js/2.466fb4bc.chunk.js": "/Ujjwal-Portfolio/static/js/2.466fb4bc.chunk.js",
-    "static/js/2.466fb4bc.chunk.js.map": "/Ujjwal-Portfolio/static/js/2.466fb4bc.chunk.js.map",
-    "static/js/3.781c9a9d.chunk.js": "/Ujjwal-Portfolio/static/js/3.781c9a9d.chunk.js",
-    "static/js/3.781c9a9d.chunk.js.map": "/Ujjwal-Portfolio/static/js/3.781c9a9d.chunk.js.map",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.3ec03d60.chunk.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.f71f6b13.chunk.js",
+    "main.js.map": "/Ujjwal-Portfolio/static/js/main.f71f6b13.chunk.js.map",
+    "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.31da56aa.js",
+    "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.31da56aa.js.map",
+    "static/js/2.90ab382f.chunk.js": "/Ujjwal-Portfolio/static/js/2.90ab382f.chunk.js",
+    "static/js/2.90ab382f.chunk.js.map": "/Ujjwal-Portfolio/static/js/2.90ab382f.chunk.js.map",
+    "static/js/3.33fee573.chunk.js": "/Ujjwal-Portfolio/static/js/3.33fee573.chunk.js",
+    "static/js/3.33fee573.chunk.js.map": "/Ujjwal-Portfolio/static/js/3.33fee573.chunk.js.map",
     "index.html": "/Ujjwal-Portfolio/index.html",
-    "static/css/main.abb684e7.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.abb684e7.chunk.css.map",
-    "static/js/2.466fb4bc.chunk.js.LICENSE.txt": "/Ujjwal-Portfolio/static/js/2.466fb4bc.chunk.js.LICENSE.txt",
+    "static/css/main.3ec03d60.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.3ec03d60.chunk.css.map",
+    "static/js/2.90ab382f.chunk.js.LICENSE.txt": "/Ujjwal-Portfolio/static/js/2.90ab382f.chunk.js.LICENSE.txt",
     "static/media/AdvancedJava.4ecb15db.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15db.jfif",
     "static/media/IMG-20210325-WA0006.44e5012a.jpg": "/Ujjwal-Portfolio/static/media/IMG-20210325-WA0006.44e5012a.jpg",
     "static/media/ReactJS.1dc468c4.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.1dc468c4.jpg",
@@ -36,9 +36,9 @@
     "static/media/ujjwalAvatarEducation.11714c83.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.11714c83.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c92d6484.js",
-    "static/js/2.466fb4bc.chunk.js",
-    "static/css/main.abb684e7.chunk.css",
-    "static/js/main.88adeca6.chunk.js"
+    "static/js/runtime-main.31da56aa.js",
+    "static/js/2.90ab382f.chunk.js",
+    "static/css/main.3ec03d60.chunk.css",
+    "static/js/main.f71f6b13.chunk.js"
   ]
 }
