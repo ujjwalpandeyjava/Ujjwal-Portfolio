@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import Iframe from "react-iframe";
 import projectsPic from './images/projectPic.png';
 
-
 export default function WorkExample(props) {
 	return (
 		<Fragment>
