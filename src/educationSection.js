@@ -19,7 +19,8 @@ export default function EducationSection(props) {
 						<div><h1>Educational Work</h1></div>
 						<div><p>Practice and Graduation project<i><sub>(Chekout github)</sub></i></p></div>
 						<div><p><span>Aug-Sept (2 months)</span> <br />Daily Brief Ambassador</p></div>
-						<div><p><span>Oct-Present</span> <br />NetCreativeMind</p></div>
+						<div><p><span>Oct-Jan</span> <br />NetCreativeMind Sol.</p></div>
+						<div><p><span>Jan-Present</span> <br />Safety labs</p></div>
 					</div>
 				</div>
 			</div>
