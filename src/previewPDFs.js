@@ -6,6 +6,8 @@ import resumePreview from './images/resumePreviewImage.png'
 import cvPreview from './images/cvPreviewImage.png'
 import downArrow2 from './images/arrow-down.png'
 
+// Change it to dymanic so that I can use it with other certificates also...
+
 export default function PreviewPDFs(props) {
 	// console.log(props);	
 	// document.getElementById("stopClick").removeAttribute('onclick')
@@ -19,7 +21,7 @@ export default function PreviewPDFs(props) {
 						<div>Resume in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
 						<div id="downloadCV"><a href={UjjwalResume} download='Ujjwal-full_stack-Resume.pdf'>Download Resume</a></div>
 					</div>
-					<hr style={{ backgroundColor: 'gray' }} />
+					{/* <hr style={{ backgroundColor: 'gray' }} /> */}
 					<div>
 						<div><img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" /></div>
 						<div></div>

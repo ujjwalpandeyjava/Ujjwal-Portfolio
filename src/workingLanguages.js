@@ -3,7 +3,8 @@ import AdJavaImage from './images/AdvancedJava.jfif';
 import cssImage from './images/css.jpg';
 import dsAlgoImage from './images/dsalog.jfif';
 import etcImage from './images/etc.jfif';
-import GAEImage from './images/GAE.jpg';
+// import GAEImage from './images/GAE.jpg';
+import GoogleCloudImage from './images/Google_Cloud.png';
 import gitImage from './images/git.jfif';
 import hibernateImage from './images/hibernate.png';
 import htmlImage from './images/html.jpg';
@@ -40,7 +41,8 @@ export default function WorkingLanguages(props) {
 					<div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
 					<div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
 					<div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>
-					<div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div>
+					<div><a href="https://www.google.com/search?q=google+cloud" target="_blank" rel="noreferrer"><img src={GoogleCloudImage} alt="Google Cloud" /></a></div>
+					{/* <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div> */}
 					<div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
 					<div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noreferrer"><img src={springImage} alt="Spring" /></a></div>
 					<div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
