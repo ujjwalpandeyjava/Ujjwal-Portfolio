@@ -7,7 +7,7 @@ import PreviewPDFs from "./previewPDFs";
 function AboutSection(props) {
 	const [viewPreview, setViewPreview] = useState(false);
 	// console.log(props, percent);
-	console.log(viewPreview);
+	// console.log(viewPreview);
 	const previewPDFs = (viewPreview) ? < PreviewPDFs viewPreview={(x) => setViewPreview(x)} /> : "";
 	return (
 		<Fragment>

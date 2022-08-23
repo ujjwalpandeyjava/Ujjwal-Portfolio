@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import contactPic from './images/contact.png'
+import TiltCardProfileSummary from "./TiltCardProfileSummary";
 
 export default function ContactMe(props) {
 	return (
@@ -32,9 +33,9 @@ export default function ContactMe(props) {
 						</div>
 					</div>
 				</div>
+				<TiltCardProfileSummary />
 			</div>
 		</Fragment>
-
 	)
 
 }
