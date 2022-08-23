@@ -30,24 +30,27 @@ function AboutSection(props) {
 						<div id="bars">
 							<div ><p>How good I am in?</p><hr /></div>
 							<div className='group'>
-								<p><span>Back-end Development</span><span>85%</span></p>
-								<section><Frag percent="85%" /></section>
+								<p> <span>Full-Stack Web Development</span><span>99%</span></p>
+								<section><Frag percent="100%" /></section>
 							</div>
 							<div className='group'>
-								<p><span>Front-end Development</span><span>90%</span></p>
-								<section><Frag percent="90%" /></section>
+								<p><span>Client side Development</span><span>97%</span></p>
+								<section><Frag percent="97%" /></section>
+							</div>
+							<div className='group'>
+								<p><span>Back-end Development</span><span>85%</span></p>
+								<section><Frag percent="85%" /></section>
 							</div>
 							<div className='group'>
 								<p><span>ReactJs app Development</span><span>80%</span></p>
 								<section><Frag percent="80%" /></section>
 							</div>
 							<div className='group'>
-								<p> <span>Full-Stack app Development</span><span>100%</span></p>
-								<section><Frag percent="100%" /></section>
-							</div>
-							<div className='group'>
 								<p><span>Competitive programming</span><span>60%</span></p>
 								<section><Frag percent="60%" /></section>
+							</div>
+							<div className="group">
+								<p style={{color: '#0977c3'} }><span>There is always room for improvement</span><span>😉</span></p>
 							</div>
 						</div>
 					</div>

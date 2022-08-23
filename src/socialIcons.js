@@ -6,23 +6,23 @@ export default function SocialIcons(props) {
 		<Fragment>
 			<div className="socialIcons">
 				<div className="icon">
-					<div className="tooltip">Facebook</div>
+					<div className="tooltip"><a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank"  rel="noreferrer">Facebook</a></div>
 					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></span>
 				</div>
 				<div className="icon">
-					<div className="tooltip">Twitter</div>
+					<div className="tooltip"><a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noreferrer">Twitter</a></div>
 					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></span>
 				</div>
 				<div className="icon">
-					<div className="tooltip">LinkedIn</div>
+					<div className="tooltip"><a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noreferrer">LinkedIn</a></div>
 					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a></span>
 				</div>
 				<div className="icon">
-					<div className="tooltip">Instagram</div>
+					<div className="tooltip"><a href="https://www.instagram.com/pandey.ujjwalpandey/" target="_blank" rel="noreferrer">Instagram</a></div>
 					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></span>
 				</div>
 				<div className="icon">
-					<div className="tooltip">Github</div>
+					<div className="tooltip"><a href="https://ujjwalpandeyjava.github.io/Ujjwal-Portfolio/" target="_blank" rel="noreferrer">Github</a></div>
 					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></span>
 				</div>
 			</div>
