@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.60088950.chunk.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.6795e3d5.chunk.js",
-    "main.js.map": "/Ujjwal-Portfolio/static/js/main.6795e3d5.chunk.js.map",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.043a4258.chunk.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.78fb3e74.chunk.js",
+    "main.js.map": "/Ujjwal-Portfolio/static/js/main.78fb3e74.chunk.js.map",
     "runtime-main.js": "/Ujjwal-Portfolio/static/js/runtime-main.31da56aa.js",
     "runtime-main.js.map": "/Ujjwal-Portfolio/static/js/runtime-main.31da56aa.js.map",
     "static/js/2.90ab382f.chunk.js": "/Ujjwal-Portfolio/static/js/2.90ab382f.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.33fee573.chunk.js": "/Ujjwal-Portfolio/static/js/3.33fee573.chunk.js",
     "static/js/3.33fee573.chunk.js.map": "/Ujjwal-Portfolio/static/js/3.33fee573.chunk.js.map",
     "index.html": "/Ujjwal-Portfolio/index.html",
-    "static/css/main.60088950.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.60088950.chunk.css.map",
+    "static/css/main.043a4258.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.043a4258.chunk.css.map",
     "static/js/2.90ab382f.chunk.js.LICENSE.txt": "/Ujjwal-Portfolio/static/js/2.90ab382f.chunk.js.LICENSE.txt",
     "static/media/AdvancedJava.4ecb15db.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15db.jfif",
     "static/media/Google_Cloud.c5ce4c2a.png": "/Ujjwal-Portfolio/static/media/Google_Cloud.c5ce4c2a.png",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.31da56aa.js",
     "static/js/2.90ab382f.chunk.js",
-    "static/css/main.60088950.chunk.css",
-    "static/js/main.6795e3d5.chunk.js"
+    "static/css/main.043a4258.chunk.css",
+    "static/js/main.78fb3e74.chunk.js"
   ]
 }
