@@ -13,7 +13,7 @@ jobs: # This workflow contains a single job called "build"
     
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
         
     steps:  # Steps represent a sequence of tasks that will be executed as part of the job
       - name: Checkout # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
