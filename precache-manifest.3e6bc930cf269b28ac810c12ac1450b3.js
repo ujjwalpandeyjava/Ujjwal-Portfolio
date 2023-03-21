@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c10f4b39fdd2447c6320",
-    "url": "/Ujjwal-Portfolio/static/css/main.491270e8.chunk.css"
+    "revision": "a0b5390b335561c10208",
+    "url": "/Ujjwal-Portfolio/static/css/main.71364b9c.chunk.css"
   },
   {
-    "revision": "c10f4b39fdd2447c6320",
-    "url": "/Ujjwal-Portfolio/static/js/main.c10f4b39.chunk.js"
+    "revision": "a0b5390b335561c10208",
+    "url": "/Ujjwal-Portfolio/static/js/main.a0b5390b.chunk.js"
   },
   {
     "revision": "00baaf3cb7bec74b6e53",
@@ -108,7 +108,7 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/eclipse_IDE.0c01ce25.jfif"
   },
   {
-    "revision": "2a3a861ef834274d97996353598d0330",
+    "revision": "e46ffdf719f7ca120c88f12778b4df3b",
     "url": "/Ujjwal-Portfolio/index.html"
   }
 ];
