@@ -207,11 +207,11 @@ body {
         top: -120px;
     }
 }
-.dynamic-txts li span {
+.dynamic-txts li>span {
     position: relative;
     height: 30px;
 }
-.dynamic-txts li span::after {
+.dynamic-txts li>span::after {
     content: "";
     position: absolute;
     height: 100%;
