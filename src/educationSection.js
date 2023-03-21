@@ -20,7 +20,7 @@ export default function EducationSection(props) {
 						<div><p>Practice and Graduation project<i><sub>(Chekout github)</sub></i></p></div>
 						<div><p><span>Aug-Sept</span> <br />Daily Brief Ambassador</p></div>
 						<div><p><span>Oct-Jan</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
-						<div title="Works as Full-Stack developer"><p><span>Feb-Present</span><br />Safety labs <i>(as Java Developer)</i></p></div>
+						<div title="Works as Full-Stack developer"><p><span>Feb-Present</span><br />Safety labs <i>(as Full Stack Developer)</i></p></div>
 					</div>
 				</div>
 			</div>

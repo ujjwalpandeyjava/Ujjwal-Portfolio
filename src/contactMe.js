@@ -33,7 +33,7 @@ export default function ContactMe(props) {
 						</div>
 					</div>
 				</div>
-				<TiltCardProfileSummary />
+				{/* <TiltCardProfileSummary /> */}
 			</div>
 		</Fragment>
 	)
