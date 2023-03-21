@@ -36,8 +36,8 @@ export default function WorkingLanguages(props) {
 					alignItems: "baseline",
 					alignContent: "flex-start"
 				}}>
-					<div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noreferrer"><img src={javaImage} alt="Java" /></a></div>
-					<div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
+					<div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noopener noreferrer"><img src={javaImage} alt="Java" /></a></div>
+					<div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noopener noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
 					<div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
 					<div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
 					<div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>

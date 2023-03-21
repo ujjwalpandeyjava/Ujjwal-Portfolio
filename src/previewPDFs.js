@@ -1,4 +1,4 @@
-import { Fragment } from "react/cjs/react.production.min";
+import React, { Component, Fragment } from 'react';
 import UjjwalResume from './Ujjwal_Pandey_Resume.pdf'
 import UjjwalCV from './Ujjwal_Pandey_C_V.pdf'
 import previewCSS from './previews.module.css'
@@ -9,8 +9,6 @@ import downArrow2 from './images/arrow-down.png'
 // Change it to dymanic so that I can use it with other certificates also...
 
 export default function PreviewPDFs(props) {
-	// console.log(props);	
-	// document.getElementById("stopClick").removeAttribute('onclick')
 	return (
 		<Fragment>
 			<div id="previews" className={previewCSS.previewsFullPage} onClick={() => props.viewPreview(false)}>
