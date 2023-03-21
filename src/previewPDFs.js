@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import UjjwalResume from './Ujjwal_Pandey_Resume.pdf'
 import UjjwalCV from './Ujjwal_Pandey_C_V.pdf'
 import previewCSS from './previews.module.css'
@@ -6,7 +6,7 @@ import resumePreview from './images/resumePreviewImage.png'
 import cvPreview from './images/cvPreviewImage.png'
 import downArrow2 from './images/arrow-down.png'
 
-// Change it to dymanic so that I can use it with other certificates also...
+// Change it to dynamic so that I can use it with other certificates also...
 
 export default function PreviewPDFs(props) {
 	return (

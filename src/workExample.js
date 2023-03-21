@@ -16,7 +16,7 @@ export default function WorkExample(props) {
               Click eye to see all the projects in one project "links".
               <div className="eye">
                 <a href="https://ujjwalpandeyjava.github.io/Links/examples.html"
-                  target="_blank" rel="noreferrer">
+                  target="_blank" rel="noopener noreferrer">
                   <i className="far fa-eye"></i>
                 </a>
               </div>

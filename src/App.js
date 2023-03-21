@@ -40,7 +40,7 @@ function App() {
             <li><span>Web Developer</span></li>
             <li><span>Java Developer</span></li>
             <li><span>ReactJS Dev.</span></li>
-            <li><span>😉Full-Stack Dev.</span></li>
+            <li><span><span role="img" aria-label='Wink emoji'>😉</span>Full-Stack Dev.</span></li>
           </ul>
         </div>
         <SocialIcons />

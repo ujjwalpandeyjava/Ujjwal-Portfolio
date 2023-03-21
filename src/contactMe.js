@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import contactPic from './images/contact.png'
-import TiltCardProfileSummary from "./TiltCardProfileSummary";
+// import TiltCardProfileSummary from "./TiltCardProfileSummary";
 
 export default function ContactMe(props) {
 	return (
@@ -14,7 +14,7 @@ export default function ContactMe(props) {
 							<div>
 								<i className="fas fa-envelope"> </i>
 								<a href="mailto:ujjwalpandey.aps@gamil.com"
-									target="_blank" rel="noreferrer"> Ujjwalpandey.aps@gmail.com</a>
+									target="_blank" rel="noopener noreferrer"> Ujjwalpandey.aps@gmail.com</a>
 							</div>
 							<div>
 								<i className="fas fa-phone-square-alt"></i>
@@ -28,7 +28,7 @@ export default function ContactMe(props) {
 							<div>
 								<i className="fab fa-linkedin"></i>
 								<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/"
-									target="_blank" rel="noreferrer"> Ujjwal Pandey</a>
+									target="_blank" rel="noopener noreferrer"> Ujjwal Pandey</a>
 							</div>
 						</div>
 					</div>

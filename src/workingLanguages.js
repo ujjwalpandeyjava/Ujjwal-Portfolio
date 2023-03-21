@@ -38,26 +38,26 @@ export default function WorkingLanguages(props) {
 				}}>
 					<div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noopener noreferrer"><img src={javaImage} alt="Java" /></a></div>
 					<div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noopener noreferrer"><img src={AdJavaImage} alt="Advnaced java" /></a></div>
-					<div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
-					<div><a href="http://www.google.com/search?q=React" target="_blank" rel="noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
-					<div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>
-					<div><a href="https://www.google.com/search?q=google+cloud" target="_blank" rel="noreferrer"><img src={GoogleCloudImage} alt="Google Cloud" /></a></div>
-					{/* <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noreferrer"><img src={GAEImage} alt="GAE" /></a></div> */}
-					<div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
-					<div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noreferrer"><img src={springImage} alt="Spring" /></a></div>
-					<div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
-					<div><a href="http://www.google.com/search?q=HTML" target="_blank" rel="noreferrer"><img src={htmlImage} alt="HTML" /></a></div>
-					<div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noreferrer"><img src={gitImage} alt="Git" /></a></div>
-					<div><a href="http://www.google.com/search?q=Figma+UI/UI" target="_blank" rel="noreferrer"><img src={figma} alt="Figma UI/UX designs" /></a></div>
-					<div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noreferrer"><img src={cssImage} alt="CSS" /></a></div>
-					<div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
-					<div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
-					<div><a href="http://www.google.com/search?q=eclipse+IDE" target="_blank" rel="noreferrer"><img src={eclipseIDE} alt="Eclipse IDE" /></a></div>
-					<div><a href="http://www.google.com/search?q=VSCode" target="_blank" rel="noreferrer"><img src={vsCode} alt="Visual Studio Code" /></a></div>
-					<div><a href="http://www.google.com/search?q=jQuery" target="_blank" rel="noreferrer"><img src={jQuery} alt="jQuery" /></a></div>
-					<div><a href="http://www.google.com/search?q=Postmantocheck_API" target="_blank" rel="noreferrer"><img src={postman} alt="postman to check API" /></a></div>
-					<div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noreferrer"><img src={msOfficeImage} alt="MS Office" /></a></div>
-					<div><a href="http://www.google.com/search?q=front+and+back+end+frameworks" target="_blank" rel="noreferrer"><img src={etcImage} alt="others on need" /></a></div>
+					<div><a href="http://www.google.com/search?q=JS" target="_blank" rel="noopener noreferrer"><img src={jsImage} alt="JavaScript" /></a></div>
+					<div><a href="http://www.google.com/search?q=React" target="_blank" rel="noopener noreferrer"><img src={reactImage} alt="ReactJS" /></a></div>
+					<div><a href="http://www.google.com/search?q=DS-Algo" target="_blank" rel="noopener noreferrer"><img src={dsAlgoImage} alt="DS-Algo" /></a></div>
+					<div><a href="https://www.google.com/search?q=google+cloud" target="_blank" rel="noopener noreferrer"><img src={GoogleCloudImage} alt="Google Cloud" /></a></div>
+					{/* <div><a href="http://www.google.com/search?q=GAE" target="_blank" rel="noopener noreferrer"><img src={GAEImage} alt="GAE" /></a></div> */}
+					<div><a href="http://www.google.com/search?q=RestApi" target="_blank" rel="noopener noreferrer"><img src={restAPIImage} alt="Rest API" /></a></div>
+					<div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noopener noreferrer"><img src={springImage} alt="Spring" /></a></div>
+					<div><a href="http://www.google.com/search?q=Hibernate" target="_blank" rel="noopener noreferrer"><img src={hibernateImage} alt="Hibernate" /></a></div>
+					<div><a href="http://www.google.com/search?q=HTML" target="_blank" rel="noopener noreferrer"><img src={htmlImage} alt="HTML" /></a></div>
+					<div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noopener noreferrer"><img src={gitImage} alt="Git" /></a></div>
+					<div><a href="http://www.google.com/search?q=Figma+UI/UI" target="_blank" rel="noopener noreferrer"><img src={figma} alt="Figma UI/UX designs" /></a></div>
+					<div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noopener noreferrer"><img src={cssImage} alt="CSS" /></a></div>
+					<div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noopener noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
+					<div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noopener noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
+					<div><a href="http://www.google.com/search?q=eclipse+IDE" target="_blank" rel="noopener noreferrer"><img src={eclipseIDE} alt="Eclipse IDE" /></a></div>
+					<div><a href="http://www.google.com/search?q=VSCode" target="_blank" rel="noopener noreferrer"><img src={vsCode} alt="Visual Studio Code" /></a></div>
+					<div><a href="http://www.google.com/search?q=jQuery" target="_blank" rel="noopener noreferrer"><img src={jQuery} alt="jQuery" /></a></div>
+					<div><a href="http://www.google.com/search?q=Postmantocheck_API" target="_blank" rel="noopener noreferrer"><img src={postman} alt="postman to check API" /></a></div>
+					<div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noopener noreferrer"><img src={msOfficeImage} alt="MS Office" /></a></div>
+					<div><a href="http://www.google.com/search?q=front+and+back+end+frameworks" target="_blank" rel="noopener noreferrer"><img src={etcImage} alt="others on need" /></a></div>
 				</div>
 			</div>
 		</Fragment >

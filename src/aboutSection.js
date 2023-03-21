@@ -50,7 +50,7 @@ function AboutSection(props) {
 								<section><Frag percent="60%" /></section>
 							</div>
 							<div className="group">
-								<p style={{color: '#0977c3'} }><span>There is always room for improvement</span><span>😉</span></p>
+								<p style={{color: '#0977c3'} }><span>There is always room for improvement</span><span role="img" aria-label="wink emoji">😉</span></p>
 							</div>
 						</div>
 					</div>
