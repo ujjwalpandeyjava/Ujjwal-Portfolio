@@ -6,8 +6,6 @@ import PreviewPDFs from "./previewPDFs";
 
 function AboutSection(props) {
 	const [viewPreview, setViewPreview] = useState(false);
-	// console.log(props, percent);
-	// console.log(viewPreview);
 	const previewPDFs = (viewPreview) ? < PreviewPDFs viewPreview={(x) => setViewPreview(x)} /> : "";
 	return (
 		<Fragment>
@@ -17,18 +15,25 @@ function AboutSection(props) {
 					<div><img src={aboutImage} alt="That's me" /></div>
 					<div id="aboutMe">
 						<div>
-							<div>Hi, my name is Ujjwal Pandey, I am pursuing graduation in:<br /><span>GNIIT</span> from<span> NIIT</span>,
-								and <span>BCA</span> from<span> IGNOU</span><br /><br />
-								I am a Full Stack Web Developer,
-								I work with Java, Advanced-Java, JavaScript, React, MySQL, MongoDB, and so on... according to the projects I am working on.
-								<br /><br />"<strong>Area of Interest</strong> includes: - "Full-stack Web app Development", and working with different technologies.<br />
-								I am looking to connect with engineers and company to work with and on same field of interest.
+							<div>
+								Hi, am Ujjwal Pandey <br/>
+							 	Graduate in: <span>GNIIT</span> <sub>(from<span> NIIT</span>),</sub> and <span>BCA</span> <sub>(from<span> IGNOU</span>)</sub>
+								<br /><br />
+
+							 	I am a skilled Full Stack Web Developer passionate about building innovative and user-friendly web applications using cutting-edge technologies, with <span>over 1.5+ yr of experience.</span><br/><br/>
+								<span className="tech">I have successfully created responsive and scalable web applications with many technologies.</span>
+								<br/><br/>
+
+								As a passionate professional, I am eagerly seeking opportunities to collaborate with great engineers and companies.
+								<br /><br />
+
+								<u><strong>Interest area:</strong></u> <i>Working with different technologies.</i>
 							</div>
 							<div id="downloadCV" style={{ color: 'black', fontWeight:'bolder', fontSize:'18px' }} onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already 'true' change from open full pages module`)}>Resume/CV<br /><em><sub>Preview-Download</sub></em></div>
 							{(previewPDFs)}
 						</div>
 						<div id="bars">
-							<div ><p>How good I am in?</p><hr /></div>
+							<div><p>How good I am in?</p><hr /></div>
 							<div className='group'>
 								<p> <span>Full-Stack Web Development</span><span>99%</span></p>
 								<section><Frag percent="100%" /></section>

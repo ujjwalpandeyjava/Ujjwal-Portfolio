@@ -10,7 +10,7 @@ import hibernateImage from './images/hibernate.png';
 import htmlImage from './images/html.jpg';
 import javaImage from './images/java.jpg';
 import jsImage from './images/js.jpg';
-import monogDBImage from './images/mongoDB.png';
+import mongoDBImage from './images/mongoDB.png';
 import msOfficeImage from './images/msOffice.jfif';
 import MySQLImage from './images/mySQL.jpg';
 import reactImage from './images/ReactJS.jpg';
@@ -20,6 +20,7 @@ import figma from './images/figma.png';
 import eclipseIDE from './images/eclipse_IDE.jfif';
 import vsCode from './images/VS_Code.png';
 import jQuery from './images/jQuery.png';
+import sfImage from './images/salesforce.png';
 import postman from './images/postman.png';
 
 
@@ -50,11 +51,12 @@ export default function WorkingLanguages(props) {
 					<div><a href="http://www.google.com/search?q=Git" target="_blank" rel="noopener noreferrer"><img src={gitImage} alt="Git" /></a></div>
 					<div><a href="http://www.google.com/search?q=Figma+UI/UI" target="_blank" rel="noopener noreferrer"><img src={figma} alt="Figma UI/UX designs" /></a></div>
 					<div><a href="http://www.google.com/search?q=CSS" target="_blank" rel="noopener noreferrer"><img src={cssImage} alt="CSS" /></a></div>
-					<div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noopener noreferrer"><img src={monogDBImage} alt="MongoDB" /></a></div>
+					<div><a href="http://www.google.com/search?q=MongoDB" target="_blank" rel="noopener noreferrer"><img src={mongoDBImage} alt="MongoDB" /></a></div>
 					<div><a href="http://www.google.com/search?q=MySQL" target="_blank" rel="noopener noreferrer"><img src={MySQLImage} alt="MySQL" /></a></div>
 					<div><a href="http://www.google.com/search?q=eclipse+IDE" target="_blank" rel="noopener noreferrer"><img src={eclipseIDE} alt="Eclipse IDE" /></a></div>
 					<div><a href="http://www.google.com/search?q=VSCode" target="_blank" rel="noopener noreferrer"><img src={vsCode} alt="Visual Studio Code" /></a></div>
 					<div><a href="http://www.google.com/search?q=jQuery" target="_blank" rel="noopener noreferrer"><img src={jQuery} alt="jQuery" /></a></div>
+					<div><a href="http://www.google.com/search?q=salesforce" target="_blank" rel="noopener noreferrer"><img src={sfImage} alt="Salesforce" /></a></div>
 					<div><a href="http://www.google.com/search?q=Postmantocheck_API" target="_blank" rel="noopener noreferrer"><img src={postman} alt="postman to check API" /></a></div>
 					<div><a href="http://www.google.com/search?q=MS+Office" target="_blank" rel="noopener noreferrer"><img src={msOfficeImage} alt="MS Office" /></a></div>
 					<div><a href="http://www.google.com/search?q=front+and+back+end+frameworks" target="_blank" rel="noopener noreferrer"><img src={etcImage} alt="others on need" /></a></div>

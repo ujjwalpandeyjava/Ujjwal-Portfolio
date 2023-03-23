@@ -1,13 +1,12 @@
 import React, { Fragment } from "react";
 import contactPic from './images/contact.png'
-// import TiltCardProfileSummary from "./TiltCardProfileSummary";
 
 export default function ContactMe(props) {
 	return (
 		<Fragment>
 			<div id="contactMeSection">
 				<h1>Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
-				<div id="firstIncontactMe">
+				<div id="firstInContactMe">
 					<div><img src={contactPic} alt="That's me with certificate" /></div>
 					<div id="aboutContact" style={{ padding: '16px 0 0 0', minHeight: '160px' }}>
 						<div>
@@ -23,7 +22,7 @@ export default function ContactMe(props) {
 						</div>
 						<div>
 							<div>
-								<i className="fas fa-map-marker-alt"></i> South Delhi, New Delhi
+								<i className="fas fa-map-marker-alt"></i>Devli, South Delhi, New Delhi
 							</div>
 							<div>
 								<i className="fab fa-linkedin"></i>
@@ -33,9 +32,7 @@ export default function ContactMe(props) {
 						</div>
 					</div>
 				</div>
-				{/* <TiltCardProfileSummary /> */}
 			</div>
 		</Fragment>
 	)
-
 }

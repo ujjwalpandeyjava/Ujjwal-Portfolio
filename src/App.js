@@ -10,8 +10,7 @@ import Navbar from './navbar'
 import SocialIcons from './socialIcons'
 import WorkExample from './workExample'
 import WorkingLanguages from './workingLanguages'
-
-
+import SummaryTilt from './tiltEffect/summaryTilt'
 
 function App() {
   let [scrollerDisplaying, setScrollerDisplaying] = useState("flex")  // "flex"/"none"
@@ -30,13 +29,13 @@ function App() {
     }
   }
   const firstView = <Fragment>
-    <div className="firstView" id="firstView">
+    <div id="firstView" className="firstView">
       <div className="whoIAm">
         <div className="name">Who I AM?
         </div>
         <div className="wrapper">
           <div className="static-txt">I am a &#9;</div>
-          <ul className="dynamic-txts">
+          <ul className="dynamic-texts">
             <li><span>Web Developer</span></li>
             <li><span>Java Developer</span></li>
             <li><span>ReactJS Dev.</span></li>
@@ -67,8 +66,9 @@ function App() {
         <WorkExample />
         <WorkingLanguages />
         <ContactMe />
+        <Footer />
+        <SummaryTilt />
       </div>
-      <Footer />
 
     </Fragment >
   );

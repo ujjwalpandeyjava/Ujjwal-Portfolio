@@ -18,6 +18,7 @@ export default function Navbar(props) {
 						<h3><a href="#educationSection">Education</a></h3>
 						<h3><a href="#workExamplesSection">Work</a></h3>
 						<h3><a href="#contactMeSection">Contact</a></h3>
+						<h3><a href="#summarySection">Summary</a></h3>
 					</div>
 				</div>
 				<div className="menus">
@@ -26,6 +27,7 @@ export default function Navbar(props) {
 					<h3><a href="#educationSection">Education</a></h3>
 					<h3><a href="#workExamplesSection">Work</a></h3>
 					<h3><a href="#contactMeSection">Contact</a></h3>
+					<h3><a href="#summarySection">Summary</a></h3>
 				</div>
 			</div>
 		</Fragment>
