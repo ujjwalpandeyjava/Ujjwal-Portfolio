@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Ujjwal-Portfolio/precache-manifest.3e6bc930cf269b28ac810c12ac1450b3.js"
+  "/Ujjwal-Portfolio/precache-manifest.3c908e6daf3cd07bac2c2e21be9be4e7.js"
 );
 
 workbox.clientsClaim();
