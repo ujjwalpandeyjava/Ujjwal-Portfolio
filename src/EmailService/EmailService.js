@@ -23,37 +23,36 @@ export default function EmailService(props) {
 		});
 		e.target.reset();
 	};
+	const inputFieldChanged = (event) => {
+		event.target.dataset.valued = (event.target.value) ? true : false;
+	}
 
 	return (
 		<React.Fragment>
-			<div className={EmailServiceStyle.head}>
-				<div className="emailService-header">
-					Invite with mail
+			<div className={EmailServiceStyle.headSection}>
+				<div className={EmailServiceStyle.emailService_header}>
+					<h2>Feel free, to drop me a message!</h2>
 					<span className={EmailServiceStyle.closeButton} onClick={props.onClick()}> X </span>
 				</div>
 				<form ref={form} onSubmit={sendEmail}>
 					<div>
-						<label>Name</label>
-						<input placeholder="dd" type="text" name="from_name" />
+						<input className={EmailServiceStyle.inputField} placeholder="4" type="text" name="from_name" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Name</div>
 					</div>
 					<div>
-						<label>Email</label>
-						<input placeholder="dd" type="email" name="user_email" />
+						<input className={EmailServiceStyle.inputField} placeholder="dd" type="email" name="user_email" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Email</div>
 					</div>
 					<div>
-						<label>Company</label>
-						<textarea placeholder="dd" name="company_name" />
+						<textarea className={EmailServiceStyle.inputField} placeholder="dd" name="company_name" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Company</div>
 					</div>
 					<div>
-						<label>Message</label>
-						<textarea placeholder="dd" name="message" />
+						<textarea className={EmailServiceStyle.inputField} placeholder="dd" name="message" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Message</div>
 					</div>
-					<input type="submit" value="Send" />
+					<input type="submit" value="Drop message" />
 				</form>
-				<div>
-					<hr />
-					<button>Let's Ping </button>
-				</div>
 			</div>
 		</React.Fragment>
 	)
