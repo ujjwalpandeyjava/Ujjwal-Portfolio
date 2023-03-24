@@ -77,8 +77,10 @@
 	all: unset;
 	margin-top: 5px;
 	background: #116b75;
-	padding: 0.4em 1em;
+	padding: 0.5em 1em;
+	font-size: large;
 	border-radius: 4px;
+	width: 65%;
 }
 
 .headSection input[type='submit']:hover {
