@@ -6,7 +6,6 @@ import EmailService from "../EmailService/EmailService";
 import '../frag.css'
 import '../tiltEffect/summaryTilt.css'
 
-
 export default function SummaryTilt(props) {
 	useEffect(() => {	// It will call every time the component is called or refreshed
 		VanillaTilt.init(document.querySelectorAll(".card"), {	// https://micku7zu.github.io/vanilla-tilt.js/  <-- Documentation
@@ -50,6 +49,7 @@ export default function SummaryTilt(props) {
 		setEmailModal(!emailModal);
 		console.log(emailModal);
 	}
+
 	return (
 		<Fragment >
 			<div id="summarySection">

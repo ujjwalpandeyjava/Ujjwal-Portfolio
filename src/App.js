@@ -11,6 +11,8 @@ import SocialIcons from './socialIcons'
 import WorkExample from './workExample'
 import WorkingLanguages from './workingLanguages'
 import SummaryTilt from './tiltEffect/summaryTilt'
+import 'idempotent-babel-polyfill';
+
 
 function App() {
   let [scrollerDisplaying, setScrollerDisplaying] = useState("flex")  // "flex"/"none"
