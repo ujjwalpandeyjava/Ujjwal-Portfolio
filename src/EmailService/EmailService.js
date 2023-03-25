@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import EmailServiceStyle from '../EmailService/EmailService.module.css'
 import emailjs from '@emailjs/browser';
-import DropNotification from "../DropNotification/DropNotification";
+// import DropNotification from "../DropNotification/DropNotification";
 
 export default function EmailService(props) {
 	const form = useRef();
