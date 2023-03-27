@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 
 export default function EmailService(props) {
 	const form = useRef();
+	let not_List = []
 	const sendEmail = (e) => {
 		e.preventDefault();
 		//	First try "react-toastify" before making own DropNotification
@@ -43,39 +44,35 @@ export default function EmailService(props) {
 	const inputFieldChanged = (event) => {
 		event.target.dataset.valued = (event.target.value) ? true : false;
 	}
-	const listOfClassList = {
-		headSectionList: [EmailServiceStyle.emailServiceSection]
-	}
-	console.log(listOfClassList);
+
 	return (
 		<React.Fragment>
-			<div className={EmailServiceStyle.coverFullScreen}>
-				<div className={listOfClassList.headSectionList.join(" ")}>
-					<div className={EmailServiceStyle.emailService_header}>
-						{/* <h2>Feel free, to drop message!</h2> */}
-						<h1>Let's work together!</h1>
-						<span className={EmailServiceStyle.closeButton} onClick={props.onClick()}> X </span>
-					</div>
-					<form ref={form} onSubmit={sendEmail}>
-						<div>
-							<div className={EmailServiceStyle.inputLabel}>Full Name</div>
-							<input className={EmailServiceStyle.inputField} placeholder="First + Last name" type="text" name="from_name" data-valued="false" onChange={inputFieldChanged} />
-						</div>
-						<div>
-							<div className={EmailServiceStyle.inputLabel}>Email</div>
-							<input className={EmailServiceStyle.inputField} placeholder="Pandey Ji will reply here" type="email" name="user_email" data-valued="false" onChange={inputFieldChanged} />
-						</div>
-						<div>
-							<div className={EmailServiceStyle.inputLabel}>Company</div>
-							<input className={EmailServiceStyle.inputField} placeholder="Org/personal work place" type="text" name="company_name" data-valued="false" onChange={inputFieldChanged} />
-						</div>
-						<div>
-							<div className={EmailServiceStyle.inputLabel}>What would like to discuss?</div>
-							<textarea className={EmailServiceStyle.inputField} rows="5" placeholder="Pandey Ji, we cordially invite you to join us for an interview and share your valuable insights." name="message" data-valued="false" onChange={inputFieldChanged} />
-						</div>
-						<input type="submit" className={EmailServiceStyle.submitButton} value="Drop message" />
-					</form>
+			<div className={EmailServiceStyle.emailServiceSection}>
+				<div className={EmailServiceStyle.emailService_header}>
+					{/* <h2>Feel free, to drop message!</h2> */}
+					<h2>Let's work together!</h2>
+					<span className={EmailServiceStyle.closeButton} onClick={props.onClick()}> X </span>
 				</div>
+				<form ref={form} onSubmit={sendEmail}>
+					<div>
+						<input className={EmailServiceStyle.inputField} placeholder="Name" type="text" name="from_name" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Full Name</div>
+					</div>
+					<div>
+						<input className={EmailServiceStyle.inputField} placeholder="Pandey Ji will reply here" type="email" name="user_email" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Email</div>
+					</div>
+					<div>
+						<textarea className={EmailServiceStyle.inputField} placeholder="Org name" name="company_name" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>Company</div>
+					</div>
+					<div>
+						<textarea className={EmailServiceStyle.inputField} placeholder="Pandey Ji, we cordially invite you to join us for an interview and share your valuable insights." name="message" data-valued="false" onChange={inputFieldChanged} />
+						<div className={EmailServiceStyle.inputLabel}>What would like to discuss?</div>
+					</div>
+					<input type="submit" value="Drop message" />
+				</form>
+				{not_List.join("")}
 			</div>
 		</React.Fragment>
 	)
