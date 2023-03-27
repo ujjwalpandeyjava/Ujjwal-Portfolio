@@ -20,7 +20,6 @@ export default function SummaryTilt(props) {
 		});
 		document.querySelector(".card").addEventListener("mouseleave", (event) => {
 			// event.currentTarget.style.opacity = 0.5;
-			// event.currentTarget.style.opacity = 1;
 		});
 		const buttons = document.querySelectorAll(".card-buttons button");
 		const sections = document.querySelectorAll(".card-section");
@@ -163,7 +162,7 @@ export default function SummaryTilt(props) {
 										{/* ujjwalpandey.aps@gmail.com */}
 										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">ujjwalpandey.aps@gmail.com</a>
 									</div>
-									<button className="contact-me" onClick={toggleEmailModal}>WORK TOGETHER</button>
+									<button className="contact-me" onClick={toggleEmailModal}>MESSAGE</button>
 								</div>
 							</div>
 						</div>

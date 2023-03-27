@@ -1,42 +1,68 @@
 import React, { useRef } from "react";
 import EmailServiceStyle from '../EmailService/EmailService.module.css'
 import emailjs from '@emailjs/browser';
-// import DropNotification from "../DropNotification/DropNotification";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function EmailService(props) {
 	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
-		//	First try "react-toastify" before making own DropNotification
-
-		//	Find a way to dynamically add the notification component on the DOM
 		let notAcceptedValues = ['', undefined, " "];
 		if (notAcceptedValues.includes(e.target.from_name.value)) {
-			console.log("inside name");
-			alert("Please Add name");
-			// <DropNotification notification_Message={'Add Your name'} />
-		} else if (notAcceptedValues.includes(e.target.user_email.value)) {
-			console.log("inside email");
-			alert("Please add email");
-			// <DropNotification notification_Message="Add email" />
+			toast('Name cannot be empty',
+				{
+					icon: '🐼',
+					style: {
+						borderRadius: '10px',
+						background: '#ff9966',
+						color: 'black',
+						padding: '1px'
+					},
+				}
+			);
 		} else if (notAcceptedValues.includes(e.target.message.value)) {
-			console.log("Add message");
-			alert("Please add some message");
-			// <DropNotification notification_Message="Add message" />
+			toast('Please add discussion topic',
+				{
+					icon: '💬',
+					style: {
+						borderRadius: '10px',
+						background: '#ff9966',
+						color: 'black',
+						padding: '1px'
+					},
+				}
+			);
+		} else if (notAcceptedValues.includes(e.target.user_email.value)) {
+			toast("Please add email/contact number, to connect back",
+				{
+					icon: '🏢📧',
+					style: {
+						borderRadius: '10px',
+						background: '#ff9966',
+						color: 'white',
+						padding: '1px'
+					},
+				}
+			);
 		} else {
 			console.log("Sending mail");
-			emailjs.send("service_xgcf3lg", "template_wsittxt", {
-				from_name: e.target.from_name.value,
-				user_email: e.target.user_email.value,
-				company_name: e.target.company_name.value,
-				message: e.target.message.value
-			}, "fuTN9NgqZc0mVDzjh").then((result) => {
-				console.log("Mail sent successfully");
-				console.log(result.text);
-			}, (error) => {
-				console.log("Error in sending mail");
-				console.log(error.text);
-			});
+			toast.promise(
+				emailjs.send("service_xgcf3lg", "template_wsittxt", {
+					from_name: e.target.from_name.value,
+					user_email: e.target.user_email.value,
+					company_name: e.target.company_name.value,
+					message: e.target.message.value
+				}, "fuTN9NgqZc0mVDzjh").then((result) => {
+					console.log(result.text);
+				}, (error) => {
+					console.log(error.text);
+					throw Error("Error: " + error.text);
+				}),
+				{
+					loading: 'Sending message...',
+					success: <b>Message sent successfully!</b>,
+					error: <p>Unable to send, please mail at <br /> <b>ujjwalpandey.aps@gmail.com</b></p>,
+				});
 			e.target.reset();
 		}
 	};
@@ -46,7 +72,6 @@ export default function EmailService(props) {
 	const listOfClassList = {
 		headSectionList: [EmailServiceStyle.emailServiceSection]
 	}
-	console.log(listOfClassList);
 	return (
 		<React.Fragment>
 			<div className={EmailServiceStyle.coverFullScreen}>
@@ -77,6 +102,10 @@ export default function EmailService(props) {
 					</form>
 				</div>
 			</div>
+			<Toaster
+				position="bottom-right"
+				reverseOrder={false}
+			/>
 		</React.Fragment>
 	)
 }
