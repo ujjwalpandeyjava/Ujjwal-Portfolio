@@ -1,10 +1,15 @@
 import React, { Fragment } from 'react';
-import UjjwalResume from './Ujjwal_Pandey_Resume.pdf'
-import UjjwalCV from './Ujjwal_Pandey_C_V.pdf'
-import previewCSS from './previews.module.css'
-import resumePreview from './images/resumePreviewImage.png'
-import cvPreview from './images/cvPreviewImage.png'
-import downArrow2 from './images/arrow-down.png'
+import previewCSS from './previews.module.css';
+import downArrow2 from './images/arrow-down.png';
+import UjjwalResume from './images/Resume_CV/fresher/Ujjwal_Pandey_Resume.pdf';
+import cvPreview from './images/Resume_CV/fresher/cvPreviewImage.png';
+import resumePreview from './images/Resume_CV/fresher/resumePreviewImage.png';
+import UjjwalCV from './images/Resume_CV/fresher/Ujjwal_Pandey_C_V.pdf';
+
+// import UjjwalResume_Experienced from './images/Resume_CV/1.5yr/ujjwal_Pandey_Resume.pdf';
+// import resumePreview_Experienced from './images/Resume_CV/1.5yr/resumePreviewImage.png';
+// import UjjwalCV_Experienced from './images/Resume_CV/1.5yr/ujjwal_Pandey_C_V.pdf';
+// import cvPreview_Experienced from './images/Resume_CV/1.5yr/cvPreviewImage.png';
 
 // Change it to dynamic so that I can use it with other certificates also...
 
