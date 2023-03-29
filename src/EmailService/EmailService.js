@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function EmailService(props) {
+	console.log(props);
 	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -54,6 +55,9 @@ export default function EmailService(props) {
 					message: e.target.message.value
 				}, "fuTN9NgqZc0mVDzjh").then((result) => {
 					console.log(result.text);
+					setTimeout(() => {
+						props.onClick()();	// bcz the function returns function.
+					}, 2000);
 				}, (error) => {
 					console.log(error.text);
 					throw Error("Error: " + error.text);

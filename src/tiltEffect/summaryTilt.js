@@ -8,22 +8,22 @@ import '../tiltEffect/summaryTilt.css'
 
 export default function SummaryTilt(props) {
 	useEffect(() => {	// It will call every time the component is called or refreshed
+		const card = document.querySelector(".card");
+		const buttons = document.querySelectorAll(".card-buttons button");
+		const sections = document.querySelectorAll(".card-section");
 		VanillaTilt.init(document.querySelectorAll(".card"), {	// https://micku7zu.github.io/vanilla-tilt.js/  <-- Documentation
 			max: 20,
 			speed: 300
 		});
-		/* document.querySelector(".card").addEventListener("tiltChange", () => {
+		/* card.addEventListener("tiltChange", () => {
 			console.log("Card moved");
 		}); */
-		document.querySelector(".card").addEventListener("mouseenter", (event) => {
+		card.addEventListener("mouseenter", (event) => {
 			event.currentTarget.style.opacity = 1;
 		});
-		document.querySelector(".card").addEventListener("mouseleave", (event) => {
+		card.addEventListener("mouseleave", (event) => {
 			// event.currentTarget.style.opacity = 0.5;
 		});
-		const buttons = document.querySelectorAll(".card-buttons button");
-		const sections = document.querySelectorAll(".card-section");
-		const card = document.querySelector(".card");
 		const handleButtonClick = e => {
 			const targetSection = e.target.getAttribute("data-section");
 			const section = document.querySelector(targetSection);	// #about	#experience		#contact
@@ -46,7 +46,6 @@ export default function SummaryTilt(props) {
 	const [emailModal, setEmailModal] = useState(false);
 	const toggleEmailModal = () => {
 		setEmailModal(!emailModal);
-		console.log(emailModal);
 	}
 
 	return (
