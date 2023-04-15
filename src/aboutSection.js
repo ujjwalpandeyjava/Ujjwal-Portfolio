@@ -29,7 +29,7 @@ function AboutSection(props) {
 
 								<u><strong>Interest area:</strong></u> <i>Working with different technologies.</i>
 							</div>
-							<div id="downloadCV" style={{ color: 'black', fontWeight:'bolder', fontSize:'18px' }} onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already 'true' change from open full pages module`)}>Resume/CV<br /><em><sub>Preview-Download</sub></em></div>
+							<div className="downloadCV" style={{ color: 'black', fontWeight:'bolder', fontSize:'18px' }} onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already 'true' change from open full pages module`)}>Resume/CV<br /><em><sub>Preview-Download</sub></em></div>
 							{(previewPDFs)}
 						</div>
 						<div id="bars">

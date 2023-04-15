@@ -11,9 +11,9 @@ import downArrow2 from './images/arrow-down.png';
 // import resumePreview from './images/Resume_CV/fresher/resumePreviewImage.png';
 
 // 1.5 yr experienced
-import UjjwalResume from './images/Resume_CV/exp_1_5yr/ujjwal_Pandey_Resume.pdf';
+import UjjwalResume from './images/Resume_CV/exp_1_5yr/_ujjwal_Pandey_Resume.pdf';
 import resumePreview from './images/Resume_CV/exp_1_5yr/resumePreviewImage.jpeg';
-import UjjwalCV from './images/Resume_CV/exp_1_5yr/ujjwal_Pandey_C_V.pdf';
+import UjjwalCV from './images/Resume_CV/exp_1_5yr/_ujjwal_Pandey_C_V.pdf';
 import cvPreview from './images/Resume_CV/exp_1_5yr/cvPreviewImage.jpeg';
 
 export default function PreviewPDFs(props) {
@@ -25,14 +25,14 @@ export default function PreviewPDFs(props) {
 					<div>
 						<div><img className={previewCSS.previewImage} src={resumePreview} alt="Resume preview" /></div>
 						<div>Resume in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<div id="downloadCV"><a href={UjjwalResume} download='_Ujjwal-full_stack-Resume.pdf'>Download Resume</a></div>
+						<a className="downloadCV" href={UjjwalResume} download='_Ujjwal-full_stack-Resume.pdf'>Download Resume</a>
 					</div>
 					{/* <hr style={{ backgroundColor: 'gray' }} /> */}
 					<div>
 						<div><img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" /></div>
 						<div></div>
 						<div>C.V. in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<div id="downloadCV"><a href={UjjwalCV} download='_Ujjwal-full_stack-C.V.pdf'>Download C.V</a></div>
+						<a className="downloadCV" href={UjjwalCV} download='_Ujjwal-full_stack-C.V.pdf'>Download C.V</a>
 					</div>
 				</div>
 			</div>

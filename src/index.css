@@ -599,7 +599,7 @@ body {
     color: #939ff9;
 }
 
-#downloadCV {
+.downloadCV {
     background-color: #ff9b09;
     max-width: 200px;
     width: auto;
@@ -608,17 +608,14 @@ body {
     font-weight: bold;
     cursor: pointer;
     box-shadow: inset 0 0 3px 0px #050300;
-}
-
-#downloadCV:hover {
-    background-color: #d88509;
-}
-
-#downloadCV>a {
     text-decoration: none;
     font-family: sans-serif;
-    font-weight: 600;
     color: #000000;
+    padding: 0.6rem 1.1rem;
+}
+
+.downloadCV:hover {
+    background-color: #d88509;
 }
 
 #bars {
