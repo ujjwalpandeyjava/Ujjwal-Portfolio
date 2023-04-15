@@ -25,14 +25,14 @@ export default function PreviewPDFs(props) {
 					<div>
 						<div><img className={previewCSS.previewImage} src={resumePreview} alt="Resume preview" /></div>
 						<div>Resume in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<a className="downloadCV" href={UjjwalResume} download='_Ujjwal-full_stack-Resume.pdf'>Download Resume</a>
+						<div><a className="downloadCV" href={UjjwalResume} download>Download Resume</a></div>
 					</div>
 					{/* <hr style={{ backgroundColor: 'gray' }} /> */}
 					<div>
 						<div><img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" /></div>
 						<div></div>
 						<div>C.V. in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<a className="downloadCV" href={UjjwalCV} download='_Ujjwal-full_stack-C.V.pdf'>Download C.V</a>
+						<a className="downloadCV" href={UjjwalCV} download>Download C.V</a>
 					</div>
 				</div>
 			</div>
