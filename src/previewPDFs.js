@@ -11,9 +11,9 @@ import downArrow2 from './images/arrow-down.png';
 // import resumePreview from './images/Resume_CV/fresher/resumePreviewImage.png';
 
 // 1.5 yr experienced
-import UjjwalResume from './images/Resume_CV/exp_1_5yr/_ujjwal_Pandey_Resume.pdf';
+import UjjwalResume from './images/Resume_CV/exp_1_5yr/ujjwal_Pandey_Resume.pdf';
 import resumePreview from './images/Resume_CV/exp_1_5yr/resumePreviewImage.jpeg';
-import UjjwalCV from './images/Resume_CV/exp_1_5yr/_ujjwal_Pandey_C_V.pdf';
+import UjjwalCV from './images/Resume_CV/exp_1_5yr/ujjwal_Pandey_C_V.pdf';
 import cvPreview from './images/Resume_CV/exp_1_5yr/cvPreviewImage.jpeg';
 
 export default function PreviewPDFs(props) {
