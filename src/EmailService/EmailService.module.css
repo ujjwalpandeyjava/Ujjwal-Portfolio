@@ -19,7 +19,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 0 0 0 10px #646981c2;
-	min-height: 50vh;
+	/* min-height: 50vh; */
 	max-height: 80vh;
 	overflow: auto;
 	min-width: 60vw;
