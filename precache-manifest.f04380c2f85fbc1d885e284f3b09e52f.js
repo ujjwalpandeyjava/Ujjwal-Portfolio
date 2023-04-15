@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2ea7c7d7c20db0b4ec72",
+    "revision": "32433979bb87f6319330",
     "url": "/Ujjwal-Portfolio/static/css/main.61509d60.chunk.css"
   },
   {
-    "revision": "2ea7c7d7c20db0b4ec72",
-    "url": "/Ujjwal-Portfolio/static/js/main.2ea7c7d7.chunk.js"
+    "revision": "32433979bb87f6319330",
+    "url": "/Ujjwal-Portfolio/static/js/main.32433979.chunk.js"
   },
   {
     "revision": "0a92ff0637b0d2e43909",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.cc3c95bf.png"
   },
   {
-    "revision": "7b603fb3a9da6ce3ab6af4b4f48bfdc3",
-    "url": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_Resume.7b603fb3.pdf"
+    "revision": "bb1852f9c2644934278ac5b13fbaef9f",
+    "url": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_Resume.bb1852f9.pdf"
   },
   {
     "revision": "ce0b0d357cd910645a6756ee9d1c0c01",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/1670752620885.a171b99e.jpg"
   },
   {
-    "revision": "b31320731d3ce59e7d160fd78cbc04ff",
+    "revision": "f9e41ec786c7bf0d1b16ca2f6995d6b7",
     "url": "/Ujjwal-Portfolio/index.html"
   }
 ];
