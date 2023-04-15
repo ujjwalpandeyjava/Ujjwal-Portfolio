@@ -1,7 +1,7 @@
 {
   "main.css": "/Ujjwal-Portfolio/static/css/main.61509d60.chunk.css",
-  "main.js": "/Ujjwal-Portfolio/static/js/main.6717c267.chunk.js",
-  "main.js.map": "/Ujjwal-Portfolio/static/js/main.6717c267.chunk.js.map",
+  "main.js": "/Ujjwal-Portfolio/static/js/main.2ea7c7d7.chunk.js",
+  "main.js.map": "/Ujjwal-Portfolio/static/js/main.2ea7c7d7.chunk.js.map",
   "static/js/1.0a92ff06.chunk.js": "/Ujjwal-Portfolio/static/js/1.0a92ff06.chunk.js",
   "static/js/1.0a92ff06.chunk.js.map": "/Ujjwal-Portfolio/static/js/1.0a92ff06.chunk.js.map",
   "static/js/2.35e205b5.chunk.js": "/Ujjwal-Portfolio/static/js/2.35e205b5.chunk.js",
@@ -10,9 +10,9 @@
   "runtime~main.js.map": "/Ujjwal-Portfolio/static/js/runtime~main.0cebe891.js.map",
   "static/media/arrow-down.png": "/Ujjwal-Portfolio/static/media/arrow-down.7a19cf0d.png",
   "static/media/ujjwalAvatar3.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.cc3c95bf.png",
-  "static/media/_ujjwal_Pandey_Resume.pdf": "/Ujjwal-Portfolio/static/media/_ujjwal_Pandey_Resume.7b603fb3.pdf",
+  "static/media/ujjwal_Pandey_Resume.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_Resume.7b603fb3.pdf",
   "static/media/resumePreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/resumePreviewImage.ce0b0d35.jpeg",
-  "static/media/_ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/_ujjwal_Pandey_C_V.80442b90.pdf",
+  "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.80442b90.pdf",
   "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.fda04019.jpeg",
   "static/media/contact.png": "/Ujjwal-Portfolio/static/media/contact.7382e483.png",
   "static/media/ujjwalAvatarEducation.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.b8681c4a.png",
@@ -33,6 +33,6 @@
   "static/media/1670752620885.jpg": "/Ujjwal-Portfolio/static/media/1670752620885.a171b99e.jpg",
   "static/css/main.61509d60.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.61509d60.chunk.css.map",
   "index.html": "/Ujjwal-Portfolio/index.html",
-  "precache-manifest.942d62242e3756794218f87fdae94c67.js": "/Ujjwal-Portfolio/precache-manifest.942d62242e3756794218f87fdae94c67.js",
+  "precache-manifest.ab89765f103fea425dc91d4076dea008.js": "/Ujjwal-Portfolio/precache-manifest.ab89765f103fea425dc91d4076dea008.js",
   "service-worker.js": "/Ujjwal-Portfolio/service-worker.js"
 }
