@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "32433979bb87f6319330",
+    "revision": "5e406ce082a93685d2f9",
     "url": "/Ujjwal-Portfolio/static/css/main.61509d60.chunk.css"
   },
   {
-    "revision": "32433979bb87f6319330",
-    "url": "/Ujjwal-Portfolio/static/js/main.32433979.chunk.js"
+    "revision": "5e406ce082a93685d2f9",
+    "url": "/Ujjwal-Portfolio/static/js/main.5e406ce0.chunk.js"
   },
   {
     "revision": "0a92ff0637b0d2e43909",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/1670752620885.a171b99e.jpg"
   },
   {
-    "revision": "f9e41ec786c7bf0d1b16ca2f6995d6b7",
+    "revision": "b09b2eb8f53817e32c145ed66927fb3f",
     "url": "/Ujjwal-Portfolio/index.html"
   }
 ];
