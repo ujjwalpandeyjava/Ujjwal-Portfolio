@@ -67,9 +67,9 @@ function App() {
         <EducationSection />
         <WorkExample />
         <WorkingLanguages />
+        <SummaryTilt />
         <ContactMe />
         <Footer />
-        <SummaryTilt />
       </div>
 
     </Fragment >
