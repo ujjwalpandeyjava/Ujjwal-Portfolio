@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c7938e46caec1a5f3a1e",
+    "revision": "6c0f78e9c3dcd6ff6b97",
     "url": "/Ujjwal-Portfolio/static/css/main.3e578668.chunk.css"
   },
   {
-    "revision": "c7938e46caec1a5f3a1e",
-    "url": "/Ujjwal-Portfolio/static/js/main.c7938e46.chunk.js"
+    "revision": "6c0f78e9c3dcd6ff6b97",
+    "url": "/Ujjwal-Portfolio/static/js/main.6c0f78e9.chunk.js"
   },
   {
     "revision": "0a92ff0637b0d2e43909",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/resumePreviewImage.ce0b0d35.jpeg"
   },
   {
-    "revision": "a73e3a1a76e3ee8556a89b5d299b3b87",
-    "url": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.a73e3a1a.pdf"
+    "revision": "74fecb22d80029c0dad35b1f94513b70",
+    "url": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.74fecb22.pdf"
   },
   {
-    "revision": "061e6f2f85a5e76cf69e4da1047517fe",
-    "url": "/Ujjwal-Portfolio/static/media/cvPreviewImage.061e6f2f.jpeg"
+    "revision": "ad09d534f16364634633928644749f50",
+    "url": "/Ujjwal-Portfolio/static/media/cvPreviewImage.ad09d534.jpeg"
   },
   {
     "revision": "7382e4834ba6ced59b496abedb33350b",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/Ujjwal-Portfolio/static/media/1670752620885.a171b99e.jpg"
   },
   {
-    "revision": "908eac979bbe17460232844bf7eaeea0",
+    "revision": "260ba9fc286d3cb713494e4585f2bf99",
     "url": "/Ujjwal-Portfolio/index.html"
   }
 ];
