@@ -1,10 +1,9 @@
 // Change this component to work on json links (Dynamic), so that it can be used in other areas too like: Present all 'Certificates'
 import React, { Fragment } from 'react';
-import previewCSS from './previews.module.css';
-import downArrow2 from './images/arrow-down.png';
-
-import UjjwalCV from './images/Resume_CV/ujjwal_Pandey_C_V.pdf';
 import cvPreview from './images/Resume_CV/cvPreviewImage.jpeg';
+import UjjwalCV from './images/Resume_CV/ujjwal_Pandey_C_V.pdf';
+import downArrow2 from './images/arrow-down.png';
+import previewCSS from './previews.module.css';
 
 export default function PreviewPDFs(props) {
 	return (
