@@ -3,8 +3,8 @@ import React, { Fragment } from 'react';
 import previewCSS from './previews.module.css';
 import downArrow2 from './images/arrow-down.png';
 
-import UjjwalCV from './images/Resume_CV/exp_1_5yr/ujjwal_Pandey_C_V.pdf';
-import cvPreview from './images/Resume_CV/exp_1_5yr/cvPreviewImage.jpeg';
+import UjjwalCV from './images/Resume_CV/ujjwal_Pandey_C_V.pdf';
+import cvPreview from './images/Resume_CV/cvPreviewImage.jpeg';
 
 export default function PreviewPDFs(props) {
 	return (
