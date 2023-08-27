@@ -18,9 +18,9 @@ export default function EducationSection(props) {
 						<div><p><span>2015</span> <br />10th from CBSE</p></div>
 						<div><h1>Experience <sub>&</sub> Work</h1></div>
 						<div><p>Practice and Graduation project<i><sub>(Chekout github)</sub></i></p></div>
-						<div><p><span>2022 - Aug-Sept</span> <br />Daily Brief Ambassador</p></div>
-						<div><p><span>2022 - Oct-Jan</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
-						<div title="Works as Full-Stack developer"><p><span>2023 - Feb-Present</span><br />Safety labs <i>(as Full Stack Developer)</i></p></div>
+						<div><p><span>Aug/2021-Sept/2021</span> <br />Daily Brief Ambassador</p></div>
+						<div><p><span>Oct/2021-Jan/2022</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
+						<div title="Works as Full-Stack developer"><p><span>Feb/2022-Present</span><br />Safety labs <i>(as Full Stack Developer)</i></p></div>
 					</div>
 				</div>
 			</div>
