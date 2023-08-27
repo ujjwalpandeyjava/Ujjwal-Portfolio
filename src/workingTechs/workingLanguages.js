@@ -23,8 +23,6 @@ import vsCode from '../images/VS_Code.png';
 import sfImage from '../images/salesforce.png';
 import postman from '../images/postman.png';
 import springBoot from '../images/springBoot.png';
-import css from './WorkingLanguages.module.css'
-
 
 export default function WorkingLanguages() {
 	return (
