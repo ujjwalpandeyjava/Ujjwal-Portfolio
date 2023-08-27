@@ -13,7 +13,7 @@ export default function EducationSection(props) {
 						<div><h1>ACADEMIC</h1></div>
 						<div><p><span>2019-2021</span> <br />GNIIT in Cloud and Mobile Software Engineering <i>from NIIT</i></p></div>
 						{/* <div><p><span>2018-Present</span> <br />1<sup>st</sup> division BCA Graduate</p></div> */}
-						<div><p><span>2018-2021</span> <br />Qualified Offline BCA Graduate</p></div>
+						<div><p><span>2018-2021</span> <br />BCA Graduate <sub>(Offline)</sub></p></div>
 						<div><p><span>2017</span> <br />12th from CBSE</p></div>
 						<div><p><span>2015</span> <br />10th from CBSE</p></div>
 						<div><h1>Experience <sub>&</sub> Work</h1></div>

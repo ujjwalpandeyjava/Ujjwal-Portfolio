@@ -16,15 +16,17 @@ function AboutSection(props) {
 					<div id="aboutMe">
 						<div>
 							<div>
-								Hi, am Ujjwal Pandey <br/>
+								Hi, I'm Ujjwal Pandey <br/>
 							 	Graduate in: <span>GNIIT</span> <sub>(from<span> NIIT</span>),</sub> and <span>BCA</span> <sub>(from<span> IGNOU</span>)</sub>
 								<br /><br />
 
-							 	I am a skilled Full Stack Web Developer passionate about building innovative and user-friendly web applications using cutting-edge technologies, with <span>over 1.5+ yr of experience.</span><br/><br/>
-								<span className="tech">I have successfully created responsive and scalable web applications with many technologies.</span>
+								A highly skilled and passionate web developer with <span>over 2+ years</span> of experience in building innovative and user-friendly web applications using cutting-edge technologies.
 								<br/><br/>
 
-								As a passionate professional, I am eagerly seeking opportunities to collaborate with great engineers and companies.
+								<span className="tech">I have successfully created responsive and scalable web applications with a variety of technologies, including HTML, CSS, JavaScript, Java, BootSpring, MySQL, MongoDB, and ReactJs.</span>
+								<br/><br/>
+
+								Eagerly seeking opportunities to collaborate with great engineers and companies.
 								<br /><br />
 
 								<u><strong>Interest area:</strong></u> <i>Working with different technologies.</i>
@@ -55,7 +57,7 @@ function AboutSection(props) {
 								<section><Frag percent="60%" /></section>
 							</div>
 							<div className="group">
-								<p style={{color: '#0977c3'} }><span>There is always room for improvement</span><span role="img" aria-label="wink emoji">😉</span></p>
+								<p style={{color: '#5ff8e4'} }><span>Getting better everyday</span><span role="img" aria-label="wink emoji">😉</span></p>
 							</div>
 						</div>
 					</div>

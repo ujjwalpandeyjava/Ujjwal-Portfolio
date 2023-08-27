@@ -1,0 +1,12 @@
+.workWith {
+	margin: "30px auto";
+	min-width: "85%";
+	max-width: "1150px";
+	overflow: "auto";
+	box-shadow: "inset 0 -3px 7px #969696";
+	border-radius: "12px";
+	align-items: "baseline";
+	align-content: "flex-start";
+	gap: 5px;
+	align-items: flex-start;
+}

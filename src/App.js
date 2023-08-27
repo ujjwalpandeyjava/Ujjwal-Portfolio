@@ -9,7 +9,7 @@ import floatingImage from './images/ujjwalAvatar1Copy.png'
 import Navbar from './navbar'
 import SocialIcons from './socialIcons'
 import WorkExample from './workExample'
-import WorkingLanguages from './workingLanguages'
+import WorkingLanguages from './workingTechs/workingLanguages'
 import SummaryTilt from './tiltEffect/summaryTilt'
 import 'idempotent-babel-polyfill';
 

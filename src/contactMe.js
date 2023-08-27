@@ -22,7 +22,7 @@ export default function ContactMe(props) {
 						</div>
 						<div>
 							<div>
-								<i className="fas fa-map-marker-alt"></i>Devli, South Delhi, New Delhi
+								<i className="fas fa-map-marker-alt"></i> Devli, South Delhi, New Delhi
 							</div>
 							<div>
 								<i className="fab fa-linkedin"></i>
