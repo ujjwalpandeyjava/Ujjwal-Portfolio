@@ -1,7 +1,7 @@
 {
   "main.css": "/Ujjwal-Portfolio/static/css/main.d013359b.chunk.css",
-  "main.js": "/Ujjwal-Portfolio/static/js/main.c91e4c1e.chunk.js",
-  "main.js.map": "/Ujjwal-Portfolio/static/js/main.c91e4c1e.chunk.js.map",
+  "main.js": "/Ujjwal-Portfolio/static/js/main.02a06e4f.chunk.js",
+  "main.js.map": "/Ujjwal-Portfolio/static/js/main.02a06e4f.chunk.js.map",
   "static/js/1.a55f6f88.chunk.js": "/Ujjwal-Portfolio/static/js/1.a55f6f88.chunk.js",
   "static/js/1.a55f6f88.chunk.js.map": "/Ujjwal-Portfolio/static/js/1.a55f6f88.chunk.js.map",
   "static/js/2.a65ebde2.chunk.js": "/Ujjwal-Portfolio/static/js/2.a65ebde2.chunk.js",
@@ -10,7 +10,7 @@
   "runtime~main.js.map": "/Ujjwal-Portfolio/static/js/runtime~main.38be036a.js.map",
   "static/media/ujjwalAvatar3.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.cc3c95bf.png",
   "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.73162fb4.jpeg",
-  "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.3af1d971.pdf",
+  "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.d6501015.pdf",
   "static/media/arrow-down.png": "/Ujjwal-Portfolio/static/media/arrow-down.7a19cf0d.png",
   "static/media/contact.png": "/Ujjwal-Portfolio/static/media/contact.7382e483.png",
   "static/media/ujjwalAvatarEducation.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.b8681c4a.png",
@@ -29,6 +29,6 @@
   "static/media/1670752620885.jpg": "/Ujjwal-Portfolio/static/media/1670752620885.a171b99e.jpg",
   "static/css/main.d013359b.chunk.css.map": "/Ujjwal-Portfolio/static/css/main.d013359b.chunk.css.map",
   "index.html": "/Ujjwal-Portfolio/index.html",
-  "precache-manifest.76233793600e9d69fa31f499730cf44b.js": "/Ujjwal-Portfolio/precache-manifest.76233793600e9d69fa31f499730cf44b.js",
+  "precache-manifest.a1caf0033411d6f064ba7730a4311858.js": "/Ujjwal-Portfolio/precache-manifest.a1caf0033411d6f064ba7730a4311858.js",
   "service-worker.js": "/Ujjwal-Portfolio/service-worker.js"
 }
