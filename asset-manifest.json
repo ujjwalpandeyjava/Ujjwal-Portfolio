@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ujjwal-Portfolio/static/css/main.d0d2b076.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.55a5d29d.js",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.6341e2d4.js",
     "static/js/787.b9ec5bb0.chunk.js": "/Ujjwal-Portfolio/static/js/787.b9ec5bb0.chunk.js",
     "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.a3b4d84fed9ad83f8eb6.pdf",
     "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.26dfcff2f3b62bc2c487.jpeg",
@@ -12,27 +12,26 @@
     "static/media/ujjwalAvatar1Copy.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar1Copy.e09b21c1c86e70ee8e5f.png",
     "static/media/ujjwalAvatarEducation.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.11714c839d73ab029e53.png",
     "static/media/projectPic.png": "/Ujjwal-Portfolio/static/media/projectPic.7dc8fb94c54bd828da04.png",
-    "static/media/eclipse_IDE.jfif": "/Ujjwal-Portfolio/static/media/eclipse_IDE.e1d56bc84be36ce7f4a0.jfif",
     "static/media/msOffice.jfif": "/Ujjwal-Portfolio/static/media/msOffice.bec21a4d93d47c82a48a.jfif",
-    "static/media/AdvancedJava.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15dba00e9a9a928b.jfif",
     "static/media/contact.png": "/Ujjwal-Portfolio/static/media/contact.5c08eab5b3759511f598.png",
-    "static/media/restAPI.jfif": "/Ujjwal-Portfolio/static/media/restAPI.7110900ecdba3eb5eb42.jfif",
+    "static/media/eclipse_IDE.jpeg": "/Ujjwal-Portfolio/static/media/eclipse_IDE.6442f82fb0d90871083c.jpeg",
+    "static/media/mongoDB.png": "/Ujjwal-Portfolio/static/media/mongoDB.7fdcf539584df52fdf2b.png",
     "static/media/ReactJS.jpg": "/Ujjwal-Portfolio/static/media/ReactJS.1dc468c48ddfb4503ec1.jpg",
+    "static/media/html.jpeg": "/Ujjwal-Portfolio/static/media/html.e752581a2660b99c2564.jpeg",
     "static/media/arrow-down.png": "/Ujjwal-Portfolio/static/media/arrow-down.feb8b34f2640bb436094.png",
+    "static/media/mySQL.jpg": "/Ujjwal-Portfolio/static/media/mySQL.a24fd27091281550f0a2.jpg",
     "static/media/spring1.jpg": "/Ujjwal-Portfolio/static/media/spring1.28619a99dcc4e3022365.jpg",
-    "static/media/git.jfif": "/Ujjwal-Portfolio/static/media/git.350109b93a4caec8242e.jfif",
     "static/media/dsalog.jfif": "/Ujjwal-Portfolio/static/media/dsalog.4141c0b4005bf9f9767b.jfif",
-    "static/media/etc.jfif": "/Ujjwal-Portfolio/static/media/etc.96fd65fe1045a88c8757.jfif",
     "static/media/polygon-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/polygon-scatter-haikei.03b19b5f3fb3a867c20d.svg",
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
     "main.d0d2b076.css.map": "/Ujjwal-Portfolio/static/css/main.d0d2b076.css.map",
-    "main.55a5d29d.js.map": "/Ujjwal-Portfolio/static/js/main.55a5d29d.js.map",
+    "main.6341e2d4.js.map": "/Ujjwal-Portfolio/static/js/main.6341e2d4.js.map",
     "787.b9ec5bb0.chunk.js.map": "/Ujjwal-Portfolio/static/js/787.b9ec5bb0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0d2b076.css",
-    "static/js/main.55a5d29d.js"
+    "static/js/main.6341e2d4.js"
   ]
 }
