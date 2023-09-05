@@ -168,7 +168,7 @@ body {
 
 .name {
     color: #e7e4df;
-    background-color: black;
+    /* background-color: black; */
     /* background-color: #343f4f; */
 }
 
@@ -215,10 +215,10 @@ body {
     background-position: center;
     background-size: contain;
     display: flex;
-    align-content: center;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .whoIamPic img {
@@ -365,7 +365,7 @@ body {
     align-items: center;
     width: auto;
     font-size: 0.75rem;
-    cursor: context-menu;
+    cursor: pointer !important;
 }
 
 #scroller>div {
@@ -380,7 +380,6 @@ body {
     text-align: center;
     animation: scrollDot 2.5s linear infinite;
     margin-top: 6px;
-    cursor: context-menu;
 }
 
 #scroller>div>span {
@@ -983,6 +982,11 @@ body {
 
     .whoIAm {
         justify-content: flex-end;
+    }
+
+    .whoIamPic {
+        flex-direction: row-reverse;
+
     }
 
     #myAvatar {

@@ -3,6 +3,7 @@ import React, { Fragment, useState } from 'react'
 import myPicture from '../images/no-bg-UjjwalPandey.png'
 import floatingImage from '../images/ujjwalAvatar1Copy.png';
 import SocialIcons from '../socialIcons'
+import ImageCarousel from '../imageCarousel/ImageCarousel';
 
 function Home() {
 	let [scrollerDisplaying, setScrollerDisplaying] = useState("flex")  // flex/none
@@ -34,7 +35,10 @@ function Home() {
 					<SocialIcons />
 					<div id="myAvatar"><img src={floatingImage} alt="It's me" /></div>
 				</div>
-				<div className="whoIamPic"><img src={myPicture} alt="It me Ujjwal Pandey" /></div>
+				<div className="whoIamPic">
+					<img src={myPicture} alt="It me Ujjwal Pandey" />
+					<ImageCarousel />
+				</div>
 				<section id="scroller" style={{ "display": scrollerDisplaying }} onClick={() => scrollBy50vh()}>
 					<p>Scroll Down</p>
 					<div><span>&bull;</span></div>
