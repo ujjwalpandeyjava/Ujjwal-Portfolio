@@ -33,7 +33,8 @@ function Home() {
 						</ul>
 					</div>
 					<SocialIcons />
-					<div id="myAvatar"><img src={floatingImage} alt="It's me" /></div>
+					{/* <div id="myAvatar"><img src={floatingImage} alt="It's me" /></div> */}
+					<img id="myAvatar" src={floatingImage} alt="It's me" />
 				</div>
 				<div className="whoIamPic">
 					<img src={myPicture} alt="It me Ujjwal Pandey" />

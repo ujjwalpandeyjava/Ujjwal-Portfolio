@@ -9,19 +9,13 @@ export default function PreviewPDFs(props) {
 	return (
 		<Fragment>
 			<div id="previews" className={previewCSS.previewsFullPage} onClick={() => props.viewPreview(false)}>
-				<div className={previewCSS.previewssection} onClick={(e) => e.stopPropagation()}>
-					<div className={previewCSS.closeBtn} onClick={() => props.viewPreview(false)}>X</div>
-					{/* <div>
-						<div><img className={previewCSS.previewImage} src={resumePreview} alt="Resume preview" /></div>
-						<div>Resume in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<div className="downloadCV"><a href={UjjwalResume} download='_Ujjwal-full_stack-Resume.pdf'>Download Resume</a></div>
-					</div> */}
-					<div style={{minWidth: "300px"}}>
-						<div><img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" /></div>
-						<div></div>
-						<div>C.V. in pdf format <img src={downArrow2} style={{ height: '18px', width: '20px' }} alt="Down arrow" /></div>
-						<div className="downloadCV"><a href={UjjwalCV} download="_Ujjwal-full_stack-C.V.pdf">Download C.V</a></div>
+				<div className={previewCSS.previewSection} onClick={(e) => e.stopPropagation()}>
+					<div className={previewCSS.eachPreview}>
+						<img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" />
+						<div>C.V. in pdf format <img src={downArrow2} style={{ height: '15px', width: '18px' }} alt="Down arrow" /></div>
+						<div className={previewCSS.downloadCV}><a className={previewCSS.downloadCV} href={UjjwalCV} download="_Ujjwal-full_stack-C.V.pdf">Download C.V</a></div>
 					</div>
+					<div className={previewCSS.closeBtn} onClick={() => props.viewPreview(false)}>X</div>
 				</div>
 			</div>
 		</Fragment >
