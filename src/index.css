@@ -1110,8 +1110,8 @@ label #cancel {
     position: relative;
     background-color: #241f30;
     min-width: 330px;
-    max-width: 1150px;
-    min-height: 220px !important;
+    /* max-width: 1150px; */
+    /* min-height: 220px !important; */
     border: 1px solid white;
     border-radius: 12px;
     display: flex;
