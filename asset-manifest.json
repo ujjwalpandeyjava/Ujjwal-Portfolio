@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.3999c9d8.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.47319b18.js",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.07cd465c.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.e4cd4df0.js",
     "static/js/787.b9ec5bb0.chunk.js": "/Ujjwal-Portfolio/static/js/787.b9ec5bb0.chunk.js",
     "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.a3b4d84fed9ad83f8eb6.pdf",
     "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.26dfcff2f3b62bc2c487.jpeg",
@@ -13,6 +13,7 @@
     "static/media/ujjwalAvatarEducation.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatarEducation.11714c839d73ab029e53.png",
     "static/media/projectPic.png": "/Ujjwal-Portfolio/static/media/projectPic.7dc8fb94c54bd828da04.png",
     "static/media/eclipse_IDE.jfif": "/Ujjwal-Portfolio/static/media/eclipse_IDE.e1d56bc84be36ce7f4a0.jfif",
+    "static/media/msOffice.jfif": "/Ujjwal-Portfolio/static/media/msOffice.bec21a4d93d47c82a48a.jfif",
     "static/media/AdvancedJava.jfif": "/Ujjwal-Portfolio/static/media/AdvancedJava.4ecb15dba00e9a9a928b.jfif",
     "static/media/contact.png": "/Ujjwal-Portfolio/static/media/contact.5c08eab5b3759511f598.png",
     "static/media/restAPI.jfif": "/Ujjwal-Portfolio/static/media/restAPI.7110900ecdba3eb5eb42.jfif",
@@ -26,12 +27,12 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
-    "main.3999c9d8.css.map": "/Ujjwal-Portfolio/static/css/main.3999c9d8.css.map",
-    "main.47319b18.js.map": "/Ujjwal-Portfolio/static/js/main.47319b18.js.map",
+    "main.07cd465c.css.map": "/Ujjwal-Portfolio/static/css/main.07cd465c.css.map",
+    "main.e4cd4df0.js.map": "/Ujjwal-Portfolio/static/js/main.e4cd4df0.js.map",
     "787.b9ec5bb0.chunk.js.map": "/Ujjwal-Portfolio/static/js/787.b9ec5bb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3999c9d8.css",
-    "static/js/main.47319b18.js"
+    "static/css/main.07cd465c.css",
+    "static/js/main.e4cd4df0.js"
   ]
 }
