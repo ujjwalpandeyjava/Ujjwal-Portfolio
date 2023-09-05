@@ -11,7 +11,7 @@ export default function SocialIcons(props) {
 				</div>
 				<div className="icon">
 					<div className="tooltip"><a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer">Twitter</a></div>
-					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a></span>
+					<span><a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a></span>
 				</div>
 				<div className="icon">
 					<div className="tooltip"><a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>

@@ -113,7 +113,7 @@ body {
     width: 100%;
 }
 
-.firstView {
+.home {
     width: 100%;
     min-height: 94dvh;
     height: 94dvh;
@@ -125,7 +125,7 @@ body {
     position: relative;
 }
 
-.firstView>div {
+.home>div {
     /* min-width: 440px; */
     width: 49%;
     padding: 12px;
@@ -219,21 +219,14 @@ body {
 
 .whoIamPic>div {
     display: flex;
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    /* box-shadow: inset 0 0 7px 5px #343f4f; */
 }
 
-.whoIamPic>div>img {
+.whoIamPic img {
     object-fit: contain;
-    height: 100%;
-    width: 100%;
+    border-radius: 10px;
     display: block;
     margin: 0 auto;
-    filter: grayscale(25%) brightness(80%);
-    box-shadow: 0 0 0 0 black;
-    z-index: -1;
+    filter: grayscale(10%) brightness(90%) drop-shadow(0px 0px 7px white);
 }
 
 @keyframes slide {
@@ -295,14 +288,11 @@ body {
 
 .socialIcons .icon span {
     position: relative;
-    /* height: 20px; */
-    /* width: 20px; */
+    min-width: 15px;
     display: block;
-    /* background: black; */
     text-align: center;
     border-radius: 50%;
     z-index: 2;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .socialIcons .icon span i {
@@ -351,7 +341,9 @@ body {
 .socialIcons .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.4);
 }
-
+.socialIcons .icon .tooltip a{
+    text-decoration: none;
+}
 /* Social Icons ends*/
 
 /* Scroller starts*/
@@ -428,13 +420,13 @@ body {
 
 /* About section start */
 #aboutSection,
-#educationSection,
-#workExamplesSection,
+#experience,
+#skills,
 #contactMeSection,
 #summarySection {
     /* border: 1px solid blue; */
     padding: 12px;
-    margin-bottom: 50px;
+    /* margin-bottom: 20px; */
     width: 100%;
     /* min-height: 65vh; */
     /* min-height: 600px; */
@@ -448,14 +440,14 @@ body {
     align-items: center;
 }
 
-#workExamplesSection,
+#skills,
 #contactMeSection {
     min-height: 20vh;
 }
 
 #aboutSection>h1,
-#educationSection>h1,
-#workExamplesSection>h1,
+#experience>h1,
+#skills>h1,
 #summarySection>h1,
 #contactMeSection>h1 {
     padding: 0px 0px 7px;
@@ -466,7 +458,7 @@ body {
     border-bottom: 1px solid red;
 }
 
-#educationSection>h1,
+#experience>h1,
 #contactMeSection>h1 {
     border-bottom: 1px solid blue;
     /* box-shadow: 0 1px 1px blueviolet, 1px 0px 0px 1px black, -1px 0px 1px 1px black; */
@@ -493,7 +485,7 @@ body {
 #firstInExamples>div,
 #firstInContactMe>div {
     /* border: 1px solid red; */
-    padding: 15px;
+    padding: 4px 15px;
     border-radius: 15px;
     margin: 0 auto;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -504,7 +496,7 @@ body {
 #firstInExamples>div:nth-child(1),
 #firstInContactMe>div:nth-child(1) {
     /* background-color: #4798bf; */
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 #firstInAbout>div:nth-child(1)>img,
@@ -675,7 +667,7 @@ body {
 
 /* About section ends */
 
-/* Education section start */
+/* Experience section start */
 #aboutEducation {
     background-color: #241f30;
     padding: 25px;
@@ -777,14 +769,12 @@ body {
     text-shadow: 1px 1px 0px #2700ff96;
 }
 
-/* Education section Ends */
+/* Experience section Ends */
 
-#aboutExamples,
-#aboutContact {
+#aboutExamples {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 19px;
     background-color: #241f30;
     min-width: 90%;
     min-height: 220px !important;
@@ -871,14 +861,34 @@ body {
 }
 
 /* About example work ends */
-#aboutContact {
-    position: relative;
+#connect {
+    /* position: relative; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* height: auto; */
+    /* align-content: space-around; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    padding: 0px !important;
+    overflow: hidden;
+    /* min-height: 160px; */
+    /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    background-color: #241f30;
+    min-width: 90%;
+    min-height: 220px !important;
+    border: 1px solid white;
+    cursor: pointer;
 }
 
-#aboutContact>div {
+#connect:hover {
+    min-width: 100%;
+}
+
+/* #connect>div {
     display: flex;
     width: 50%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -890,28 +900,29 @@ body {
     padding: 1px;
     cursor: pointer;
     position: relative;
-}
+} */
 
-#aboutContact:hover {
-    min-width: 100%;
-}
-
-#aboutContact::before {
-    position: absolute;
-    content: "Contact through";
-    top: 5px;
-    width: 90%;
-    left: 50%;
-    color: white;
+.connect-title {
     padding: 7px;
     height: auto;
+    font-size: 1.4em;
+    cursor: text;
     background-color: #241f30;
-    transform: translateX(-50%);
-    z-index: 12;
     border-bottom: 1px solid gray;
 }
 
-#aboutContact>div>div>a {
+.connect-ways {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.connect-directMail {
+    padding: 0 7px 7px 7px;
+}
+
+#connect a {
     text-decoration: none;
     color: white;
 }
@@ -952,27 +963,22 @@ body {
 /* Page Scrollbar ends */
 
 @media (max-width: 970px) {
-    .firstView {
+    .home {
         flex-direction: column;
         min-height: 80vh;
     }
 
-    .firstView>div {
+    .home>div {
         height: 45%;
         width: 100%;
     }
 
-    .firstView>div:last-child {
+    .home>div:last-child {
         height: 45%;
     }
 
     .whoIAm {
         justify-content: flex-end;
-    }
-
-    .whoIamPic>div>img {
-        box-shadow: 1px 1px 20px 3px white;
-        border-radius: 10px;
     }
 
     #myAvatar {
@@ -1005,7 +1011,7 @@ body {
         width: 135px;
     }
 
-    #aboutContact>div {
+    #connect>div {
         font-size: small;
     }
 }
@@ -1015,9 +1021,9 @@ body {
         display: none;
     }
 
-    .firstView,
-    .firstView>div,
-    .firstView>div>.wrapper {
+    .home,
+    .home>div,
+    .home>div>.wrapper {
         padding: 0;
     }
 
@@ -1148,19 +1154,27 @@ label #cancel {
 
 .workWith {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #241f30;
+    min-width: 85%;
+    max-width: 1150px;
+    min-height: 220px !important;
+    border: 1px solid white;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     overflow: auto;
-    transition: all 1.2s ease-in-out;
-    margin: "30px auto";
-	min-width: "85%";
-    width: 100%;
-	max-width: "1150px";
-    height: 100%;
-	box-shadow: "inset 0 -3px 7px #969696";
-	border-radius: "12px";
-	align-items: "baseline";
-	align-content: "flex-start";
-	gap: 5px;
-	align-items: flex-start;
+    margin: 30px auto;
+    box-shadow: inset 0 -3px 7px #969696;
+    border-radius: 12px;
+    align-items: baseline;
+    align-content: flex-start;
+    gap: 5px;
+    align-items: flex-start;
 }
 
 .workWith::before {
@@ -1177,8 +1191,8 @@ label #cancel {
 }
 
 .workWith>div {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 190px;
+    max-height: 155px;
     overflow: hidden;
     padding: 7px;
 }
@@ -1214,5 +1228,10 @@ label #cancel {
 }
 
 #aboutExamples {
-    padding: 0 !important;
+    margin-top: 15px !important;
+    padding: 3px !important;
+}
+
+#aboutExamples iframe {
+    border-radius: 12px;
 }

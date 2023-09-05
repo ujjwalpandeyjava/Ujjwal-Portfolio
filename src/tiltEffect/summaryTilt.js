@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import myPicture from '../images/1670752620885.jpg'
 import VanillaTilt from "vanilla-tilt";
-import tiltCustomStyle from '../tiltEffect/summaryTilt.module.css'
 import EmailService from "../EmailService/EmailService";
 import '../frag.css'
 import '../tiltEffect/summaryTilt.css'
@@ -17,17 +16,19 @@ export default function SummaryTilt(props) {
 		});
 		/* card.addEventListener("tiltChange", () => {
 			console.log("Card moved");
-		}); */
+		});
 		card.addEventListener("mouseenter", (event) => {
 			event.currentTarget.style.opacity = 1;
 		});
 		card.addEventListener("mouseleave", (event) => {
 			// event.currentTarget.style.opacity = 0.5;
-		});
-		const handleButtonClick = e => {
+		}); */
+		const handleSectionChange = e => {
 			const targetSection = e.target.getAttribute("data-section");
 			const section = document.querySelector(targetSection);	// #about	#experience		#contact
-			targetSection !== "#about" ? card.classList.add("is-active") : card.classList.remove("is-active");
+			console.log(targetSection, section);
+			console.log(card);
+			// targetSection !== "#about" ? card.classList.add("is-active") : card.classList.remove("is-active");
 			card.setAttribute("data-state", targetSection);
 			sections.forEach(s => s.classList.remove("is-active"));
 			buttons.forEach(b => b.classList.remove("is-active"));
@@ -35,12 +36,12 @@ export default function SummaryTilt(props) {
 			section.classList.add("is-active");
 		};
 		buttons.forEach(innerButton => {
-			innerButton.addEventListener("click", handleButtonClick);
+			innerButton.addEventListener("click", handleSectionChange);
 		});
 	});
 
 	const classesListOfClassList = {
-		mainFrameClasses: [tiltCustomStyle.card, "card"]
+		mainFrameClasses: ["card"]
 	}
 
 	const [emailModal, setEmailModal] = useState(false);
@@ -79,9 +80,10 @@ export default function SummaryTilt(props) {
 										<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
 									</svg></a>
 								<a href="https://twitter.com/Ujjwalp13341664">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									{/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 										<path d="M512 97.248c-19.04 8.352-39.328 13.888-60.48 16.576 21.76-12.992 38.368-33.408 46.176-58.016-20.288 12.096-42.688 20.64-66.56 25.408C411.872 60.704 384.416 48 354.464 48c-58.112 0-104.896 47.168-104.896 104.992 0 8.32.704 16.32 2.432 23.936-87.264-4.256-164.48-46.08-216.352-109.792-9.056 15.712-14.368 33.696-14.368 53.056 0 36.352 18.72 68.576 46.624 87.232-16.864-.32-33.408-5.216-47.424-12.928v1.152c0 51.008 36.384 93.376 84.096 103.136-8.544 2.336-17.856 3.456-27.52 3.456-6.72 0-13.504-.384-19.872-1.792 13.6 41.568 52.192 72.128 98.08 73.12-35.712 27.936-81.056 44.768-130.144 44.768-8.608 0-16.864-.384-25.12-1.44C46.496 446.88 101.6 464 161.024 464c193.152 0 298.752-160 298.752-298.688 0-4.64-.16-9.12-.384-13.568 20.832-14.784 38.336-33.248 52.608-54.496z" />
-									</svg>
+									</svg> */}
+									<a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
 								</a>
 								<a href="https://www.instagram.com/pandey.ujjwalpandey/">
 									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +99,7 @@ export default function SummaryTilt(props) {
 								</a>
 							</div>
 						</div>
-						<div className="card-section" id="experience">
+						<div className="card-section" id="experience-card">
 							<div className="card-content">
 								<div className="card-subtitle">WORK EXPERIENCE</div>
 								<div className="card-timeline">
@@ -168,15 +170,14 @@ export default function SummaryTilt(props) {
 						</div>
 						<div className="card-buttons button">
 							<button data-section="#about" className="is-active">ABOUT</button>
-							<button data-section="#experience">EXPERIENCE</button>
+							<button data-section="#experience-card">EXPERIENCE</button>
 							<button data-section="#contact">CONTACT</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			{(emailModal) ? <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }}
-				emailModal={emailModal}
-				onClick={() => toggleEmailModal} /> : ''}
+				emailModal={emailModal} onClick={() => toggleEmailModal} /> : null}
 		</Fragment >
 	)
 }

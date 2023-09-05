@@ -29,7 +29,7 @@ export default function WorkingLanguages() {
 		<Fragment>
 			<div className="workingWith">
 				<h2 id="workH3">I work with <sub><i>Click to get details</i></sub></h2>
-				<div id="aboutExamples" className="workWith">
+				<div className="workWith">
 					<div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noopener noreferrer"><img src={javaImage} alt="Java" /></a></div>
 					<div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noopener noreferrer"><img src={AdJavaImage} alt="Advanced java" /></a></div>
 					<div><a href="http://www.google.com/search?q=Spring" target="_blank" rel="noopener noreferrer"><img src={springImage} alt="Spring" /></a></div>

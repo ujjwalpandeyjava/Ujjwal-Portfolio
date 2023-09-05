@@ -13,19 +13,19 @@ export default function Navbar(props) {
 						<i className="fas fa-times" id="cancel"></i>
 					</label>
 					<div className="sidebar move" >
-						<h3><a href="#firstView">Home</a></h3>
+						<h3><a href="#home">Home</a></h3>
 						<h3><a href="#aboutSection">About</a></h3>
-						<h3><a href="#educationSection">Education</a></h3>
-						<h3><a href="#workExamplesSection">Work</a></h3>
+						<h3><a href="#experience">Experience</a></h3>
+						<h3><a href="#skills">Skills</a></h3>
 						<h3><a href="#contactMeSection">Contact</a></h3>
 						<h3><a href="#summarySection">Summary</a></h3>
 					</div>
 				</div>
 				<div className="menus">
-					<h3><a href="#firstView">Home</a></h3>
+					<h3><a href="#home">Home</a></h3>
 					<h3><a href="#aboutSection">About</a></h3>
-					<h3><a href="#educationSection">Education</a></h3>
-					<h3><a href="#workExamplesSection">Work</a></h3>
+					<h3><a href="#experience">Experience</a></h3>
+					<h3><a href="#skills">Skills</a></h3>
 					<h3><a href="#contactMeSection">Contact</a></h3>
 					<h3><a href="#summarySection">Summary</a></h3>
 				</div>

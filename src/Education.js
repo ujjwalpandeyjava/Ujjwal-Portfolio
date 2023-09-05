@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import educationPic from './images/ujjwalAvatarEducation.png'
 
 
-export default function EducationSection(props) {
+export default function Education() {
 	return (
 		<Fragment>
-			<div id="educationSection">
+			<div id="experience">
 				<h1>Education Journey</h1>
 				<div id="firstInEducation">
 					<div><img src={educationPic} alt="That's me with certificate" /></div>
@@ -16,7 +16,7 @@ export default function EducationSection(props) {
 						<div><p><span>2018-2021</span> <br />BCA Graduate <sub>(Offline)</sub></p></div>
 						<div><p><span>2017</span> <br />12th from CBSE</p></div>
 						<div><p><span>2015</span> <br />10th from CBSE</p></div>
-						<div><h1>Experience <sub>&</sub> Work</h1></div>
+						<div><h1>Experience <sub>&</sub> Skills</h1></div>
 						<div><p>Practice and Graduation project<i><sub>(Chekout github)</sub></i></p></div>
 						<div><p><span>Aug/2021-Sept/2021</span> <br />Daily Brief Ambassador</p></div>
 						<div><p><span>Oct/2021-Jan/2022</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
