@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 // import myPicture from '../images/IMG-20210325-WA0006.jpg'
-import myPicture from '../images/no-bg-UjjwalPandy.png'
+import myPicture from '../images/no-bg-UjjwalPandey.png'
 import floatingImage from '../images/ujjwalAvatar1Copy.png';
 import SocialIcons from '../socialIcons'
 
@@ -12,6 +12,9 @@ function Home() {
 			setScrollerDisplaying("none")
 		else if (currentScrollPos < 120 && scrollerDisplaying === "none")
 			setScrollerDisplaying("flex")
+	}
+	const scrollBy50vh = () => {
+		window.scrollBy(0, 550);
 	}
 	return (
 		<Fragment>
@@ -32,7 +35,7 @@ function Home() {
 					<div id="myAvatar"><img src={floatingImage} alt="It's me" /></div>
 				</div>
 				<div className="whoIamPic"><img src={myPicture} alt="It me Ujjwal Pandey" /></div>
-				<section id="scroller" style={{ "display": scrollerDisplaying }}>
+				<section id="scroller" style={{ "display": scrollerDisplaying }} onClick={() => scrollBy50vh()}>
 					<p>Scroll Down</p>
 					<div><span>&bull;</span></div>
 				</section>
