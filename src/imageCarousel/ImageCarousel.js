@@ -25,33 +25,34 @@ import sfImage from '../images/salesforce.png';
 import postman from '../images/postman.png';
 import springBoot from '../images/springBoot.png';
 
-const imageInCarouse = [AdJavaImage,
+const imageInCarouse = [
 	htmlImage,
 	cssImage,
 	dsAlgoImage,
 	
 	javaImage,
+	AdJavaImage,
 	hibernateImage,
 	springImage,
 	springBoot,
-	
+
 	restAPIImage,
 	mongoDBImage,
 	MySQLImage,
-	
+
 	sfImage,
-	
+
 	jsImage,
 	jQuery,
 	reactImage,
-	
+
 	postman,
 	gitImage,
 	figma,
-	
+
 	vsCode,
 	eclipseIDE,
-	
+
 	// GAEImage,
 	// GoogleCloudImage,
 	msOfficeImage,

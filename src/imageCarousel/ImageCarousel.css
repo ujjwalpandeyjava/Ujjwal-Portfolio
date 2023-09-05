@@ -16,3 +16,9 @@
 	border-radius: 4px;
 	/* object-fit: contain; */
 }
+
+@media screen and (width < 650px) {
+	.image-carousel {
+		display: none;
+	}
+}
