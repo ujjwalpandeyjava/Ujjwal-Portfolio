@@ -1,23 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
-* {
-	box-sizing: border-box;
-}
-
-
-body {
-	color: #2b2c48;
-	font-family: "Jost", sans-serif;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	min-height: 100vh;
-	/* display: flex; */
-	flex-wrap: wrap;
-	padding: 20px;
-}
-
 #summarySection {
 	/* background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80') */
 	background-color: #5c5c5c2e;

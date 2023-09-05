@@ -30,7 +30,7 @@
 /* Applied on full app */
 div {
     color: white;
-    padding: 12px;
+    /* padding: 12px; */
 }
 
 /* Applied to only summary Section div */
@@ -41,10 +41,9 @@ div {
 }
 
 body {
-    background: black;
+    background-color: black;
     font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    width: 100%;
+    min-width: 340px;
     position: relative;
 }
 
@@ -117,7 +116,7 @@ body {
     width: 100%;
     min-height: 94dvh;
     height: 94dvh;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -469,12 +468,12 @@ body {
 }
 
 #firstInAbout,
+#firstInContactMe,
 #firstInEducation,
-#firstInExamples,
-#firstInContactMe {
+#firstInExamples {
     /* border: 1px solid blue; */
-    width: 100%;
-    height: 100%;
+    /* width: 100%; */
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -639,6 +638,7 @@ body {
 
 #bars>div {
     width: 100%;
+    margin-top: 10px;
 }
 
 #bars>div:first-child {
@@ -866,21 +866,10 @@ body {
 
 /* About example work ends */
 #connect {
-    /* position: relative; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* height: auto; */
-    /* align-content: space-around; */
-    /* align-items: center; */
-    /* justify-content: space-around; */
     padding: 0px !important;
     overflow: hidden;
-    /* min-height: 160px; */
-    /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
     background-color: #241f30;
-    min-width: 90%;
-    min-height: 220px !important;
+    min-width: 300px;
     border: 1px solid white;
     cursor: pointer;
 }
@@ -888,23 +877,6 @@ body {
 #connect:hover {
     min-width: 100%;
 }
-
-/* #connect>div {
-    display: flex;
-    width: 50%;
-    border: 1px solid red;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: medium;
-    word-break: break-all;
-    padding: 1px;
-    cursor: pointer;
-    position: relative;
-} */
 
 .connect-title {
     padding: 7px;
@@ -920,6 +892,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.connect-ways div {
+    padding: 5px;
 }
 
 .connect-directMail {
@@ -1036,7 +1012,7 @@ body {
     .home,
     .home>div,
     .home>div>.wrapper {
-        padding: 0;
+        /* padding: 0; */
     }
 
     .wrapper .static-txt {
@@ -1166,27 +1142,24 @@ label #cancel {
 
 .workWith {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: #241f30;
-    min-width: 85%;
+    margin: 30px auto;
+    min-width: 330px;
     max-width: 1150px;
     min-height: 220px !important;
     border: 1px solid white;
-    align-content: space-around;
-    align-items: center;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    /* gap: 5px; */
     justify-content: space-around;
+    overflow: auto;
+    box-shadow: inset 0 -3px 7px #969696;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    overflow: auto;
-    margin: 30px auto;
-    box-shadow: inset 0 -3px 7px #969696;
-    border-radius: 12px;
-    align-items: baseline;
-    align-content: flex-start;
-    gap: 5px;
-    align-items: flex-start;
 }
 
 .workWith::before {
@@ -1203,7 +1176,7 @@ label #cancel {
 }
 
 .workWith>div {
-    max-width: 190px;
+    max-width: 160px;
     max-height: 155px;
     overflow: hidden;
     padding: 7px;
@@ -1211,7 +1184,7 @@ label #cancel {
 
 @media (max-width: 350px) {
     .workWith>div {
-        width: 60px;
+        width: 100px;
     }
 }
 
@@ -1225,7 +1198,7 @@ label #cancel {
 .workWith>div>a>img {
     height: 100%;
     width: 100%;
-    object-fit: initial;
+    object-fit: contain;
     margin: 0 auto;
     vertical-align: middle;
     border-radius: 7px;

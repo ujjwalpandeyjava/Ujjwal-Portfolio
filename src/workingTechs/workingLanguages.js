@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
-import etcImage from '../images/etc.jpeg';
+import etcImage from '../images/etc.png';
 // import GAEImage from '../images/GAE.jpg';
 // import GoogleCloudImage from '../images/Google_Cloud.png';
 import gitImage from '../images/git.png';
