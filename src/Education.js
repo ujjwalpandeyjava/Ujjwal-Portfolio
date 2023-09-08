@@ -19,7 +19,7 @@ export default function Education() {
 						<div><p>Projects and Work demo<i> <sub><a style={{"textDecoration": "none", "color": "white"}} title="Some are private, Contact me to check them out" href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer">(Chekout github)</a></sub></i></p></div>
 						<div><p><span>Aug, 2021 - Sept, 2021</span> <br />Daily Brief Ambassador</p></div>
 						<div><p><span>Oct, 2021 - Jan, 2022</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
-						<div title="Works as Full-Stack developer"><p><span>Feb/2022-Present</span><br />Safety labs <i>(as Full Stack Developer)</i></p></div>
+						<div title="Works as Java and JavaScript Full-Stack developer"><p><span>Feb/2022-Present</span><br />Safety labs <i>(as Java and JavaScript developer)</i></p></div>
 					</div>
 				</div>
 			</div>

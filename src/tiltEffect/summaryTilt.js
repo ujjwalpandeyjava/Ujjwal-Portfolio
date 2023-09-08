@@ -62,7 +62,7 @@ export default function SummaryTilt(props) {
 							src={myPicture}
 							alt="avatar" />
 						<h1 className="card-fullname">Ujjwal Pandey</h1>
-						<h2 className="card-jobtitle">Full-Stack Developer</h2>
+						<h2 className="card-jobtitle">Java and JavaScript Developer</h2>
 					</div>
 					<div className="card-main">
 						<div className="card-section is-active" id="about">
