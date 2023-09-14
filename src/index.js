@@ -1,4 +1,4 @@
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
