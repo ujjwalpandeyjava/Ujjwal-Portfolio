@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { Fragment, useRef } from "react";
 import EmailServiceStyle from '../EmailService/EmailService.module.css'
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
@@ -77,7 +77,7 @@ export default function EmailService(props) {
 		headSectionList: [EmailServiceStyle.emailServiceSection]
 	}
 	return (
-		<React.Fragment>
+		<Fragment>
 			<div className={EmailServiceStyle.coverFullScreen}>
 				<div className={listOfClassList.headSectionList.join(" ")}>
 					<div className={EmailServiceStyle.emailService_header}>
@@ -110,6 +110,6 @@ export default function EmailService(props) {
 				position="bottom-right"
 				reverseOrder={false}
 			/>
-		</React.Fragment>
+		</Fragment>
 	)
 }

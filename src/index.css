@@ -33,9 +33,16 @@ div {
 }
 
 /* Applied to only summary Section div */
+.card {
+    /* border: 2px solid rgba(29, 85, 242, 0.548); */
+    /* box-shadow: 0 0 5px rgba(108, 108, 242, 0.689); */
+    /* box-shadow: 0 0 10px gray; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
 #summarySection div {
     color: #37439c;
-    padding: 5px;
+    /* padding: 5px; */
 }
 
 body {
@@ -406,12 +413,8 @@ body {
 #skills,
 #contactMeSection,
 #summarySection {
-    /* border: 1px solid blue; */
     padding: 12px;
-    /* margin-bottom: 20px; */
     width: 100%;
-    /* min-height: 65vh; */
-    /* min-height: 600px; */
     text-align: center;
     border-radius: 12px;
     display: flex;
@@ -427,19 +430,22 @@ body {
     min-height: 20vh;
 }
 
-#aboutSection>h1,
-#experience>h1,
-#skills>h1,
-#summarySection>h1,
-#contactMeSection>h1 {
+.sectionHeading {
+    display: inline-block;
     padding: 0px 0px 7px;
     font-family: Rubik;
     padding: 2px 8px;
     font-size: xx-large;
     text-shadow: 1px 1px 2px #c14d4d, 3px 2px 2px #4798bf;
     border-bottom: 1px solid red;
+    color: white;
 }
 
+.mb-5px {
+    margin-bottom: 10px;
+}
+
+.blueUnderline,
 #experience>h1,
 #contactMeSection>h1 {
     border-bottom: 1px solid blue;
@@ -493,30 +499,16 @@ body {
     border-radius: 0;
 }
 
-#firstInAbout>div:nth-child(2) {
-    background-color: #15121c;
+#aboutMe {
+    /* background-color: #15121c; */
+    background-color: #23282d;
     flex-grow: 2;
     position: relative;
     margin-top: 1em;
-}
 
-#firstInAbout>div:nth-child(2)::before {
-    content: "";
-    width: 35px;
-    height: 35px;
-    background-color: #15121c;
-    z-index: 12;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -55%) rotate(45deg);
-    border-top: 1.4px solid pink;
-    border-left: 1.4px solid pink;
-}
 
-#aboutMe {
     padding: 25px !important;
-    border: 1.4px solid pink;
+    border: 2px solid rgb(247, 165, 179);
     width: 75%;
     display: flex;
     flex-direction: row;
@@ -524,6 +516,20 @@ body {
     justify-content: space-evenly;
     align-items: stretch;
     align-content: center;
+}
+
+#aboutMe::before {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: #23282d;
+    z-index: 12;
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%, -55%) rotate(45deg);
+    border-top: 1.4px solid pink;
+    border-left: 1.4px solid pink;
 }
 
 #firstInAbout:hover>#aboutMe {
@@ -870,7 +876,7 @@ body {
 /* Page Scrollbar starts*/
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: black;
+    background-color: #242c55;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1143,6 +1149,12 @@ label #cancel {
     padding: 7px;
 }
 
+
+.workWith:hover>div:not(:hover) {
+    filter: brightness(1) blur(1.5px);
+    transform: scale(0.95);
+}
+
 @media (max-width: 350px) {
     .workWith>div {
         width: 100px;
@@ -1175,4 +1187,27 @@ label #cancel {
 
 #aboutExamples iframe {
     border-radius: 12px;
+}
+
+.blueHeading {
+    color: rgb(60, 60, 255);
+}
+
+.parallelBackgroundImage {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.bg-Image0 {
+    background-image: url(images/realisti/5968949.jpg);
+}
+
+.bg-Image1 {
+    background-image: url(images/realisti/5026563.jpg);
+}
+
+.bg-Image2 {
+    background-image: url(images/realisti/gray-abstract-wireframe-technology-background.jpg);
 }

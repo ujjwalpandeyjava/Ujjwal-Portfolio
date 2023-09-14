@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import  { Fragment } from "react";
 import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
@@ -28,7 +28,7 @@ export default function WorkingLanguages() {
 	return (
 		<Fragment>
 			<div className="workingWith">
-				<h2 id="workH3">I work with <sub><i>Click to get details</i></sub></h2>
+				<h2 id="workH3">Technical skills <sub><i>Click for details</i></sub></h2>
 				<div className="workWith">
 					<div><a href="http://www.google.com/search?q=Java" target="_blank" rel="noopener noreferrer"><img src={javaImage} alt="Java" /></a></div>
 					<div><a href="http://www.google.com/search?q=Advanced+Java" target="_blank" rel="noopener noreferrer"><img src={AdJavaImage} alt="Advanced java" /></a></div>

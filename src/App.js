@@ -1,14 +1,14 @@
 import React, { Fragment } from 'react'
-import AboutSection from './aboutSection'
 import './App.css'
-import ContactMe from './contactMe'
 import EducationSection from './Education'
+import AboutSection from './aboutSection'
+import ContactMe from './contactMe'
 import Footer from './footer'
-import Navbar from './navbar'
-import WorkExample from './workExample'
-import SummaryTilt from './tiltEffect/summaryTilt'
 import Home from './home/Home'
-// import 'idempotent-babel-polyfill';
+import Certificates from './imageCarousel/certificate/Certificates'
+import Navbar from './navbar'
+import SummaryTilt from './tiltEffect/summaryTilt'
+import WorkExample from './workExample'
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Home />
         <AboutSection />
         <EducationSection />
+        <Certificates />
         <WorkExample />
         <SummaryTilt />
         <ContactMe />

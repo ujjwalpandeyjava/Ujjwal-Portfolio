@@ -1,12 +1,12 @@
-import React, { Fragment } from "react";
-import educationPic from './images/ujjwalAvatarEducation.png'
+import { Fragment } from "react";
+import educationPic from './images/ujjwalAvatarEducation.png';
 
 
 export default function Education() {
 	return (
 		<Fragment>
 			<div id="experience">
-				<h1>Education Journey</h1>
+				<h1 className="sectionHeading">Education Journey</h1>
 				<div id="firstInEducation">
 					<div><img src={educationPic} alt="That's me with certificate" /></div>
 					<div id="aboutEducation">
@@ -16,7 +16,7 @@ export default function Education() {
 						<div><p><span>2017</span> <br />12th from CBSE</p></div>
 						<div><p><span>2015</span> <br />10th from CBSE</p></div>
 						<div><h1>Experience <sub>&</sub> Skills</h1></div>
-						<div><p>Projects and Work demo<i> <sub><a style={{"textDecoration": "none", "color": "white"}} title="Some are private, Contact me to check them out" href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer">(Chekout github)</a></sub></i></p></div>
+						<div><p>Projects and Work demo<i> <sub><a style={{ "textDecoration": "none", "color": "white" }} title="Some are private, Contact me to check them out" href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer">(Chekout github)</a></sub></i></p></div>
 						<div><p><span>Aug, 2021 - Sept, 2021</span> <br />Daily Brief Ambassador</p></div>
 						<div><p><span>Oct, 2021 - Jan, 2022</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
 						<div title="Works as Java and JavaScript Full-Stack developer"><p><span>Feb/2022-Present</span><br />Safety labs <i>(as Java and JavaScript developer)</i></p></div>

@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import  { Fragment, useState } from 'react'
 // import myPicture from '../images/IMG-20210325-WA0006.jpg'
 import myPicture from '../images/no-bg-UjjwalPandey.png'
 import floatingImage from '../images/ujjwalAvatar1Copy.png';

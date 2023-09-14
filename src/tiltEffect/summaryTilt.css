@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
 #summarySection {
-	/* background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80') */
 	background-color: #5c5c5c2e;
-	/* background-image: url('../images/IndiaGate.jpg'); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	color: #371db8;
-	/* min-height: 50vh; */
-	height: auto;
-	max-height: 80vh;
+	/* max-height: 80vh; */
 	padding: 20px;
 	color: unset;
+	padding-bottom: 3em !important;
 }
 
 .card[data-state="#experience"] {
@@ -24,16 +21,13 @@
 }
 
 .card {
-	min-width: 300px;
-	max-width: 420px;
-	/* margin: auto; */
+	min-width: 350px;
+	max-width: 400px;
 	overflow-x: hidden;
 	overflow-y: auto;
 	position: relative;
 	z-index: 1;
 	display: flex;
-	/* background-color: rgb(223 131 153); */
-	/* opacity: 0.6; */
 	background-color: rgba(255, 255, 255, 1);
 	transition: 0.3s;
 	flex-direction: column;
@@ -78,7 +72,6 @@
 }
 
 .card.is-active .card-jobtitle {
-	/* bottom: 16px; */
 	letter-spacing: 1px;
 	font-size: 10px;
 }
@@ -272,7 +265,6 @@
 }
 
 .card-timeline {
-	/* margin-top: 30px; */
 	position: relative;
 	padding: 0 !important;
 }
@@ -282,10 +274,8 @@
 	position: absolute;
 	height: 100%;
 	top: 0;
-	/* left: 20%; */
 	left: 0%;
 	width: 3px;
-	/* transform: translateX(-100%); */
 	background: linear-gradient(to top, rgba(134, 214, 243, 0) 0%, rgba(81, 106, 204, 1) 100%);
 }
 
@@ -324,32 +314,13 @@
 
 .card-item {
 	position: relative;
-	/* padding: 0 10px 25px 50px !important; */
 	z-index: 1;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	align-content: flex-start;
+	margin-bottom: 6px;
 }
-
-/* .card-item:after {
-	content: attr(data-year);
-	content: '';
-	position: absolute;
-	top: 0;
-	width: 8px;
-	height: 8px;
-	line-height: 0.6;
-	border: 2px solid #fff;
-	font-size: 11px;
-	text-indent: -35px;
-	border-radius: 50%;
-	color: rgba(134, 134, 134, 0.7);
-	background: linear-gradient(to bottom, #a0aee3 0%, #516acc 100%);
-	left: 37px;
-} */
-
-
 
 .card-item-title {
 	font-weight: 500;

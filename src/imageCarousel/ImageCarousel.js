@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import './ImageCarousel.css'; // Import your CSS file
 import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';

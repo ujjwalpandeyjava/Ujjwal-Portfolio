@@ -1,16 +1,16 @@
-import React, { Fragment, useState } from "react";
+import  { Fragment, useState } from "react";
 import contactPic from './images/contact.png'
 import EmailService from "./EmailService/EmailService";
 
 export default function ContactMe() {
 	const [emailModal, setEmailModal] = useState(false);
 	const toggleEmailModal = () => {
-		setEmailModal(!emailModal);
+		setEmailModal(previous => !previous);
 	}
 	return (
 		<Fragment>
 			<div id="contactMeSection">
-				<h1>Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
+				<h1 className="sectionHeading">Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
 				<div id="firstInContactMe">
 					<div><img src={contactPic} alt="That's me with certificate" /></div>
 					<div id="connect">

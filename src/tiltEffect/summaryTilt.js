@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import  { Fragment, useEffect, useState } from "react";
 import myPicture from '../images/1670752620885.jpg'
 import VanillaTilt from "vanilla-tilt";
 import EmailService from "../EmailService/EmailService";
@@ -51,8 +51,8 @@ export default function SummaryTilt(props) {
 
 	return (
 		<Fragment >
-			<div id="summarySection">
-				<h1>Summary Card</h1>
+			<div id="summarySection" className="parallelBackgroundImage bg-Image2">
+				<h1 className="sectionHeading blueHeading">Quick Rundown</h1>
 				<div className={classesListOfClassList.mainFrameClasses.join(" ")} data-state="#about" data-tilt >
 					<div className="card-header">
 						<div className="card-cover">
@@ -118,7 +118,7 @@ export default function SummaryTilt(props) {
 										</div>
 										<div className="card-timeline-item-detail">
 											<div className="card-item-title">Java Developer at <span>NetCreativeMind Sol.</span></div>
-											<div className="card-item-desc">Trainee</div>
+											<div className="card-item-desc">Backend, Frontend, Management</div>
 										</div>
 									</div>
 									<div className="card-item" data-year="2014">

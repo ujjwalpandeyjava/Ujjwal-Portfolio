@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import './frag.css'
 function Frag(props) {
     const { percent } = props;
