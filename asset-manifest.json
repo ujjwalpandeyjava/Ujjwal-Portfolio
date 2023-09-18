@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.972bc467.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.c349fa9c.js",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.c7b6e32e.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.e9348bc6.js",
     "static/media/Complete Front-End Web Development Course.jpg": "/Ujjwal-Portfolio/static/media/Complete Front-End Web Development Course.3372be2b269abb6d6170.jpg",
     "static/media/Awesome - Java Programming.jpg": "/Ujjwal-Portfolio/static/media/Awesome - Java Programming.be9d37aef62ffe422eac.jpg",
     "static/media/Bootstrap - Unleash the power Rapid web Development.jpg": "/Ujjwal-Portfolio/static/media/Bootstrap - Unleash the power Rapid web Development.e794aa42a5fb2ab2df30.jpg",
@@ -10,7 +10,6 @@
     "static/media/Java Programming - Complete Beginner to Advanced.jpg": "/Ujjwal-Portfolio/static/media/Java Programming - Complete Beginner to Advanced.f44c22e1cfdfb1cd7a58.jpg",
     "static/media/React Js - Complete Guid fro Frontend Web Development.jpg": "/Ujjwal-Portfolio/static/media/React Js - Complete Guid fro Frontend Web Development.6fd8b13f91159438b48f.jpg",
     "static/media/Web Development - 22 Courses in 1 Course.jpg": "/Ujjwal-Portfolio/static/media/Web Development - 22 Courses in 1 Course.5c1df2820ed8f8ee40d9.jpg",
-    "static/media/gray-abstract-wireframe-technology-background.jpg": "/Ujjwal-Portfolio/static/media/gray-abstract-wireframe-technology-background.833b1243acc6edb3d8e1.jpg",
     "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.33fc334cffac73e306a2.pdf",
     "static/media/Python from Udemy.jpg": "/Ujjwal-Portfolio/static/media/Python from Udemy.d7eca225541dd0431e0b.jpg",
     "static/media/React- 6.5hr course.jpg": "/Ujjwal-Portfolio/static/media/React- 6.5hr course.e86db5981c3e088cca2a.jpg",
@@ -20,6 +19,7 @@
     "static/media/Complete Best ever Java Course 2000+ example, 92 hours lecture.jpg": "/Ujjwal-Portfolio/static/media/Complete Best ever Java Course 2000+ example, 92 hours lecture.0df13efc0e6a7d77c58f.jpg",
     "static/media/1670752620885.jpg": "/Ujjwal-Portfolio/static/media/1670752620885.f152909df550f1deed69.jpg",
     "static/media/Daily Brief Internship Certificate Ujjwal.jpg": "/Ujjwal-Portfolio/static/media/Daily Brief Internship Certificate Ujjwal.5ec0f1f9d226491da8aa.jpg",
+    "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
     "static/media/5026563.jpg": "/Ujjwal-Portfolio/static/media/5026563.6032bff76fce7b1e4aea.jpg",
     "static/media/no-bg-UjjwalPandey.png": "/Ujjwal-Portfolio/static/media/no-bg-UjjwalPandey.0c96de0c56821784d75a.png",
     "static/media/5968949.jpg": "/Ujjwal-Portfolio/static/media/5968949.411f5dcbc8818c630173.jpg",
@@ -40,11 +40,11 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
-    "main.972bc467.css.map": "/Ujjwal-Portfolio/static/css/main.972bc467.css.map",
-    "main.c349fa9c.js.map": "/Ujjwal-Portfolio/static/js/main.c349fa9c.js.map"
+    "main.c7b6e32e.css.map": "/Ujjwal-Portfolio/static/css/main.c7b6e32e.css.map",
+    "main.e9348bc6.js.map": "/Ujjwal-Portfolio/static/js/main.e9348bc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.972bc467.css",
-    "static/js/main.c349fa9c.js"
+    "static/css/main.c7b6e32e.css",
+    "static/js/main.e9348bc6.js"
   ]
 }
