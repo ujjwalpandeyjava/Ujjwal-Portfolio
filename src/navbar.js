@@ -1,14 +1,14 @@
 import  { Fragment } from "react"
-const colorOrangeRed = { "color": "orangered" };
 
 export default function Navbar(props) {
-	const clickMenu = () => {
+	/* const clickMenu = () => {
 		document.getElementById("check").click();
 	}
+	onClick={() => clickMenu()} */
 	return (
 		<Fragment>
 			<div className="navbar" id="navbar">
-				<h1>IAM<span style={colorOrangeRed}>UJJWALPANDEY</span></h1>
+				<h1>IAM<span style={{ "color": "orangered" }}>UJJWALPANDEY</span></h1>
 				<div className="hamburger">
 					<input type="checkbox" id="check" />
 					<label htmlFor="check">
@@ -16,12 +16,12 @@ export default function Navbar(props) {
 						<i className="fas fa-times" id="cancel"></i>
 					</label>
 					<div className="sidebar move" >
-						<h3 onClick={() => clickMenu()}><a href="#home">Home</a></h3>
-						<h3 onClick={() => clickMenu()}><a href="#aboutSection">About</a></h3>
-						<h3 onClick={() => clickMenu()}><a href="#experience">Experience</a></h3>
-						<h3 onClick={() => clickMenu()}><a href="#skills">Skills</a></h3>
-						<h3 onClick={() => clickMenu()}><a href="#contactMeSection">Contact</a></h3>
-						<h3 onClick={() => clickMenu()}><a href="#summarySection">Summary</a></h3>
+						<h3><a href="#home">Home</a></h3>
+						<h3><a href="#aboutSection">About</a></h3>
+						<h3><a href="#experience">Experience</a></h3>
+						<h3><a href="#skills">Skills</a></h3>
+						<h3><a href="#contactMeSection">Contact</a></h3>
+						<h3><a href="#summarySection">Summary</a></h3>
 					</div>
 				</div>
 				<div className="menus">

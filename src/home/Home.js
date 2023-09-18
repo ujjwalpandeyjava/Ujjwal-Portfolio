@@ -26,14 +26,13 @@ function Home() {
 					<div className="wrapper">
 						<div className="static-txt">I am a &#9;</div>
 						<ul className="dynamic-texts">
+							<li><span>😉 Full-Stack Dev.</span></li>
 							<li><span>Java Developer</span></li>
 							<li><span>Front-end Dev.</span></li>
 							<li><span>Back-end Dev.</span></li>
-							<li><span>😉 Full-Stack Dev.</span></li>
 						</ul>
 					</div>
 					<SocialIcons />
-					{/* <div id="myAvatar"><img src={floatingImage} alt="It's me" /></div> */}
 					<img id="myAvatar" src={floatingImage} alt="It's me" />
 				</div>
 				<div className="whoIamPic">

@@ -129,7 +129,7 @@ function Certificates() {
 
 	return (
 		<div className={[CSS.certificates, "parallelBackgroundImage bg-Image1"].join(" ")}>
-			<h1 className='sectionHeading blueHeading mb-5px'>Certificates</h1>
+			<h1 className='sectionHeading blueHeading mb-1em'>Certificates</h1>
 			<Swiper
 				centeredSlides={true}
 				spaceBetween={60}

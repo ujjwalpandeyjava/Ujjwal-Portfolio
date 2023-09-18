@@ -441,8 +441,8 @@ body {
     color: white;
 }
 
-.mb-5px {
-    margin-bottom: 10px;
+.mb-1em {
+    margin-bottom: 1em;
 }
 
 .blueUnderline,
@@ -1209,5 +1209,6 @@ label #cancel {
 }
 
 .bg-Image2 {
-    background-image: url(images/realisti/gray-abstract-wireframe-technology-background.jpg);
+    /* background-image: url(images/realisti/gray-abstract-wireframe-technology-background.jpg); */
+    background-image: url(images/realisti/whiteStone.jpg);
 }
