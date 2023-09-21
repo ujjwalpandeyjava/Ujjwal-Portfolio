@@ -19,6 +19,7 @@ import c11 from '../certificate/images/Daily Brief Internship Certificate Ujjwal
 import c12 from '../certificate/images/Awesome - Java Programming.jpg';
 import c13 from '../certificate/images/Python from Udemy.jpg';
 import c14 from '../certificate/images/React Js - Complete Guid fro Frontend Web Development.jpg';
+import c15 from '../certificate/images/Java Collection Frameworks + Generics+ 5.5Hrs.jpg';
 
 import CSS from './Certificates.module.css';
 
@@ -92,6 +93,11 @@ const certificatesJSON = [
 		name: "React Js - Complete Guid fro Frontend Web Development",
 		description: "About this certificate",
 		path: c14
+	},
+	{
+		name: "Java Collection Frameworks Generics+ 5.5Hrs",
+		description: "About this certificate",
+		path: c15
 	}
 ]
 
