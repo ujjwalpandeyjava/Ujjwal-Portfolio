@@ -116,8 +116,9 @@ body {
 
 .home {
     width: 100%;
-    min-height: 98dvh;
-    height: 98dvh;
+    min-height: 600px;
+    /* min-height: 98dvh; */
+    /* height: 98dvh; */
     padding: 5px 35px;
     display: flex;
     flex-direction: row;
