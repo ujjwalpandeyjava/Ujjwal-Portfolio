@@ -10,7 +10,7 @@ export default function Education() {
 					<div><img src={educationPic} alt="That's me with certificate" /></div>
 					<div id="aboutEducation">
 						<div><h1>ACADEMIC</h1></div>
-						<div><p><span>June, 2023 - pursuing <span style={{color: "yellow", fontWeight: "bolder", fontSize: "1.15em"}}>(PG)</span></span> <br />MCA<i> from Amity University</i></p></div>
+						<div><p><span>June, 2023 <span style={{color: "yellow", fontWeight: "bolder", fontSize: "1.15em"}}>(PG)</span></span> <br />MCA<i> from Amity University</i></p></div>
 						<div><p><span>Jan, 2019 - Oct, 2021 <span style={{color: "yellow", fontWeight: "bolder", fontSize: "1.15em"}}>(Specialization)</span></span> <br />In Web Development,<br />GNIIT in Cloud and Mobile Web Software Engineering <i>from NIIT</i></p></div>
 						<div><p><span>July, 2018 - June, 2021 <span style={{color: "yellow", fontWeight: "bolder", fontSize: "1.15em"}}>(UG)</span></span> <br />BCA <i>from IGNOU</i> <sub>(Offline exams)</sub></p></div>
 						<div><p><span>2017</span> <br />12th from CBSE</p></div>
