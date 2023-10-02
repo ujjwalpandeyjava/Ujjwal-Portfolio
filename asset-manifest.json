@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.9b7d2227.css",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.a2033472.css",
     "main.js": "/Ujjwal-Portfolio/static/js/main.a5ca3dab.js",
     "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.1e506322bccdb0abe61b.pdf",
     "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
@@ -44,11 +44,11 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
-    "main.9b7d2227.css.map": "/Ujjwal-Portfolio/static/css/main.9b7d2227.css.map",
+    "main.a2033472.css.map": "/Ujjwal-Portfolio/static/css/main.a2033472.css.map",
     "main.a5ca3dab.js.map": "/Ujjwal-Portfolio/static/js/main.a5ca3dab.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b7d2227.css",
+    "static/css/main.a2033472.css",
     "static/js/main.a5ca3dab.js"
   ]
 }
