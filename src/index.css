@@ -951,12 +951,12 @@ label #cancel {
 /*  Working languages section.*/
 .workingWith,
 #aboutExamples {
-    width: 85%;
+    width: 90%;
 }
 
 .workingWith:hover,
 #aboutExamples:hover {
-    width: 90%;
+    width: 94%;
 }
 
 
