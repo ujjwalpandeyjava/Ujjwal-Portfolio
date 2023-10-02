@@ -97,7 +97,7 @@ export default function SummaryTilt(props) {
 								</a>
 							</div>
 						</div>
-						<div className="card-section" id="experience-card">
+						<div className="card-section" id="experience_card">
 							<div className="card-content">
 								<div className="card-subtitle">WORK EXPERIENCE</div>
 								<div className="card-timeline">
@@ -168,7 +168,7 @@ export default function SummaryTilt(props) {
 						</div>
 						<div className="card-buttons button">
 							<button data-section="#about" className="is-active">ABOUT</button>
-							<button data-section="#experience-card">EXPERIENCE</button>
+							<button data-section="#experience_card">EXPERIENCE</button>
 							<button data-section="#contact">CONTACT</button>
 						</div>
 					</div>

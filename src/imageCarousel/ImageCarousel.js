@@ -4,8 +4,7 @@ import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
 import etcImage from '../images/etc.png';
-// import GAEImage from '../images/GAE.jpg';
-// import GoogleCloudImage from '../images/Google_Cloud.png';
+import GoogleCloudImage from '../images/Google_Cloud.png';
 import gitImage from '../images/git.png';
 import hibernateImage from '../images/hibernate.png';
 import htmlImage from '../images/html.jpeg';
@@ -53,8 +52,7 @@ const imageInCarouse = [
 	vsCode,
 	eclipseIDE,
 
-	// GAEImage,
-	// GoogleCloudImage,
+	GoogleCloudImage,
 	msOfficeImage,
 	etcImage,
 ];

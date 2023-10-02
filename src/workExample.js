@@ -12,6 +12,7 @@ export default function WorkExample(props) {
 					<div><img src={projectsPic} alt="Me with certificate" /></div>
 					<WorkingLanguages />
 					<div id="aboutExamples" className='container' >
+						<h2 id="workH3">Work Examples</h2>
 						<Iframe src="https://ujjwalpandeyjava.github.io/Links/examples.html" title="Projects by me" width="100%" height="600" ></Iframe>
 					</div>
 				</div>

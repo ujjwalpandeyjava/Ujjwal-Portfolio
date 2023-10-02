@@ -1,10 +1,10 @@
 import  { Fragment } from "react"
 
 export default function Navbar(props) {
-	/* const clickMenu = () => {
+	const clickMenu = () => {
 		document.getElementById("check").click();
 	}
-	onClick={() => clickMenu()} */
+
 	return (
 		<Fragment>
 			<div className="navbar" id="navbar">
@@ -15,7 +15,7 @@ export default function Navbar(props) {
 						<i className="fas fa-bars" id="btn"></i>
 						<i className="fas fa-times" id="cancel"></i>
 					</label>
-					<div className="sidebar move" >
+					<div className="sidebar move" 	onClick={() => clickMenu()}>
 						<h3><a href="#home">Home</a></h3>
 						<h3><a href="#aboutSection">About</a></h3>
 						<h3><a href="#experience">Experience</a></h3>
