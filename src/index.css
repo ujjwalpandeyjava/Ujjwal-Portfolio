@@ -1004,7 +1004,7 @@ label #cancel {
 .skillSet>.eachSkill {
     flex: 1 1;
     min-width: 250px;
-    max-width: 430px;
+    max-width: 350px;
     height: 150px;
     padding: 7px;
     -webkit-backdrop-filter: blur(5px) saturate(180%);

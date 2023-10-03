@@ -87,24 +87,6 @@ const listOfSkills = [
 	},
 	{
 		show: true,
-		googleURL: "http://www.google.com/search?q=DS-Algo",
-		url: dsAlgoImage,
-		alt: "DS-Algo"
-	},
-	{
-		show: true,
-		googleURL: "https://www.google.com/search?q=google+cloud",
-		url: GoogleCloudImage,
-		alt: "Google Cloud"
-	},
-	{
-		show: true,
-		googleURL: "http://www.google.com/search?q=Figma+UI/UI",
-		url: figma,
-		alt: "Figma UI/UX designs"
-	},
-	{
-		show: true,
 		googleURL: "http://www.google.com/search?q=Git",
 		url: gitImage,
 		alt: "Git"
@@ -123,15 +105,33 @@ const listOfSkills = [
 	},
 	{
 		show: true,
+		googleURL: "http://www.google.com/search?q=Figma+UI/UI",
+		url: figma,
+		alt: "Figma UI/UX designs"
+	},
+	{
+		show: true,
 		googleURL: "http://www.google.com/search?q=Postmantocheck_API",
 		url: postman,
 		alt: "postman to check API"
 	},
 	{
 		show: true,
+		googleURL: "http://www.google.com/search?q=DS-Algo",
+		url: dsAlgoImage,
+		alt: "DS-Algo"
+	},
+	{
+		show: true,
 		googleURL: "http://www.google.com/search?q=salesforce",
 		url: sfImage,
 		alt: "Salesforce"
+	},
+	{
+		show: true,
+		googleURL: "https://www.google.com/search?q=google+cloud",
+		url: GoogleCloudImage,
+		alt: "Google Cloud"
 	},
 	{
 		show: true,

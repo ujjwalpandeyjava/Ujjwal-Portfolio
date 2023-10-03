@@ -162,7 +162,7 @@ export default function SummaryTilt(props) {
 										{/* ujjwalpandey.aps@gmail.com */}
 										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">ujjwalpandey.aps@gmail.com</a>
 									</div>
-									<button className="contact-me" onClick={toggleEmailModal}>MESSAGE</button>
+									<button className="contact-me" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
 								</div>
 							</div>
 						</div>

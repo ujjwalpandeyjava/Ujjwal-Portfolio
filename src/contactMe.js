@@ -39,7 +39,7 @@ export default function ContactMe() {
 							</div>
 						</div>
 						<div className="connect-directMail">
-							<button className="contact-me" onClick={toggleEmailModal}>MESSAGE</button>
+							<button className="contact-me" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
 							{(emailModal) ? <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }}
 								emailModal={emailModal} onClick={() => toggleEmailModal} /> : null}
 						</div>
