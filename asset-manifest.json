@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.a2033472.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.a5ca3dab.js",
-    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.1e506322bccdb0abe61b.pdf",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.85c58025.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.46865bb4.js",
+    "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.835a220dbf4a909d2a25.jpeg",
     "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
-    "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.e1bc7dd5f37e98026e32.jpeg",
+    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.f82f1257c8e6c91d8b13.pdf",
     "static/media/5026563.jpg": "/Ujjwal-Portfolio/static/media/5026563.6032bff76fce7b1e4aea.jpg",
     "static/media/5968949.jpg": "/Ujjwal-Portfolio/static/media/5968949.411f5dcbc8818c630173.jpg",
     "static/media/Java Collection Frameworks + Generics+ 5.5Hrs.jpg": "/Ujjwal-Portfolio/static/media/Java Collection Frameworks + Generics+ 5.5Hrs.8f3331c6cff2afd5ffe5.jpg",
@@ -24,7 +24,6 @@
     "static/media/Java Servlets and JSP - Build Java EE app.jpg": "/Ujjwal-Portfolio/static/media/Java Servlets and JSP - Build Java EE app.35ff1fa9787d59a089db.jpg",
     "static/media/Python from Udemy.jpg": "/Ujjwal-Portfolio/static/media/Python from Udemy.ab4a2031a4fa199f293f.jpg",
     "static/media/Spring Framework with Spring Boot.jpg": "/Ujjwal-Portfolio/static/media/Spring Framework with Spring Boot.594e385c8b3488a42f9f.jpg",
-    "static/media/AdvancedJava.png": "/Ujjwal-Portfolio/static/media/AdvancedJava.9697ff15044a39d24ef4.png",
     "static/media/css.jpg": "/Ujjwal-Portfolio/static/media/css.59888fca6d3263bd0b50.jpg",
     "static/media/ujjwalAvatar3.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar3.055f67c7531336401935.png",
     "static/media/ujjwalAvatar1Copy.png": "/Ujjwal-Portfolio/static/media/ujjwalAvatar1Copy.e09b21c1c86e70ee8e5f.png",
@@ -44,11 +43,11 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
-    "main.a2033472.css.map": "/Ujjwal-Portfolio/static/css/main.a2033472.css.map",
-    "main.a5ca3dab.js.map": "/Ujjwal-Portfolio/static/js/main.a5ca3dab.js.map"
+    "main.85c58025.css.map": "/Ujjwal-Portfolio/static/css/main.85c58025.css.map",
+    "main.46865bb4.js.map": "/Ujjwal-Portfolio/static/js/main.46865bb4.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2033472.css",
-    "static/js/main.a5ca3dab.js"
+    "static/css/main.85c58025.css",
+    "static/js/main.46865bb4.js"
   ]
 }
