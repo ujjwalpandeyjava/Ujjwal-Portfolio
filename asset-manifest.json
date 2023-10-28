@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Ujjwal-Portfolio/static/css/main.85c58025.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.cb6e74b9.js",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.b32475b7.js",
     "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.835a220dbf4a909d2a25.jpeg",
+    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.6c6aa8acb2fc32698d88.pdf",
     "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
-    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.37c796061cde32f9efb1.pdf",
     "static/media/5026563.jpg": "/Ujjwal-Portfolio/static/media/5026563.6032bff76fce7b1e4aea.jpg",
     "static/media/5968949.jpg": "/Ujjwal-Portfolio/static/media/5968949.411f5dcbc8818c630173.jpg",
     "static/media/Java Collection Frameworks + Generics+ 5.5Hrs.jpg": "/Ujjwal-Portfolio/static/media/Java Collection Frameworks + Generics+ 5.5Hrs.8f3331c6cff2afd5ffe5.jpg",
@@ -44,10 +44,10 @@
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
     "main.85c58025.css.map": "/Ujjwal-Portfolio/static/css/main.85c58025.css.map",
-    "main.cb6e74b9.js.map": "/Ujjwal-Portfolio/static/js/main.cb6e74b9.js.map"
+    "main.b32475b7.js.map": "/Ujjwal-Portfolio/static/js/main.b32475b7.js.map"
   },
   "entrypoints": [
     "static/css/main.85c58025.css",
-    "static/js/main.cb6e74b9.js"
+    "static/js/main.b32475b7.js"
   ]
 }
