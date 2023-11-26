@@ -7,10 +7,11 @@ import './index.css';
 import PageNotFound from './pageNotFound/PageNotFound';
 import Navbar from './navbar/Navbar';
 import { Toaster } from 'react-hot-toast';
+import configs from '../package.json'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter >
+  <BrowserRouter basename={configs.homepage} >
     <Navbar />
     <div className='sectionBody'>
       <Routes >
@@ -18,7 +19,7 @@ root.render(
         <Route path="/error" element={<Error />} />
         <Route path="/*" element={<PageNotFound />} />
       </Routes>
-    <Toaster position="bottom-right"/>
+      <Toaster position="bottom-right" />
     </div>
   </BrowserRouter>
 );
