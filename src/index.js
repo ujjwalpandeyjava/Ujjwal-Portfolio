@@ -11,7 +11,7 @@ import configs from '../package.json'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={configs.homepage} >
+  <BrowserRouter basename={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} >
     <Navbar />
     <div className='sectionBody'>
       <Routes >
