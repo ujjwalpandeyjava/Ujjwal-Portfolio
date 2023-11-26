@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --fontSize10: 10px;
+  --fontSize12: 12px;
+  --fontSize15: 15px;
+  --fontSize20: 20px;
+  --fontSize25: 25px;
+  --fontSize30: 30px;
+  --fontSize35: 35px;
+  --fontSize40: 40px;
+}
+body {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.sectionBody {
+  background-image: url('images/polygon-scatter-haikei.svg');
+  /* background-image: url("images/blob-scatter-haikei.svg"); */
+}
