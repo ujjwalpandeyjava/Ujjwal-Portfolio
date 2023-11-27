@@ -1,9 +1,9 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import myPicture from '../images/no-bg-UjjwalPandey.png';
 import floatingImage from '../images/ujjwalAvatar1Copy.png';
 import SocialIcons from './socialIcons';
 // import ImageCarousel from '../imageCarousel/ImageCarousel';
-
+import SummaryCard from '../tiltEffect/summaryTilt';
 function Home() {
   let [scrollerDisplaying, setScrollerDisplaying] = useState("flex")  // flex/none
   window.onscroll = function () {
@@ -16,14 +16,19 @@ function Home() {
   const scrollBy50vh = () => {
     window.scrollBy(0, 550);
   }
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // Use smooth scrolling
-    });
-    return () => {
-    }
-  }, [])
+  const [isDeviceMobile] = useState(isMobileDevice());
+  function isMobileDevice() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(userAgent);
+  }
+  /*   useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Use smooth scrolling
+      });
+      return () => { }
+    }, []) */
+
 
   return (
     <Fragment>
@@ -52,8 +57,6 @@ function Home() {
         </section>
       </div>
 
-
-
       <div id="home" className="home">
         <div className="whoIAm">
           <div className="name">Who I AM?</div>
@@ -102,6 +105,7 @@ function Home() {
           <div><span>&bull;</span></div>
         </section>
       </div>
+      {isDeviceMobile ? <SummaryCard /> : null}
     </Fragment>
   )
 }

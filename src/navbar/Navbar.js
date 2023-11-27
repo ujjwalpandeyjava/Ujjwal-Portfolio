@@ -23,7 +23,7 @@ export default function Navbar(props) {
 		if (currentUrl === passedUrl)
 			toast("Already at " + event.currentTarget.textContent,
 				{
-					icon: '🏢',
+					icon: '📃🕸️',
 					style: {
 						borderRadius: '10px',
 						background: '#ff9966',
@@ -35,25 +35,23 @@ export default function Navbar(props) {
 	}
 	return (
 		<div className={[navbarCSS.navbar, (floatNav) ? navbarCSS.floatingNav : ""].join(" ")} id={navbarCSS.navbar}>
-			<img id={navbarCSS.navIcon} src={ujjwalIcon} alt="It's me, on home" />
+			<NavLink to="/" onClick={(event) => isActive(event, "/")}><img id={navbarCSS.navIcon} src={ujjwalIcon} alt="It's me, on home" /></NavLink>
 			<div className={navbarCSS.noHamburger}>
 				<NavLink to="/" onClick={(event) => isActive(event, "/")}>Home</NavLink>
-				<NavLink to="/error" onClick={(event) => isActive(event, "/error")}>About</NavLink>
-				<NavLink to="experience" onClick={(event) => isActive(event, "experience")}>Experience</NavLink>
-				<NavLink to="skills" onClick={(event) => isActive(event, "skills")}>Skills</NavLink>
-				<NavLink to="contactMeSection" onClick={(event) => isActive(event, "contactMeSection")}>Contact</NavLink>
-				<NavLink to="summarySection" onClick={(event) => isActive(event, "summarySection")}>Summary</NavLink>
+				<NavLink to="/experience" onClick={(event) => isActive(event, "/experience")}>Experience</NavLink>
+				<NavLink to="/skills_projects" onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</NavLink>
+				<NavLink to="/blog" onClick={(event) => isActive(event, "/blog")}>Blog</NavLink>
+				<NavLink to="/contact" onClick={(event) => isActive(event, "/contact")}>Contact</NavLink>
 			</div>
 			<div className={navbarCSS.hamburger}>
 				{showSmallScreenMenu ?
 					<div className={[navbarCSS.sidebar, navbarCSS.move].join(" ")} onClick={() => setShowSmallScreenMenu(false)}>
 						<NavLink to="/" onClick={(event) => isActive(event, "/")}>Home</NavLink>
-						<NavLink to="/error" onClick={(event) => isActive(event, "/error")}>About</NavLink>
 						<NavLink to="/experience" onClick={(event) => isActive(event, "/experience")}>Experience</NavLink>
-						<NavLink to="/skills" onClick={(event) => isActive(event, "/skills")}>Skills</NavLink>
-						<NavLink to="/contactMeSection" onClick={(event) => isActive(event, "/contactMeSection")}>Contact</NavLink>
-						<NavLink to="/summarySection" onClick={(event) => isActive(event, "/summarySection")}>Summary</NavLink>
-					</div> : "Nothing"}
+						<NavLink to="/skills_projects" onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</NavLink>
+						<NavLink to="/blog" onClick={(event) => isActive(event, "/blog")}>Blog</NavLink>
+						<NavLink to="/contact" onClick={(event) => isActive(event, "/contact")}>Contact</NavLink>
+					</div> : null}
 				{showSmallScreenMenu ? <FaWindowClose size={30} onClick={() => setShowSmallScreenMenu(false)} /> : <BiSolidBarChartAlt2 className={navbarCSS.rotate90} size={30} onClick={() => setShowSmallScreenMenu(true)} />}
 			</div>
 		</div>
