@@ -105,7 +105,7 @@ function Certificates() {
 	const [allSlides, setAllSlides] = useState([]);
 	useEffect(() => {
 		[...certificatesJSON].forEach((eachImg, index) => {
-			let newSlide = <SwiperSlide>
+			let newSlide = <SwiperSlide key={"eachSlide" + (index + 1)}>
 				<article className={CSS.eachCertificate}>
 					<section className={CSS.eachCertificate_Inner}><img className={CSS.eachCertificateImg} src={eachImg.path} alt={eachImg.name} /></section>
 					{/* <section className={CSS.eachCertificate_Inner_Name}>{eachImg.name}</section> */}

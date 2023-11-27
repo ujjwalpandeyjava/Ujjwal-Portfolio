@@ -8,7 +8,7 @@ import previewCSS from './previews.module.css';
 export default function PreviewPDFs(props) {
 	return (
 		<Fragment>
-			<div id="previews" className={previewCSS.previewsFullPage} onClick={() => props.viewPreview(false)}>
+			<section id="previews" className={previewCSS.previewsFullPage} onClick={() => props.viewPreview(false)}>
 				<div className={previewCSS.previewSection} onClick={(e) => e.stopPropagation()}>
 					<div className={previewCSS.eachPreview}>
 						<img className={previewCSS.previewImage} src={cvPreview} alt="C.V. preview" />
@@ -17,7 +17,7 @@ export default function PreviewPDFs(props) {
 					</div>
 					<div className={previewCSS.closeBtn} onClick={() => props.viewPreview(false)}>X</div>
 				</div>
-			</div>
+			</section>
 		</Fragment >
 	)
 }

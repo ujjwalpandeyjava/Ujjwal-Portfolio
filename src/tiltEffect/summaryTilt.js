@@ -81,7 +81,8 @@ export default function SummaryTilt(props) {
 									</svg>
 								</a>
 								<a href="https://twitter.com/Ujjwalp13341664">
-									<a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-x-twitter"></i></a>
+									<i className="fa-brands fa-x-twitter"></i>
+									{/* <a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"></a> */}
 								</a>
 								<a href="https://www.instagram.com/pandey.ujjwalpandey/">
 									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">

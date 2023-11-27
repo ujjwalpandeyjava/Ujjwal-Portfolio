@@ -1,7 +1,10 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import educationPic from './images/ujjwalAvatarEducation.png';
+import PreviewPDFs from "./previewPDFs";
 
 export default function Education() {
+	const [viewPreview, setViewPreview] = useState(false);
+	const previewPDFs = (viewPreview) ? < PreviewPDFs viewPreview={(x) => setViewPreview(x)} /> : "";
 	return (
 		<Fragment>
 			<div id="experience">
@@ -20,6 +23,8 @@ export default function Education() {
 						<div><p><span>Aug, 2021 - Sept, 2021</span> <br />Daily Brief Ambassador</p></div>
 						<div><p><span>Oct, 2021 - Jan, 2022</span> <br />NetCreativeMind Solutions<i>(as Java Developer)</i></p></div>
 						<div title="Works as Java and JavaScript Full-Stack developer"><p><span>Feb/2022-Present</span><br />Safety labs <i>(as SDE-II, Java and JavaScript Developer)</i></p></div>
+						<div id="downloadCV" onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already 'true' change from open full pages module`)}>Download Resume<i className="fa-solid fa-download"></i></div>
+						{(previewPDFs)}
 					</div>
 				</div>
 			</div>

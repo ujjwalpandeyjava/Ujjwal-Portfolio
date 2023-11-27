@@ -1,12 +1,9 @@
-import { Fragment, useState } from "react";
-import aboutImage from './images/ujjwalAvatar3.png'
-import './frag.css';
+import { Fragment } from "react";
 import Frag from "./frag";
-import PreviewPDFs from "./previewPDFs";
+import './frag.css';
+import aboutImage from './images/ujjwalAvatar3.png';
 
 function AboutSection(props) {
-	const [viewPreview, setViewPreview] = useState(false);
-	const previewPDFs = (viewPreview) ? < PreviewPDFs viewPreview={(x) => setViewPreview(x)} /> : "";
 	return (
 		<Fragment>
 			<div id="aboutSection" className="parallelBackgroundImage bg-Image0">
@@ -31,8 +28,6 @@ function AboutSection(props) {
 
 								<u><strong>Interest area:</strong></u> <i>Working with different technologies.</i>
 							</div>
-							<div id="downloadCV" onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already 'true' change from open full pages module`)}>Resume/CV<br /><em><sub>Preview-Download</sub></em></div>
-							{(previewPDFs)}
 						</div>
 						<div id="bars">
 							<div><p>How good I am in?</p><hr /></div>
