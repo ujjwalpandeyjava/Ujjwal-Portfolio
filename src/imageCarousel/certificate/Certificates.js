@@ -108,10 +108,8 @@ function Certificates() {
 			let newSlide = <SwiperSlide key={"eachSlide" + (index + 1)}>
 				<article className={CSS.eachCertificate}>
 					<section className={CSS.eachCertificate_Inner}><img className={CSS.eachCertificateImg} src={eachImg.path} alt={eachImg.name} /></section>
-					{/* <section className={CSS.eachCertificate_Inner_Name}>{eachImg.name}</section> */}
 					<section className={CSS.eachCertificate_Details}>
 						<section className={CSS.eachCertificate_Inner_Name}>{eachImg.name}</section>
-						{/* {eachImg.description} */}
 					</section>
 				</article>
 			</SwiperSlide>
@@ -141,29 +139,28 @@ function Certificates() {
 				spaceBetween={60}
 				slidesPerView={2}
 				breakpoints={{
-					// when window width is <= 640px
+					// width >= 0px
+					0: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					// width >= 640px
 					640: {
 						slidesPerView: 2,
 						spaceBetween: 20,
 					},
-					// when window width is <= 768px
-					768: {
-						slidesPerView: 3,
-						spaceBetween: 40,
-					},
 					1024: {
-						slidesPerView: 4,
+						slidesPerView: 3,
 						spaceBetween: 50,
 					},
 					1824: {
-						slidesPerView: 5,
+						slidesPerView: 4,
 						spaceBetween: 50,
-					},
-
+					}
 				}}
 				loop={true}
 				autoplay={{
-					delay: 2500,
+					delay: 25000,
 					disableOnInteraction: false,
 				}}
 				pagination={numberedPagination}

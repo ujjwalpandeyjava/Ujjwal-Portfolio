@@ -572,8 +572,9 @@ div {
 
 #downloadCV {
     font-size: 18px;
-    margin: 0.4em 1.9em;
+    margin: 0.4em 0em;
     background-color: #ff9b09;
+    cursor: pointer !important;
     /* max-width: 200px; */
     /* width: auto; */
     text-align: center;
@@ -715,7 +716,7 @@ div {
     display: flex;
     align-items: center;
     text-align: start;
-    cursor: grab;
+    cursor: auto;
     transition:
         border 0.3s ease-in-out,
         margin 0.3s ease-out;
