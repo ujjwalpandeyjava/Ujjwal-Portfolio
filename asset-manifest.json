@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Ujjwal-Portfolio/static/css/main.8db9f4a5.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.53ab30ee.js",
+    "main.css": "/Ujjwal-Portfolio/static/css/main.822b71fa.css",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.878333c8.js",
     "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
     "static/media/5026563.jpg": "/Ujjwal-Portfolio/static/media/5026563.6032bff76fce7b1e4aea.jpg",
     "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.4d2a2cf9e4abc89bc119.jpeg",
     "static/media/5968949.jpg": "/Ujjwal-Portfolio/static/media/5968949.411f5dcbc8818c630173.jpg",
+    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.c1c6b150931f35a239da.pdf",
     "static/media/Java Collection Frameworks + Generics+ 5.5Hrs.jpg": "/Ujjwal-Portfolio/static/media/Java Collection Frameworks + Generics+ 5.5Hrs.8f3331c6cff2afd5ffe5.jpg",
     "static/media/React Js - Complete Guid fro Frontend Web Development.jpg": "/Ujjwal-Portfolio/static/media/React Js - Complete Guid fro Frontend Web Development.ab442926c31655b11bc2.jpg",
     "static/media/Complete Front-End Web Development Course.jpg": "/Ujjwal-Portfolio/static/media/Complete Front-End Web Development Course.4c9b13455c713ffd8c26.jpg",
@@ -13,7 +14,6 @@
     "static/media/Bootstrap - Unleash the power Rapid web Development.jpg": "/Ujjwal-Portfolio/static/media/Bootstrap - Unleash the power Rapid web Development.51eef2d6afe646790bdb.jpg",
     "static/media/Bootstrap 4 with projects.jpg": "/Ujjwal-Portfolio/static/media/Bootstrap 4 with projects.025403c5c965362d9406.jpg",
     "static/media/Java Programming - Complete Beginner to Advanced.jpg": "/Ujjwal-Portfolio/static/media/Java Programming - Complete Beginner to Advanced.a011732663feff12cab6.jpg",
-    "static/media/ujjwal_Pandey_C_V.pdf": "/Ujjwal-Portfolio/static/media/ujjwal_Pandey_C_V.d5d2ab768db2ccfbfeeb.pdf",
     "static/media/Advanced JS - JavaScript for QA Engineers and SDETs.jpg": "/Ujjwal-Portfolio/static/media/Advanced JS - JavaScript for QA Engineers and SDETs.cc89a510f3454e753a1c.jpg",
     "static/media/Web Development - 22 Courses in 1 Course.jpg": "/Ujjwal-Portfolio/static/media/Web Development - 22 Courses in 1 Course.e26edc076d309a61d698.jpg",
     "static/media/no-bg-UjjwalPandey.png": "/Ujjwal-Portfolio/static/media/no-bg-UjjwalPandey.ce4f5e014e9487f6321b.png",
@@ -44,11 +44,11 @@
     "index.html": "/Ujjwal-Portfolio/index.html",
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
-    "main.8db9f4a5.css.map": "/Ujjwal-Portfolio/static/css/main.8db9f4a5.css.map",
-    "main.53ab30ee.js.map": "/Ujjwal-Portfolio/static/js/main.53ab30ee.js.map"
+    "main.822b71fa.css.map": "/Ujjwal-Portfolio/static/css/main.822b71fa.css.map",
+    "main.878333c8.js.map": "/Ujjwal-Portfolio/static/js/main.878333c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8db9f4a5.css",
-    "static/js/main.53ab30ee.js"
+    "static/css/main.822b71fa.css",
+    "static/js/main.878333c8.js"
   ]
 }
