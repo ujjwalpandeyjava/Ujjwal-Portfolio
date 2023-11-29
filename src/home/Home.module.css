@@ -1,47 +1,20 @@
-#home {
-}
 .home {
-}
-.whoIAm {
-}
-.whoIAm .name {
-}
-.whoIAm .wrapper {
-}
-.whoIAm .wrapper .static-txt {
-}
-.whoIAm .wrapper .dynamic-texts {
-}
-.whoIAm {
-}
-
-#myAvatar {
-}
-
-.main {
-	/* background-image: url('images/polygon-scatter-haikei.svg'); */
-	background-image: url("images/blob-scatter-haikei.svg");
-}
-
-.home {
-	min-height: 650px;
-	/* min-height: 98dvh; */
-	/* height: 98dvh; */
-	padding: 5px 35px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	position: relative;
+	align-items: center;
+	padding-inline: 4rem;
+	gap: 5px;
+	text-align: center;
+	justify-content: center;
 }
 
-.home > div {
+.home > :is(.whoIAm, img) {
+	/* border: 1px solid green; */
 	flex: 1;
-	/* min-width: 440px; */
-	/* padding: 12px; */
-	/* border: 2px solid white; */
 }
-
-.whoIAm {
+.home > .whoIAm {
+	min-width: max-content;
 	display: flex;
 	flex-direction: column;
 	font-size: 30px;
@@ -49,18 +22,17 @@
 	justify-content: center;
 	align-items: flex-start;
 	flex-wrap: nowrap;
-	position: relative;
+}
+.home > img {
+	/* height: 100%; */
+	width: 100%;
+	min-width: 400px;
+	max-width: 600px;
+	object-fit: contain;
 }
 
 #myAvatar {
-	padding: 0;
-	position: absolute;
-	top: 26%;
-	right: 22%;
-	height: 35%;
-	transform: rotate(-13deg) translate(50%, 10px);
-	overflow: hidden;
-	cursor: grabbing;
+	cursor: none;
 }
 
 .name {
@@ -73,7 +45,7 @@
 	display: inline-flex;
 }
 
-.wrapper .static-txt {
+.wrapper .static_txt {
 	color: #fff;
 	padding: 0;
 	font-size: 28px;
@@ -86,7 +58,7 @@
 	-webkit-text-stroke: 0.2px white;
 }
 
-.wrapper .dynamic-texts {
+.wrapper .dynamic_texts {
 	height: 30px;
 	line-height: 31px;
 	overflow: hidden;
@@ -107,7 +79,7 @@
 }
 
 .whoIamPic {
-	background-image: url("images/blob-haikei.svg");
+	/* background-image: url("images/blob-haikei.svg"); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -132,12 +104,12 @@
 	}
 }
 
-.dynamic-texts li > span {
+.dynamic_texts li > span {
 	position: relative;
 	height: 30px;
 }
 
-.dynamic-texts li > span::after {
+.dynamic_texts li > span::after {
 	content: "";
 	position: absolute;
 	height: 100%;

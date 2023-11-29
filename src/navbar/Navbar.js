@@ -11,7 +11,7 @@ export default function Navbar(props) {
 	const [showSmallScreenMenu, setShowSmallScreenMenu] = useState(false);
 
 	useEffect(() => {
-		const handleScroll = () => { setFloatNav(window.scrollY > 40) };
+		const handleScroll = () => { setFloatNav(window.scrollY > 80) };
 		window.addEventListener('scroll', handleScroll);
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
@@ -35,7 +35,6 @@ export default function Navbar(props) {
 	}
 	return (
 		<div className={[navbarCSS.navbar, (floatNav) ? navbarCSS.floatingNav : ""].join(" ")} id={navbarCSS.navbar}>
-			<NavLink to="/" onClick={(event) => isActive(event, "/")}><img id={navbarCSS.navIcon} src={ujjwalIcon} alt="It's me, on home" /></NavLink>
 			<div className={navbarCSS.noHamburger}>
 				<NavLink to="/" onClick={(event) => isActive(event, "/")}>Home</NavLink>
 				<NavLink to="/experience" onClick={(event) => isActive(event, "/experience")}>Experience</NavLink>
@@ -54,6 +53,7 @@ export default function Navbar(props) {
 					</div> : null}
 				{showSmallScreenMenu ? <FaWindowClose size={30} onClick={() => setShowSmallScreenMenu(false)} /> : <BiSolidBarChartAlt2 className={navbarCSS.rotate90} size={30} onClick={() => setShowSmallScreenMenu(true)} />}
 			</div>
+			<NavLink to="/" onClick={(event) => isActive(event, "/")}><img id={navbarCSS.navIcon} src={ujjwalIcon} alt="It's me, on home" /></NavLink>
 		</div>
 	)
 }
