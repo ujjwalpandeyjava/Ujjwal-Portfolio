@@ -4,6 +4,7 @@
 .navbar {
 	display: flex;
 	background-color: white;
+	font-size: 1.2em;
 	width: 100%;
 	min-height: 50px;
 	flex-direction: row;
@@ -12,12 +13,10 @@
 	z-index: 51;
 	justify-content: space-between;
 	top: 0;
-	/* position: static; */
 	backdrop-filter: blur(9px) saturate(125%);
 	transition: all 350ms ease-in-out;
 	padding-inline: 2rem;
 	padding-block: 5px;
-	/* overflow: hidden; */
 	position: relative;
 }
 .navbar a {

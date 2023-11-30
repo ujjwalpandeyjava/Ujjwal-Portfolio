@@ -7,7 +7,7 @@ import BlogHome from './blog/BlogHome';
 import Blog from './blog/Blogs/Blog';
 import Contact from './contact/contactMe';
 
-import Experience from './experience/Experience.js';
+import EducationExperience from './educationExperience/EducationExperience.js';
 import SkillsProjects from './skillsProjects/SkillsProjects.js';
 
 import Error from './error/Error';
@@ -25,7 +25,7 @@ root.render(
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />{/* education and work experience */}
+          <Route path="/experience" element={<EducationExperience />} />{/* education and work experience */}
           <Route path="/skills_projects" element={<SkillsProjects />} /> {/* skills and projects  */}
           <Route path="/blog" element={<BlogHome />} />
           <Route path="/blog/:blogId" element={<Blog />} />

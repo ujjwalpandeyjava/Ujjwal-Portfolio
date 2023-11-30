@@ -1,12 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&family=Quicksand&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-/* font-family: 'Rubik', sans-serif; */
+/*  font-family: "Poppins", "Rubik", "Exo 2", "Quicksand", "Varela Round", sans-serif;  */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
   scroll-behavior: smooth;
+  font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
 }
 :root {
   --fontSize10: 10px;
@@ -19,7 +20,7 @@
   --fontSize40: 40px;
 }
 body {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: white;
 }
 .sectionBody {
   position: relative;
