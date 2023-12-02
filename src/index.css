@@ -20,6 +20,8 @@
   --fontSize40: 40px;
 }
 body {
+  min-width: 375px;
+  overflow-x: auto;
   background-color: white;
 }
 .sectionBody {
