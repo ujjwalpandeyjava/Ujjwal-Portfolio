@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import EmailService from "../EmailService/EmailService";
 import contactPic from '../images/contact.png';
+import './contactMe.scss'
 
 export default function ContactMe() {
 	const [emailModal, setEmailModal] = useState(false);
@@ -10,7 +11,7 @@ export default function ContactMe() {
 	return (
 		<Fragment>
 			<div id="contactMeSection">
-				<h1 className="sectionHeading">Get In Touch <br /><sub><em>Let's talk about work</em></sub></h1>
+				<h1 className="sectionHeading">Hire me <br /><sub><em>Let's talk about work</em></sub></h1>
 				<div id="firstInContactMe">
 					<div><img src={contactPic} alt="That's me with certificate" /></div>
 					<div id="connect">
@@ -19,8 +20,7 @@ export default function ContactMe() {
 							<div>
 								<div>
 									<i className="fas fa-envelope"> </i>
-									<a href="mailto:ujjwalpandey.aps@gamil.com"
-										target="_blank" rel="noopener noreferrer"> Ujjwalpandey.aps@gmail.com</a>
+									<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer"> Ujjwalpandey.aps@gmail.com</a>
 								</div>
 								<div>
 									<i className="fas fa-phone-square-alt"></i>

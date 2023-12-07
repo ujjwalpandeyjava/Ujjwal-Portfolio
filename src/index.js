@@ -6,15 +6,16 @@ import configs from '../package.json';
 import BlogHome from './blog/BlogHome';
 import Blog from './blog/Blogs/Blog';
 import Contact from './contact/contactMe';
-
-import EducationExperience from './educationExperience/EducationExperience.js';
-import SkillsProjects from './skillsProjects/SkillsProjects.js';
-
+import ExperiencePage from './educationExperience/ExperiencePage.js';
 import Error from './error/Error';
 import Home from './home/Home';
 import './index.css';
 import Navbar from './navbar/Navbar';
 import PageNotFound from './pageNotFound/PageNotFound';
+import SkillsProjects from './skills/SkillsProjects.js';
+import BackEndProjects from './skills/projectsByCategory/BackEndProjects.js';
+import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
+import FullStackProjects from './skills/projectsByCategory/FullStackProjects.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,8 +26,11 @@ root.render(
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
-          <Route path="/experience" element={<EducationExperience />} />{/* education and work experience */}
+          <Route path="/experience" element={<ExperiencePage />} />{/* education and work experience */}
           <Route path="/skills_projects" element={<SkillsProjects />} /> {/* skills and projects  */}
+          <Route path="/skills_projects/frontEndsProjects" element={<FrontEndProjects />} />
+          <Route path="/skills_projects/backEndProjects" element={<BackEndProjects />} />
+          <Route path="/skills_projects/fullStackProjects" element={<FullStackProjects />} />
           <Route path="/blog" element={<BlogHome />} />
           <Route path="/blog/:blogId" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

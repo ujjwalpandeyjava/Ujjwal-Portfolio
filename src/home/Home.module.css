@@ -67,8 +67,11 @@
 	margin-left: 4rem;
 	column-gap: 3rem;
 }
+.actionContainer > a,
 .actionContainer > button {
 	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: normal;
 	font-size: 0.7em;
 	border: none;
 	outline: none;

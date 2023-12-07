@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
   font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
 }
+*::selection {
+  color: red;
+  background-color: yellow;
+}
 :root {
   --fontSize10: 10px;
   --fontSize12: 12px;
