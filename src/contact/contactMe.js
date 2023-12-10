@@ -1,13 +1,14 @@
 import { Fragment, useState } from "react";
 import EmailService from "../EmailService/EmailService";
 import contactPic from '../images/contact.png';
-import './contactMe.scss'
+import './contactMe.scss';
 
 export default function ContactMe() {
 	const [emailModal, setEmailModal] = useState(false);
 	const toggleEmailModal = () => {
 		setEmailModal(previous => !previous);
 	}
+
 	return (
 		<Fragment>
 			<div id="contactMeSection">

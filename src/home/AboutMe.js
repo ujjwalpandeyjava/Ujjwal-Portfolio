@@ -5,8 +5,11 @@ import { IoGameController } from "react-icons/io5";
 import { MdMovieCreation } from "react-icons/md";
 import aboutAvatar from "../images/ujjwalAvatar3.png";
 import aboutMeCSS from './AboutMe.module.css';
+import { useState } from "react";
+import PreviewPDFs from "../contact/resume/previewPDFs";
 
 export default function AboutMe() {
+	const [viewPreview, setViewPreview] = useState(false);
 	return (
 		<div className={aboutMeCSS.aboutMeCSS}>
 			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
@@ -85,11 +88,11 @@ export default function AboutMe() {
 							<CgGym size="2em" />
 							<div>Gym</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
-			<button className={aboutMeCSS.resumeDownload}>Download CV <FaDownload /></button>
+			<button className={aboutMeCSS.resumeDownload} onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already true`)}>Download CV <FaDownload /></button>
+			{viewPreview ? <PreviewPDFs viewPreview={x => setViewPreview(x)} /> : null}
 		</div>
 	)
 }

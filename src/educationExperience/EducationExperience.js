@@ -60,7 +60,7 @@ export default function EducationExperience() {
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='While I was pursuing BCA and GNIIT'>Daily Brief app<span className={eeCSS.time}> (Aug/2020-Oct/2020)</span> </div>
-						<div className={eeCSS.someDetails}>New app</div>
+						<div className={eeCSS.someDetails}>NEWS app</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>

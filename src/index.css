@@ -9,7 +9,7 @@
   scroll-behavior: smooth;
   font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
 }
-*::selection {
+div::selection {
   color: red;
   background-color: yellow;
 }
