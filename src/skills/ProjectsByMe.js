@@ -19,15 +19,15 @@ export default function ProjectsByMe() {
 						</div>
 						<div className={projectsCSS.projects}>
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 						</div>
@@ -41,17 +41,17 @@ export default function ProjectsByMe() {
 						</div>
 						<div className={projectsCSS.projects}>
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 
 							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} />
+								<img src={projectThumbNail} alt='project' />
 								<span>Project Name</span>
 							</div>
 						</div>
@@ -65,17 +65,17 @@ export default function ProjectsByMe() {
 					</div>
 					<div className={projectsCSS.projects}>
 						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} />
+							<img src={projectThumbNail} alt='project' />
 							<span>Project Name</span>
 						</div>
 
 						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} />
+							<img src={projectThumbNail} alt='project' />
 							<span>Project Name</span>
 						</div>
 
 						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} />
+							<img src={projectThumbNail} alt='project' />
 							<span>Project Name</span>
 						</div>
 					</div>
