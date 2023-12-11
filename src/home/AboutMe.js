@@ -23,34 +23,37 @@ export default function AboutMe() {
 				<div className={aboutMeCSS.personalDetails}>
 					<h2 >Personal Details</h2>
 					<table>
-						<tr>
-							<td>Phone</td>
-							<td>+91 8375990500</td>
-						</tr>
-						<tr>
-							<td>Email</td>
-							<td>ujjwapandey.aps@gmail.com</td>
-						</tr>
-						<tr>
-							<td>BirthDate</td>
-							<td>31 may 1999</td>
-						</tr>
-						<tr>
-							<td>Address</td>
-							<td>Devoli, New Delhi, India, 110080</td>
-						</tr>
-						<tr>
-							<td>Languages</td>
-							<td>Hindi | English</td>
-						</tr>
-						<tr>
-							<td>Job Status</td>
-							<td>Working at Safety Labs</td>
-						</tr>
-						<tr>
-							<td>Job Profile</td>
-							<td>SDE II, Full Stack Developer <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java & JavaScript</u></td>
-						</tr>
+						<tbody>
+
+							<tr>
+								<td>Phone</td>
+								<td>+91 8375990500</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>ujjwapandey.aps@gmail.com</td>
+							</tr>
+							<tr>
+								<td>BirthDate</td>
+								<td>31 may 1999</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>Devoli, New Delhi, India, 110080</td>
+							</tr>
+							<tr>
+								<td>Languages</td>
+								<td>Hindi | English</td>
+							</tr>
+							<tr>
+								<td>Job Status</td>
+								<td>Working at Safety Labs</td>
+							</tr>
+							<tr>
+								<td>Job Profile</td>
+								<td>SDE II, Full Stack Developer <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java & JavaScript</u></td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 				<div className={aboutMeCSS.myInterest}>

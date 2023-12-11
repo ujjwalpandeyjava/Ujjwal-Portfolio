@@ -9,10 +9,11 @@
 	justify-content: flex-start;
 	align-items: center;
 	.sectionHeading {
-		border-bottom: 1px solid #0088ff;
-		text-shadow:
-			1px 1px 2px #c14d4d,
-			3px 2px 2px #4798bf;
+		border-bottom: 1px solid #333;
+		/* text-shadow: 1px 1px 2px #c14d4d, 3px 2px 2px #4798bf; */
+		filter: drop-shadow(0px 0px 0.5px #161616);
+		padding-bottom: 5px;
+		color: #0088ff;
 	}
 	#firstInContactMe {
 		display: flex;
@@ -28,13 +29,13 @@
 			transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			&:first-child {
 				margin-bottom: 15px;
+				display: none;
 				&:hover {
 					background-color: wheat;
 					padding: 6px;
 				}
 				img {
 					background-color: orange;
-					border-radius: 50%;
 					height: 100%;
 					max-height: 90px;
 					max-width: 90px;
@@ -45,14 +46,16 @@
 			}
 		}
 		#connect {
-			background-color: #f6f0fa9c;
-			border: 1px solid #fff;
+			/* background-color: rgb(255 255 255 / 38%); */
+			/* border: 1px solid #fff; */
 			min-width: 300px;
 			width: 75%;
 			overflow: hidden;
 			padding: 0 !important;
 			cursor: pointer;
+			/* border: 1px solid; */
 			.connect-title {
+				display: none;
 				border-bottom: 1px solid gray;
 				font-size: 1.4em;
 				height: auto;
@@ -62,12 +65,22 @@
 			cursor: text;
 			.connect-ways {
 				display: flex;
-				flex-direction: row;
+				flex-direction: column;
 				flex-wrap: wrap;
 				justify-content: space-around;
-				div,
-				address {
+
+				& > div {
 					padding: 5px;
+					& > div,
+					& > address {
+						padding: 10px;
+						display: flex;
+						flex-direction: row;
+						align-items: center;
+						gap: 7px;
+						border-bottom: 1px solid #ccc;
+						justify-content: space-between;
+					}
 				}
 				a:active,
 				a:hover,
@@ -81,7 +94,7 @@
 						font-weight: bold;
 					}
 				}
-				address{
+				address {
 					cursor: text;
 				}
 			}

@@ -20,18 +20,6 @@ export default function EmailService(props) {
 					},
 				}
 			);
-		} else if (notAcceptedValues.includes(e.target.message.value)) {
-			toast('Please add discussion topic',
-				{
-					icon: '💬',
-					style: {
-						borderRadius: '10px',
-						background: '#ff9966',
-						color: 'black',
-						padding: '1px'
-					},
-				}
-			);
 		} else if (notAcceptedValues.includes(e.target.user_email.value)) {
 			toast("Please add email/contact number, to connect back",
 				{
@@ -40,6 +28,18 @@ export default function EmailService(props) {
 						borderRadius: '10px',
 						background: '#ff9966',
 						color: 'white',
+						padding: '1px'
+					},
+				}
+			);
+		} else if (notAcceptedValues.includes(e.target.message.value)) {
+			toast('Please add discussion topic',
+				{
+					icon: '💬',
+					style: {
+						borderRadius: '10px',
+						background: '#ff9966',
+						color: 'black',
 						padding: '1px'
 					},
 				}
@@ -87,20 +87,20 @@ export default function EmailService(props) {
 					</div>
 					<form ref={form} onSubmit={sendEmail}>
 						<div>
-							<div className={EmailServiceStyle.inputLabel}>Full Name</div>
-							<input className={EmailServiceStyle.inputField} placeholder="First + Last name" type="text" name="from_name" data-valued="false" onChange={inputFieldChanged} />
+							<div className={EmailServiceStyle.inputLabel}>Full Name <span className={EmailServiceStyle.required}>*</span></div>
+							<input className={EmailServiceStyle.inputField} placeholder="First name + Last name" type="text" name="from_name" data-valued="false" onChange={inputFieldChanged} />
 						</div>
 						<div>
-							<div className={EmailServiceStyle.inputLabel}>Email</div>
-							<input className={EmailServiceStyle.inputField} placeholder="Pandey Ji will reply here" type="email" name="user_email" data-valued="false" onChange={inputFieldChanged} />
+							<div className={EmailServiceStyle.inputLabel}>Email <span className={EmailServiceStyle.required}>*</span></div>
+							<input className={EmailServiceStyle.inputField} placeholder="You will receive confirmation, and I will reply here" type="email" name="user_email" data-valued="false" onChange={inputFieldChanged} />
 						</div>
 						<div>
 							<div className={EmailServiceStyle.inputLabel}>Company</div>
 							<input className={EmailServiceStyle.inputField} placeholder="Org/personal work place" type="text" name="company_name" data-valued="false" onChange={inputFieldChanged} />
 						</div>
 						<div>
-							<div className={EmailServiceStyle.inputLabel}>What would like to discuss?</div>
-							<textarea className={EmailServiceStyle.inputField} rows="5" placeholder="Pandey Ji, we cordially invite you to join us for an interview and share your valuable insights." name="message" data-valued="false" onChange={inputFieldChanged} />
+							<div className={EmailServiceStyle.inputLabel}>What would like to discuss? <span className={EmailServiceStyle.required}>*</span></div>
+							<textarea className={EmailServiceStyle.inputField} rows="5" placeholder="Pandey ji, I am amazed by your skills, would like to invite you to join us for an interview..." name="message" data-valued="false" onChange={inputFieldChanged} />
 						</div>
 						<input type="submit" className={EmailServiceStyle.submitButton} value="Drop message" />
 					</form>

@@ -41,6 +41,7 @@
 	border-radius: 50%;
 	border: 2.5px solid #390e4d;
 	cursor: pointer;
+	user-select: none;
 }
 .closeButton:hover {
 	color: darkblue;
@@ -131,6 +132,10 @@ textarea:focus {
 		inset -4px -4px 6px #363636;
 }
 
+.required {
+	color: orangered;
+	font-size: small;
+}
 /* Submit button */
 .submitButton {
 	margin: 5px auto;
