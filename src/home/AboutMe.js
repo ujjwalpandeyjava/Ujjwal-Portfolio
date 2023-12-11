@@ -1,12 +1,12 @@
+import { useState } from "react";
 import { CgGym } from "react-icons/cg";
 import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
-import { GiDistraction, GiFruitBowl, GiTakeMyMoney } from "react-icons/gi";
+import { GiDistraction, GiTakeMyMoney } from "react-icons/gi";
 import { IoGameController } from "react-icons/io5";
 import { MdMovieCreation } from "react-icons/md";
+import PreviewPDFs from "../contact/resume/previewPDFs";
 import aboutAvatar from "../images/ujjwalAvatar3.png";
 import aboutMeCSS from './AboutMe.module.css';
-import { useState } from "react";
-import PreviewPDFs from "../contact/resume/previewPDFs";
 
 export default function AboutMe() {
 	const [viewPreview, setViewPreview] = useState(false);
@@ -79,10 +79,6 @@ export default function AboutMe() {
 						<div className={aboutMeCSS.eachInterest}>
 							<GiDistraction size="2em" />
 							<div>Anime</div>
-						</div>
-						<div className={aboutMeCSS.eachInterest}>
-							<GiFruitBowl size="2em" />
-							<div>Fruits</div>
 						</div>
 						<div className={aboutMeCSS.eachInterest}>
 							<CgGym size="2em" />

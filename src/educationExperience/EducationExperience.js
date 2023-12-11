@@ -34,12 +34,12 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Create future change applicable web products as per the documentation</li>
-								<li>Create new and Optimize old Java based API</li>
-								<li>Recreate the front-end of application</li>
-								<li>Led team for the production of application</li>
-								<li>Connect with team for product documentation and share details for tesing</li>
-								<li>Integrate APIs</li>
+								<li>Develop web products that align with future changes.</li>
+								<li>Develop new Java APIs and optimize existing ones in use.</li>
+								<li>Revise the front-end of the application.</li>
+								<li>Managed a team to oversee the production of applications.</li>
+								<li>Collaborate with the team to create product documentation and disseminate pertinent information for testing purposes.</li>
+								<li>Incorporate APIs into the system.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
@@ -50,10 +50,9 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Live Java APIs after validations</li>
+								<li>Developing Java APIs live following thorough validations & testing.</li>
 								<li>Work with NextGen products</li>
-								<li>Project initialization</li>
-								<li>Design UI and code them on JSP and HTML CSS</li>
+								<li>Develop and implement user interfaces by designing and coding using JSP, HTML, and CSS.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer Trainee</div>
@@ -68,7 +67,7 @@ export default function EducationExperience() {
 								<li>Provided how the new UI is and provide figma</li>
 							</ul>
 						</details>
-						<div className={eeCSS.type}>Ambedissor</div>
+						<div className={eeCSS.type}>Ambassador</div>
 					</div>
 				</div>
 			</div>

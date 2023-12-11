@@ -11,7 +11,6 @@
 }
 
 .home > :is(.whoIAm, img) {
-	/* border: 1px solid green; */
 	flex: 1;
 }
 .home > .whoIAm {
@@ -28,15 +27,11 @@
 	font-weight: bold;
 	row-gap: 8px;
 }
-.home > img {
-	/* height: 100%; */
+#myAvatar {
 	width: 100%;
 	min-width: 400px;
 	max-width: 600px;
 	object-fit: contain;
-}
-
-#myAvatar {
 	cursor: none;
 }
 
@@ -143,5 +138,17 @@
 	100% {
 		left: 100%;
 		margin: 0 -35px 0 35px;
+	}
+}
+@media all and (max-width: 600px) {
+	.home > .whoIAm {
+		font-size: 1.3rem;
+	}
+	.actionContainer {
+		margin: auto;
+	}
+	#myAvatar {
+		min-width: unset;
+		max-width: unset;
 	}
 }
