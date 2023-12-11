@@ -40,11 +40,6 @@
 	text-transform: capitalize;
 	color: #280f0fb8;
 	border-bottom: 2px solid;
-	/* background-color: black; */
-	/* background-color: #343f4f; */
-}
-.nameIm {
-	/* font-weight: bold; */
 }
 .nameIm > span {
 	color: #f63b54;
@@ -80,66 +75,6 @@
 	background-color: #2d47b7;
 }
 
-.dynamic-texts li {
-	color: #fa5151;
-	list-style: none;
-	font-size: 25px;
-	font-weight: 500px;
-	position: relative;
-	top: 0;
-	animation: slide 9.6s steps(4) infinite;
-}
-
-.whoIamPic {
-	/* background-image: url("images/blob-haikei.svg"); */
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: nowrap;
-	flex-direction: column;
-	transition: all 300ms ease;
-}
-
-.whoIamPic > img {
-	/* object-fit: contain; */
-	height: 50%;
-	/* max-height: 350px; */
-	filter: grayscale(10%) brightness(90%) drop-shadow(0px 0px 4px rgb(255 255 255 / 35%));
-}
-
-@keyframes slide {
-	100% {
-		top: -120px;
-	}
-}
-
-.dynamic_texts li > span {
-	position: relative;
-	height: 30px;
-}
-
-.dynamic_texts li > span::after {
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	border-left: 2px solid #fc6d6d;
-	left: 0;
-	/* background-color: #343f4f; */
-	background-color: black;
-	/* animation: typing 2s steps(14) infinite; */
-	animation: typing 1.2s steps(14) infinite alternate;
-}
-
-@keyframes typing {
-	100% {
-		left: 100%;
-		margin: 0 -35px 0 35px;
-	}
-}
 @media all and (max-width: 600px) {
 	.home > .whoIAm {
 		font-size: 1.3rem;

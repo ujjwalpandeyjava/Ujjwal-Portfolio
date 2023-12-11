@@ -16,6 +16,7 @@ import SkillsProjects from './skills/SkillsProjects.js';
 import BackEndProjects from './skills/projectsByCategory/BackEndProjects.js';
 import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
 import FullStackProjects from './skills/projectsByCategory/FullStackProjects.js';
+// import Footer from './footer/Footer.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,6 +40,7 @@ root.render(
         </Routes>
         <Toaster position="bottom-right" />
       </div>
+      {/* <Footer /> */}
     </BrowserRouter>
     <BrowserRouter basename='app2'>
       <Routes>

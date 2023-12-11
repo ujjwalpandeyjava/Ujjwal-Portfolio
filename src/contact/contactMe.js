@@ -9,7 +9,7 @@ export default function ContactMe() {
 
 	return (
 		<div id="contactMeSection">
-			<h1 className="sectionHeading">Hire me <br /><sub><em>Let's talk about work</em></sub></h1>
+			<h1 className="sectionHeading">Let's Discuss Your Needs</h1>
 			<div id="firstInContactMe">
 				<div><img src={contactPic} alt="That's me with certificate" /></div>
 				<div id="connect">
@@ -26,9 +26,9 @@ export default function ContactMe() {
 							</div>
 						</div>
 						<div>
-							<div>
+							<address>
 								<i className="fas fa-map-marker-alt"></i> Devli, South Delhi, New Delhi
-							</div>
+							</address>
 							<div>
 								<i className="fab fa-linkedin"></i>
 								<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer"> Ujjwal Pandey</a>

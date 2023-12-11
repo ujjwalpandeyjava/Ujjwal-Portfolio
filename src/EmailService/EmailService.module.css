@@ -1,4 +1,3 @@
-/* Main Full body */
 .coverFullScreen {
 	position: fixed;
 	top: 50%;
@@ -6,11 +5,10 @@
 	height: 200vh;
 	width: 200vw;
 	transform: translate(-50%, -50%);
-	background: #8484846e;
+	background: #b3b3b3cc;
 	pointer-events: initial;
 	z-index: 100;
 }
-
 .emailServiceSection {
 	border: 1px solid rgb(0, 0, 0);
 	text-align: left;
@@ -28,9 +26,8 @@
 	background-color: rgb(19, 18, 40);
 	color: rgb(255, 255, 255);
 	font-family: Arial, sans-serif;
+	padding: 5px 0 15px 0;
 }
-
-/* Close Modal Body */
 .closeButton {
 	position: absolute;
 	top: 5px;
@@ -43,15 +40,14 @@
 	color: #270303;
 	border-radius: 50%;
 	border: 2.5px solid #390e4d;
+	cursor: pointer;
 }
-
 .closeButton:hover {
 	color: darkblue;
 	background-color: rgb(255, 62, 62);
 	/* text-shadow: 1px 0 3px #10fc9a; */
 	border-color: rgb(13, 6, 32);
 }
-
 /* Header */
 .emailService_header {
 	position: relative;
@@ -76,14 +72,13 @@
 }
 
 /* .inputField:not(:placeholder-shown)~.inputLabel, */
-.inputField[data-valued="true"]~.inputLabel,
-.inputField:not([disabled]):focus~.inputLabel {
+.inputField[data-valued="true"] ~ .inputLabel,
+.inputField:not([disabled]):focus ~ .inputLabel {
 	color: magenta;
 	transform: scale(0.75) translateY(-39px);
 }
 
-
-.emailServiceSection input[type='submit']:hover {
+.emailServiceSection input[type="submit"]:hover {
 	/* background: #147986; */
 	margin-top: 5px;
 	margin-bottom: 0px;
@@ -92,8 +87,6 @@
 	/* border: 1px solid rgb(43, 43, 125); */
 	box-shadow: 0 0 5px 1px #756fe1;
 }
-
-
 
 h1 {
 	text-align: center;
@@ -124,17 +117,19 @@ textarea {
 	background-color: #202126;
 	color: #f0f0f0;
 	border-radius: 10px;
-	box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #363636;
-
+	box-shadow:
+		inset 5px 5px 10px #1e1e1e,
+		inset -5px -5px 10px #363636;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
 	outline: none;
-	box-shadow: inset 4px 4px 6px #1e1e1e, inset -4px -4px 6px #363636;
+	box-shadow:
+		inset 4px 4px 6px #1e1e1e,
+		inset -4px -4px 6px #363636;
 }
-
 
 /* Submit button */
 .submitButton {
@@ -149,7 +144,9 @@ textarea:focus {
 	color: #f0f0f0;
 	border: none;
 	border-radius: 10px;
-	box-shadow: 5px 5px 10px #1e1e1e, -5px -5px 10px #363636;
+	box-shadow:
+		5px 5px 10px #1e1e1e,
+		-5px -5px 10px #363636;
 	cursor: pointer;
 }
 

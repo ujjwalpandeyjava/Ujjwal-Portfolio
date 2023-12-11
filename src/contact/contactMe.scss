@@ -1,5 +1,93 @@
 #contactMeSection {
-	background-color: rgb(189, 237, 224);
-	// border: 1px solid red;
-	padding: 1em;
+	background-color: #f0fffb;
+	padding: 0.7rem;
+	text-align: center;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	.sectionHeading {
+		border-bottom: 1px solid #0088ff;
+		text-shadow:
+			1px 1px 2px #c14d4d,
+			3px 2px 2px #4798bf;
+	}
+	#firstInContactMe {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		padding: 12px;
+		width: 100%;
+		& > div {
+			padding: 4px 15px;
+			border-radius: 15px;
+			transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			&:first-child {
+				margin-bottom: 15px;
+				&:hover {
+					background-color: wheat;
+					padding: 6px;
+				}
+				img {
+					background-color: orange;
+					border-radius: 50%;
+					height: 100%;
+					max-height: 90px;
+					max-width: 90px;
+					width: 100%;
+					background-color: initial;
+					border-radius: 0;
+				}
+			}
+		}
+		#connect {
+			background-color: #f6f0fa9c;
+			border: 1px solid #fff;
+			min-width: 300px;
+			width: 75%;
+			overflow: hidden;
+			padding: 0 !important;
+			cursor: pointer;
+			.connect-title {
+				border-bottom: 1px solid gray;
+				font-size: 1.4em;
+				height: auto;
+				padding: 7px;
+				font-weight: bold;
+			}
+			cursor: text;
+			.connect-ways {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				div,
+				address {
+					padding: 5px;
+				}
+				a:active,
+				a:hover,
+				a:link,
+				a:visited,
+				address {
+					text-decoration: none;
+					color: #1b1b1b;
+					&:hover {
+						color: black;
+						font-weight: bold;
+					}
+				}
+				address{
+					cursor: text;
+				}
+			}
+			.connect-directMail {
+				padding: 0 7px 7px;
+			}
+		}
+	}
 }
