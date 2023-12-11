@@ -19,9 +19,6 @@
 	padding-block: 5px;
 	position: relative;
 }
-.navbar a {
-	text-decoration: none;
-}
 .floatingNav {
 	position: sticky;
 	top: 10px;
@@ -52,6 +49,7 @@
 	color: black;
 	background-color: transparent;
 	margin-inline: 3px;
+	text-decoration: none;
 	transition: all 300ms ease-in-out;
 }
 .hamburger {
@@ -63,7 +61,7 @@
 	min-width: 40px;
 	cursor: pointer;
 }
-.hamburger a:hover,
+/* .hamburger a:hover, */
 .noHamburger a:hover {
 	color: black;
 	background-color: rgba(199, 199, 199);
@@ -82,26 +80,32 @@
 	border-radius: 0px 0 1.5rem 1.5rem;
 	z-index: 3;
 	overflow: hidden;
-	animation: openDown 0.8s linear;
+	animation: Navbar_openDown__c5Qul 0.5s linear;
+	box-shadow: 0px 1px 6px #bcbbbbbd;
+	background-color: rgba(199, 199, 199, 0.9);
+	color: black;
+	border: 1px solid rgba(209, 213, 219, 0.4);
 }
 .sidebar a {
 	display: block;
-	line-height: 50px;
+	line-height: 45px;
 	font-size: 20px;
-	color: #ffffff;
+	color: #2e221b;
 	padding-left: 25px;
 	box-sizing: border-box;
 	border-bottom: 1px solid black;
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	transition: 0.4s;
 	text-decoration: none;
 }
-
+.sidebar a:last-child {
+	border: none;
+}
 .move a:hover {
 	padding-left: 40px;
 	text-shadow:
 		1px 1px 1px #4bb1b3a6,
 		0px 0px 1px #ffffff;
+	border-radius: 0px;
 }
 
 #check {
@@ -164,7 +168,7 @@ label #cancel {
 		min-height: 0px;
 	}
 	to {
-		min-height: 280px;
+		min-height: 260px;
 		height: 100%;
 		opacity: 1;
 	}
