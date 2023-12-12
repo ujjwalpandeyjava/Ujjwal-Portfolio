@@ -1,12 +1,13 @@
+import { FaLink } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
-import projectThumbNail from './projectsByCategory/images/testThumbNail.png'
 import ContactMe from '../contact/contactMe';
 import projectsCSS from './ProjectsByMe.module.css';
+import projectThumbNail from './projectsByCategory/images/testThumbNail.png';
 
 export default function ProjectsByMe() {
 	return (
 		<div className={projectsCSS.projectsByMe}>
-			<h2>FEATURED PROJECTS</h2>
+			<h2><u style={{textDecorationStyle: "double"}}>FEATURED PROJECTS</u></h2>
 			<div><i>Personal projects created during my learnings</i></div>
 			<div className={projectsCSS.projectsCategories}>
 				<div className={projectsCSS.projectsCategories_1}>
@@ -20,14 +21,17 @@ export default function ProjectsByMe() {
 						<div className={projectsCSS.projects}>
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 								<span>Project Name</span>
 							</div>
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 								<span>Project Name</span>
 							</div>
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 								<span>Project Name</span>
 							</div>
 						</div>
@@ -42,16 +46,20 @@ export default function ProjectsByMe() {
 						<div className={projectsCSS.projects}>
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
+
 								<span>Project Name</span>
 							</div>
 
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 								<span>Project Name</span>
 							</div>
 
 							<div className={projectsCSS.eachProject}>
 								<img src={projectThumbNail} alt='project' />
+								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 								<span>Project Name</span>
 							</div>
 						</div>
@@ -66,16 +74,19 @@ export default function ProjectsByMe() {
 					<div className={projectsCSS.projects}>
 						<div className={projectsCSS.eachProject}>
 							<img src={projectThumbNail} alt='project' />
+							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 							<span>Project Name</span>
 						</div>
 
 						<div className={projectsCSS.eachProject}>
 							<img src={projectThumbNail} alt='project' />
+							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 							<span>Project Name</span>
 						</div>
 
 						<div className={projectsCSS.eachProject}>
 							<img src={projectThumbNail} alt='project' />
+							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
 							<span>Project Name</span>
 						</div>
 					</div>

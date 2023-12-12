@@ -7,6 +7,7 @@
 	text-decoration: none;
 }
 .projectsByMe h2 {
+	margin-bottom: 3px;
 	margin-top: 1em;
 }
 
@@ -98,7 +99,7 @@
 		rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 	transition: all 300ms ease-in-out;
 	font-size: 1em;
-	text-align: center;
+	text-align: left;
 }
 .eachProject:hover {
 	/* font-size: 0.95em; */
@@ -107,6 +108,18 @@
 	scale: 1.05;
 	box-shadow: 0 0 3px rgb(15, 15, 88);
 }
+.projectNavLink > svg {
+	opacity: 0;
+	margin-bottom: -3px;
+	margin-right: 2px;
+	cursor: pointer;
+	color: rgb(84, 84, 84);
+	transition: all 0.4s ease-in-out;
+}
+.eachProject:hover .projectNavLink > svg {
+	opacity: 1;
+}
+/* .projectThumbNail */
 .eachProject > img {
 	display: block;
 	margin: auto;

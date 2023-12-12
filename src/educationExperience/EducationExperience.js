@@ -19,7 +19,7 @@ export default function EducationExperience() {
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Bachelors of Computer Application'>BCA <span className={eeCSS.time}>(2018-2021)</span> </div>
-						<div className={eeCSS.someDetails}>Learned the basic development skills and attended the GNIIT regularly to enhance my Web and Cloud development skill, completed BCA in min time alloted by University without even a single subject back.</div>
+						<div className={eeCSS.someDetails}>Learned the basic development skills and attended the GNIIT regularly to enhance my Web and Cloud development skill, completed BCA in minimum duration alloted by University without even a single subject back.</div>
 						<div className={eeCSS.type}>Graduation from IGNOU</div>
 					</div>
 				</div>

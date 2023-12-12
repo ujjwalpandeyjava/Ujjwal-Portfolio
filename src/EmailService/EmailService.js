@@ -57,7 +57,7 @@ export default function EmailService(props) {
 						console.log(result.text);
 						setTimeout(() => {
 							props.onClick()();	// bcz the function returns function.
-						}, 2000);
+						}, 200);
 					}, (error) => {
 						console.log(error.text);
 						throw Error("Error: " + error.text);

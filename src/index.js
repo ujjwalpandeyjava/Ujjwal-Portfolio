@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import configs from '../package.json';
 import BlogHome from './blog/BlogHome';
 import Blog from './blog/Blogs/Blog';
-import Contact from './contact/contactMe';
+import ContactMePage from './contact/ContactMePage.js';
 import ExperiencePage from './educationExperience/ExperiencePage.js';
 import Error from './error/Error';
 import Home from './home/Home';
@@ -34,7 +34,7 @@ root.render(
           <Route path="/skills_projects/fullStackProjects" element={<FullStackProjects />} />
           <Route path="/blog" element={<BlogHome />} />
           <Route path="/blog/:blogId" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<ContactMePage />} />
           <Route path="/error" element={<Error />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
