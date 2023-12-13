@@ -1,7 +1,12 @@
 import { Fragment, useEffect, useState } from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+import { PiLinkSimpleBold } from "react-icons/pi";
+
 import VanillaTilt from "vanilla-tilt";
 import EmailService from "../EmailService/EmailService";
-import './frag.css';
 import myPicture from '../images/1670752620885.jpg';
 import './summaryTilt.css';
 
@@ -71,31 +76,16 @@ export default function SummaryTilt(props) {
 								<p className="card-desc">
 									Committed to staying up-to-date with the latest technologies and trends to provide the best solutions, with a broad range of skills enabling me to handle everything.
 									<br />
-									<b>Expertise in both front-end and back-end development.</b>
+									<b>Skilled in both front-end and back-end web development.</b>
 								</p>
 							</div>
 							<div className="card-social">
-								<a href="https://www.facebook.com/ujjwal.pandey.1656">
-									<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path d="M15.997 3.985h2.191V.169C17.81.117 16.51 0 14.996 0c-3.159 0-5.323 1.987-5.323 5.639V9H6.187v4.266h3.486V24h4.274V13.267h3.345l.531-4.266h-3.877V6.062c.001-1.233.333-2.077 2.051-2.077z" />
-									</svg>
-								</a>
-								<a href="https://twitter.com/Ujjwalp13341664">
-									<i className="fa-brands fa-x-twitter"></i>
-									{/* <a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"></a> */}
-								</a>
-								<a href="https://www.instagram.com/pandey.ujjwalpandey/">
-									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-										<path d="M301 256c0 24.852-20.148 45-45 45s-45-20.148-45-45 20.148-45 45-45 45 20.148 45 45zm0 0" />
-										<path d="M332 120H180c-33.086 0-60 26.914-60 60v152c0 33.086 26.914 60 60 60h152c33.086 0 60-26.914 60-60V180c0-33.086-26.914-60-60-60zm-76 211c-41.355 0-75-33.645-75-75s33.645-75 75-75 75 33.645 75 75-33.645 75-75 75zm86-146c-8.285 0-15-6.715-15-15s6.715-15 15-15 15 6.715 15 15-6.715 15-15 15zm0 0" />
-										<path d="M377 0H135C60.562 0 0 60.563 0 135v242c0 74.438 60.563 135 135 135h242c74.438 0 135-60.563 135-135V135C512 60.562 451.437 0 377 0zm45 332c0 49.625-40.375 90-90 90H180c-49.625 0-90-40.375-90-90V180c0-49.625 40.375-90 90-90h152c49.625 0 90 40.375 90 90zm0 0" />
-									</svg>
-								</a>
-								<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/">
-									<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-										<path d="M23.994 24v-.001H24v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07V7.976H8.489v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243V24zM.396 7.977h4.976V24H.396zM2.882 0C1.291 0 0 1.291 0 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909A2.884 2.884 0 002.882 0z" />
-									</svg>
-								</a>
+								<a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+								<a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
+								<a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
+								<a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><PiLinkSimpleBold /></a>
+								<a href="https://www.instagram.com/pandeyy_ujjwalpandit/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+								<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
 							</div>
 						</div>
 						<div className="card-section" id="experience_card">
@@ -105,7 +95,7 @@ export default function SummaryTilt(props) {
 									<div className="card-item" data-year="2014">
 										<div className="card-timeline-item-date">
 											Aug-21 <br />
-											Sept-21
+											Oct-21
 										</div>
 										<div className="card-timeline-item-detail">
 											<div className="card-item-title">App ambassador at <span>Daily Brief</span></div>

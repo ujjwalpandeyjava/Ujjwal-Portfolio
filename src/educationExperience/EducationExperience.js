@@ -29,7 +29,7 @@ export default function EducationExperience() {
 				<div className={eeCSS.subHeading}>My Awesome Experience</div>
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title=''>Safety Labs<span className={eeCSS.time}> (Feb/2021-Till date)</span> </div>
+						<div className={eeCSS.name} title=''>Safety Labs<span className={eeCSS.time}> (Feb/2022-Till date)</span> </div>
 						<div className={eeCSS.someDetails}>Tele-Medicine Home-Based Health-Care company, originated from Canada.</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
@@ -45,7 +45,7 @@ export default function EducationExperience() {
 						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Oct/2020-Jan/021)</span> </div>
+						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Oct/2021-Jan/022)</span> </div>
 						<div className={eeCSS.someDetails}>Government product based company</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
@@ -58,7 +58,7 @@ export default function EducationExperience() {
 						<div className={eeCSS.type}>Java Developer Trainee</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='While I was pursuing BCA and GNIIT'>Daily Brief app<span className={eeCSS.time}> (Aug/2020-Oct/2020)</span> </div>
+						<div className={eeCSS.name} title='While I was pursuing BCA and GNIIT'>Daily Brief app<span className={eeCSS.time}> (Aug/2021-Oct/2021)</span> </div>
 						<div className={eeCSS.someDetails}>NEWS app</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
