@@ -1,14 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram, FaXTwitter } from "react-icons/fa6";
-import { FiGithub } from "react-icons/fi";
-import { FaLinkedinIn } from "react-icons/fa";
-import { PiLinkSimpleBold } from "react-icons/pi";
-
+// import { FaFacebookF } from "react-icons/fa";
+// import { FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
+// import { FiGithub } from "react-icons/fi";
+// import { PiLinkSimpleBold } from "react-icons/pi";
 import VanillaTilt from "vanilla-tilt";
 import EmailService from "../EmailService/EmailService";
 import myPicture from '../images/1670752620885.jpg';
 import './summaryTilt.css';
+import SocialIcons from "../utility/SocialIcons";
 
 export default function SummaryTilt(props) {
 	useEffect(() => {	// It will call every time the component is called or refreshed
@@ -80,12 +79,13 @@ export default function SummaryTilt(props) {
 								</p>
 							</div>
 							<div className="card-social">
-								<a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-								<a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-								<a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer"><FiGithub /></a>
-								<a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><PiLinkSimpleBold /></a>
-								<a href="https://www.instagram.com/pandeyy_ujjwalpandit/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-								<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+								{/* <a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer"><FiGithub /></a> */}
+								{/* <a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a> */}
+								{/* <a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a> */}
+								{/* <a href="https://www.instagram.com/pandeyy_ujjwalpandit/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a> */}
+								{/* <a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><PiLinkSimpleBold /></a> */}
+								{/* <a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a> */}
+								<SocialIcons />
 							</div>
 						</div>
 						<div className="card-section" id="experience_card">

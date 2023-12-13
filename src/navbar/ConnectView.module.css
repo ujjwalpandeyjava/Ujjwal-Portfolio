@@ -13,13 +13,8 @@
 	align-items: flex-end;
 	padding-inline: 2em;
 }
-.socialIcons,
-.contactEmail {
-	height: 100dvh;
-	/* background: white; */
-}
-
 .socialIcons {
+	height: 100dvh;
 	display: inline-flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -41,6 +36,7 @@
 	aspect-ratio: 1/1;
 }
 .contactEmail {
+	height: 100dvh;
 	width: 1em;
 	display: flex;
 	flex-wrap: nowrap;
@@ -78,7 +74,6 @@
 	/* margin-block-start: 1rem; */
 	margin-inline: auto;
 }
-
 .lineBottom2 {
 	height: calc(100% - 26ch);
 }

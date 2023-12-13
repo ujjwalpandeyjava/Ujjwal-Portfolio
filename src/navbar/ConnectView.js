@@ -1,9 +1,8 @@
 import { FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { Link } from "react-router-dom";
-import connectCSS from './ConnectView.module.css';
 import { PiLinkSimpleBold } from "react-icons/pi";
+import connectCSS from './ConnectView.module.css';
 
 export default function ConnectView() {
 	return (
