@@ -9,7 +9,7 @@ import ContactMePage from './contact/ContactMePage.js';
 import ExperiencePage from './educationExperience/ExperiencePage.js';
 import Error from './error/Error';
 import Home from './home/Home';
-import './index.css';
+import './index.scss';
 import Navbar from './navbar/Navbar';
 import PageNotFound from './pageNotFound/PageNotFound';
 import SkillsProjects from './skills/SkillsProjects.js';
