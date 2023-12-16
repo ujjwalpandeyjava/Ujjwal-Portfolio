@@ -5,6 +5,8 @@ import projectsCSS from './ProjectsByMe.module.css';
 import projectThumbNail from './projectsByCategory/images/testThumbNail.png';
 // import ImageCarousel from "../imageCarousel/ImageCarousel";
 import Certificates from "../imageCarousel/certificate/Certificates";
+import EachProjectCut from "./EachProjectCut";
+import reactImg from '../images/ReactJS.jpg'
 
 export default function ProjectsByMe() {
 	return (
@@ -21,21 +23,24 @@ export default function ProjectsByMe() {
 							<NavLink to="/skills_projects/frontEndsProjects" className={projectsCSS.button}><span>Check more</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-								<span>Project Name</span>
-							</div>
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-								<span>Project Name</span>
-							</div>
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-								<span>Project Name</span>
-							</div>
+							<EachProjectCut projectName="My Portfolio 1" alt="My first portfolio build on reactJs"
+								projectLink="https://ujjwalpandeyjava.github.io/Ujjwal-Portfolio/"
+								imageSrc="https://i.pinimg.com/originals/7d/92/07/7d920792c0ab7efa9fee3464e8c696a3.jpg" />
+							<EachProjectCut projectName="Ping Pong with physics" alt="JS canvas game ping pong"
+								projectLink="https://ujjwalpandeyjava.github.io/PingPongGameLoaded/"
+								imageSrc="https://i.pinimg.com/originals/67/6e/f2/676ef21bf17b9ae9f0f0511871096904.jpg" />
+							<EachProjectCut projectName="ReactJs projects repo" alt="My projects on reactjs"
+								projectLink="https://github.com/ujjwalpandeyjava/React_Projects"
+								imageSrc={reactImg} />
+							{/* <EachProjectCut projectName="Animated Landing page" alt="1st section of web with landing animation"
+								projectLink="https://ujjwalpandeyjava.github.io/Pre-PageLoading/"
+								imageSrc="https://i.pinimg.com/originals/df/9f/03/df9f03c89ed0f3522823c7d8454d13af.jpg" /> */}
+							{/* <EachProjectCut projectName="Pizza shop landing page" alt="Project pizza shop"
+								 projectLink="https://ujjwalpandeyjava.github.io/Pizza-palace/"
+								imageSrc="https://ujjwalpandeyjava.github.io/Pizza-palace/images/One.webp" /> */}
+							<EachProjectCut projectName="UI Element for demand use" alt="UI elements I created over time"
+								projectLink="https://github.com/ujjwalpandeyjava/Components_Elements"
+								imageSrc="https://i.pinimg.com/originals/40/43/9f/40439f509e514e15364bd07f1054877d.jpg" />
 						</div>
 					</div>
 					<div className={projectsCSS.projectsCategories_}>
@@ -46,24 +51,16 @@ export default function ProjectsByMe() {
 							<NavLink to="/skills_projects/backEndProjects" className={projectsCSS.button} ><span>Check more</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
+							<EachProjectCut projectName="Some WARs, JARS, and DB Backups" alt="To show case WARS and JARS"
+								projectLink="https://github.com/ujjwalpandeyjava/WARs-JARs-DBs"
+								imageSrc="https://i.pinimg.com/originals/46/d9/6d/46d96d028c678d81a3594bb4ef5fe003.jpg" />
+							<EachProjectCut projectName="JavaScript with server sides" alt="Nodes server side code repo"
+								projectLink="https://github.com/ujjwalpandeyjava/NodeProjects"
+								imageSrc="https://i.pinimg.com/originals/61/4e/7f/614e7fcd7c07198989c22699c1f8df33.jpg" />
+							<EachProjectCut projectName="Java and framework server sides" alt="Java server side code repo"
+								projectLink="https://github.com/ujjwalpandeyjava/JavaTestedProjects"
+								imageSrc="https://i.pinimg.com/originals/40/43/9f/40439f509e514e15364bd07f1054877d.jpg" />
 
-								<span>Project Name</span>
-							</div>
-
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-								<span>Project Name</span>
-							</div>
-
-							<div className={projectsCSS.eachProject}>
-								<img src={projectThumbNail} alt='project' />
-								<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-								<span>Project Name</span>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -74,23 +71,16 @@ export default function ProjectsByMe() {
 						<NavLink to="/skills_projects/fullStackProjects" className={projectsCSS.button}><span>Check more</span></NavLink>
 					</div>
 					<div className={projectsCSS.projects}>
-						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} alt='project' />
-							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-							<span>Project Name</span>
-						</div>
+						<EachProjectCut projectName="Computer institute management system" alt="management system"
+							projectLink="https://github.com/ujjwalpandeyjava/User-Faculty_Institute_Workspace"
+							imageSrc="https://ujjwalpandeyjava.github.io/Links/examplesPreviewImages/ComputerInstitute.png" />
+						<EachProjectCut projectName="ToDo - Spring and Hibernate" alt="Java server side code repo"
+							projectLink="https://github.com/ujjwalpandeyjava/SimpleToDo_withHibernate"
+							imageSrc="https://ujjwalpandeyjava.github.io/Links/examplesPreviewImages/noImageFound.jpg" />
+						<EachProjectCut projectName="Explore projects" alt="Full resp to explore"
+							projectLink="https://github.com/ujjwalpandeyjava?tab=repositories"
+							imageSrc="https://ujjwalpandeyjava.github.io/Links/examplesPreviewImages/deploy.jpeg" />
 
-						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} alt='project' />
-							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-							<span>Project Name</span>
-						</div>
-
-						<div className={projectsCSS.eachProject}>
-							<img src={projectThumbNail} alt='project' />
-							<a href="https://github.com/ujjwalpandeyjava?tab=repositories" target="_blank" className={projectsCSS.projectNavLink} rel="noreferrer"><FaLink /></a>
-							<span>Project Name</span>
-						</div>
 					</div>
 				</div>
 			</div>

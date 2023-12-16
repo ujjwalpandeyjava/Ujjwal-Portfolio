@@ -19,6 +19,8 @@
 	justify-content: space-evenly;
 	align-items: center;
 	gap: 15px 7px;
+	margin-bottom: 2rem;
+	margin-top: 0.7rem;
 }
 .specialCertificates > img {
 	/* flex: 1 1; */

@@ -2,8 +2,8 @@ import './projectsByCategory.scss';
 
 function FrontEndProjects() {
 	return (
-		<div className='FrontEndProjects'>
-			FrontEndProjects
+		<div className='frontEndProjects'>
+			Front-end Projects list coming soon
 		</div>
 	)
 }

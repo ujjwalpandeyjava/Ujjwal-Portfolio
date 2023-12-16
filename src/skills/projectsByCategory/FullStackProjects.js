@@ -2,8 +2,8 @@ import './projectsByCategory.scss'
 
 function FullStackProjects() {
 	return (
-		<div className='FullStackProjects'>
-			FullStackProjects
+		<div className='fullStackProjects'>
+			Full-Stack Projects list coming soon
 		</div>
 	)
 }

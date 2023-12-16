@@ -2,7 +2,9 @@ import './projectsByCategory.scss'
 
 function BackEndProjects() {
 	return (
-		<div>BackEndProjects</div>
+		<div className='backEndProjects'>
+			Back-end Projects list coming soon
+		</div>
 	)
 }
 

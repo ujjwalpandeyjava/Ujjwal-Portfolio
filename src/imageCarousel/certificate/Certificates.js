@@ -2,27 +2,27 @@ import { Suspense, useEffect, useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Keyboard, Autoplay, HashNavigation, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, HashNavigation, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import c1 from '../certificate/images/Bootstrap 4 with projects.jpg';
-import c2 from '../certificate/images/Complete Front-End Web Development Course.jpg';
 import c3 from '../certificate/images/Advanced JS - JavaScript for QA Engineers and SDETs.jpg';
-import c4 from '../certificate/images/React- 6.5hr course.jpg';
-import c5 from '../certificate/images/Bootstrap - Unleash the power Rapid web Development.jpg';
-import c6 from '../certificate/images/Web Development - 22 Courses in 1 Course.jpg';
-import c7 from '../certificate/images/Java Servlets and JSP - Build Java EE app.jpg';
-import c8 from '../certificate/images/Complete Best ever Java Course 2000+ example, 92 hours lecture.jpg';
-import c9 from '../certificate/images/Java Programming - Complete Beginner to Advanced.jpg';
-import c10 from '../certificate/images/Spring Framework with Spring Boot.jpg';
-import c11 from '../certificate/images/Daily Brief Internship Certificate Ujjwal.jpg';
 import c12 from '../certificate/images/Awesome - Java Programming.jpg';
+import c5 from '../certificate/images/Bootstrap - Unleash the power Rapid web Development.jpg';
+import c1 from '../certificate/images/Bootstrap 4 with projects.jpg';
+import c8 from '../certificate/images/Complete Best ever Java Course 2000+ example, 92 hours lecture.jpg';
+import c2 from '../certificate/images/Complete Front-End Web Development Course.jpg';
+import c11 from '../certificate/images/Daily Brief Internship Certificate Ujjwal.jpg';
+import c15 from '../certificate/images/Java Collection Frameworks + Generics+ 5.5Hrs.jpg';
+import c9 from '../certificate/images/Java Programming - Complete Beginner to Advanced.jpg';
+import c7 from '../certificate/images/Java Servlets and JSP - Build Java EE app.jpg';
 import c13 from '../certificate/images/Python from Udemy.jpg';
 import c14 from '../certificate/images/React Js - Complete Guid fro Frontend Web Development.jpg';
-import c15 from '../certificate/images/Java Collection Frameworks + Generics+ 5.5Hrs.jpg';
+import c4 from '../certificate/images/React- 6.5hr course.jpg';
+import c10 from '../certificate/images/Spring Framework with Spring Boot.jpg';
+import c6 from '../certificate/images/Web Development - 22 Courses in 1 Course.jpg';
 
-import certificatesCSS from './Certificates.module.css';
 import { useImage } from 'react-image';
+import certificatesCSS from './Certificates.module.css';
 
 const certificatesJSON = [
 	{
@@ -141,7 +141,14 @@ function Certificates() {
 
 	return (
 		<div className={[certificatesCSS.certificates, "parallelBackgroundImage bg-Image1"].join(" ")}>
-			<h1 className={certificatesCSS.sectionHeading}>Certificates</h1>
+			<Suspense>
+				<h1 className={certificatesCSS.sectionHeading}>Special Certificates</h1>
+				<div className={certificatesCSS.specialCertificates}>
+					<MyImageComponent url='https://i.pinimg.com/originals/ba/77/67/ba77677b7be504b25ee2a8ea05c0a385.jpg' imgAlt="My first ever certificate F-Tech" />
+					<MyImageComponent url='https://i.pinimg.com/originals/53/dd/ee/53ddeeca3ebe2859ebce42c28673da6b.jpg' imgAlt="3-year Web development specialization certificate From NIIT" />
+				</div>
+			</Suspense>
+			<h1 className={certificatesCSS.sectionHeading}>Dedicated Certifications</h1>
 			<Swiper
 				centeredSlides={true}
 				spaceBetween={60}
@@ -190,13 +197,6 @@ function Certificates() {
 					<span ref={progressContent}></span>
 				</div>
 			</Swiper>
-			<Suspense>
-				<h1 className={certificatesCSS.sectionHeading}>Special Certificates</h1>
-				<div className={certificatesCSS.specialCertificates}>
-					<MyImageComponent url='https://i.pinimg.com/originals/ba/77/67/ba77677b7be504b25ee2a8ea05c0a385.jpg' imgAlt="My first ever certificate F-Tech" />
-					<MyImageComponent url='https://i.pinimg.com/originals/53/dd/ee/53ddeeca3ebe2859ebce42c28673da6b.jpg' imgAlt="3-year Web development specialization certificate From NIIT" />
-				</div>
-			</Suspense>
 		</ div >
 	)
 }
