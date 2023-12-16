@@ -1,12 +1,10 @@
-import { FaLink } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import projectsCSS from './ProjectsByMe.module.css';
-import projectThumbNail from './projectsByCategory/images/testThumbNail.png';
 // import ImageCarousel from "../imageCarousel/ImageCarousel";
 import Certificates from "../imageCarousel/certificate/Certificates";
+import reactImg from '../images/ReactJS.jpg';
 import EachProjectCut from "./EachProjectCut";
-import reactImg from '../images/ReactJS.jpg'
 
 export default function ProjectsByMe() {
 	return (
