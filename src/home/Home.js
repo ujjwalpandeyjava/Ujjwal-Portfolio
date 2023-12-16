@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import PreviewPDFs from '../contact/resume/previewPDFs';
@@ -13,6 +13,9 @@ import WhatICanDo from './WhatICanDo';
 
 
 export default function Home() {
+  useEffect(() => {
+		document.title = "Ujjwal pandey Home"
+	}, [])
   const [isDeviceMobile] = useState(isMobileDevice());
   function isMobileDevice() { return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(navigator.userAgent.toLowerCase()); }
   const [viewPreview, setViewPreview] = useState(false);

@@ -4,8 +4,12 @@ import ContactMe from "../contact/contactMe";
 import workingImg from '../images/working_on_laptop.png';
 import Skills from "../skills/Skills";
 import EducationExperience from "./EducationExperience";
+import { useEffect } from "react";
 
 function ExperiencePage() {
+	useEffect(() => {
+		document.title = "Experience"
+	}, [])
 	return (
 		<>
 			<div className="experienceTxt">
@@ -19,6 +23,7 @@ function ExperiencePage() {
 					</p>
 				</div>
 				<p className="journeyOtherTxt">
+					<div className="projectExperience">Project Experience</div>
 					Each project, I undertook was a new learning experience, pushing me to explore new technologies and frameworks. I embraced challenges, viewing them as opportunities to grow and refine my skills. Today, I stand as a proficient developer, ready to take on new challenges and create innovative solutions. Over time, I accumulated a wealth of experience that has shaped me into I am today.<br />
 					<SiNextra size="0.8rem" />My journey is a testament to my dedication and passion for web development. And I believe that every step I took, every challenge I overcame, has led me to where I am now. And I'm excited for what the future holds!
 				</p>

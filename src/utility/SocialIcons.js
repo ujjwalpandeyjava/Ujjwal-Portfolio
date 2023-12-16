@@ -22,7 +22,7 @@ export default function SocialIcons(props) {
 				</div>
 				<div className={siCSS.icon}>
 					<div className={siCSS.tooltip}>Instagram</div>
-					<a href="https://www.instagram.com/pandeyy_ujjwalpandit/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+					<a href="https://www.instagram.com/sadhu_ujjwalpandeyy/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
 				</div>
 				<div className={siCSS.icon}>
 					<div className={siCSS.tooltip}>LinkedIn</div>

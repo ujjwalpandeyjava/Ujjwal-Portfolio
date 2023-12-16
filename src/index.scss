@@ -44,25 +44,29 @@ body {
   align-items: center;
   justify-content: space-around;
   & > img {
-    max-width: 270px;
+    min-width: 200px;
+    max-width: 280px;
+    width: 30%;
     flex: 1;
     border-radius: 9px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .journey {
     .journeyHeading {
-      font-size: 1.1em;
+      font-size: 1.15em;
       font-weight: bold;
       // display: block;
-      border-bottom: 1px dashed #999;
+      border-bottom: 2px dashed #787878;
       // text-decoration: underline;
     }
     .journeyText {
       min-width: 260px;
+      margin-top: 8px;
     }
   }
   & > div {
     width: 100%;
+    max-width: 700px;
     padding: 1rem;
     text-shadow: 1px 1px 1px rgb(137 154 229 / 71%);
     flex: 1;
@@ -72,7 +76,15 @@ body {
   }
   .journeyOtherTxt {
     padding: 1rem;
+    max-width: 1300px;
+    margin-top: 1.5rem;
     // word-spacing: 5px;
+    .projectExperience {
+      text-decoration-line: underline;
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-bottom: 3px;
+    }
   }
 }
 @media all and (max-width: "600px") {
@@ -80,7 +92,9 @@ body {
     .journeyOtherTxt {
       padding: 1rem;
       max-height: 150px;
-      box-shadow: 2px 2px 5px gray;
+      box-shadow:
+        -6px 9px 10px gray,
+        6px -9px 10px #d5d5d5;
       overflow: auto;
       border-radius: 10px;
       padding: 5px 10px;

@@ -1,4 +1,9 @@
+import { FaSalesforce } from "react-icons/fa6";
+import { SiJquery } from "react-icons/si";
 import { useEffect } from 'react';
+import { FaSitemap } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
 
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { FaAngleDown, FaAngleUp, FaGithub, FaNode } from "react-icons/fa";
@@ -73,6 +78,11 @@ export default function Skills() {
 						<div className={eachSkills.eachSkillDescription}>I choose Spring-Boot to rapid the development of spring applications and overcome the limitations of spring framework.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
+						<FaSitemap className={eachSkills.skillIcon} />
+						<div>REST APIs</div>
+						<div className={eachSkills.eachSkillDescription}>A REST API is an application programming interface that allows interaction with RESTful web services, with any supported language.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
 						<FaGithub className={eachSkills.skillIcon} />
 						<div>GitHub</div>
 						<div className={eachSkills.eachSkillDescription}>Version control GitHub used to track history of code changes, and let multiple developers work aynsronouly.</div>
@@ -88,15 +98,34 @@ export default function Skills() {
 						<div className={eachSkills.eachSkillDescription}>The All rounder, allowing me to code anything and everything in one language, I rank myself 9.5/10 in JS.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
+						<SiJquery className={eachSkills.skillIcon} />
+						<div>jQuery</div>
+						<div className={eachSkills.eachSkillDescription}>Simplified JavaScript library to fasten up the JavaScript work.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
 						<FaNode className={eachSkills.skillIcon} />
 						<div>Nodejs</div>
 						<div className={eachSkills.eachSkillDescription}>The runtime environment used for all kind of application built on JavaScript.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
-
+						<SiExpress className={eachSkills.skillIcon} />
+						<div>Express</div>
+						<div className={eachSkills.eachSkillDescription}>I used Express.js a Node.js framework to simplifying the development of web server APIs and adding helpful features.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
 						<FaReact className={eachSkills.skillIcon} />
 						<div>ReactJs</div>
 						<div className={eachSkills.eachSkillDescription}>My mastery over SPA technology ReactJs with 2 year of experience give me ability to write class & function based components to create Single Page Frontend Application, with the help of JS and NodeJS.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
+						<SiPostman className={eachSkills.skillIcon} />
+						<div>Postman</div>
+						<div className={eachSkills.eachSkillDescription}>I always use it to know how my API is behaving and performing, Postman is a tool for building, testing, and modifying APIs, simplifying API development.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
+						<FaSalesforce className={eachSkills.skillIcon} />
+						<div>Salesforce</div>
+						<div className={eachSkills.eachSkillDescription}>I have worked with Salesforce team to develop and deploy custom application on there platform.</div>
 					</div>
 				</div>
 				<div className={eachSkills.previousNextAction}>

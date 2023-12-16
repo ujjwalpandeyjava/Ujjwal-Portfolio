@@ -1,5 +1,5 @@
-import  { useEffect, useState } from 'react';
-import './ImageCarousel.css'; // Import your CSS file
+import { useEffect, useState } from 'react';
+import './ImageCarousel.css';
 import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
@@ -28,7 +28,7 @@ const imageInCarouse = [
 	htmlImage,
 	cssImage,
 	dsAlgoImage,
-	
+
 	javaImage,
 	AdJavaImage,
 	hibernateImage,

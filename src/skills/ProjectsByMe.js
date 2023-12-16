@@ -3,11 +3,13 @@ import { NavLink } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import projectsCSS from './ProjectsByMe.module.css';
 import projectThumbNail from './projectsByCategory/images/testThumbNail.png';
+// import ImageCarousel from "../imageCarousel/ImageCarousel";
+import Certificates from "../imageCarousel/certificate/Certificates";
 
 export default function ProjectsByMe() {
 	return (
 		<div className={projectsCSS.projectsByMe}>
-			<h2><u style={{textDecorationStyle: "double"}}>FEATURED PROJECTS</u></h2>
+			<h2><u style={{ textDecorationStyle: "double" }}>FEATURED PROJECTS</u></h2>
 			<div><i>Personal projects created during my learnings</i></div>
 			<div className={projectsCSS.projectsCategories}>
 				<div className={projectsCSS.projectsCategories_1}>
@@ -92,6 +94,8 @@ export default function ProjectsByMe() {
 					</div>
 				</div>
 			</div>
+			{/* <ImageCarousel /> */}
+			<Certificates />
 			<div className={projectsCSS.contactMeContainer}><ContactMe /></div>
 			<div id={projectsCSS.twoSectionBackground}></div>
 		</div>

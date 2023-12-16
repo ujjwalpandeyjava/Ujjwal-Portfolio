@@ -12,7 +12,7 @@ export default function ConnectView() {
 				<a rel="noopener noreferrer" target="_blank" href="https://github.com/ujjwalpandeyjava"><FaGithub color="black" size="1.3rem" /></a>
 				<a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/ujjwal.pandey.1656"><FaFacebook color="black" size="1.3rem" /></a>
 				<a rel="noopener noreferrer" target="_blank" href="https://twitter.com/Ujjwalp13341664"><FaXTwitter color="black" size="1.3rem" /></a>
-				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/pandeyy_ujjwalpandit"><FaInstagramSquare color="black" size="1.3rem" /></a>
+				<a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/sadhu_ujjwalpandeyy"><FaInstagramSquare color="black" size="1.3rem" /></a>
 				<a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138"><PiLinkSimpleBold color="black" size="1.3rem" /></a>
 				<a rel="noopener noreferrer" target="_blank" href="https://ujjwalpandeyjava.github.io/Links"><IoLogoLinkedin color="black" size="1.3rem" /></a>
 				<div className={connectCSS.lineBottom}></div>

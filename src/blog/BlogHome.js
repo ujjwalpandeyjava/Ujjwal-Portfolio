@@ -1,5 +1,9 @@
+import { useEffect } from "react"
 
 function BlogHome() {
+	useEffect(() => {
+		document.title = "Blogs by Ujjwal Pandey"
+	}, [])
 	return (
 		<div>
 			<h1>Blog - Insights and Musings</h1>
