@@ -14,7 +14,7 @@ export default function EducationExperience() {
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Cloud and mobile software engineering'>GNIIT <span className={eeCSS.time}>(2019-2022)</span> </div>
-						<div className={eeCSS.someDetails}>Scored 9 CGPA while learning multiple Web development skills in these 3 years, it awarded me mastery over full stack development from basic to advanced and taught me the importance of never stopped learning!</div>
+						<div className={eeCSS.someDetails}>BootCamp of 2+1 year with learning Full-stack Web development with java and javaScript technologies, where I scored 9 CGPA, it awarded me mastery over several technologies from basic of html to advanced handling of servers, and taught me the importance of never stopped learning!</div>
 						<div className={eeCSS.type}>Web development Specialization</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>

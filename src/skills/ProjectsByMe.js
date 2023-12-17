@@ -18,7 +18,8 @@ export default function ProjectsByMe() {
 							<span>Frontend Projects</span>
 							<p>Frontend projects with HTML, CSS, JavaScript, ReactJS.<br />
 								From static pages to dynamic applications, each reflecting a commitment to engaging and responsive user experiences. Dive into the code.</p>
-							<NavLink to="/skills_projects/frontEndsProjects" className={projectsCSS.button}><span>Check more</span></NavLink>
+							{/* <NavLink to="/skills_projects/frontEndsProjects" className={projectsCSS.button}><span>Check more</span></NavLink> */}
+							<NavLink to="/contact" className={projectsCSS.button}><span>Create something</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
 							<EachProjectCut projectName="My Portfolio 1" alt="My first portfolio build on reactJs"
@@ -36,7 +37,7 @@ export default function ProjectsByMe() {
 							{/* <EachProjectCut projectName="Pizza shop landing page" alt="Project pizza shop"
 								 projectLink="https://ujjwalpandeyjava.github.io/Pizza-palace/"
 								imageSrc="https://ujjwalpandeyjava.github.io/Pizza-palace/images/One.webp" /> */}
-							<EachProjectCut projectName="UI Element for demand use" alt="UI elements I created over time"
+							<EachProjectCut projectName="My UI Element for rapid development" alt="UI elements I created over time"
 								projectLink="https://github.com/ujjwalpandeyjava/Components_Elements"
 								imageSrc="https://i.pinimg.com/originals/40/43/9f/40439f509e514e15364bd07f1054877d.jpg" />
 						</div>
@@ -46,7 +47,8 @@ export default function ProjectsByMe() {
 							<span>Back-end Featured</span>
 							<p>Backend Development projects featuring Java, Advanced Java, Hibernate, Spring, Spring Boot, Spring Security, JPA, and more.<br />
 								Engage in robust, secure, and efficient backend solutions. Dive into the code.</p>
-							<NavLink to="/skills_projects/backEndProjects" className={projectsCSS.button} ><span>Check more</span></NavLink>
+							{/* <NavLink to="/skills_projects/backEndProjects" className={projectsCSS.button} ><span>Check more</span></NavLink> */}
+							<NavLink to="/contact" className={projectsCSS.button}><span>Build more</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
 							<EachProjectCut projectName="Some WARs, JARS, and DB Backups" alt="To show case WARS and JARS"
@@ -66,7 +68,8 @@ export default function ProjectsByMe() {
 					<div className={projectsCSS.projectSectionDetails}>
 						<span>Full Stack Featured</span>
 						<p>Full Stack projects, seamlessly integrating Frontend (HTML, CSS, JS, React.js) and Backend (Java, Advanced Java, Hibernate, Spring, Spring Boot, Security, JPA). Engaging, responsive, and efficient. Dive into the code.</p>
-						<NavLink to="/skills_projects/fullStackProjects" className={projectsCSS.button}><span>Check more</span></NavLink>
+						{/* <NavLink to="/skills_projects/fullStackProjects" className={projectsCSS.button}><span>Check more</span></NavLink> */}
+						<NavLink to="/contact" className={projectsCSS.button}><span>Connect</span></NavLink>
 					</div>
 					<div className={projectsCSS.projects}>
 						<EachProjectCut projectName="Computer institute management system" alt="management system"
