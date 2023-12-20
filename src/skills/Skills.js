@@ -118,14 +118,14 @@ export default function Skills() {
 						<div className={eachSkills.eachSkillDescription}>My mastery over SPA technology ReactJs with 2 year of experience give me ability to write class & function based components to create Single Page Frontend Application, with the help of JS and NodeJS.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
-						<SiPostman className={eachSkills.skillIcon} />
-						<div>Postman</div>
-						<div className={eachSkills.eachSkillDescription}>I always use it to know how my API is behaving and performing, Postman is a tool for building, testing, and modifying APIs, simplifying API development.</div>
-					</div>
-					<div className={eachSkills.eachSkill}>
 						<FaSalesforce className={eachSkills.skillIcon} />
 						<div>Salesforce</div>
 						<div className={eachSkills.eachSkillDescription}>I have worked with Salesforce team to develop and deploy custom application on there platform.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
+						<SiPostman className={eachSkills.skillIcon} />
+						<div>Postman</div>
+						<div className={eachSkills.eachSkillDescription}>I always use it to know how my API is behaving and performing, Postman is a tool for building, testing, and modifying APIs, simplifying API development.</div>
 					</div>
 				</div>
 				<div className={eachSkills.previousNextAction}>
