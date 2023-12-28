@@ -15,7 +15,7 @@ export default function AboutMe() {
 			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
 			<div className={aboutMeCSS.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 			<div className={aboutMeCSS.someDetails}>
-				<span>Hello! I'm Ujjwal,</span> I am a SDE-II at Safety Labs. <b>3 yr  Specialization certificate holder</b> in full stack web development <i>(GNIIT from NIIT)</i>, Graduate in BCA, and pursuing post gradation in MCA <i>(Amity University online)</i>.
+				<span>Hello! I'm Ujjwal,</span> I am an SDE-II at Safety Labs. <b>3-year Specialization certificate holder</b> in full stack web development <i>(GNIIT from NIIT)</i>, Graduate in BCA, and pursuing post gradation in MCA <i>(Amity University online)</i>.
 				I work as an SDE-II <sub><i>(working with Java and JavaScript)</i></sub> at Safety Labs, a Canada-based telemedicine home healthcare company.
 				I possess proficiency in Java and JavaScript technologies with over 2 years of hands-on experience.
 			</div>
@@ -35,7 +35,7 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td>BirthDate</td>
-								<td>31 may 1999</td>
+								<td>31 May 1999</td>
 							</tr>
 							<tr>
 								<td>Address</td>

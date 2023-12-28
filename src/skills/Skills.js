@@ -45,12 +45,12 @@ export default function Skills() {
 					<div className={eachSkills.eachSkill}>
 						<FaJava className={eachSkills.skillIcon} />
 						<div>Java</div>
-						<div className={eachSkills.eachSkillDescription}>Object Oriented Programming language used to write logic for the the applications for me server and JSP.</div>
+						<div className={eachSkills.eachSkillDescription}>Object Oriented Programming language used to write the logic for the applications for me server and JSP.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<GrJava className={eachSkills.skillIcon} />
 						<div>Advanced Java</div>
-						<div className={eachSkills.eachSkillDescription}>Used to write backend-business logic with the power of java, allowing us to implement several protocols on the base of API properties & requirements.</div>
+						<div className={eachSkills.eachSkillDescription}>Used to write backend-business logic with the power of Java, allowing us to implement several protocols on the base of API properties & requirements.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<GrMysql className={eachSkills.skillIcon} />
@@ -70,12 +70,12 @@ export default function Skills() {
 					<div className={eachSkills.eachSkill}>
 						<BiLogoSpringBoot className={eachSkills.skillIcon} />
 						<div>Spring</div>
-						<div className={eachSkills.eachSkillDescription}>I choose Spring framework for its robust and all condition module availability to simplifying Java development, and showcase expertise in enhancing server capabilities effectively.</div>
+						<div className={eachSkills.eachSkillDescription}>I choose the Spring framework for its robust and all-condition module availability to simplify Java development, and showcase expertise in enhancing server capabilities effectively.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<SiSpringboot className={eachSkills.skillIcon} />
 						<div>Spring Boot</div>
-						<div className={eachSkills.eachSkillDescription}>I choose Spring-Boot to rapid the development of spring applications and overcome the limitations of spring framework.</div>
+						<div className={eachSkills.eachSkillDescription}>I choose Spring-Boot to rapid the development of spring applications and overcome the limitations of the spring framework.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<FaSitemap className={eachSkills.skillIcon} />
@@ -85,7 +85,7 @@ export default function Skills() {
 					<div className={eachSkills.eachSkill}>
 						<FaGithub className={eachSkills.skillIcon} />
 						<div>GitHub</div>
-						<div className={eachSkills.eachSkillDescription}>Version control GitHub used to track history of code changes, and let multiple developers work aynsronouly.</div>
+						<div className={eachSkills.eachSkillDescription}>Version control GitHub is used to track the history of code changes, and let multiple developers work asynchronously.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<VscSymbolInterface className={eachSkills.skillIcon} />
@@ -105,22 +105,22 @@ export default function Skills() {
 					<div className={eachSkills.eachSkill}>
 						<FaNode className={eachSkills.skillIcon} />
 						<div>Nodejs</div>
-						<div className={eachSkills.eachSkillDescription}>The runtime environment used for all kind of application built on JavaScript.</div>
+						<div className={eachSkills.eachSkillDescription}>The runtime environment is used for all kinds of applications built on JavaScript.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<SiExpress className={eachSkills.skillIcon} />
 						<div>Express</div>
-						<div className={eachSkills.eachSkillDescription}>I used Express.js a Node.js framework to simplifying the development of web server APIs and adding helpful features.</div>
+						<div className={eachSkills.eachSkillDescription}>I used Express.js a Node.js framework to simplify the development of web server APIs and add helpful features.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<FaReact className={eachSkills.skillIcon} />
 						<div>ReactJs</div>
-						<div className={eachSkills.eachSkillDescription}>My mastery over SPA technology ReactJs with 2 year of experience give me ability to write class & function based components to create Single Page Frontend Application, with the help of JS and NodeJS.</div>
+						<div className={eachSkills.eachSkillDescription}>My mastery of SPA technology ReactJs with 2 years of experience gives me the ability to write class & function-based components to create Single Page Frontend Applications, with the help of JS and NodeJS.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<FaSalesforce className={eachSkills.skillIcon} />
 						<div>Salesforce</div>
-						<div className={eachSkills.eachSkillDescription}>I have worked with Salesforce team to develop and deploy custom application on there platform.</div>
+						<div className={eachSkills.eachSkillDescription}>I have worked with the Salesforce team to develop and deploy custom application on there platform.</div>
 					</div>
 					<div className={eachSkills.eachSkill}>
 						<SiPostman className={eachSkills.skillIcon} />

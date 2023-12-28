@@ -10,22 +10,22 @@ function WhatICanDo() {
 			<h1>My proficiency</h1>
 			<div className={whatICanDoCSS.abilities}>
 				<div className={whatICanDoCSS.eachAbilities}>
-					<img src={backend} alt="Server side coding" />
+					<img src={backend} alt="Server-side coding" />
 					<div>Back-end</div>
-					<p>The sole of a web/portal is it's server, I do server-side with most intelligent language and framework to provide best industry standard codes.
+					<p>The sole of a web/portal is its server, I do server-side with the most intelligent language and framework to provide the best industry-standard codes.
 						<br />Java, Spring MVC, Spring boot, Hibernate, MongoDB, MySQL</p>
 				</div>
 				<div className={whatICanDoCSS.eachAbilities}>
-					<img src={frontEnd} alt="Server side coding" />
+					<img src={frontEnd} alt="Client-side coding" />
 					<div>Front-end</div>
-					<p>It is very important to make user feels good and immersive while intreating with the page.
-						I develope mind blowing UI/UX with best practices code of HTML, CSS, JS, ReactJs, SCSS, and libraries.</p>
+					<p>It is very important to make the user feel good and immersive while interacting with the page.
+						I develop mind-blowing UI/UX with best practices code of HTML, CSS, JS, ReactJs, SCSS, and libraries.</p>
 				</div>
 				<div className={whatICanDoCSS.eachAbilities}>
-					<img src={dataBase} alt="Server side coding" />
-					<div>DataBase management</div>
-					<p>Maintaining and structuring the data is one of the most crucial task a backend developer does,
-						Giving me a upper hand in comparison to others as of my experience and high level technologies.
+					<img src={dataBase} alt="Database development coding" />
+					<div>Database management</div>
+					<p>Maintaining and structuring the data is one of the most crucial tasks a backend developer does,
+						Giving me the upper hand in comparison to others as of my experience and high-level technologies.
 					</p>
 				</div>
 				<div className={whatICanDoCSS.eachAbilities}>

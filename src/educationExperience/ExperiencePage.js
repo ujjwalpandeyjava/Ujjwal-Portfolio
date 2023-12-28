@@ -15,7 +15,7 @@ function ExperiencePage() {
 			<div className="experienceTxt">
 				<img src={workingImg} alt="I got experience" />
 				<div className="journey">
-					<span className="journeyHeading">Embarking on my journey as a SDE-II, Full-stack web developer</span>
+					<span className="journeyHeading">Embarking on my journey as an SDE-II, Full-stack web developer</span>
 					<p className="journeyText">
 						<RiDoubleQuotesL />
 						I started with a strong foundation in Java, HTML, CSS, JavaScript, and MySQL. As I progressed, I expanded my skill set to include Spring, Spring-Boot, MongoDB, SCSS, Nodejs, and ReactJs. My educational background provided me with the theoretical knowledge, while my work experience allowed me to apply this knowledge in real-world scenarios.
