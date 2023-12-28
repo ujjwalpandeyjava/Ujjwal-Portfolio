@@ -41,19 +41,24 @@ export default function PDFViewer() {
 					<span>Page {pageNumber} of {numPages}</span>
 					<button onClick={goToNextPage}>Next <MdNavigateNext /></button>
 				</nav>
-				<div className={style.downloadCV}>
-					<a className={style.downloadCV} href={pdfFile} download="_Ujjwal-full_stack-C.V.pdf">Download C.V</a><FiDownload />
-				</div>
+				<DownloadCVButton pdfFile={pdfFile} text="Download C.V." />
 			</div>
 		</div>
 	);
 };
+function DownloadCVButton({ pdfFile, extraStyle, text }) {
+	return (
+		<div className={style.downloadCV} style={extraStyle}>
+			<a className={style.downloadCV} href={pdfFile} download="_Ujjwal-full_stack-C.V.pdf">{text}</a><FiDownload />
+		</div>
+	)
+}
 
 function PDF({ file, onDocumentLoadSuccess, pageNumber }) {
 	return (
 		<div className={style.page}>
 			<div className={style.doc} >
-				<Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+				<Document file={file + "d"} onLoadSuccess={onDocumentLoadSuccess} error={<DownloadCVButton extraStyle={{ marginTop: "8px" }} pdfFile={pdfFile} text="Browser not supported, please Download!" />}>
 					<Page pageNumber={pageNumber} renderTextLayer={false} />
 				</Document>
 			</div>
