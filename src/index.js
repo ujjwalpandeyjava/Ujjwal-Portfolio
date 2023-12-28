@@ -8,6 +8,7 @@ import Blog from './blog/Blogs/Blog';
 import ContactMePage from './contact/ContactMePage.js';
 import ExperiencePage from './educationExperience/ExperiencePage.js';
 import Error from './error/Error';
+import PDFViewer from './document/PDFViewer';
 import Home from './home/Home';
 import './index.scss';
 import Navbar from './navbar/Navbar';
@@ -36,6 +37,7 @@ root.render(
           <Route path="/blog/:blogId" element={<Blog />} />
           <Route path="/contact" element={<ContactMePage />} />
           <Route path="/error" element={<Error />} />
+          <Route path="/resume" element={<PDFViewer />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
         <Toaster position="bottom-right" />

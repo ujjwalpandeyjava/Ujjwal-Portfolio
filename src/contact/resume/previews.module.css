@@ -1,111 +1,59 @@
 .previewsFullPage {
-	position: fixed;
-	height: 100dvh;
-	width: 100dvw;
-	background-color: rgba(29, 79, 73, 0.687);
-	z-index: 20;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	font-size: 1rem ;
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    /* background-color: rgba(29, 79, 73, 0.687); */
+    background-color: rgba(255, 255, 255, 0.871);
+    z-index: 20;
+    padding-bottom: 0;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    color: black;
 }
 
 .previewSection {
-	display: flex;
-	min-width: 50%;
-	max-height: calc(100vh - 140px);
-	margin-top: 70px;
-	overflow: auto;
-	max-width: 96vw;
-	width: auto;
-	border-radius: 9px;
-	box-shadow: 0 0 30px 1px #6e6e6eb8;
-	background-color: black;
-	z-index: 51;
-	pointer-events: fill;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: stretch;
-	position: relative;
+    --heightToAdjust: 7rem;
+    display: flex;
+    min-width: 50%;
+    max-height: calc(100dvh - var(--heightToAdjust) * 1.25);
+    margin-top: var(--heightToAdjust);
+    padding-block: 5px;
+    overflow: auto;
+    max-width: 96vw;
+    /* width: auto; */
+    border-radius: 9px;
+    box-shadow: 0 0 30px 1px #6e6e6eb8;
+    background-color: white;
+    z-index: 51;
+    pointer-events: fill;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    position: relative;
+    justify-content: space-between;
 }
-
-.eachPreview {
-	min-width: 300px;
+.previewSection::-webkit-scrollbar {
+    display: none;
 }
 
 .closeBtn {
-	/* content: "X"; */
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	float: right;
-	height: 20px;
-	width: 20px;
-	font-size: 20px;
-	padding: 0;
-	border-radius: 50%;
-	font-weight: bold;
-	background-color: red;
-	box-shadow: 0 2px 6px rgba(159, 10, 10, 0.836), inset 0 1px 4px rgba(255, 255, 255, 0.653);
-	cursor: pointer;
-}
-
-.previewSection>div {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.previewImage {
-	margin: 15px;
-	object-fit: contain;
-	max-height: 500px;
-	border-radius: 5px;
-	filter: drop-shadow(0 0 8px rgb(0 55 255 / 85%));
-	transition: transform 0.8s ease-in-out;
-}
-
-div.downloadCV {
-	background-color: #ff9b09;
-    max-width: 200px;
-    width: auto;
-    text-align: center;
-    border-radius: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    float: right;
+    display: grid;
+    place-items: center;
+    width: 1.3em;
+    aspect-ratio: 1/1;
+    font-size: 20px;
+    border-radius: 50%;
     font-weight: bold;
+    background-color: red;
+    box-shadow:
+        0 2px 6px rgba(159, 10, 10, 0.836),
+        inset 0 1px 4px rgba(255, 255, 255, 0.653);
     cursor: pointer;
-    box-shadow: inset 0 0 3px 0px #050300;
-    font-family: sans-serif;
-    padding: 0.6rem 1.1rem;
-    margin-block: 1em;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-	gap: 8px;
-}
-
-a.downloadCV {
-	text-decoration: none;
-	color: black;
-}
-
-.downloadCV:hover {
-	background-color: #d88509;
-}
-
-.previewImage:hover {
-	transform: scale(1.02);
-}
-
-@media (max-width: 800px) {
-	.previewSection>hr {
-		display: none;
-	}
 }
