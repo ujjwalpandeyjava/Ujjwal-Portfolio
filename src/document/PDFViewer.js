@@ -34,7 +34,7 @@ export default function PDFViewer() {
 		<div className={style.pdfSection}>
 			<div className={style.heading}>Ujjwal Pandey Resume</div>
 			<PDF file={pdfFile} onDocumentLoadSuccess={onDocumentLoadSuccess} pageNumber={pageNumber} /> {/* if file in public folder*/}
-			{/* <PDF file="./ujjwal_Pandey_C_V.pdf" /> */}
+			{/* <PDF file="../images/Resume_CV/ujjwal_Pandey_C_V.pdf" /> */}
 			<div className={style.pdfPageNavCont}>
 				<nav className={style.pdfPageNav}>
 					<button onClick={goToPrevPage}><MdNavigateBefore /> Prev</button>
@@ -46,11 +46,14 @@ export default function PDFViewer() {
 		</div>
 	);
 };
-function DownloadCVButton({ pdfFile, extraStyle, text }) {
+function DownloadCVButton({ pdfFile, extraStyle, text, extraText }) {
 	return (
-		<div className={style.downloadCV} style={extraStyle}>
-			<a className={style.downloadCV} href={pdfFile} download="_Ujjwal-full_stack-C.V.pdf">{text}</a><FiDownload />
-		</div>
+		<>
+			<div className={style.downloadCV} style={extraStyle}>
+				<a className={style.downloadCV} href={pdfFile} download="_Ujjwal-full_stack-C.V.pdf">{text}</a><FiDownload />
+			</div>
+			{<p>{extraText}</p> || ""}
+		</>
 	)
 }
 
@@ -58,7 +61,7 @@ function PDF({ file, onDocumentLoadSuccess, pageNumber }) {
 	return (
 		<div className={style.page}>
 			<div className={style.doc} >
-				<Document file={file + "d"} onLoadSuccess={onDocumentLoadSuccess} error={<DownloadCVButton extraStyle={{ marginTop: "8px" }} pdfFile={pdfFile} text="Browser not supported, please Download!" />}>
+				<Document file={file + "d"} onLoadSuccess={onDocumentLoadSuccess} error={<DownloadCVButton extraStyle={{ marginBlock: "8px" }} pdfFile={pdfFile} text="Download C.V." extraText="Browser not supported, please Download PDF!" />}>
 					<Page pageNumber={pageNumber} renderTextLayer={false} />
 				</Document>
 			</div>
