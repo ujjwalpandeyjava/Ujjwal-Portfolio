@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 import style from './PDFViewer.module.css';
-import pdfFile from '../images/Resume_CV/ujjwal_Pandey_C_V.pdf';
+import pdfFile from '../images/Resume_CV/ujjwalpandey_CV_SDE-II.pdf';
 
 // https://github.com/wojtekmaj/react-pdf#support-for-annotations
 // https://drive.google.com/file/d/1pBi221O_ccRc2Eg9UUKaUZt_yLIzjQV1/view?usp=sharing
@@ -34,7 +34,7 @@ export default function PDFViewer() {
 		<div className={style.pdfSection}>
 			<div className={style.heading}>Ujjwal Pandey Resume</div>
 			<PDF file={pdfFile} onDocumentLoadSuccess={onDocumentLoadSuccess} pageNumber={pageNumber} /> {/* if file in public folder*/}
-			{/* <PDF file="../images/Resume_CV/ujjwal_Pandey_C_V.pdf" /> */}
+			{/* <PDF file="../images/Resume_CV/ujjwalpandey_CV_SDE-II.pdf" /> */}
 			<div className={style.pdfPageNavCont}>
 				<nav className={style.pdfPageNav}>
 					<button onClick={goToPrevPage}><MdNavigateBefore /> Prev</button>
