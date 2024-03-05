@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import { PiLinkSimpleBold } from "react-icons/pi";
 import siCSS from './SocialIcons.module.css'
@@ -16,10 +16,10 @@ export default function SocialIcons(props) {
 					<div className={siCSS.tooltip}>Facebook</div>
 					<a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
 				</div>
-				<div className={siCSS.icon}>
+				{/* <div className={siCSS.icon}>
 					<div className={siCSS.tooltip}>Twitter</div>
 					<a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a>
-				</div>
+				</div> */}
 				<div className={siCSS.icon}>
 					<div className={siCSS.tooltip}>Instagram</div>
 					<a href="https://www.instagram.com/sadhu_ujjwalpandeyy/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>

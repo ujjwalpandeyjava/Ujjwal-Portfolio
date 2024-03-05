@@ -1,4 +1,4 @@
-import { FaSalesforce } from "react-icons/fa6";
+import { FaAws, FaSalesforce } from "react-icons/fa6";
 import { SiJquery } from "react-icons/si";
 import { useEffect } from 'react';
 import { FaSitemap } from "react-icons/fa";
@@ -126,6 +126,11 @@ export default function Skills() {
 						<SiPostman className={eachSkills.skillIcon} />
 						<div>Postman</div>
 						<div className={eachSkills.eachSkillDescription}>I always use it to know how my API is behaving and performing, Postman is a tool for building, testing, and modifying APIs, simplifying API development.</div>
+					</div>
+					<div className={eachSkills.eachSkill}>
+						<FaAws className={eachSkills.skillIcon} />
+						<div>AWS</div>
+						<div className={eachSkills.eachSkillDescription}>Amazon Web Services for all cloud stuff.</div>
 					</div>
 				</div>
 				<div className={eachSkills.previousNextAction}>

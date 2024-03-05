@@ -78,15 +78,7 @@ export default function SummaryTilt(props) {
 									<b>Skilled in both front-end and back-end web development.</b>
 								</p>
 							</div>
-							<div className="card-social">
-								{/* <a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noopener noreferrer"><FiGithub /></a> */}
-								{/* <a href="https://www.facebook.com/ujjwal.pandey.1656" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a> */}
-								{/* <a href="https://twitter.com/Ujjwalp13341664" target="_blank" rel="noopener noreferrer"><FaXTwitter /></a> */}
-								{/* <a href="https://www.instagram.com/sadhu_ujjwalpandeyy/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a> */}
-								{/* <a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"><PiLinkSimpleBold /></a> */}
-								{/* <a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a> */}
-								<SocialIcons />
-							</div>
+							<div className="card-social"><SocialIcons /></div>
 						</div>
 						<div className="card-section" id="experience_card">
 							<div className="card-content">
