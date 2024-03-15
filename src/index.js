@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import configs from '../package.json';
 import App from './App.jsx';
 import BlogHome from './blog/BlogHome';
 import Blog from './blog/Blogs/Blog';
@@ -17,7 +16,7 @@ import BackEndProjects from './skills/projectsByCategory/BackEndProjects.js';
 import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
 import FullStackProjects from './skills/projectsByCategory/FullStackProjects.js';
 // import Footer from './footer/Footer.js';
-{/* <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} element={<App />} > */ }
+// {/* <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} element={<App />} > */ }
 
 // console.log(configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length));
 const routesWithJSX = createBrowserRouter(
@@ -42,7 +41,7 @@ const routesWithJSX = createBrowserRouter(
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <Fragment>
     <RouterProvider router={routesWithJSX} />
-  </>
+  </Fragment>
 );
