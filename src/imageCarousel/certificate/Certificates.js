@@ -7,16 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import c3 from '../certificate/images/Advanced JS - JavaScript for QA Engineers and SDETs.jpg';
 import c12 from '../certificate/images/Awesome - Java Programming.jpg';
-import c5 from '../certificate/images/Bootstrap - Unleash the power Rapid web Development.jpg';
 import c1 from '../certificate/images/Bootstrap 4 with projects.jpg';
 import c8 from '../certificate/images/Complete Best ever Java Course 2000+ example, 92 hours lecture.jpg';
 import c2 from '../certificate/images/Complete Front-End Web Development Course.jpg';
 import c11 from '../certificate/images/Daily Brief Internship Certificate Ujjwal.jpg';
 import c15 from '../certificate/images/Java Collection Frameworks + Generics+ 5.5Hrs.jpg';
-import c9 from '../certificate/images/Java Programming - Complete Beginner to Advanced.jpg';
 import c7 from '../certificate/images/Java Servlets and JSP - Build Java EE app.jpg';
-import c13 from '../certificate/images/Python from Udemy.jpg';
-import c14 from '../certificate/images/React Js - Complete Guid fro Frontend Web Development.jpg';
 import c4 from '../certificate/images/React- 6.5hr course.jpg';
 import c10 from '../certificate/images/Spring Framework with Spring Boot.jpg';
 import c6 from '../certificate/images/Web Development - 22 Courses in 1 Course.jpg';
@@ -46,11 +42,6 @@ const certificatesJSON = [
 		path: c4
 	},
 	{
-		name: "Bootstrap - Unleash the power Rapid web Development",
-		description: "About this certificate",
-		path: c5
-	},
-	{
 		name: "Web Development - 22 Courses in 1 Course",
 		description: "About this certificate",
 		path: c6
@@ -66,11 +57,6 @@ const certificatesJSON = [
 		path: c8
 	},
 	{
-		name: "Java Programming - Complete Beginner to Advanced",
-		description: "About this certificate",
-		path: c9
-	},
-	{
 		name: "Spring Framework with Spring Boot",
 		description: "About this certificate",
 		path: c10
@@ -84,16 +70,6 @@ const certificatesJSON = [
 		name: "Awesome - Java Programming",
 		description: "About this certificate",
 		path: c12
-	},
-	{
-		name: "Python from Udemy",
-		description: "About this certificate",
-		path: c13
-	},
-	{
-		name: "React Js - Complete Guid fro Frontend Web Development",
-		description: "About this certificate",
-		path: c14
 	},
 	{
 		name: "Java Collection Frameworks Generics+ 5.5Hrs",
