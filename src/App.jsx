@@ -5,7 +5,7 @@ import Navbar from "./navbar/Navbar";
 function App() {
 	return (
 		<>
-			<Navbar />
+			<Navbar/>
 			<div className='sectionBody'>
 				<Outlet />
 				<Toaster position="bottom-right" />

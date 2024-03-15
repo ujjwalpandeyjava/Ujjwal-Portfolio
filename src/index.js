@@ -17,11 +17,13 @@ import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
 import FullStackProjects from './skills/projectsByCategory/FullStackProjects.js';
 // import Footer from './footer/Footer.js';
 // {/* <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} element={<App />} > */ }
+import configs from '../package.json';
 
-// console.log(configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length));
+console.log(configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length));
 const routesWithJSX = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="" element={<App />} >
+    <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)}
+      element={<App />} >
       <Route path="" element={<Home />} />
       <Route path="home" element={<Home />} />
       <Route path="experience" element={<ExperiencePage />} />
