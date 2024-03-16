@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import projectsCSS from './ProjectsByMe.module.css';
-// import ImageCarousel from "../imageCarousel/ImageCarousel";
 import Certificates from "../imageCarousel/certificate/Certificates";
 import reactImg from '../images/ReactJS.jpg';
 import EachProjectCut from "./EachProjectCut";
@@ -18,7 +17,6 @@ export default function ProjectsByMe() {
 							<span>Frontend Projects</span>
 							<p>Frontend projects with HTML, CSS, JavaScript, ReactJS.<br />
 								From static pages to dynamic applications, each reflecting a commitment to engaging and responsive user experiences. Dive into the code.</p>
-							{/* <NavLink to="/skills_projects/frontEndsProjects" className={projectsCSS.button}><span>Check more</span></NavLink> */}
 							<NavLink to="/contact" className={projectsCSS.button}><span>Create something</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
@@ -31,12 +29,6 @@ export default function ProjectsByMe() {
 							<EachProjectCut projectName="ReactJs projects repo" alt="My projects on reactjs"
 								projectLink="https://github.com/ujjwalpandeyjava/React_Projects"
 								imageSrc={reactImg} />
-							{/* <EachProjectCut projectName="Animated Landing page" alt="1st section of web with landing animation"
-								projectLink="https://ujjwalpandeyjava.github.io/Pre-PageLoading/"
-								imageSrc="https://i.pinimg.com/originals/df/9f/03/df9f03c89ed0f3522823c7d8454d13af.jpg" /> */}
-							{/* <EachProjectCut projectName="Pizza shop landing page" alt="Project pizza shop"
-								 projectLink="https://ujjwalpandeyjava.github.io/Pizza-palace/"
-								imageSrc="https://ujjwalpandeyjava.github.io/Pizza-palace/images/One.webp" /> */}
 							<EachProjectCut projectName="My UI Element for rapid development" alt="UI elements I created over time"
 								projectLink="https://github.com/ujjwalpandeyjava/Components_Elements"
 								imageSrc="https://i.pinimg.com/originals/40/43/9f/40439f509e514e15364bd07f1054877d.jpg" />

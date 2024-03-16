@@ -157,8 +157,7 @@ export default function SummaryTilt(props) {
 					</div>
 				</div>
 			</div>
-			{(emailModal) ? <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }}
-				emailModal={emailModal} onClick={() => toggleEmailModal} /> : null}
+			{emailModal && <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }} emailModal={emailModal} onClick={toggleEmailModal} />}
 		</Fragment >
 	)
 }

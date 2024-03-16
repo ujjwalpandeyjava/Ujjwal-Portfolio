@@ -22,7 +22,7 @@
     margin-top: var(--heightToAdjust);
     padding-block: 5px;
     overflow: auto;
-    max-width: 96vw;
+    max-width: 90vw;
     /* width: auto; */
     border-radius: 9px;
     box-shadow: 0 0 30px 1px #6e6e6eb8;

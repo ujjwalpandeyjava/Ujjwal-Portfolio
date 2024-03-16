@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import PreviewPDFs from '../contact/resume/previewPDFs';
 import EducationExperience from '../educationExperience/EducationExperience';
@@ -11,11 +11,11 @@ import AboutMe from './AboutMe';
 import homeCSS from './Home.module.css';
 import WhatICanDo from './WhatICanDo';
 
-
 export default function Home() {
   useEffect(() => {
 		document.title = "Ujjwal pandey Home"
-	}, [])
+	}, []);
+
   const [isDeviceMobile] = useState(isMobileDevice());
   function isMobileDevice() { return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(navigator.userAgent.toLowerCase()); }
   const [viewPreview, setViewPreview] = useState(false);
@@ -29,8 +29,8 @@ export default function Home() {
           <div className={homeCSS.nameWebD}>I am a Web Developer</div>
           <div className={homeCSS.actionContainer}>
             <button id="downloadCV" onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already true`)}>Resume</button>
-            {viewPreview ? <PreviewPDFs viewPreview={(x) => setViewPreview(x)} /> : null}
-            <NavLink to={"/contact"}>Contact me</NavLink>
+            {viewPreview && <PreviewPDFs viewPreview={(x) => setViewPreview(x)} />}
+            <Link to="contact">Contact me</Link>
           </div>
         </div>
         <img id={homeCSS.myAvatar} src={floatingImage} alt="It's me" />
@@ -39,7 +39,7 @@ export default function Home() {
       <WhatICanDo />
       <EducationExperience />
       <Skills />
-      {isDeviceMobile ? <SummaryCard /> : null}
+      {isDeviceMobile && <SummaryCard />}
       <ContactMe />
     </Fragment >
   )

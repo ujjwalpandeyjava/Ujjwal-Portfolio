@@ -15,11 +15,8 @@ import SkillsProjects from './skills/SkillsProjects.js';
 import BackEndProjects from './skills/projectsByCategory/BackEndProjects.js';
 import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
 import FullStackProjects from './skills/projectsByCategory/FullStackProjects.js';
-// import Footer from './footer/Footer.js';
-// {/* <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} element={<App />} > */ }
 import configs from '../package.json';
 
-console.log(configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length));
 const routesWithJSX = createBrowserRouter(
   createRoutesFromElements(
     <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)}
@@ -38,7 +35,7 @@ const routesWithJSX = createBrowserRouter(
       <Route path="resume" element={<PDFViewer />} />
       <Route path='*' element={<PageNotFound />} />
     </Route>
-  ),
+  )
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
