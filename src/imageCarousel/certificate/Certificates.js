@@ -88,7 +88,7 @@ function MyImageComponent({ url, imgAlt }) {
 function Certificates() {
 	const [allSlides, setAllSlides] = useState([]);
 	useEffect(() => {
-		[...certificatesJSON].forEach((eachImg, index) => {
+		[...certificatesJSON, ...certificatesJSON].forEach((eachImg, index) => {
 			let newSlide = <SwiperSlide key={"eachSlide" + (index + 1)}>
 				<article className={certificatesCSS.eachCertificate}>
 					<section className={certificatesCSS.eachCertificate_Inner}><img className={certificatesCSS.eachCertificateImg} src={eachImg.path} alt={eachImg.name} /></section>

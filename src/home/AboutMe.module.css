@@ -1,6 +1,6 @@
 .aboutMeCSS {
 	background-color: rgba(250, 250, 250, 0.54);
-	padding: 1rem 4rem;
+	padding: 2.6rem 4rem;
 }
 .aboutMeHeading {
 	border-bottom: 2px solid red;
@@ -37,7 +37,8 @@
 .someDetails {
 	font-family: "Exo 2";
 	font-weight: 400;
-	font-size: 1.08rem;
+	font-size: 1.22rem;
+	line-height: 2.6ch;
 	color: rgb(9 9 36);
 }
 .someDetails > span {
@@ -64,7 +65,7 @@
 
 @media all and (max-width: 500px) {
 	.otherDetails > div {
-		min-width: 300px;
+		min-width: 245px;
 	}
 }
 .otherDetails h2 {
@@ -104,22 +105,30 @@
 	justify-content: space-evenly;
 }
 .myInterestBlocks .eachInterest {
-	font-family: "Poppins", sans-serif;
-	display: block;
-	padding: 10px;
-	border-radius: 4px;
-	overflow: hidden;
-	min-width: 100px;
-	aspect-ratio: 1/1;
-	text-align: center;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	transition: all 200ms ease-in-out;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    min-width: 120px;
+    font-size: 1.3em;
+    aspect-ratio: 1/1;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* font-family: roboto; */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 200ms ease-in-out;
 }
 .myInterestBlocks .eachInterest:hover {
 	box-shadow:
 		rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-	scale: 1.04;
+	scale: 1.08;
+    border-radius: 6px;
 }
 
 .resumeDownload {
