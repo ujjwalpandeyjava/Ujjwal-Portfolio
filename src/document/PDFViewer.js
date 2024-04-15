@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 import style from './PDFViewer.module.css';
-import pdfFile from '../Resume_CV/_Ujjwal_full_stack_C_V.pdf';
+import pdfFile from '../Resume_CV/ujjwal_full_stack_C_V.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 export default function PDFViewer() {
