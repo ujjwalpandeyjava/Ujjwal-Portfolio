@@ -19,7 +19,6 @@ export default function SummaryTilt(props) {
 			speed: 300
 		});
 		/* card.addEventListener("tiltChange", () => {
-			console.log("Card moved");
 		});
 		card.addEventListener("mouseenter", (event) => {
 			event.currentTarget.style.opacity = 1;
@@ -30,9 +29,6 @@ export default function SummaryTilt(props) {
 		const handleSectionChange = e => {
 			const targetSection = e.target.getAttribute("data-section");
 			const section = document.querySelector(targetSection);	// #about	#experience		#contact
-			console.log(targetSection, section);
-			console.log(card);
-			// targetSection !== "#about" ? card.classList.add("is-active") : card.classList.remove("is-active");
 			card.setAttribute("data-state", targetSection);
 			sections.forEach(s => s.classList.remove("is-active"));
 			buttons.forEach(b => b.classList.remove("is-active"));
@@ -66,7 +62,7 @@ export default function SummaryTilt(props) {
 							src={myPicture}
 							alt="avatar" />
 						<h1 className="card-fullname">Ujjwal Pandey</h1>
-						<h2 className="card-jobtitle">Java and JavaScript Developer</h2>
+						<h2 className="card-jobtitle">Java + ReactJS Full Stack Developer</h2>
 					</div>
 					<div className="card-main">
 						<div className="card-section is-active" id="about">
@@ -90,8 +86,8 @@ export default function SummaryTilt(props) {
 											Oct-21
 										</div>
 										<div className="card-timeline-item-detail">
-											<div className="card-item-title">App ambassador at <span>Daily Brief</span></div>
-											<div className="card-item-desc">Internship</div>
+											<div className="card-item-title">Front end Developer at <span>NIIT Developers</span></div>
+											<div className="card-item-desc">Part-time, frontend developer while being a student at NIIT</div>
 										</div>
 									</div>
 									<div className="card-item" data-year="2014">
@@ -101,7 +97,7 @@ export default function SummaryTilt(props) {
 										</div>
 										<div className="card-timeline-item-detail">
 											<div className="card-item-title">Java Developer at <span>NetCreativeMind Sol.</span></div>
-											<div className="card-item-desc">Backend, Frontend, Management</div>
+											<div className="card-item-desc">API management and UI development</div>
 										</div>
 									</div>
 									<div className="card-item" data-year="2014">
@@ -111,7 +107,7 @@ export default function SummaryTilt(props) {
 										</div>
 										<div className="card-timeline-item-detail">
 											<div className="card-item-title">Full Stack Developer at <span>SafetyLabs</span></div>
-											<div className="card-item-desc">Front-end, Back-end, Salesforce, and <br /> Team-lead (without promotion)</div>
+											<div className="card-item-desc">Working with java and javascript, MySQL and MongoDB</div>
 										</div>
 									</div>
 								</div>
@@ -145,7 +141,7 @@ export default function SummaryTilt(props) {
 										{/* ujjwalpandey.aps@gmail.com */}
 										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">ujjwalpandey.aps@gmail.com</a>
 									</div>
-									<button className="contact-me" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
+									<button className="contact-me" onClick={() => setEmailModal(!emailModal)}>DIRECT MESSAGE</button>
 								</div>
 							</div>
 						</div>

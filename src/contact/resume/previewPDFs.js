@@ -7,7 +7,6 @@ export default function PreviewPDFs(props) {
 	const closeBtnHandler = (event) => {
 		event.preventDefault();
 		event.stopPropagation();
-		console.log(event.currentTarget);
 		props.viewPreview(false)
 	}
 	return (

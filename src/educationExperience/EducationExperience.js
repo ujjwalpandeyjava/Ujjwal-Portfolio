@@ -9,17 +9,17 @@ export default function EducationExperience() {
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Masters of Compute Application'>MCA <span className={eeCSS.time}>(2023 - 2025 pursuing)</span> </div>
-						<div className={eeCSS.someDetails}>Web Development from Amity University Online. Giving me full time to concentrate on job, learning, skill development.</div>
+						<div className={eeCSS.someDetails}>Masters or Post Graduation from Amity University Online. Giving me flexibility to concentrate on job, learning, and skill development.</div>
 						<div className={eeCSS.type}>Masters from Amity University</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Cloud and mobile software engineering'>GNIIT <span className={eeCSS.time}>(2019 - 2022)</span> </div>
-						<div className={eeCSS.someDetails}>BootCamp of 2+1 year with learning Full-stack Web development with java and javaScript technologies, where I scored 9 CGPA, it awarded me mastery over several technologies from basic of html to advanced handling of servers, and taught me the importance of never stopped learning!</div>
+						<div className={eeCSS.someDetails}>Dedicated 3 years boot-camp where I was dedicated to learning full-stack Web development with java and javaScript technologies, Here I scores in top 10 with CGPA of 9.</div>
 						<div className={eeCSS.type}>Web development Specialization</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Bachelors of Computer Application'>BCA <span className={eeCSS.time}>(2018 - 2021)</span> </div>
-						<div className={eeCSS.someDetails}>Learned the basic development skills and attended the GNIIT regularly to enhance my Web and Cloud development skill, completed BCA in minimum duration alloted by University without even a single subject back.</div>
+						<div className={eeCSS.someDetails}>Learned the basic development skills and attended the GNIIT regularly to enhance my Web and Cloud development skill, completed BCA in minimum alloted duration without subject back.</div>
 						<div className={eeCSS.type}>Graduation from IGNOU</div>
 					</div>
 				</div>
@@ -29,7 +29,7 @@ export default function EducationExperience() {
 				<div className={eeCSS.subHeading}>My Awesome Experience</div>
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title=''>Safety Labs<span className={eeCSS.time}> (Feb/2022-Till date)</span> </div>
+						<div className={eeCSS.name} title=''>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-Till date)</span> </div>
 						<div className={eeCSS.someDetails}>Tele-Medicine Home-Based Health-Care company, originated from Canada.</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
@@ -77,13 +77,13 @@ export default function EducationExperience() {
 						<div className={eeCSS.type}>Ambassador</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='While I was pursuing BCA and GNIIT'>NIIT Developer - Project based<span className={eeCSS.time}> (July/2020-Oct/2021)</span> </div>
-						<div className={eeCSS.someDetails}>NEWS app</div>
+						<div className={eeCSS.name} title='While I was pursuing BCA and GNIIT'>NIIT Developer - Project based<span className={eeCSS.time}> (May/2020-Oct/2021)</span> </div>
+						<div className={eeCSS.someDetails}>Education</div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>
 							<ul>
-								<li>Started with User Interfaces (UI) with HTML, CSS, JS for the multiple assigned developers.</li>
-								<li>In the end of this tenure, I became good work with Java, Servlets for APIs, and UI with JSP too.</li>
+								<li>Created User Interfaces with HTML, CSS, and JS for multiple assigned projects with mentor developers.</li>
+								<li>At the end of this tenure, I was able to work on Java, ReactJS, Advanced Java, and JSP.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Front-end Developer</div>

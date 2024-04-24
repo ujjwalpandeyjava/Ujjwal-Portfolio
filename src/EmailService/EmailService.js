@@ -45,7 +45,6 @@ export default function EmailService(props) {
 				}
 			);
 		} else {
-			console.log("Sending mail");
 			toast.promise(
 				emailjs.send("service_xgcf3lg", "template_wsittxt", {
 					from_name: e.target.from_name.value,
@@ -54,12 +53,10 @@ export default function EmailService(props) {
 					message: e.target.message.value
 				}, "fuTN9NgqZc0mVDzjh")
 					.then((result) => {
-						console.log(result.text);
 						setTimeout(() => {
 							props.onClick()();	// bcz the function returns function.
 						}, 200);
 					}, (error) => {
-						console.log(error.text);
 						throw Error("Error: " + error.text);
 					}),
 				{

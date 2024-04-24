@@ -16,6 +16,8 @@ import c7 from '../certificate/images/Java Servlets and JSP - Build Java EE app.
 import c4 from '../certificate/images/React- 6.5hr course.jpg';
 import c10 from '../certificate/images/Spring Framework with Spring Boot.jpg';
 import c6 from '../certificate/images/Web Development - 22 Courses in 1 Course.jpg';
+import c9 from '../certificate/images/Java Programming.jpg';
+
 
 import { useImage } from 'react-image';
 import certificatesCSS from './Certificates.module.css';
@@ -57,7 +59,7 @@ const certificatesJSON = [
 		path: c8
 	},
 	{
-		name: "Spring Framework with Spring Boot",
+		name: "Spring Framework with Spring Boot 5.5+ hours lecture",
 		description: "About this certificate",
 		path: c10
 	},
@@ -75,7 +77,14 @@ const certificatesJSON = [
 		name: "Java Collection Frameworks Generics+ 5.5Hrs",
 		description: "About this certificate",
 		path: c15
+	},
+	{
+		name: "Java Programming for Complete Beginners 3+ hours",
+		description: "Java Programming for Complete Beginners",
+		path: c9
 	}
+
+	
 ]
 
 function MyImageComponent({ url, imgAlt }) {
