@@ -5,7 +5,7 @@ import connectImg from './doItTogether.svg'
 
 function ContactMePage() {
 	useEffect(() => {
-		document.title = "Contact page"
+		document.title = "Contact with Ujjwal Pandey"
 	}, [])
 	return (
 		<div>

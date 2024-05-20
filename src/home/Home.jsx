@@ -29,7 +29,7 @@ export default function Home() {
           <div className={homeCSS.nameWebD}>I am a Web Developer</div>
           <div className={homeCSS.actionContainer}>
             <button id="downloadCV" onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already true`)}>Resume</button>
-            {viewPreview && <PreviewPDFs viewPreview={(x) => setViewPreview(x)} />}
+            {viewPreview && <PreviewPDFs setViewPreview={(x) => setViewPreview(x)} />}
             <Link to="contact">Contact me</Link>
           </div>
         </div>

@@ -7,14 +7,14 @@ export default function PreviewPDFs(props) {
 	const closeBtnHandler = (event) => {
 		event.preventDefault();
 		event.stopPropagation();
-		props.viewPreview(false)
+		props.setViewPreview(false)
 	}
 	return (
 		<Fragment>
 			<section id="previews" className={previewCSS.previewsFullPage} onClick={(e) => closeBtnHandler(e)}>
 				<div className={previewCSS.previewSection} onClick={(e) => e.stopPropagation()}>
 					<PDFViewer />
-					<div className={previewCSS.closeBtn} onClick={() => props.viewPreview(false)}>X</div>
+					<div className={previewCSS.closeBtn} onClick={() => props.setViewPreview(false)}>X</div>
 				</div>
 			</section>
 		</Fragment >
