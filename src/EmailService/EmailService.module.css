@@ -19,7 +19,6 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	box-shadow: 0 0 0 10px #646981c2;
-	/* min-height: 50vh; */
 	max-height: 80vh;
 	overflow: auto;
 	min-width: 60vw;
@@ -48,7 +47,6 @@
 .closeButton:hover {
 	color: darkblue;
 	background-color: rgb(255, 62, 62);
-	/* text-shadow: 1px 0 3px #10fc9a; */
 	border-color: rgb(13, 6, 32);
 }
 
@@ -62,12 +60,10 @@
 /* text change main to above text area */
 .inputField {
 	padding: 3px 8px;
-	/* color: #116b75; */
 }
 
 .inputLabel {
 	transition: all 0.5s ease;
-	/* text-align: start; */
 }
 
 .inputField:not(:empty) {
@@ -76,24 +72,19 @@
 }
 
 /* .inputField:not(:placeholder-shown)~.inputLabel, */
-.inputField[data-valued="true"]~.inputLabel,
-.inputField:not([disabled]):focus~.inputLabel {
+.inputField[data-valued="true"] ~ .inputLabel,
+.inputField:not([disabled]):focus ~ .inputLabel {
 	color: magenta;
 	transform: scale(0.75) translateY(-39px);
 }
 
-
-.emailServiceSection input[type='submit']:hover {
-	/* background: #147986; */
+.emailServiceSection input[type="submit"]:hover {
 	margin-top: 5px;
 	margin-bottom: 0px;
 	border-radius: 2px;
 	color: rgb(245, 244, 255);
-	/* border: 1px solid rgb(43, 43, 125); */
 	box-shadow: 0 0 5px 1px #756fe1;
 }
-
-
 
 h1 {
 	text-align: center;
@@ -102,11 +93,6 @@ h1 {
 
 .form-group {
 	margin-bottom: 20px;
-}
-
-label {
-	/* display: block; */
-	/* margin-bottom: 5px; */
 }
 
 .emailServiceSection div {
@@ -124,24 +110,24 @@ textarea {
 	background-color: #202126;
 	color: #f0f0f0;
 	border-radius: 10px;
-	box-shadow: inset 5px 5px 10px #1e1e1e, inset -5px -5px 10px #363636;
-
+	box-shadow:
+		inset 5px 5px 10px #1e1e1e,
+		inset -5px -5px 10px #363636;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
 	outline: none;
-	box-shadow: inset 4px 4px 6px #1e1e1e, inset -4px -4px 6px #363636;
+	box-shadow:
+		inset 4px 4px 6px #1e1e1e,
+		inset -4px -4px 6px #363636;
 }
-
 
 /* Submit button */
 .submitButton {
 	margin: 5px auto;
-	padding: 0.5em 1em;
 	font-size: large;
-	border-radius: 4px;
 	display: block;
 	width: 90%;
 	padding: 10px;
@@ -149,7 +135,9 @@ textarea:focus {
 	color: #f0f0f0;
 	border: none;
 	border-radius: 10px;
-	box-shadow: 5px 5px 10px #1e1e1e, -5px -5px 10px #363636;
+	box-shadow:
+		5px 5px 10px #1e1e1e,
+		-5px -5px 10px #363636;
 	cursor: pointer;
 }
 

@@ -1,30 +1,17 @@
-import  { Fragment } from "react"
+function Navbar() {
+	const clickMenu = () => document.getElementById("check").click();
 
-export default function Navbar(props) {
-	const clickMenu = () => {
-		document.getElementById("check").click();
-	}
 
 	return (
-		<Fragment>
-			<div className="navbar" id="navbar">
-				<h1>IAM<span style={{ "color": "orangered" }}>UJJWALPANDEY</span></h1>
-				<div className="hamburger">
-					<input type="checkbox" id="check" />
-					<label htmlFor="check">
-						<i className="fas fa-bars" id="btn"></i>
-						<i className="fas fa-times" id="cancel"></i>
-					</label>
-					<div className="sidebar move" 	onClick={() => clickMenu()}>
-						<h3><a href="#home">Home</a></h3>
-						<h3><a href="#aboutSection">About</a></h3>
-						<h3><a href="#experience">Experience</a></h3>
-						<h3><a href="#skills">Skills</a></h3>
-						<h3><a href="#contactMeSection">Contact</a></h3>
-						<h3><a href="#summarySection">Summary</a></h3>
-					</div>
-				</div>
-				<div className="menus">
+		<div className="navbar" id="navbar">
+			<h1>IAM<span style={{ "color": "orangered" }}>UJJWALPANDEY</span></h1>
+			<div className="hamburger">
+				<input type="checkbox" id="check" />
+				<label htmlFor="check">
+					<i className="fas fa-bars" id="btn"></i>
+					<i className="fas fa-times" id="cancel"></i>
+				</label>
+				<div className="sidebar move" onClick={() => clickMenu()}>
 					<h3><a href="#home">Home</a></h3>
 					<h3><a href="#aboutSection">About</a></h3>
 					<h3><a href="#experience">Experience</a></h3>
@@ -33,6 +20,15 @@ export default function Navbar(props) {
 					<h3><a href="#summarySection">Summary</a></h3>
 				</div>
 			</div>
-		</Fragment>
+			<div className="menus">
+				<h3><a href="#home">Home</a></h3>
+				<h3><a href="#aboutSection">About</a></h3>
+				<h3><a href="#experience">Experience</a></h3>
+				<h3><a href="#skills">Skills</a></h3>
+				<h3><a href="#contactMeSection">Contact</a></h3>
+				<h3><a href="#summarySection">Summary</a></h3>
+			</div>
+		</div>
 	)
 }
+export default Navbar;

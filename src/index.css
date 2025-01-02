@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-/* font-family: 'Rubik', sans-serif; */
 
 :root {
     --fontSize10: 10px;
@@ -22,7 +21,6 @@
 body {
     background-color: black;
     font-family: "Rubik", sans-serif;
-    /* min-width: 320px; */
     position: relative;
 }
 
@@ -40,15 +38,11 @@ div {
 
 /* Applied to only summary Section div */
 .card {
-    /* border: 2px solid rgba(29, 85, 242, 0.548); */
-    /* box-shadow: 0 0 5px rgba(108, 108, 242, 0.689); */
-    /* box-shadow: 0 0 10px gray; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #summarySection div {
     color: #37439c;
-    /* padding: 5px; */
 }
 
 /* Navbar starts */
@@ -85,7 +79,6 @@ div {
     padding: 3px 12px;
     min-height: 40px;
     min-width: 40px;
-    cursor: pointer;
 }
 
 .navbar > div {
@@ -109,14 +102,11 @@ div {
 
 /* Main content */
 .main {
-    /* background-image: url('images/polygon-scatter-haikei.svg'); */
     background-image: url("images/blob-scatter-haikei.svg");
 }
 
 .home {
     min-height: 650px;
-    /* min-height: 98dvh; */
-    /* height: 98dvh; */
     padding: 5px 35px;
     display: flex;
     flex-direction: row;
@@ -126,9 +116,6 @@ div {
 
 .home > div {
     flex: 1;
-    /* min-width: 440px; */
-    /* padding: 12px; */
-    /* border: 2px solid white; */
 }
 
 .whoIAm {
@@ -142,21 +129,8 @@ div {
     position: relative;
 }
 
-#myAvatar {
-    padding: 0;
-    position: absolute;
-    top: 26%;
-    right: 22%;
-    height: 35%;
-    transform: rotate(-13deg) translate(50%, 10px);
-    overflow: hidden;
-    cursor: grabbing;
-}
-
 .name {
     color: #e7e4df;
-    /* background-color: black; */
-    /* background-color: #343f4f; */
 }
 
 .wrapper {
@@ -168,11 +142,10 @@ div {
     padding: 0;
     font-size: 28px;
     display: block;
-    color: transparent;
     text-decoration: underline;
     text-underline-position: from-font;
     text-decoration-color: rgb(255 0 0 / 70%);
-    padding: 0;
+    color: transparent;
     -webkit-text-stroke: 0.2px white;
 }
 
@@ -210,9 +183,7 @@ div {
 }
 
 .whoIamPic > img {
-    /* object-fit: contain; */
     height: 50%;
-    /* max-height: 350px; */
     filter: grayscale(10%) brightness(90%) drop-shadow(0px 0px 4px rgb(255 255 255 / 35%));
 }
 
@@ -234,9 +205,7 @@ div {
     width: 100%;
     border-left: 2px solid #fc6d6d;
     left: 0;
-    /* background-color: #343f4f; */
     background-color: black;
-    /* animation: typing 2s steps(14) infinite; */
     animation: typing 1.2s steps(14) infinite alternate;
 }
 
@@ -249,12 +218,8 @@ div {
 
 /* Social Icons start*/
 .socialIcons {
-    /* margin-top: 20px; */
     margin-top: 9%;
-    /* margin-left: 50%; */
-    /* transform: translateX(-50%); */
     display: inline-flex;
-    /* background-color: #e94b10; */
     background-color: #ff8800;
     border-radius: 50px;
     padding: 3px;
@@ -291,7 +256,6 @@ div {
 .socialIcons .icon .tooltip {
     position: absolute;
     top: 0px;
-    /* background: #0f1124; */
     background: white;
     color: black;
     font-weight: bold;
@@ -316,7 +280,6 @@ div {
     content: "";
     height: 15px;
     width: 15px;
-    /* background: #0f1124; */
     background: white;
     bottom: -8px;
     left: 50%;
@@ -335,7 +298,6 @@ div {
 
 /* Scroller */
 #scroller {
-    /* border: 1px solid white; */
     position: absolute;
     bottom: 4px;
     left: 50%;
@@ -362,7 +324,6 @@ div {
     width: 15px;
     height: 35px;
     padding: 0;
-    text-align: center;
     animation: scrollDot 2.5s linear infinite;
     margin-top: 6px;
 }
@@ -429,8 +390,6 @@ div {
 
 .sectionHeading {
     display: inline-block;
-    padding: 0px 0px 7px;
-    font-family: Rubik;
     padding: 2px 8px;
     font-size: xx-large;
     text-shadow:
@@ -448,7 +407,6 @@ div {
 #experience > h1,
 #contactMeSection > h1 {
     border-bottom: 1px solid blue;
-    /* box-shadow: 0 1px 1px blueviolet, 1px 0px 0px 1px black, -1px 0px 1px 1px black; */
 }
 
 #firstInAbout,
@@ -499,7 +457,6 @@ div {
 }
 
 #aboutMe {
-    /* background-color: #15121c; */
     background-color: #23282d;
     flex-grow: 2;
     position: relative;
@@ -575,17 +532,11 @@ div {
     margin: 0.4em 0em;
     background-color: #ff9b09;
     cursor: pointer !important;
-    /* max-width: 200px; */
-    /* width: auto; */
     text-align: center;
     border-radius: 20px;
     font-weight: bold;
-    /* cursor: pointer; */
-    /* box-shadow: 0 0 3px 0px #dcdcdc; */
     text-decoration: none;
-    /* font-family: sans-serif; */
     color: #000000;
-    /* padding: 0.6rem 1.1rem; */
     min-height: 0px !important;
     padding: 0.7em 1em !important;
 }
@@ -680,14 +631,6 @@ div {
     top: 0;
     left: 50%;
     transform: translate(-50%, -55%) rotate(45deg);
-    /* 
-    background-color: #15121c;
-    border-bottom: 3px solid rgb(116 2 2);
-    border-right: 3px solid rgb(116, 2, 2);
-    border-bottom: 2px solid rgba(223, 135, 4, 0.993);
-    border-right: 2px solid rgba(223, 135, 4, 0.993);
-    box-shadow: inset 9px 9px 10px 0 black, inset -3px -35px #ffffff66;
-    */
     border-bottom: 2px solid rgb(70 46 10 / 99%);
     border-right: 2px solid rgb(153 94 7 / 99%);
     box-shadow:
@@ -710,7 +653,6 @@ div {
 #aboutEducation > div {
     border-left: 1px solid white;
     min-height: 65px;
-    /* margin: 0 0 0 5px; */
     padding: 6px 2px 6px 20px;
     position: relative;
     display: flex;
@@ -731,7 +673,6 @@ div {
 #aboutEducation > div:hover {
     border-left: 3px solid rgb(112, 97, 245);
     margin-left: 25px;
-    /* border-radius: 3px; */
 }
 
 #aboutEducation > div ::before {
@@ -825,7 +766,6 @@ div {
         inset 0 0 3px #ffffff;
 }
 
-/*  */
 #connect {
     padding: 0px !important;
     overflow: hidden;
@@ -938,7 +878,6 @@ label #cancel {
     top: 0;
     left: 0;
     padding: 5px 12px;
-    z-index: 111;
     font-size: 35px;
     color: #0a5275;
     z-index: 5;
@@ -979,20 +918,12 @@ label #cancel {
 /* Experience section Ends */
 #aboutExamples {
     margin-top: 4em;
-    /* padding: 3px !important; */
-    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
-    /* background-color: #241f30; */
-    /* min-width: 90%; */
     min-height: 220px !important;
-    /* height: auto; */
-    /* border: 1px solid white; */
     align-content: space-around;
     align-items: center;
     justify-content: space-around;
-    /* cursor: pointer; */
-    /* transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
 
 .skillSet {
@@ -1007,7 +938,6 @@ label #cancel {
 
 #workH3 {
     text-align: left;
-    font-family: Rubik;
     padding: 6px 10px;
     font-size: x-large;
     text-shadow:
@@ -1089,7 +1019,6 @@ label #cancel {
 }
 
 .bg-Image2 {
-    /* background-image: url(images/realisti/gray-abstract-wireframe-technology-background.jpg); */
     background-image: url(images/realisti/whiteStone.jpg);
 }
 
@@ -1101,7 +1030,6 @@ label #cancel {
     text-align: center;
     background-color: rgba(33, 11, 87, 0.39);
     padding: 10px 2px;
-    font-size: large;
     color: firebrick;
     font-size: x-large;
     background: radial-gradient(#c6838e 0% 10%, #f06f6f 10% 20%, #4570c4 40% 65%, #e58387 65% 90%, blue 91% 100%);
@@ -1157,19 +1085,17 @@ label #cancel {
         height: 65%;
     }
 
-    #myAvatar {
-        top: unset;
-        bottom: -10%;
-        right: 25%;
-        height: 50%;
-    }
-
     #scroller > div {
         height: 32px;
     }
 }
 
 @media (max-width: 900px) {
+    #aboutMe > div:nth-child(1) {
+        border-bottom: 1px solid gray;
+        margin-bottom: 15px;
+        padding-bottom: 20px;
+    }
     .navbar > .menus {
         display: none;
     }
@@ -1183,27 +1109,9 @@ label #cancel {
 }
 
 @media (max-width: 560px) {
-    #myAvatar {
-        top: 100%;
-        right: 0%;
-    }
-
     #connect > div {
         font-size: small;
     }
-}
-
-@media (max-width: 500px) {
-    #myAvatar {
-        display: none;
-    }
-
-    .home,
-    .home > div,
-    .home > div > .wrapper {
-        /* padding: 0; */
-    }
-
     .wrapper .static-txt {
         font-size: small;
     }
@@ -1220,13 +1128,5 @@ label #cancel {
 
     #aboutEducation > div > h1 {
         font-size: x-large;
-    }
-}
-
-@media (max-width: 925px) {
-    #aboutMe > div:nth-child(1) {
-        border-bottom: 1px solid gray;
-        margin-bottom: 15px;
-        padding-bottom: 20px;
     }
 }
