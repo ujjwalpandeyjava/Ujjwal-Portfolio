@@ -1,4 +1,8 @@
+import useDocumentTitle from "../assets/useDocumentTitle"
+
 function PageNotFound() {
+	useDocumentTitle("Page Not Found")
+
 	return (
 		<div>
 			PageNotFound <br />

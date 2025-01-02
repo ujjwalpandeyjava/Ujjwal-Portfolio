@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react';
+import useDocumentTitle from '../assets/useDocumentTitle';
 import ContactMe from './contactMe';
-import connectImg from './doItTogether.svg'
-// import SocialIcons from '../utility/SocialIcons'
+import connectImg from './doItTogether.svg';
 
 function ContactMePage() {
-	useEffect(() => {
-		document.title = "Contact with Ujjwal Pandey"
-	}, [])
+	useDocumentTitle("Contact with Ujjwal Pandey")
+	
+	
 	return (
 		<div>
 			<img src={connectImg} style={{ maxHeight: "45vh", margin: 'auto', display: 'block' }} alt='Connect me' />

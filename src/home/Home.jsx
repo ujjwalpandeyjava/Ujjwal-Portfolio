@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ContactMe from '../contact/contactMe';
 import PreviewPDFs from '../contact/resume/previewPDFs';
@@ -10,17 +10,19 @@ import SummaryCard from '../tiltEffect/summaryTilt';
 import AboutMe from './AboutMe';
 import homeCSS from './Home.module.css';
 import WhatICanDo from './WhatICanDo';
+import useDocumentTitle from '../assets/useDocumentTitle';
+
 
 export default function Home() {
-  useEffect(() => {
-		document.title = "Ujjwal pandey Home"
-	}, []);
+  useDocumentTitle("Ujjwal pandey");
 
+  const [viewPreview, setViewPreview] = useState(false);
   const [isDeviceMobile] = useState(isMobileDevice());
   function isMobileDevice() { return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(navigator.userAgent.toLowerCase()); }
-  const [viewPreview, setViewPreview] = useState(false);
+
+
   return (
-    <Fragment>
+    <>
       <ConnectView />
       <div className={homeCSS.home}>
         <div className={homeCSS.whoIAm}>
@@ -41,6 +43,6 @@ export default function Home() {
       <Skills />
       {isDeviceMobile && <SummaryCard />}
       <ContactMe />
-    </Fragment >
+    </>
   )
 }

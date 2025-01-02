@@ -1,15 +1,15 @@
 import { RiDoubleQuotesL, RiDoubleQuotesR } from "react-icons/ri";
 import { SiNextra } from "react-icons/si";
+import useDocumentTitle from "../assets/useDocumentTitle";
 import ContactMe from "../contact/contactMe";
 import workingImg from '../images/working_on_laptop.png';
 import Skills from "../skills/Skills";
 import EducationExperience from "./EducationExperience";
-import { useEffect } from "react";
+
 
 function ExperiencePage() {
-	useEffect(() => {
-		document.title = "Experience"
-	}, [])
+	useDocumentTitle("Experience");
+
 	return (
 		<>
 			<div className="experienceTxt">
