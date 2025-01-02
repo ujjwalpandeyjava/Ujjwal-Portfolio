@@ -14,8 +14,8 @@ function Navbar() {
 					<h3><a href="#aboutSection">About</a></h3>
 					<h3><a href="#experience">Experience</a></h3>
 					<h3><a href="#skills">Skills</a></h3>
-					<h3><a href="#contactMeSection">Contact</a></h3>
 					<h3><a href="#summarySection">Summary</a></h3>
+					<h3><a href="#contactMeSection">Contact</a></h3>
 				</div>
 			</div>
 			<div className="menus">
@@ -23,8 +23,8 @@ function Navbar() {
 				<h3><a href="#aboutSection">About</a></h3>
 				<h3><a href="#experience">Experience</a></h3>
 				<h3><a href="#skills">Skills</a></h3>
-				<h3><a href="#contactMeSection">Contact</a></h3>
 				<h3><a href="#summarySection">Summary</a></h3>
+				<h3><a href="#contactMeSection">Contact</a></h3>
 			</div>
 		</div>
 	)
