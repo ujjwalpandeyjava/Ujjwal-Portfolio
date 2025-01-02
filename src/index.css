@@ -22,6 +22,7 @@ body {
     background-color: black;
     font-family: "Rubik", sans-serif;
     position: relative;
+    color: white;
 }
 
 .icon > span > a:link,
@@ -47,19 +48,20 @@ div {
 
 /* Navbar starts */
 .navbar {
-    color: white;
+    position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: black;
     width: 100%;
     min-height: 70px;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    z-index: 51;
     box-shadow: 0 1px 5px 0px #ffffff36;
-    justify-content: space-around;
+    z-index: 51;
 }
 
 .navbar > h1 {
@@ -102,6 +104,7 @@ div {
 
 /* Main content */
 .main {
+    position: relative;
     background-image: url("images/blob-scatter-haikei.svg");
 }
 
@@ -138,7 +141,6 @@ div {
 }
 
 .wrapper .static-txt {
-    color: #fff;
     padding: 0;
     font-size: 28px;
     display: block;
@@ -1023,10 +1025,7 @@ label #cancel {
 }
 
 #footerSection {
-    margin-bottom: 0.4rem;
-}
-
-.footer {
+    border-top: 1px solid rgb(39, 39, 39);
     text-align: center;
     background-color: rgba(33, 11, 87, 0.39);
     padding: 10px 2px;

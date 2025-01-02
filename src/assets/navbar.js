@@ -1,9 +1,7 @@
 function Navbar() {
-	const clickMenu = () => document.getElementById("check").click();
-
 
 	return (
-		<div className="navbar" id="navbar">
+		<div className="navbar" >
 			<h1>IAM<span style={{ "color": "orangered" }}>UJJWALPANDEY</span></h1>
 			<div className="hamburger">
 				<input type="checkbox" id="check" />
@@ -11,7 +9,7 @@ function Navbar() {
 					<i className="fas fa-bars" id="btn"></i>
 					<i className="fas fa-times" id="cancel"></i>
 				</label>
-				<div className="sidebar move" onClick={() => clickMenu()}>
+				<div className="sidebar move" onClick={() => document.getElementById("check").click()}>
 					<h3><a href="#home">Home</a></h3>
 					<h3><a href="#aboutSection">About</a></h3>
 					<h3><a href="#experience">Experience</a></h3>

@@ -1,64 +1,46 @@
-import  { Fragment, useEffect, useState } from "react";
-import myPicture from '../images/1670752620885.jpg'
+import { useEffect, useState } from "react";
 import VanillaTilt from "vanilla-tilt";
 import EmailService from "../EmailService/EmailService";
-import '../frag.css'
-import '../tiltEffect/summaryTilt.css'
+import '../frag.css';
+import myPicture from '../images/1670752620885.jpg';
+import '../tiltEffect/summaryTilt.css';
+
 
 export default function SummaryTilt(props) {
-	useEffect(() => {	// It will call every time the component is called or refreshed
+	const [emailModal, setEmailModal] = useState(false);
+	const toggleEmailModal = () => setEmailModal(!emailModal);
+
+	useEffect(() => {
 		const card = document.querySelector(".card");
 		const buttons = document.querySelectorAll(".card-buttons button");
 		const sections = document.querySelectorAll(".card-section");
-		VanillaTilt.init(document.querySelectorAll(".card"), {	// https://micku7zu.github.io/vanilla-tilt.js/  <-- Documentation
-			max: 20,
-			speed: 300
-		});
-		/* card.addEventListener("tiltChange", () => {
-			console.log("Card moved");
-		});
-		card.addEventListener("mouseenter", (event) => {
-			event.currentTarget.style.opacity = 1;
-		});
-		card.addEventListener("mouseleave", (event) => {
-			// event.currentTarget.style.opacity = 0.5;
-		}); */
+		// https://micku7zu.github.io/vanilla-tilt.js/  <-- Documentation
+		VanillaTilt.init(document.querySelectorAll(".card"), { max: 20, speed: 300 });
+
 		const handleSectionChange = e => {
 			const targetSection = e.target.getAttribute("data-section");
-			const section = document.querySelector(targetSection);	// #about	#experience		#contact
-			console.log(targetSection, section);
-			console.log(card);
-			// targetSection !== "#about" ? card.classList.add("is-active") : card.classList.remove("is-active");
+			const section = document.querySelector(targetSection);
+
 			card.setAttribute("data-state", targetSection);
 			sections.forEach(s => s.classList.remove("is-active"));
 			buttons.forEach(b => b.classList.remove("is-active"));
+
 			e.target.classList.add("is-active");
 			section.classList.add("is-active");
 		};
-		buttons.forEach(innerButton => {
-			innerButton.addEventListener("click", handleSectionChange);
-		});
+		buttons.forEach(innerButton => { innerButton.addEventListener("click", handleSectionChange) });
 	});
 
-	const classesListOfClassList = {
-		mainFrameClasses: ["card"]
-	}
-
-	const [emailModal, setEmailModal] = useState(false);
-	const toggleEmailModal = () => {
-		setEmailModal(!emailModal);
-	}
 
 	return (
-		<Fragment >
+		<>
 			<div id="summarySection" className="parallelBackgroundImage bg-Image2">
 				<h1 className="sectionHeading blueHeading">Quick Rundown</h1>
-				<div className={classesListOfClassList.mainFrameClasses.join(" ")} data-state="#about" data-tilt >
+				<div className={"card"} data-state="#about" data-tilt >
 					<div className="card-header">
 						<div className="card-cover">
 						</div>
 						<img className="card-avatar"
-							// src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
 							src={myPicture}
 							alt="avatar" />
 						<h1 className="card-fullname">Ujjwal Pandey</h1>
@@ -82,7 +64,6 @@ export default function SummaryTilt(props) {
 								</a>
 								<a href="https://twitter.com/Ujjwalp13341664">
 									<i className="fa-brands fa-x-twitter"></i>
-									{/* <a href="https://ujjwalpandeyjava.github.io/Links/" target="_blank" rel="noopener noreferrer"></a> */}
 								</a>
 								<a href="https://www.instagram.com/pandey.ujjwalpandey/">
 									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -160,7 +141,6 @@ export default function SummaryTilt(props) {
 											<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
 											<path d="M22 6l-10 7L2 6" />
 										</svg>
-										{/* ujjwalpandey.aps@gmail.com */}
 										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">ujjwalpandey.aps@gmail.com</a>
 									</div>
 									<button className="contact-me" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
@@ -175,8 +155,7 @@ export default function SummaryTilt(props) {
 					</div>
 				</div>
 			</div>
-			{(emailModal) ? <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }}
-				emailModal={emailModal} onClick={() => toggleEmailModal} /> : null}
-		</Fragment >
+			{emailModal && <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }} emailModal={emailModal} onClick={() => toggleEmailModal} />}
+		</>
 	)
 }

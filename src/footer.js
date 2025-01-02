@@ -1,12 +1,7 @@
-import { Fragment } from "react";
-
-
-export default function Footer(props) {
+export default function Footer() {
 	return (
-		<Fragment>
-			<div id="footerSection" className="footer">
-				Created by: <i>Ujjwal Pandey</i> using ReactJs
-			</div>
-		</Fragment>
+		<div id="footerSection">
+			Created by: <i>Ujjwal Pandey</i> using ReactJs
+		</div>
 	)
 }

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Keyboard, Autoplay, HashNavigation, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, HashNavigation, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import c1 from '../certificate/images/Bootstrap 4 with projects.jpg';
@@ -20,8 +20,9 @@ import c12 from '../certificate/images/Awesome - Java Programming.jpg';
 import c13 from '../certificate/images/Python from Udemy.jpg';
 import c14 from '../certificate/images/React Js - Complete Guid fro Frontend Web Development.jpg';
 import c15 from '../certificate/images/Java Collection Frameworks + Generics+ 5.5Hrs.jpg';
-
 import CSS from './Certificates.module.css';
+
+
 
 const certificatesJSON = [
 	{
@@ -100,9 +101,13 @@ const certificatesJSON = [
 		path: c15
 	}
 ]
-
 function Certificates() {
+	const progressCircle = useRef(null);
+	const progressContent = useRef(null);
+
 	const [allSlides, setAllSlides] = useState([]);
+
+
 	useEffect(() => {
 		[...certificatesJSON].forEach((eachImg, index) => {
 			let newSlide = <SwiperSlide key={"eachSlide" + (index + 1)}>
@@ -120,19 +125,14 @@ function Certificates() {
 		}
 	}, []);
 
-	const progressCircle = useRef(null);
-	const progressContent = useRef(null);
 	const onAutoplayTimeLeft = (s, time, progress) => {
 		progressCircle.current.style.setProperty('--progress', 1 - progress);
 		progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
 	};
-	const numberedPagination = {
-		clickable: true,
-		dynamicBullets: true,
-	};
+
 
 	return (
-		<div className={[CSS.certificates, "parallelBackgroundImage bg-Image1"].join(" ")}>
+		<div className={`${CSS.certificates} parallelBackgroundImage bg-Image1`}>
 			<h1 className='sectionHeading blueHeading mb-1em'>Certificates</h1>
 			<Swiper
 				centeredSlides={true}
@@ -163,7 +163,10 @@ function Certificates() {
 					delay: 25000,
 					disableOnInteraction: false,
 				}}
-				pagination={numberedPagination}
+				pagination={{
+					clickable: true,
+					dynamicBullets: true,
+				}}
 				navigation={true}
 				hashNavigation={{
 					watchState: true,
@@ -182,8 +185,7 @@ function Certificates() {
 					<span ref={progressContent}></span>
 				</div>
 			</Swiper>
-		</ div >
+		</ div>
 	)
 }
-
 export default Certificates

@@ -26,8 +26,6 @@ function Home() {
 	}, [scrollerDisplaying]);
 
 
-
-
 	return (
 		<div id="home" className="home">
 			<div className="whoIAm">
@@ -35,9 +33,9 @@ function Home() {
 				<div className="wrapper">
 					<div className="static-txt">I am a &#9;</div>
 					<ul className="dynamic-texts">
-						<li><span>😉 Full-Stack Dev.</span></li>
 						<li><span>Java Developer</span></li>
 						<li><span>React Developer</span></li>
+						<li><span>😉 Full-Stack Dev.</span></li>
 					</ul>
 				</div>
 				<SocialIcons />

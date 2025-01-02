@@ -1,26 +1,25 @@
-import { Fragment } from "react";
 import AdJavaImage from '../images/AdvancedJava.png';
 import htmlCssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
-import GoogleCloudImage from '../images/Google_Cloud.png';
+import eclipseIDE from '../images/eclipse_IDE.jpeg';
+import etcImage from '../images/etc.png';
+import figma from '../images/figma.png';
 import gitImage from '../images/git.png';
+import GoogleCloudImage from '../images/Google_Cloud.png';
 import hibernateImage from '../images/hibernate.png';
 import javaImage from '../images/java.jpg';
+import jQuery from '../images/jQuery.png';
 import jsImage from '../images/js.jpg';
 import mongoDBImage from '../images/mongoDB.png';
 import MySQLImage from '../images/mySQL.jpg';
+import node_express from "../images/node_express.png";
+import postman from '../images/postman.png';
 import reactImage from '../images/ReactJS.jpg';
 import restAPIImage from '../images/restAPI.png';
-import springImage from '../images/spring1.jpg';
-import figma from '../images/figma.png';
-import eclipseIDE from '../images/eclipse_IDE.jpeg';
-import vsCode from '../images/VS_Code.png';
-import jQuery from '../images/jQuery.png';
 import sfImage from '../images/salesforce.png';
-import postman from '../images/postman.png';
+import springImage from '../images/spring1.jpg';
 import springBoot from '../images/springBoot.png';
-import etcImage from '../images/etc.png';
-import node_express from "../images/node_express.png";
+import vsCode from '../images/VS_Code.png';
 import EachSkill from "./EachSkill";
 
 
@@ -180,19 +179,14 @@ const listOfSkills = [
 		url: eclipseIDE,
 		alt: "Eclipse IDE"
 	},
-];
-
+]
 export default function WorkingLanguages() {
 	return (
-		<Fragment>
-			<div className="workingWith">
-				<h2 id="workH3">Technical skills <sub><i>Click for details</i></sub></h2>
-				<div className="skillSet">
-					{listOfSkills.map((eachSkill, index) =>
-						< EachSkill key={index + 1} eachSkill={eachSkill} indexing={index + 1} />
-					)}
-				</div >
-			</div >
-		</Fragment >
+		<div className="workingWith">
+			<h2 id="workH3">Technical skills <sub><i>Click for details</i></sub></h2>
+			<div className="skillSet">
+				{listOfSkills.map((eachSkill, index) => <EachSkill key={index + 1} eachSkill={eachSkill} indexing={index + 1} />)}
+			</div>
+		</div>
 	)
 }
