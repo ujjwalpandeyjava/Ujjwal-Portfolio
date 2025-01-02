@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ujjwal-Portfolio/static/css/main.46124ff0.css",
-    "main.js": "/Ujjwal-Portfolio/static/js/main.198a5848.js",
+    "main.js": "/Ujjwal-Portfolio/static/js/main.14554d2c.js",
     "static/media/whiteStone.jpg": "/Ujjwal-Portfolio/static/media/whiteStone.a139e47a704a9897ebb4.jpg",
     "static/media/5026563.jpg": "/Ujjwal-Portfolio/static/media/5026563.6032bff76fce7b1e4aea.jpg",
     "static/media/cvPreviewImage.jpeg": "/Ujjwal-Portfolio/static/media/cvPreviewImage.4d2a2cf9e4abc89bc119.jpeg",
@@ -44,10 +44,10 @@
     "static/media/blob-scatter-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-scatter-haikei.01e17a6d8e02e6d3e40e.svg",
     "static/media/blob-haikei.svg": "/Ujjwal-Portfolio/static/media/blob-haikei.e69cba3bc5d926cf4f97.svg",
     "main.46124ff0.css.map": "/Ujjwal-Portfolio/static/css/main.46124ff0.css.map",
-    "main.198a5848.js.map": "/Ujjwal-Portfolio/static/js/main.198a5848.js.map"
+    "main.14554d2c.js.map": "/Ujjwal-Portfolio/static/js/main.14554d2c.js.map"
   },
   "entrypoints": [
     "static/css/main.46124ff0.css",
-    "static/js/main.198a5848.js"
+    "static/js/main.14554d2c.js"
   ]
 }
