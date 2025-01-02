@@ -8,22 +8,30 @@ import PreviewPDFs from "../contact/resume/previewPDFs";
 import aboutAvatar from "../images/ujjwalAvatar3.png";
 import aboutMeCSS from './AboutMe.module.css';
 
+
 export default function AboutMe() {
 	const [viewPreview, setViewPreview] = useState(false);
+	const toggleViewPreview = () => setViewPreview(old => !old)
+
 	return (
 		<div className={aboutMeCSS.aboutMeCSS}>
 			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
 			<div className={aboutMeCSS.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 			<div className={aboutMeCSS.someDetails}>
-				<span>Hello! I'm Ujjwal,</span> I am an SDE-II - Full Stack Developer (Java & JavaScript) at Safety Labs. <b>I hold 3-year Specialization certificate</b> in cloud and mobile software engineering with full stack web development <i>(GNIIT from NIIT)</i>, Graduate in BCA, and pursuing MCA from <i>(Amity University online)</i>.<br/>
+				<span>Hello! I'm Ujjwal,</span> I am an SDE-II - Full Stack Developer (Java & JavaScript) at Safety Labs. <b>I hold 3-year Specialization certificate</b> in cloud and mobile software engineering with full stack web development <i>(GNIIT from NIIT)</i>, Graduate in BCA, and pursuing MCA from <i>(Amity University online)</i>.<br />
 				I am proficient in Java and JavaScript technologies with over 3 years of hands-on experience.
 			</div>
 			<div className={aboutMeCSS.otherDetails}>
 				<div className={aboutMeCSS.personalDetails}>
 					<h2 >Personal Details</h2>
 					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
 						<tbody>
-
 							<tr>
 								<td>Phone</td>
 								<td>+91 8375990500</td>
@@ -89,8 +97,9 @@ export default function AboutMe() {
 					</div>
 				</div>
 			</div>
-			<button className={aboutMeCSS.resumeDownload} onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already true`)}>Download CV <FaDownload /></button>
-			{viewPreview ? <PreviewPDFs viewPreview={x => setViewPreview(x)} /> : null}
+
+			<button className={aboutMeCSS.resumeDownload} onClick={toggleViewPreview}>Download CV <FaDownload /></button>
+			{viewPreview && <PreviewPDFs close={toggleViewPreview} />}
 		</div>
 	)
 }

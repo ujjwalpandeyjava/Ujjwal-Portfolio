@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import useDocumentTitle from '../assets/useDocumentTitle';
 import ContactMe from '../contact/contactMe';
 import PreviewPDFs from '../contact/resume/previewPDFs';
 import EducationExperience from '../educationExperience/EducationExperience';
@@ -10,13 +11,14 @@ import SummaryCard from '../tiltEffect/summaryTilt';
 import AboutMe from './AboutMe';
 import homeCSS from './Home.module.css';
 import WhatICanDo from './WhatICanDo';
-import useDocumentTitle from '../assets/useDocumentTitle';
 
 
 export default function Home() {
   useDocumentTitle("Ujjwal pandey");
 
   const [viewPreview, setViewPreview] = useState(false);
+  const toggleViewPreview = () => setViewPreview(old => !old)
+
   const [isDeviceMobile] = useState(isMobileDevice());
   function isMobileDevice() { return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(navigator.userAgent.toLowerCase()); }
 
@@ -30,8 +32,8 @@ export default function Home() {
           <div className={homeCSS.nameIm}>I'm <span>Ujjwal Pandey</span></div>
           <div className={homeCSS.nameWebD}>I am a Web Developer</div>
           <div className={homeCSS.actionContainer}>
-            <button id="downloadCV" onClick={() => (!viewPreview) ? setViewPreview(true) : console.log(`Already true`)}>Resume</button>
-            {viewPreview && <PreviewPDFs setViewPreview={(x) => setViewPreview(x)} />}
+            <button id="downloadCV" onClick={toggleViewPreview} >Resume</button>
+            {viewPreview && <PreviewPDFs close={toggleViewPreview} />}
             <Link to="contact">Contact me</Link>
           </div>
         </div>

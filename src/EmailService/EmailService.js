@@ -1,7 +1,8 @@
-import { Fragment, useRef } from "react";
-import EmailServiceStyle from './EmailService.module.css'
 import emailjs from '@emailjs/browser';
+import { useRef } from "react";
 import toast, { Toaster } from 'react-hot-toast';
+import EmailServiceStyle from './EmailService.module.css';
+
 
 export default function EmailService(props) {
 	const form = useRef();
@@ -52,7 +53,7 @@ export default function EmailService(props) {
 					company_name: e.target.company_name.value,
 					message: e.target.message.value
 				}, "fuTN9NgqZc0mVDzjh")
-					.then((result) => {
+					.then(result => {
 						setTimeout(() => {
 							props.onClick()();	// bcz the function returns function.
 						}, 200);
@@ -67,16 +68,14 @@ export default function EmailService(props) {
 			e.target.reset();
 		}
 	};
-	const inputFieldChanged = (event) => {
-		event.target.dataset.valued = (event.target.value) ? true : false;
-	}
-	const listOfClassList = {
-		headSectionList: [EmailServiceStyle.emailServiceSection]
-	}
+	const inputFieldChanged = (event) => event.target.dataset.valued = event.target.value;
+
+
+
 	return (
-		<Fragment>
+		<>
 			<div className={EmailServiceStyle.coverFullScreen}>
-				<div className={listOfClassList.headSectionList.join(" ")}>
+				<div className={EmailServiceStyle.emailServiceSection}>
 					<div className={EmailServiceStyle.emailService_header}>
 						{/* <h2>Feel free, to drop message!</h2> */}
 						<h1>Let's work together!</h1>
@@ -103,10 +102,7 @@ export default function EmailService(props) {
 					</form>
 				</div>
 			</div>
-			<Toaster
-				position="bottom-right"
-				reverseOrder={false}
-			/>
-		</Fragment>
+			<Toaster position="bottom-right" reverseOrder={false} />
+		</>
 	)
 }

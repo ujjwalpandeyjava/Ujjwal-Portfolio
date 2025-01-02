@@ -13,26 +13,18 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 export default function PDFViewer() {
 	useDocumentTitle("PDF Viewer");
 
-
 	const [numPages, setNumPages] = useState(1);
 	const [pageNumber, setPageNumber] = useState(1);
 
-	const onDocumentLoadSuccess = ({ numPages }) => {
-		setNumPages(numPages);
-	};
-	const goToPrevPage = () => {
-		setPageNumber(prevPageNumber => Math.max(prevPageNumber - 1, 1));
-	};
-	const goToNextPage = () => {
-		setPageNumber(prevPageNumber =>
-			Math.min(prevPageNumber + 1, numPages)
-		);
-	};
+	const onDocumentLoadSuccess = ({ numPages }) => setNumPages(numPages);
+	const goToPrevPage = () => setPageNumber(prevPageNumber => Math.max(prevPageNumber - 1, 1));
+	const goToNextPage = () => setPageNumber(prevPageNumber => Math.min(prevPageNumber + 1, numPages));
+
+
 	return (
 		<div className={style.pdfSection}>
 			<div className={style.heading}>Ujjwal Pandey Resume</div>
-			<PDF file={pdfFile} onDocumentLoadSuccess={onDocumentLoadSuccess} pageNumber={pageNumber} /> {/* if file in public folder*/}
-			{/* <PDF file="../images/Resume_CV/ujjwalpandey_CV_SDE-II.pdf" /> */}
+			<PdfHere file={pdfFile} onDocumentLoadSuccess={onDocumentLoadSuccess} pageNumber={pageNumber} />
 			<div className={style.pdfPageNavCont}>
 				<nav className={style.pdfPageNav}>
 					<button onClick={goToPrevPage}><MdNavigateBefore /> Prev</button>
@@ -57,7 +49,7 @@ function DownloadCVButton({ pdfFile, extraStyle, text, extraText }) {
 	)
 }
 
-function PDF({ file, onDocumentLoadSuccess, pageNumber }) {
+function PdfHere({ file, onDocumentLoadSuccess, pageNumber }) {
 	return (
 		<div className={style.page}>
 			<div className={style.doc} >
