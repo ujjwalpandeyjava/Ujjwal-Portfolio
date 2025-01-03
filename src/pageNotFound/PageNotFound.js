@@ -5,7 +5,9 @@ function PageNotFound() {
 
 	return (
 		<div>
-			PageNotFound <br />
+			<h1>Page Not Found</h1>
+			<h3>404</h3>
+			<br />
 			<a href="/">Get to home</a>
 		</div>
 	)

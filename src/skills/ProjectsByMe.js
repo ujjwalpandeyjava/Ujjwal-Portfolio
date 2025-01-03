@@ -39,7 +39,6 @@ export default function ProjectsByMe() {
 							<span>Back-end Featured</span>
 							<p>Backend Development projects featuring Java, Advanced Java, Hibernate, Spring, Spring Boot, Spring Security, JPA, and more.<br />
 								Engage in robust, secure, and efficient backend solutions. Dive into the code.</p>
-							{/* <NavLink to="/skills_projects/backEndProjects" className={projectsCSS.button} ><span>Check more</span></NavLink> */}
 							<NavLink to="/contact" className={projectsCSS.button}><span>Build more</span></NavLink>
 						</div>
 						<div className={projectsCSS.projects}>
@@ -60,7 +59,6 @@ export default function ProjectsByMe() {
 					<div className={projectsCSS.projectSectionDetails}>
 						<span>Full Stack Featured</span>
 						<p>Full Stack projects, seamlessly integrating Frontend (HTML, CSS, JS, React.js) and Backend (Java, Advanced Java, Hibernate, Spring, Spring Boot, Security, JPA). Engaging, responsive, and efficient. Dive into the code.</p>
-						{/* <NavLink to="/skills_projects/fullStackProjects" className={projectsCSS.button}><span>Check more</span></NavLink> */}
 						<NavLink to="/contact" className={projectsCSS.button}><span>Connect</span></NavLink>
 					</div>
 					<div className={projectsCSS.projects}>

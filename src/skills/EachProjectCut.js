@@ -1,6 +1,7 @@
 import { FaLink } from 'react-icons/fa6';
 import projectsCSS from './ProjectsByMe.module.css';
 
+
 function EachProjectCut({ imageSrc, alt, projectLink, projectName }) {
 	return (
 		<div className={projectsCSS.eachProject}>
@@ -10,5 +11,4 @@ function EachProjectCut({ imageSrc, alt, projectLink, projectName }) {
 		</div>
 	)
 }
-
 export default EachProjectCut

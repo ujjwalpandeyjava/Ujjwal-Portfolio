@@ -1,16 +1,19 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ComponentLoading } from '../assets/Loadings';
 import useDocumentTitle from '../assets/useDocumentTitle';
-import ContactMe from '../contact/contactMe';
+import { isMobileDevice } from "../assets/Utilities";
 import PreviewPDFs from '../contact/resume/previewPDFs';
-import EducationExperience from '../educationExperience/EducationExperience';
 import floatingImage from '../images/developer1.svg';
 import ConnectView from '../navbar/ConnectView';
-import Skills from '../skills/Skills';
-import SummaryCard from '../tiltEffect/summaryTilt';
-import AboutMe from './AboutMe';
 import homeCSS from './Home.module.css';
-import WhatICanDo from './WhatICanDo';
+
+const AboutMe = lazy(() => import("./AboutMe"));
+const Skills = lazy(() => import("../skills/Skills"));
+const WhatICanDo = lazy(() => import("./WhatICanDo"));
+const ContactMe = lazy(() => import("../contact/contactMe"));
+const SummaryCard = lazy(() => import("../tiltEffect/summaryTilt"));
+const EducationExperience = lazy(() => import("../educationExperience/EducationExperience"));
 
 
 export default function Home() {
@@ -18,9 +21,6 @@ export default function Home() {
 
   const [viewPreview, setViewPreview] = useState(false);
   const toggleViewPreview = () => setViewPreview(old => !old)
-
-  const [isDeviceMobile] = useState(isMobileDevice());
-  function isMobileDevice() { return /android|iphone|ipad|blackberry|mobile|webos|opera mini/i.test(navigator.userAgent.toLowerCase()); }
 
 
   return (
@@ -39,12 +39,12 @@ export default function Home() {
         </div>
         <img id={homeCSS.myAvatar} src={floatingImage} alt="It's me" />
       </div>
-      <AboutMe />
-      <WhatICanDo />
-      <EducationExperience />
-      <Skills />
-      {isDeviceMobile && <SummaryCard />}
-      <ContactMe />
+      <Suspense fallback={<ComponentLoading />}><AboutMe /></Suspense>
+      <Suspense fallback={<ComponentLoading />}><WhatICanDo /></Suspense>
+      <Suspense fallback={<ComponentLoading />}><EducationExperience /></Suspense>
+      <Suspense fallback={<ComponentLoading />}><Skills /></Suspense>
+      {isMobileDevice() && <Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>}
+      <Suspense fallback={<ComponentLoading />}><ContactMe /></Suspense>
     </>
   )
 }

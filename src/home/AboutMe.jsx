@@ -18,8 +18,9 @@ export default function AboutMe() {
 			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
 			<div className={aboutMeCSS.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 			<div className={aboutMeCSS.someDetails}>
-				<span>Hello! I'm Ujjwal,</span> I am an SDE-II - Full Stack Developer (Java & JavaScript) at Safety Labs. <b>I hold 3-year Specialization certificate</b> in cloud and mobile software engineering with full stack web development <i>(GNIIT from NIIT)</i>, Graduate in BCA, and pursuing MCA from <i>(Amity University online)</i>.<br />
-				I am proficient in Java and JavaScript technologies with over 3 years of hands-on experience.
+				<span>Hello! I'm Ujjwal Pandey!,</span><br />
+				I am an Sr. Product Developer, Product Engineering at <a href="https://www.intellylabs.com/">Intellylabs Techonologies</a>. <b>I am specialized in Web development</b> <i>(GNIIT from NIIT)</i>, BCA Graduate, and pursuing MCA final sem from Amity University online.<br />
+				I am proficient in Java-Spring boot, JavaScript, and Typescript with React development with over 3 years 8 Months of hands-on experience.
 			</div>
 			<div className={aboutMeCSS.otherDetails}>
 				<div className={aboutMeCSS.personalDetails}>

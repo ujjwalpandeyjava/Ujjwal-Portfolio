@@ -1,31 +1,51 @@
-import React from 'react';
+import React, { lazy, Suspense, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast';
+import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider, useNavigate } from 'react-router-dom';
 import configs from '../package.json';
-import App from './App.jsx';
+import { ComponentLoading } from './assets/Loadings.jsx';
 import ContactMePage from './contact/ContactMePage.js';
 import PDFViewer from './document/PDFViewer';
 import ExperiencePage from './educationExperience/ExperiencePage.js';
-import Home from './home/Home';
 import './index.scss';
-import PageNotFound from './pageNotFound/PageNotFound';
-import SkillsProjects from './skills/SkillsProjects.js';
-import BackEndProjects from './skills/projectsByCategory/BackEndProjects.js';
-import FrontEndProjects from './skills/projectsByCategory/FrontEndProjects.js';
+import Navbar from "./navbar/Navbar";
 
+const Home = lazy(() => import("./home/Home"));
+const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
+const SkillsProjects = lazy(() => import("./skills/SkillsProjects.js"));
+
+const homePath = configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)
+function BaseApp() {
+  return (
+    <div>
+      <Navbar />
+      <div className='sectionBody'>
+        <Outlet />
+        <Toaster position="bottom-right" />
+      </div >
+    </div>
+  )
+}
+function ToHome() {
+  const nav = useNavigate();
+  useEffect(() => {
+    nav(homePath)
+  }, [nav]);
+  return <></>
+}
 
 const routesWithJSX = createBrowserRouter(
   createRoutesFromElements(
-    <Route path={configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)} element={<App />} >
-      <Route path="" element={<Home />} />
-      <Route path="home" element={<Home />} />
-      <Route path="experience" element={<ExperiencePage />} />
-      <Route path="skills_projects" element={<SkillsProjects />} />
-      <Route path="skills_projects/frontEndsProjects" element={<FrontEndProjects />} />
-      <Route path="skills_projects/backEndProjects" element={<BackEndProjects />} />
-      <Route path="contact" element={<ContactMePage />} />
-      <Route path="resume" element={<PDFViewer />} />
-      <Route path='*' element={<PageNotFound />} />
+    <Route path="" element={<BaseApp />}>
+      <Route path="" element={<ToHome />} />
+      <Route path={homePath} element={<Outlet />}>
+        <Route path="" element={<Suspense fallback={<ComponentLoading />}><Home /></Suspense>} />
+        <Route path="experience" element={<Suspense fallback={<ComponentLoading />}><ExperiencePage /></Suspense>} />
+        <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
+        <Route path="contact" element={<Suspense fallback={<ComponentLoading />}><ContactMePage /></Suspense>} />
+        <Route path="resume" element={<Suspense fallback={<ComponentLoading />}><PDFViewer /></Suspense>} />
+      </Route>
+      <Route path='*' element={<Suspense fallback={<ComponentLoading />}><PageNotFound /></Suspense>} />
     </Route>
   )
 );
@@ -34,3 +54,4 @@ const routesWithJSX = createBrowserRouter(
 ReactDOM
   .createRoot(document.getElementById('root'))
   .render(<RouterProvider router={routesWithJSX} />);
+

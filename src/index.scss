@@ -67,27 +67,25 @@ body {
     margin: 3px 5px 0 5px;
   }
   .journeyOtherTxt {
-    padding: 1rem;
-    max-width: 1300px;
     margin-top: 1.5rem;
+    max-width: 1300px;
+    padding: 1rem;
     .projectExperience {
       text-decoration-line: underline;
       font-weight: bold;
       font-size: 1.4em;
       margin-bottom: 3px;
     }
-  }
-}
-@media all and (max-width: "600px") {
-  .experienceTxt {
-    .journeyOtherTxt {
-      max-height: 150px;
-      box-shadow:
-        -6px 9px 10px gray,
-        6px -9px 10px #d5d5d5;
-      overflow: auto;
-      border-radius: 10px;
-      padding: 5px 10px;
+    @media all and (max-width: "600px") {
+      .journeyOtherTxt {
+        max-height: 150px;
+        box-shadow:
+          -6px 9px 10px gray,
+          6px -9px 10px #d5d5d5;
+        overflow: auto;
+        border-radius: 10px;
+        padding: 5px 10px;
+      }
     }
   }
 }
