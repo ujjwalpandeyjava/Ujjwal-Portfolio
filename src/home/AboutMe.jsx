@@ -13,14 +13,15 @@ export default function AboutMe() {
 	const [viewPreview, setViewPreview] = useState(false);
 	const toggleViewPreview = () => setViewPreview(old => !old)
 
+
 	return (
 		<div className={aboutMeCSS.aboutMeCSS}>
 			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
 			<div className={aboutMeCSS.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 			<div className={aboutMeCSS.someDetails}>
 				<span>Hello! I'm Ujjwal Pandey!,</span><br />
-				I am an Sr. Product Developer, Product Engineering at <a href="https://www.intellylabs.com/">Intellylabs Techonologies</a>. <b>I am specialized in Web development</b> <i>(GNIIT from NIIT)</i>, BCA Graduate, and pursuing MCA final sem from Amity University online.<br />
-				I am proficient in Java-Spring boot, JavaScript, and Typescript with React development with over 3 years 8 Months of hands-on experience.
+				I am an Sr. Product Developer, Product Engineering at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Techonologies</a>. <b>I am specialized in Web development</b> <i>(GNIIT from NIIT)</i>, BCA Graduate, and pursuing MCA final sem from Amity University online.<br />
+				I am proficient in Java-Spring boot, JavaScript, and Typescript React development with over <b>3 years 8+ Months</b> of hands-on experience.
 			</div>
 			<div className={aboutMeCSS.otherDetails}>
 				<div className={aboutMeCSS.personalDetails}>
@@ -72,20 +73,20 @@ export default function AboutMe() {
 							<div>Code</div>
 						</div>
 						<div className={aboutMeCSS.eachInterest}>
-							<IoGameController size="2em" />
-							<div>Game</div>
-						</div>
-						<div className={aboutMeCSS.eachInterest}>
-							<FaHeadphones size="2em" />
-							<div>Music</div>
+							<GiTakeMyMoney size="2em" />
+							<div>Money</div>
 						</div>
 						<div className={aboutMeCSS.eachInterest}>
 							<MdMovieCreation size="2em" />
 							<div>Cinema</div>
 						</div>
 						<div className={aboutMeCSS.eachInterest}>
-							<GiTakeMyMoney size="2em" />
-							<div>Money</div>
+							<FaHeadphones size="2em" />
+							<div>Music</div>
+						</div>
+						<div className={aboutMeCSS.eachInterest}>
+							<IoGameController size="2em" />
+							<div>Game</div>
 						</div>
 						<div className={aboutMeCSS.eachInterest}>
 							<GiDistraction size="2em" />

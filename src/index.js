@@ -15,6 +15,7 @@ const Home = lazy(() => import("./home/Home"));
 const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
 const SkillsProjects = lazy(() => import("./skills/SkillsProjects.js"));
 
+
 const homePath = configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)
 
 
