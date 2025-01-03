@@ -5,7 +5,6 @@ import useDocumentTitle from '../assets/useDocumentTitle';
 import { isMobileDevice } from "../assets/Utilities";
 import PreviewPDFs from '../contact/resume/previewPDFs';
 import floatingImage from '../images/developer1.svg';
-import ConnectView from '../navbar/ConnectView';
 import homeCSS from './Home.module.css';
 
 const AboutMe = lazy(() => import("./AboutMe"));
@@ -25,7 +24,7 @@ export default function Home() {
 
   return (
     <>
-      <ConnectView />
+      
       <div className={homeCSS.home}>
         <div className={homeCSS.whoIAm}>
           <div className={homeCSS.nameCalling}>Hi There!!</div>

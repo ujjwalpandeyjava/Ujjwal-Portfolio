@@ -36,18 +36,18 @@ export default function Navbar() {
 	return (
 		<div className={[navbarCSS.navbar, (floatNav) ? navbarCSS.floatingNav : ""].join(" ")} id={navbarCSS.navbar}>
 			<div className={navbarCSS.noHamburger}>
-				<Link relative='path' to="" onClick={(event) => isActive(event, "/")}>Home</Link>
-				<Link relative='path' to={`experience`} onClick={(event) => isActive(event, "/experience")}>Experience</Link>
-				<Link relative='path' to={`skills_projects`} onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</Link>
-				<Link relative='path' to={`contact`} onClick={(event) => isActive(event, "/contact")}>Contact</Link>
+				<Link to="" onClick={(event) => isActive(event, "/")}>Home</Link>
+				<Link to="./experience" onClick={(event) => isActive(event, "/experience")}>Experience</Link>
+				<Link to="./skills_projects" onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</Link>
+				<Link to="./contact" onClick={(event) => isActive(event, "/contact")}>Contact</Link>
 			</div>
 			<div className={navbarCSS.hamburger}>
 				{showSmallScreenMenu ?
 					<div className={[navbarCSS.sidebar, navbarCSS.move].join(" ")} onClick={() => setShowSmallScreenMenu(false)}>
 						<Link relative='path' to="" onClick={(event) => isActive(event, "/")}>Home</Link>
-						<Link relative='path' to={`experience`} onClick={(event) => isActive(event, "/experience")}>Experience</Link>
-						<Link relative='path' to={`skills_projects`} onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</Link>
-						<Link relative='path' to={`contact`} onClick={(event) => isActive(event, "/contact")}>Contact</Link>
+						<Link relative='path' to="./experience" onClick={(event) => isActive(event, "/experience")}>Experience</Link>
+						<Link relative='path' to="./skills_projects" onClick={(event) => isActive(event, "/skills_projects")}>ShowCase</Link>
+						<Link relative='path' to="./contact" onClick={(event) => isActive(event, "/contact")}>Contact</Link>
 					</div> : null}
 				{showSmallScreenMenu ? <FaWindowClose size={30} onClick={() => setShowSmallScreenMenu(false)} /> : <BiSolidBarChartAlt2 className={navbarCSS.rotate90} size={30} onClick={() => setShowSmallScreenMenu(true)} />}
 			</div>

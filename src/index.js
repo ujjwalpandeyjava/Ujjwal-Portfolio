@@ -8,6 +8,7 @@ import ContactMePage from './contact/ContactMePage.js';
 import PDFViewer from './document/PDFViewer';
 import ExperiencePage from './educationExperience/ExperiencePage.js';
 import './index.scss';
+import ConnectView from './navbar/ConnectView.js';
 import Navbar from "./navbar/Navbar";
 
 const Home = lazy(() => import("./home/Home"));
@@ -15,17 +16,8 @@ const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
 const SkillsProjects = lazy(() => import("./skills/SkillsProjects.js"));
 
 const homePath = configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)
-function BaseApp() {
-  return (
-    <div>
-      <Navbar />
-      <div className='sectionBody'>
-        <Outlet />
-        <Toaster position="bottom-right" />
-      </div >
-    </div>
-  )
-}
+
+
 function ToHome() {
   const nav = useNavigate();
   useEffect(() => {
@@ -33,12 +25,24 @@ function ToHome() {
   }, [nav]);
   return <></>
 }
+function BaseApp() {
+  return (
+    <>
+      <Navbar />
+      <ConnectView />
+      <div className='sectionBody'>
+        <Outlet />
+        <Toaster position="bottom-right" />
+      </div >
+    </>
+  )
+}
 
 const routesWithJSX = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="" element={<BaseApp />}>
+    <Route path="" element={<Outlet />}>
       <Route path="" element={<ToHome />} />
-      <Route path={homePath} element={<Outlet />}>
+      <Route path={homePath} element={<BaseApp />}>
         <Route path="" element={<Suspense fallback={<ComponentLoading />}><Home /></Suspense>} />
         <Route path="experience" element={<Suspense fallback={<ComponentLoading />}><ExperiencePage /></Suspense>} />
         <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
@@ -50,8 +54,6 @@ const routesWithJSX = createBrowserRouter(
   )
 );
 
-
 ReactDOM
   .createRoot(document.getElementById('root'))
   .render(<RouterProvider router={routesWithJSX} />);
-
