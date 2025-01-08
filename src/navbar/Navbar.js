@@ -33,7 +33,7 @@ export default function Navbar() {
 
 			<div className={`${style.sideBar} ${showSidebar && style.hideSidebar}`}>
 				<div className={style.actions}>
-					<div className={style.myName}>Ujjwal Pandey</div>
+					<div className="myName">Ujjwal Pandey</div>
 					<FaWindowClose className={style.action} size="2rem" onClick={toggleShowSidebar} />
 				</div>
 				<Link className={style.links} onClick={linkClicked} to="">Home</Link>

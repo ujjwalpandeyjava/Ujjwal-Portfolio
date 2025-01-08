@@ -6,7 +6,7 @@ import { IoGameController } from "react-icons/io5";
 import { MdMovieCreation } from "react-icons/md";
 import PreviewPDFs from "../contact/resume/previewPDFs";
 import aboutAvatar from "../images/ujjwalAvatar3.png";
-import aboutMeCSS from './AboutMe.module.css';
+import style from './AboutMe.module.css';
 
 
 export default function AboutMe() {
@@ -15,16 +15,18 @@ export default function AboutMe() {
 
 
 	return (
-		<div className={aboutMeCSS.aboutMeCSS}>
-			<div className={aboutMeCSS.aboutMeHeading}>About Me</div>
-			<div className={aboutMeCSS.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
-			<div className={aboutMeCSS.someDetails}>
-				<span>Hello! I'm Ujjwal Pandey!,</span><br />
-				I am an Sr. Product Developer, Product Engineering at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Techonologies</a>. <b>I am specialized in Web development</b> <i>(GNIIT from NIIT)</i>, BCA Graduate, and pursuing MCA final sem from Amity University online.<br />
-				I am proficient in Java-Spring boot, JavaScript, and Typescript React development with over <b>3 years 8+ Months</b> of hands-on experience.
+		<div className={style.aboutMeCSS}>
+			<div className={style.aboutMeHeading}>About Me</div>
+			<div className={style.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
+
+			<div className={style.someDetails}>
+				{/* <span className="myName">Hello!, I'm Ujjwal Pandey</span><br /> */}
+				I am Product Engineering <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
+				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs) <b>with over 3 years 8+ Months</b> of hands-on experience. Do occasional Android development with Kotlin and Swift.
 			</div>
-			<div className={aboutMeCSS.otherDetails}>
-				<div className={aboutMeCSS.personalDetails}>
+
+			<div className={style.otherDetails}>
+				<div className={style.personalDetails}>
 					<h2 >Personal Details</h2>
 					<table>
 						<thead>
@@ -52,47 +54,47 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td>Languages</td>
-								<td>Hindi | English</td>
+								<td>English | Hindi</td>
 							</tr>
 							<tr>
 								<td>Job Status</td>
-								<td>Working at Safety Labs</td>
+								<td>Working at Intellylabs Technologies</td>
 							</tr>
 							<tr>
 								<td>Job Profile</td>
-								<td>SDE II, Full Stack Developer <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java & JavaScript</u></td>
+								<td>Product Engineering, Full Stack Developer <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java, JavaScript and Typescript</u></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-				<div className={aboutMeCSS.myInterest}>
+				<div className={style.myInterest}>
 					<h2>My Interests</h2>
-					<div className={aboutMeCSS.myInterestBlocks}>
-						<div className={aboutMeCSS.eachInterest}>
+					<div className={style.myInterestBlocks}>
+						<div className={style.eachInterest}>
 							<FaCode size="2em" />
 							<div>Code</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<GiTakeMyMoney size="2em" />
 							<div>Money</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<MdMovieCreation size="2em" />
 							<div>Cinema</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<FaHeadphones size="2em" />
 							<div>Music</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<IoGameController size="2em" />
 							<div>Game</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<GiDistraction size="2em" />
 							<div>Anime</div>
 						</div>
-						<div className={aboutMeCSS.eachInterest}>
+						<div className={style.eachInterest}>
 							<CgGym size="2em" />
 							<div>Gym</div>
 						</div>
@@ -100,7 +102,10 @@ export default function AboutMe() {
 				</div>
 			</div>
 
-			<button className={aboutMeCSS.resumeDownload} onClick={toggleViewPreview}>Download CV <FaDownload /></button>
+			<div style={{ textAlign: 'center' }}>
+				<button className={style.resumeDownload} onClick={toggleViewPreview}>Download CV <FaDownload /></button>
+			</div>
+
 			{viewPreview && <PreviewPDFs close={toggleViewPreview} />}
 		</div>
 	)

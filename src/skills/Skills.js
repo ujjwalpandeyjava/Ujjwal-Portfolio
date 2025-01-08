@@ -1,20 +1,12 @@
-import { FaAws, FaSalesforce } from "react-icons/fa6";
-import { SiJquery } from "react-icons/si";
 import { useEffect } from 'react';
-import { FaSitemap } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
-
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { FaAngleDown, FaAngleUp, FaGithub, FaNode } from "react-icons/fa";
-import { FaJava, FaReact } from "react-icons/fa6";
+import { FaAngleDown, FaAngleUp, FaGithub, FaNode, FaSitemap } from "react-icons/fa";
+import { FaAws, FaJava, FaReact, FaSalesforce } from "react-icons/fa6";
 import { GrJava, GrMysql } from "react-icons/gr";
-import { SiHibernate, SiMongodb, SiSpringboot } from "react-icons/si";
+import { SiExpress, SiHibernate, SiJquery, SiMongodb, SiPostman, SiSpringboot } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { VscSymbolInterface } from "react-icons/vsc";
 import eachSkills from './eachSkills.module.css';
-
-
 
 
 export default function Skills() {
@@ -35,11 +27,12 @@ export default function Skills() {
 	}
 	return (
 		<div className={eachSkills.skillSection}>
-			Services
+
 			<div className={eachSkills.heading}>
 				Skill-Set
 				<div className={eachSkills.underline}></div>
 			</div>
+
 			<div className={eachSkills.skillShowCase}>
 				<div id='skillShowCase' className={eachSkills.allSkills}>
 					<div className={eachSkills.eachSkill}>
