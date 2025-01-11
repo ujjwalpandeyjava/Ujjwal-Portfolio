@@ -91,19 +91,19 @@
 .myInterest .myInterestBlocks {
 	text-transform: uppercase;
 	display: flex;
-	gap: 20px;
+	gap: 1.5rem;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 .myInterestBlocks .eachInterest {
 	font-family: "Poppins", sans-serif;
-	padding: 10px;
-	border-radius: 4px;
-	overflow: hidden;
+	padding: 12px;
+	border-radius: 0.25em;
 	display: flex;
-	min-width: 120px;
-	font-size: 1.3em;
+	overflow: auto;
+	min-width: 150px;
+	font-size: 1.45em;
 	aspect-ratio: 1/1;
 	text-align: center;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { CgGym } from "react-icons/cg";
 import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
-import { GiDistraction, GiTakeMyMoney } from "react-icons/gi";
+import { GiTakeMyMoney } from "react-icons/gi";
 import { IoGameController } from "react-icons/io5";
 import { MdMovieCreation } from "react-icons/md";
 import PreviewPDFs from "../contact/resume/previewPDFs";
@@ -79,25 +78,25 @@ export default function AboutMe() {
 							<div>Money</div>
 						</div>
 						<div className={style.eachInterest}>
-							<MdMovieCreation size="2em" />
-							<div>Cinema</div>
-						</div>
-						<div className={style.eachInterest}>
 							<FaHeadphones size="2em" />
 							<div>Music</div>
+						</div>
+						<div className={style.eachInterest}>
+							<MdMovieCreation size="2em" />
+							<div>Cinema</div>
 						</div>
 						<div className={style.eachInterest}>
 							<IoGameController size="2em" />
 							<div>Game</div>
 						</div>
-						<div className={style.eachInterest}>
+						{/* <div className={style.eachInterest}>
 							<GiDistraction size="2em" />
 							<div>Anime</div>
 						</div>
 						<div className={style.eachInterest}>
 							<CgGym size="2em" />
 							<div>Gym</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

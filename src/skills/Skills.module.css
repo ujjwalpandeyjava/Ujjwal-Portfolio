@@ -8,14 +8,12 @@
 .heading {
 	color: red;
 	font-size: 2em;
-	/* display: inline-block; */
 	white-space: nowrap;
 	margin: 8px 0;
 }
 .heading > .underline {
 	width: 120px;
 	height: 4px;
-	background: rgb(253, 29, 29);
 	border-radius: 3px;
 	background: linear-gradient(
 		90deg,
@@ -56,17 +54,15 @@
 }
 
 .allSkills {
-	/* width: 100%; */
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
 	align-items: stretch;
-	gap: 1em;
-	max-height: calc(var(--eachSkillHeightWidth) * 2);
+	gap: 1.5rem;
+	max-height: calc(var(--eachSkillHeightWidth) * 3.5);
 	scroll-snap-type: y mandatory;
 	overflow: auto;
 	padding: 12px;
-	/* margin: auto; */
 	max-width: 1000px;
 }
 .allSkills::-webkit-scrollbar {
@@ -95,7 +91,6 @@
 	box-shadow:
 		rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-	/* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 }
 .skillIcon {
 	font-size: 3em;
@@ -104,4 +99,7 @@
 .eachSkillDescription {
 	color: gray;
 	font-size: 0.85em;
+}
+.eachSkill::-webkit-scrollbar {
+	visibility: hidden;
 }

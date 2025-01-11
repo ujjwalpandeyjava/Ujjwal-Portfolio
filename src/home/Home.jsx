@@ -2,7 +2,6 @@ import { lazy, Suspense, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ComponentLoading } from '../assets/Loadings';
 import useDocumentTitle from '../assets/useDocumentTitle';
-import { isMobileDevice } from "../assets/Utilities";
 import PreviewPDFs from '../contact/resume/previewPDFs';
 import floatingImage from '../images/developer1.svg';
 import homeCSS from './Home.module.css';
@@ -11,7 +10,6 @@ const AboutMe = lazy(() => import("./AboutMe"));
 const Skills = lazy(() => import("../skills/Skills"));
 const WhatICanDo = lazy(() => import("./WhatICanDo"));
 const ContactMe = lazy(() => import("../contact/contactMe"));
-const SummaryCard = lazy(() => import("../tiltEffect/summaryTilt"));
 const EducationExperience = lazy(() => import("../educationExperience/EducationExperience"));
 
 
@@ -24,7 +22,6 @@ export default function Home() {
 
   return (
     <>
-      
       <div className={homeCSS.home}>
         <div className={homeCSS.whoIAm}>
           <div className={homeCSS.nameCalling}>Hi There!!</div>
@@ -42,7 +39,6 @@ export default function Home() {
       <Suspense fallback={<ComponentLoading />}><WhatICanDo /></Suspense>
       <Suspense fallback={<ComponentLoading />}><EducationExperience /></Suspense>
       <Suspense fallback={<ComponentLoading />}><Skills /></Suspense>
-      {isMobileDevice() && <Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>}
       <Suspense fallback={<ComponentLoading />}><ContactMe /></Suspense>
     </>
   )

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { BiSolidBarChartAlt2 } from 'react-icons/bi';
 import { FaWindowClose } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { isMobileDevice } from '../assets/Utilities';
 import ujjwalIcon from '../images/ujjwalAvatar3.png';
 import style from './Navbar.module.css';
 
@@ -25,9 +26,8 @@ export default function Navbar() {
 
 	return (
 		<>
-
 			<div id={style.navbar} className={floatNav && style.floatingNav} >
-				<BiSolidBarChartAlt2 className={style.action} size={30} onClick={toggleShowSidebar} />
+				<BiSolidBarChartAlt2 className={style.action} size="2.45rem" onClick={toggleShowSidebar} />
 				<Link to="/"><img id={style.navIcon} src={ujjwalIcon} alt="It's me, on home" /></Link>
 			</div>
 
@@ -40,8 +40,8 @@ export default function Navbar() {
 				<Link className={style.links} onClick={linkClicked} to="./experience">Experience</Link>
 				<Link className={style.links} onClick={linkClicked} to="./skills_projects">ShowCase</Link>
 				<Link className={style.links} onClick={linkClicked} to="./contact">Contact</Link>
+				{!isMobileDevice() && <Link className={style.links} onClick={linkClicked} to="./summary">Summary</Link>}
 			</div>
-
 		</>
 	)
 }

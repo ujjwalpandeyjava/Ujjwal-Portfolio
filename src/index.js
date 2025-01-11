@@ -14,6 +14,7 @@ import Navbar from "./navbar/Navbar";
 const Home = lazy(() => import("./home/Home"));
 const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
 const SkillsProjects = lazy(() => import("./skills/SkillsProjects.js"));
+const SummaryCard = lazy(() => import("./tiltEffect/summaryTilt"));
 
 
 const homePath = configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)
@@ -48,6 +49,7 @@ const routesWithJSX = createBrowserRouter(
         <Route path="experience" element={<Suspense fallback={<ComponentLoading />}><ExperiencePage /></Suspense>} />
         <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
         <Route path="contact" element={<Suspense fallback={<ComponentLoading />}><ContactMePage /></Suspense>} />
+        <Route path="summary" element={<Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>} />
         <Route path="resume" element={<Suspense fallback={<ComponentLoading />}><PDFViewer /></Suspense>} />
       </Route>
       <Route path='*' element={<Suspense fallback={<ComponentLoading />}><PageNotFound /></Suspense>} />

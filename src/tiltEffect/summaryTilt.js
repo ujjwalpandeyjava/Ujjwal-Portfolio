@@ -1,31 +1,17 @@
 import { Fragment, useEffect, useState } from "react";
-// import { FaFacebookF } from "react-icons/fa";
-// import { FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
-// import { FiGithub } from "react-icons/fi";
-// import { PiLinkSimpleBold } from "react-icons/pi";
 import VanillaTilt from "vanilla-tilt";
 import EmailService from "../EmailService/EmailService";
 import myPicture from '../images/1670752620885.jpg';
-import './summaryTilt.css';
 import SocialIcons from "../utility/SocialIcons";
+import './summaryTilt.css';
 
 export default function SummaryTilt(props) {
 	useEffect(() => {	// It will call every time the component is called or refreshed
 		const card = document.querySelector(".card");
 		const buttons = document.querySelectorAll(".card-buttons button");
 		const sections = document.querySelectorAll(".card-section");
-		VanillaTilt.init(document.querySelectorAll(".card"), {	// https://micku7zu.github.io/vanilla-tilt.js/  <-- Documentation
-			max: 20,
-			speed: 300
-		});
-		/* card.addEventListener("tiltChange", () => {
-		});
-		card.addEventListener("mouseenter", (event) => {
-			event.currentTarget.style.opacity = 1;
-		});
-		card.addEventListener("mouseleave", (event) => {
-			// event.currentTarget.style.opacity = 0.5;
-		}); */
+		// https://micku7zu.github.io/vanilla-tilt.js
+		VanillaTilt.init(document.querySelectorAll(".card"), { max: 20, speed: 300 });
 		const handleSectionChange = e => {
 			const targetSection = e.target.getAttribute("data-section");
 			const section = document.querySelector(targetSection);	// #about	#experience		#contact
@@ -35,9 +21,7 @@ export default function SummaryTilt(props) {
 			e.target.classList.add("is-active");
 			section.classList.add("is-active");
 		};
-		buttons.forEach(innerButton => {
-			innerButton.addEventListener("click", handleSectionChange);
-		});
+		buttons.forEach(innerButton => innerButton.addEventListener("click", handleSectionChange));
 	});
 
 	const classesListOfClassList = {
@@ -55,12 +39,8 @@ export default function SummaryTilt(props) {
 				<h1 className="sectionHeading blueHeading">Quick Rundown</h1>
 				<div className={classesListOfClassList.mainFrameClasses.join(" ")} data-state="#about" data-tilt >
 					<div className="card-header">
-						<div className="card-cover">
-						</div>
-						<img className="card-avatar"
-							// src="https://images.unsplash.com/photo-1549068106-b024baf5062d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-							src={myPicture}
-							alt="avatar" />
+						<div className="card-cover"></div>
+						<img className="card-avatar" src={myPicture} alt="avatar" />
 						<h1 className="card-fullname">Ujjwal Pandey</h1>
 						<h2 className="card-jobtitle">Java + ReactJS Full Stack Developer</h2>
 					</div>

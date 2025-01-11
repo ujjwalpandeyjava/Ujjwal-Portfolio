@@ -9,12 +9,12 @@ export default function EducationExperience() {
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Masters of Compute Application'>MCA - ML & AI <span className={eeCSS.time}>(2023 - 2025 pursuing)</span> </div>
-						<div className={eeCSS.someDetails}>Masters from Amity University Online, flexibly concentrating on job, academic, and skill development.</div>
+						<div className={eeCSS.someDetails}>Flexibly concentrating on skills, academic, and job.</div>
 						<div className={eeCSS.type}>Masters from Amity University Online</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Cloud and mobile software engineering'>GNIIT <span className={eeCSS.time}>(2019 - 2022)</span> </div>
-						<div className={eeCSS.someDetails}>Dedicated 3 years boot-camp, learning full-stack Web development with java and javaScript, in NIIT I scored in top 10 with CGPA of 9.</div>
+						<div className={eeCSS.someDetails}>Dedicated 3 years boot-camp, learning full-stack Web development with java and javaScript from NIIT. I scored in top 10 with CGPA of 9.</div>
 						<div className={eeCSS.type}>Web development Specialization</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
@@ -25,49 +25,44 @@ export default function EducationExperience() {
 				</div>
 			</div>
 			<div className={eeCSS.workExperience}>
+
 				<div className={eeCSS.heading}>Work Experience</div>
 				<div className={eeCSS.subHeading}>Companies I worked for</div>
+
 				<div className={eeCSS.details}>
-
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title=''>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024)</span> </div>
-						<div className={eeCSS.someDetails}>Tele-Medicine Home-Based Health-Care company, originated from Canada.</div>
+						<div className={eeCSS.name} title='Senior Product Developer'>IntellyLabs Technologies<span className={eeCSS.time}> (June/2024-Present)</span></div>
+						<div className={eeCSS.someDetails}>Service Based with Own Product on AI</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Development and refinement of new and existing APIs and User Interfaces.</li>
-								<li>Automation features for manual labour work.</li>
-								<li>Super-headed the development of the Scheduler project.</li>
-								<li>Managed the team to oversee the production of applications.</li>
-								<li>Developed high-processing front-end for dedicated hardwares.</li>
-								<li>Integrated enterprise chat-bots, Appointment bots with AIs for multi-level companies.</li>
-								<li>Worked very close with Salesforce developers and admin.</li>
+								<li>Development of React frontend with JS and TS</li>
+								<li>Development of microservice apps with spring boot</li>
+								<li>Development of Mobile apps with Kotlin and Swift</li>
 							</ul>
 						</details>
-						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
+						<div className={eeCSS.type}>Senior Product Developer</div>
 					</div>
 
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title=''>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024)</span> </div>
+						<div className={eeCSS.name} title='2 years 4 months'>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024) (2 years 4 months)</span> </div>
 						<div className={eeCSS.someDetails}>Tele-Medicine Home-Based Health-Care company, originated from Canada.</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Development and refinement of new and existing APIs and User Interfaces.</li>
-								<li>Automation features for manual labour work.</li>
-								<li>Super-headed the development of the Scheduler project.</li>
-								<li>Managed the team to oversee the production of applications.</li>
-								<li>Developed high-processing front-end for dedicated hardwares.</li>
-								<li>Integrated enterprise chat-bots, Appointment bots with AIs for multi-level companies.</li>
-								<li>Worked very close with Salesforce developers and admin.</li>
+								<li>Development and refinement of APIs and User Interfaces.</li>
+								<li>Super-headed development and managed of the projects to oversee the production.</li>
+								<li>Developed high-processing front-end for dedicated low powered hardwares.</li>
+								<li>Integrated enterprise chat-bots, Appointment bots with AIs for web apps.</li>
+								<li>Worked very close with Salesforce developers and admin teams.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Nov/2021-Jan/022)</span> </div>
+						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Nov/2021-Jan/022) (3 months)</span> </div>
 						<div className={eeCSS.someDetails}>Government product based company</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
@@ -85,7 +80,7 @@ export default function EducationExperience() {
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='While pursuing BCA and GNIIT'>Freelance<span className={eeCSS.time}> (May/2020-Oct/2021)</span> </div>
+						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Freelance<span className={eeCSS.time}> (May/2020-Oct/2021) (6 months)</span> </div>
 						<div className={eeCSS.someDetails}>Education and Part time</div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>
@@ -96,6 +91,7 @@ export default function EducationExperience() {
 						</details>
 						<div className={eeCSS.type}>Front-end Developer</div>
 					</div>
+
 				</div>
 			</div>
 		</div>

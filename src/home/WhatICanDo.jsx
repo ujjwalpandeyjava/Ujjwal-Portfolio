@@ -13,25 +13,25 @@ function WhatICanDo() {
 					<img src={backend} alt="Server-side coding" />
 					<div>Backend Development</div>
 					<p>
-						The backbone of any application is its server. I use spring boot with Java to deliver industry-standard, fast, robust server.
+						I have mastered spring boot with Java to deliver industry-standard, fast, robust server to keep backbone of application strong. 
 						<hr />
-						<strong>Technologies:</strong> Java, Spring Boot, Hibernate, MongoDB, MySQL
+						<strong>Technologies:</strong> Java, Spring Boot, multiple modules of Spring
 					</p>
 				</div>
 				<div className={style.eachAbilities}>
 					<img src={frontEnd} alt="Client-side coding" />
 					<div>Frontend Development</div>
 					<p>
-						I am specialized in creating immersive and user-friendly experience, developing visually stunning and intuitive UI.
+						Proficient in creating immersive and user-friendly experience, developing visually stunning and intuitive UI.
 						<hr />
-						<strong>Technologies:</strong> HTML, CSS, JavaScript, TypeScript, ReactJS, SCSS, and various modern libraries.
+						<strong>Technologies:</strong> HTML, CSS, JavaScript, TypeScript, <b>ReactJS</b>, SCSS, and various modern libraries.
 					</p>
 				</div>
 				<div className={style.eachAbilities}>
 					<img src={dataBase} alt="Database development coding" />
 					<div>Database Management</div>
 					<p>
-						Maintaining and structuring the data is one of the most crucial tasks a backend development.
+						Creating and maintaining the database for best performance is one of my best when come to backend development.
 						<hr />
 						<strong>Technologies:</strong> SQL: MySQl and NoSQL: MongoDB
 					</p>
@@ -40,9 +40,9 @@ function WhatICanDo() {
 					<img src={mobileApp} alt="" />
 					<div>Mobile App Development</div>
 					<p>
-						Occasional mobile app development with React Native, kotlin, swift. I can build a mobile app for both Android and iOS.
+						I am an occasional mobile app developer I code for Android and iOS both, with React Native, kotlin, swift.
 						<hr />
-						<strong>Technologies:</strong> ReactNative, Swift, and Kotlin
+						<strong>Technologies:</strong> React Native, Swift, and Kotlin
 					</p>
 				</div>
 			</div>
