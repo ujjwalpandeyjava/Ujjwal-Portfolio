@@ -41,8 +41,8 @@ export default function ContactMe() {
 					</div>
 
 					<div className="connect-directMail">
-						<button className="contact-me" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
-						{emailModal && <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }} emailModal={emailModal} onClick={() => toggleEmailModal} />}
+						<button className="directMessageBtn" onClick={toggleEmailModal}>DIRECT MESSAGE</button>
+						{emailModal && <EmailService person={{ name: 'Ujjwal Pandey', message: 'Contact me' }} closeBtn={toggleEmailModal} />}
 					</div>
 
 				</div>

@@ -15,12 +15,12 @@ const Footer = () => {
 				<br />
 				<Link className={styles.link} to="/">Home</Link>
 				<Link className={styles.link} to="./skills_projects">Skills and Projects Repos</Link>
-				<Link className={styles.link} to="./summary">Summary</Link>
+				<Link className={styles.link} to="./rundown">Summary</Link>
 				<Link className={styles.link} to="./resume">Resume</Link>
 				<Link className={styles.link} to="./contact">Contact</Link>
 			</div>
 			<hr style={{ marginBlock: "0.35rem", borderColor: "#515151" }} />
-			<p>© {new Date().getFullYear()} Ujjwal Pandey. All Rights Reserved to the Ujjwal Pandey.</p>
+			<p>©{new Date().getFullYear()} Ujjwal Pandey. All Rights Reserved to the Ujjwal Pandey.</p>
 		</footer>
 	);
 };

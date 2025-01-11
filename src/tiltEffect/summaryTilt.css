@@ -223,7 +223,6 @@
 		opacity: 0;
 		transform: translatey(40px);
 	}
-
 	100% {
 		opacity: 1;
 	}

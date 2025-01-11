@@ -5,7 +5,7 @@ import { email } from '../assets/Utilities';
 import EmailServiceStyle from './EmailService.module.css';
 
 
-export default function EmailService(props) {
+export default function EmailService({ closeBtn }) {
 	const form = useRef();
 	const sendEmail = (e) => {
 		e.preventDefault();
@@ -25,8 +25,9 @@ export default function EmailService(props) {
 						message: e.target.message.value
 					}, "fuTN9NgqZc0mVDzjh")
 					.then(result => {
+						console.log(result);
 						setTimeout(() => {
-							props.onClick()();	// bcz the function returns function.
+							closeBtn();
 						}, 200);
 					}, (error) => {
 						throw Error("Error: " + error.text);
@@ -49,7 +50,7 @@ export default function EmailService(props) {
 				<div className={EmailServiceStyle.emailService_header}>
 					<h1>Let's work</h1>
 					<center>Drop detail about project, I will get back to you soon</center>
-					<button className={EmailServiceStyle.closeButton} onClick={props.onClick()}>X</button>
+					<button className={EmailServiceStyle.closeButton} onClick={closeBtn}>X</button>
 				</div>
 				<form ref={form} onSubmit={sendEmail}>
 					<div>

@@ -42,9 +42,9 @@ export default function Navbar() {
 					<FaWindowClose className={style.action} size="2rem" onClick={toggleShowSidebar} />
 				</div>
 				<Link className={style.links} onClick={linkClicked} to="/"><FaHome />Home</Link>
-				<Link className={style.links} onClick={linkClicked} to="./skills_projects"><SiComposer />Show Case</Link>
 				<Link className={style.links} onClick={linkClicked} to="./resume"><RiFilePaper2Line />Resume</Link>
-				<Link className={style.links} onClick={linkClicked} to="./summary"><GiSkills />Summary</Link>
+				<Link className={style.links} onClick={linkClicked} to="./skills_projects"><SiComposer />Work & Certificates</Link>
+				<Link className={style.links} onClick={linkClicked} to="./rundown"><GiSkills />Quick Rundown</Link>
 				<Link className={style.links} onClick={linkClicked} to="./contact"><MdContacts />Contact</Link>
 			</div>
 		</>

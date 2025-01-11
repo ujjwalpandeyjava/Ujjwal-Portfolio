@@ -49,7 +49,7 @@ const routesWithJSX = createBrowserRouter(
       <Route path={homePath} element={<BaseApp />}>
         <Route path="" element={<Suspense fallback={<ComponentLoading />}><Home /></Suspense>} />
         <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
-        <Route path="summary" element={<Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>} />
+        <Route path="rundown" element={<Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>} />
         <Route path="resume" element={<Suspense fallback={<ComponentLoading />}><PDFViewer /></Suspense>} />
         <Route path="contact" element={<Suspense fallback={<ComponentLoading />}><ContactMePage /></Suspense>} />
       </Route>
