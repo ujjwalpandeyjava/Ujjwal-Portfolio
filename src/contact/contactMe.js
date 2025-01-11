@@ -14,7 +14,7 @@ export default function ContactMe() {
 
 	return (
 		<div id="contactMeSection">
-			<h2 className="sectionHeading">Let's Discuss Your Needs</h2>
+			<h2 className="sectionHeading">Let's Discuss Requirements</h2>
 			<div id="firstInContactMe">
 				<div><img src={contactPic} alt="That's me with certificate" /></div>
 				<div id="connect">

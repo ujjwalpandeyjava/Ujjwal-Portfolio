@@ -10,6 +10,8 @@ import ExperiencePage from './educationExperience/ExperiencePage.js';
 import './index.scss';
 import ConnectView from './navbar/ConnectView.js';
 import Navbar from "./navbar/Navbar";
+import Footer from "./footer/Footer";
+
 
 const Home = lazy(() => import("./home/Home"));
 const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
@@ -36,6 +38,7 @@ function BaseApp() {
         <Outlet />
         <Toaster position="bottom-right" />
       </div >
+      <Footer />
     </>
   )
 }
