@@ -80,7 +80,7 @@ export default function EducationExperience() {
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Freelance<span className={eeCSS.time}> (May/2020-Oct/2021) (6 months)</span> </div>
+						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Freelance<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
 						<div className={eeCSS.someDetails}>Education and Part time</div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>

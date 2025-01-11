@@ -68,36 +68,38 @@ export default function SummaryTilt() {
 						</div>
 						<div className="card-section" id="experience_card">
 							<div className="card-content">
-								<div className="card-subtitle">WORK EXPERIENCE</div>
+								<div className="card-subtitle">WORK EXPERIENCE <sub>(3 year 8 months)</sub></div>
 								<div className="card-timeline">
-									<div className="card-item" data-year="2014">
-										<div className="card-timeline-item-date">
-											Aug-21 <br />
-											Oct-21
-										</div>
+
+									<div className="card-item">
+										<div className="card-timeline-item-date" title="8 month">June-2024 <br />Present</div>
 										<div className="card-timeline-item-detail">
-											<div className="card-item-title">Front end Developer at <span>NIIT Developers</span></div>
-											<div className="card-item-desc">Part-time, frontend developer while being a student at NIIT</div>
+											<div className="card-item-title">Sr. Product Developer at <span>Intellylabs</span></div>
+											<div className="card-item-desc">Web development and mobile development</div>
 										</div>
 									</div>
-									<div className="card-item" data-year="2014">
-										<div className="card-timeline-item-date">
-											Oct-21 <br />
-											Jan-22
+
+									<div className="card-item">
+										<div className="card-timeline-item-date" title="2 year 4 months">Feb-2022 <br />May-2024</div>
+										<div className="card-timeline-item-detail">
+											<div className="card-item-title">Full Stack Developer at <span>SafetyLabs</span></div>
+											<div className="card-item-desc"><b>Web development</b> with java, javascript, MySQL, MongoDB, HTML, CSS, and Salesforce</div>
 										</div>
+									</div>
+
+									<div className="card-item">
+										<div className="card-timeline-item-date" title="3 month">Nov-2021<br />Jan-2022</div>
 										<div className="card-timeline-item-detail">
 											<div className="card-item-title">Java Developer at <span>NetCreativeMind Sol.</span></div>
 											<div className="card-item-desc">API management and UI development</div>
 										</div>
 									</div>
-									<div className="card-item" data-year="2014">
-										<div className="card-timeline-item-date">
-											Feb-22 <br />
-											Present
-										</div>
+
+									<div className="card-item">
+										<div className="card-timeline-item-date" title="6 month">May-2021<br />Oct-2021</div>
 										<div className="card-timeline-item-detail">
-											<div className="card-item-title">Full Stack Developer at <span>SafetyLabs</span></div>
-											<div className="card-item-desc">Working with java and javascript, MySQL and MongoDB</div>
+											<div className="card-item-title">Front end Developer at <span>NIIT Developers</span></div>
+											<div className="card-item-desc">Part-time, frontend developer while learning web development at NIIT</div>
 										</div>
 									</div>
 								</div>
