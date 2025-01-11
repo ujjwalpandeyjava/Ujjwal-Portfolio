@@ -4,6 +4,7 @@ import EmailService from "../EmailService/EmailService";
 import myPicture from '../images/1670752620885.jpg';
 import SocialIcons from "../utility/SocialIcons";
 import './summaryTilt.css';
+import { email } from "../assets/Utilities";
 
 export default function SummaryTilt(props) {
 	useEffect(() => {	// It will call every time the component is called or refreshed
@@ -118,8 +119,8 @@ export default function SummaryTilt(props) {
 											<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
 											<path d="M22 6l-10 7L2 6" />
 										</svg>
-										{/* ujjwalpandey.aps@gmail.com */}
-										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">ujjwalpandey.aps@gmail.com</a>
+										{email}
+										<a href="mailto:ujjwalpandey.aps@gamil.com" target="_blank" rel="noopener noreferrer">{email}</a>
 									</div>
 									<button className="contact-me" onClick={() => setEmailModal(!emailModal)}>DIRECT MESSAGE</button>
 								</div>

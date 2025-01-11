@@ -10,7 +10,7 @@ export default function PreviewPDFs({ close }) {
 	}
 
 	return (
-		<section id="previews" className={previewCSS.previewsFullPage} onClick={(e) => closeBtnHandler(e)} role='pageClose'>
+		<section id="previews" className={previewCSS.previewsFullPage} onClick={(e) => closeBtnHandler(e)}>
 			<div className={previewCSS.previewSection} onClick={(e) => e.stopPropagation()}>
 				<div className={previewCSS.closeBtn} onClick={() => close(false)}>X</div>
 				<PDFViewer />

@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 import { BiSolidBarChartAlt2 } from 'react-icons/bi';
-import { FaWindowClose } from 'react-icons/fa';
+import { FaHome, FaWindowClose } from 'react-icons/fa';
+import { GiSkills } from "react-icons/gi";
+import { MdContacts } from "react-icons/md";
+import { RiFilePaper2Line } from "react-icons/ri";
+import { SiComposer } from "react-icons/si";
 import { Link } from 'react-router-dom';
-import { isMobileDevice } from '../assets/Utilities';
 import ujjwalIcon from '../images/ujjwalAvatar3.png';
 import style from './Navbar.module.css';
 
@@ -17,7 +20,9 @@ export default function Navbar() {
 
 	// Let the navbar float when scrolled
 	useEffect(() => {
-		const handleScroll = () => { setFloatNav(window.scrollY > 80) }
+		const handleScroll = () => {
+			setFloatNav(window.scrollY > 80)
+		}
 
 		window.addEventListener('scroll', handleScroll)
 		return () => window.removeEventListener('scroll', handleScroll)
@@ -36,10 +41,11 @@ export default function Navbar() {
 					<div className="myName">Ujjwal Pandey</div>
 					<FaWindowClose className={style.action} size="2rem" onClick={toggleShowSidebar} />
 				</div>
-				<Link className={style.links} onClick={linkClicked} to="">Home</Link>
-				<Link className={style.links} onClick={linkClicked} to="./skills_projects">ShowCase</Link>
-				<Link className={style.links} onClick={linkClicked} to="./contact">Contact</Link>
-				{!isMobileDevice() && <Link className={style.links} onClick={linkClicked} to="./summary">Summary</Link>}
+				<Link className={style.links} onClick={linkClicked} to="/"><FaHome />Home</Link>
+				<Link className={style.links} onClick={linkClicked} to="./skills_projects"><SiComposer />Show Case</Link>
+				<Link className={style.links} onClick={linkClicked} to="./resume"><RiFilePaper2Line />Resume</Link>
+				<Link className={style.links} onClick={linkClicked} to="./summary"><GiSkills />Summary</Link>
+				<Link className={style.links} onClick={linkClicked} to="./contact"><MdContacts />Contact</Link>
 			</div>
 		</>
 	)

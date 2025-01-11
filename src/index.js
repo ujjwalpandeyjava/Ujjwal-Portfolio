@@ -1,9 +1,10 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { Toaster } from 'react-hot-toast';
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider, useNavigate } from 'react-router-dom';
-import configs from '../package.json';
+import { ToastContainer, Zoom } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { ComponentLoading } from './assets/Loadings';
+import { homePath } from './assets/Utilities';
 import ContactMePage from './contact/ContactMePage';
 import PDFViewer from './document/PDFViewer';
 import Footer from "./footer/Footer";
@@ -16,9 +17,6 @@ const Home = lazy(() => import("./home/Home"));
 const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
 const SkillsProjects = lazy(() => import("./learnings/SkillsProjects"));
 const SummaryCard = lazy(() => import("./tiltEffect/summaryTilt"));
-
-
-const homePath = configs.homepage.substring(configs.homepage.lastIndexOf("/") + 1, configs.homepage.length)
 
 
 function ToHome() {
@@ -35,7 +33,9 @@ function BaseApp() {
       <ConnectView />
       <div className='sectionBody'>
         <Outlet />
-        <Toaster position="bottom-right" />
+        <ToastContainer position="top-right" style={{ position: "fixed", zIndex: "1000" }}
+          autoClose={2500} limit={12} hideProgressBar={false} draggable newestOnTop={true}
+          rtl={false} theme="light" transition={Zoom} closeOnClick pauseOnFocusLoss pauseOnHover />
       </div >
       <Footer />
     </>
@@ -49,9 +49,9 @@ const routesWithJSX = createBrowserRouter(
       <Route path={homePath} element={<BaseApp />}>
         <Route path="" element={<Suspense fallback={<ComponentLoading />}><Home /></Suspense>} />
         <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
-        <Route path="contact" element={<Suspense fallback={<ComponentLoading />}><ContactMePage /></Suspense>} />
         <Route path="summary" element={<Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>} />
         <Route path="resume" element={<Suspense fallback={<ComponentLoading />}><PDFViewer /></Suspense>} />
+        <Route path="contact" element={<Suspense fallback={<ComponentLoading />}><ContactMePage /></Suspense>} />
       </Route>
       <Route path='*' element={<Suspense fallback={<ComponentLoading />}><PageNotFound /></Suspense>} />
     </Route>
