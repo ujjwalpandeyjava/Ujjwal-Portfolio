@@ -11,7 +11,6 @@
 
 .qualification,
 .workExperience {
-	/* background-color: #fff5e794; */
 	padding: 7px;
 	border-radius: 7px;
 	flex: 1 1;
@@ -49,7 +48,6 @@
 }
 .details > .eachWorkSection {
 	padding: 0 0 25px 20px;
-	/* text-transform: capitalize; */
 	position: relative;
 }
 .details > .eachWorkSection::after {
@@ -80,7 +78,6 @@
 	color: gray;
 	font-weight: normal;
 	font-size: small;
-	/* font-style: italic; */
 	font-family: serif;
 }
 .someDetails {

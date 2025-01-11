@@ -37,7 +37,6 @@ export default function Navbar() {
 					<FaWindowClose className={style.action} size="2rem" onClick={toggleShowSidebar} />
 				</div>
 				<Link className={style.links} onClick={linkClicked} to="">Home</Link>
-				<Link className={style.links} onClick={linkClicked} to="./experience">Experience</Link>
 				<Link className={style.links} onClick={linkClicked} to="./skills_projects">ShowCase</Link>
 				<Link className={style.links} onClick={linkClicked} to="./contact">Contact</Link>
 				{!isMobileDevice() && <Link className={style.links} onClick={linkClicked} to="./summary">Summary</Link>}

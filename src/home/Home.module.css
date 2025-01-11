@@ -11,13 +11,12 @@
 	box-shadow: 0 15px 15px 0 #e3e3e3;
 	min-height: 80dvh;
 }
-
-.home > .whoIAm {
+.whoIAm {
 	display: flex;
 	min-width: max-content;
 	flex-direction: column;
 	margin-top: 2rem;
-	font-size: 2em;
+	font-size: 1.85em;
 	text-transform: uppercase;
 	justify-content: center;
 	align-items: flex-start;

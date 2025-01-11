@@ -7,9 +7,10 @@ import 'react-pdf/dist/Page/TextLayer.css';
 import pdfFile from '../Resume_CV/ujjwal_full_stack_C_V.pdf';
 import useDocumentTitle from "../assets/useDocumentTitle";
 import style from './PDFViewer.module.css';
+
+
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-
 export default function PDFViewer() {
 	useDocumentTitle("PDF Viewer");
 

@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import './ImageCarousel.css';
+import { useEffect, useRef, useState } from 'react';
 import AdJavaImage from '../images/AdvancedJava.png';
 import cssImage from '../images/css.jpg';
 import dsAlgoImage from '../images/dsalog.jfif';
@@ -23,6 +22,8 @@ import jQuery from '../images/jQuery.png';
 import sfImage from '../images/salesforce.png';
 import postman from '../images/postman.png';
 import springBoot from '../images/springBoot.png';
+import styles from './ImageCarousel.css';
+
 
 const imageInCarouse = [
 	htmlImage,
@@ -61,30 +62,32 @@ const images = {
 	images: [...imageInCarouse, ...imageInCarouse, ...imageInCarouse, ...imageInCarouse]
 };
 
-const ImageCarousel = () => {
+export default function SkillsImageCarousel() {
 	const [currentIndex, setCurrentIndex] = useState(-15);
+	const carouselImages = useRef(null);
+
 
 	useEffect(() => {
-		const interval = setInterval(() => {
+		carouselImages.current = setInterval(() => {
 			setCurrentIndex((prevIndex) => ((prevIndex + images.imageWidth <= images.imageWidth * (images.images.length - 1)) ? (prevIndex + images.imageWidth) : 0));
 		}, 2500);
-		return () => clearInterval(interval);
+
+		return () => {
+			clearInterval(carouselImages.current)
+			carouselImages.current = null;
+		};
 	}, []);
 
+
 	return (
-		<div className="image-carousel">
-			<div className="image-list" style={{
-				width: images.images.length * images.imageWidth + "px",
-				transform: `translateX(-${currentIndex}px)`
-			}}>
-				{images.images.map((imageUrl, index) => (
-					<div key={"skill-" + (index + 1)} className="image-item">
+		<div className={styles.imageCarousel}>
+			<div className={styles.imageList} style={{ width: images.images.length * images.imageWidth + "px", transform: `translateX(-${currentIndex}px)` }}>
+				{images.images.map((imageUrl, index) =>
+					<div key={"skill-" + (index + 1)} className={styles.imageItem}>
 						<img src={imageUrl} alt={`i ${index + 1}`} style={{ width: `${images.imageWidth}px`, maxWidth: `${images.imageWidth}px` }} />
 					</div>
-				))}
+				)}
 			</div>
-		</div >
+		</div>
 	);
 };
-
-export default ImageCarousel;
