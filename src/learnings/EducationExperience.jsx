@@ -36,9 +36,10 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Development of React frontend with JS and TS</li>
-								<li>Development of microservice apps with spring boot</li>
-								<li>Development of Mobile apps with Kotlin and Swift</li>
+								<li>- Developed React-based frontend applications using JavaScript (JS) and TypeScript (TS).  </li>
+								<li>- Built and maintained backend microservices using Spring Boot.</li>
+								<li>- Designed and developed Android applications using Kotlin.</li>
+								<li>- Led a development team in building and delivering high-quality software solutions.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Senior Product Developer</div>
@@ -51,11 +52,11 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Development and refinement of APIs and User Interfaces.</li>
-								<li>Super-headed development and managed of the projects to oversee the production.</li>
-								<li>Developed high-processing front-end for dedicated low powered hardwares.</li>
-								<li>Integrated enterprise chat-bots, Appointment bots with AIs for web apps.</li>
-								<li>Worked very close with Salesforce developers and admin teams.</li>
+								<li>- Development and refinement of APIs and User Interfaces.</li>
+								<li>- Super-headed development and managed of the projects to oversee the production.</li>
+								<li>- Developed high-processing front-end for dedicated low powered hardwares.</li>
+								<li>- Integrated enterprise chat-bots, Appointment bots with AIs for web apps.</li>
+								<li>- Worked very close with Salesforce developers and admin teams.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
@@ -67,13 +68,13 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>Worked on project, as team member in building Digitization software for government documents keeping.</li>
-								<li>Worked on DRDO and CEMILAC projects.</li>
-								<li>Identify and add validations in Java APIs and fix bugs for smooth transition of work.</li>
-								<li>Created flows and implemented them on NewGen's software, including OmniDoc, OmniScanner.</li>
-								<li>Developing Java APIs live following thorough validations & testing.</li>
-								<li>Handled UI/UX development using Figma and coding them in JSP, HTML, CSS.</li>
-								<li>Bug fixing to ensure the project online smoothly.</li>
+								<li>- Worked on project, as team member in building Digitization software for government documents keeping.</li>
+								<li>- Worked on DRDO and CEMILAC projects.</li>
+								<li>- Identify and add validations in Java APIs and fix bugs for smooth transition of work.</li>
+								<li>- Created flows and implemented them on NewGen's software, including OmniDoc, OmniScanner.</li>
+								<li>- Developing Java APIs live following thorough validations & testing.</li>
+								<li>- Handled UI/UX development using Figma and coding them in JSP, HTML, CSS.</li>
+								<li>- Bug fixing to ensure the project online smoothly.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer Trainee</div>
@@ -85,8 +86,8 @@ export default function EducationExperience() {
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>
 							<ul>
-								<li>Create Ui with HTML, CSS, and JS for projects assigned in NIIT with teachers and developers.</li>
-								<li>Learn java for backend, at the end of this tenure, I was able to work on backend and frontend.</li>
+								<li>- Create Ui with HTML, CSS, and JS for projects assigned in NIIT with teachers and developers.</li>
+								<li>- Learn java for backend, at the end of this tenure, I was able to work on backend and frontend.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Front-end Developer</div>

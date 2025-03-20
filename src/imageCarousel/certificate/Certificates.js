@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Autoplay, HashNavigation, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import certificatesCSS from './Certificates.module.css';
+import style from './Certificates.module.css';
 
 import c3 from '../certificate/images/Advanced JS - JavaScript for QA Engineers and SDETs.jpg';
 import c12 from '../certificate/images/Awesome - Java Programming.jpg';
@@ -19,6 +19,7 @@ import c7 from '../certificate/images/Java Servlets and JSP - Build Java EE app.
 import c4 from '../certificate/images/React- 6.5hr course.jpg';
 import c10 from '../certificate/images/Spring Framework with Spring Boot.jpg';
 import c6 from '../certificate/images/Web Development - 22 Courses in 1 Course.jpg';
+import c11 from '../certificate/images/JavaThreading10hrCourse.jpg';
 
 
 
@@ -64,6 +65,11 @@ const certificatesJSON = [
 		path: c10
 	},
 	{
+		name: "Java Threading 10+hr (Advanced Course)",
+		description: "About this certificate",
+		path: c11
+	},
+	{
 		name: "Awesome - Java Programming",
 		description: "About this certificate",
 		path: c12
@@ -79,11 +85,6 @@ const certificatesJSON = [
 		path: c9
 	}
 ]
-// {
-// 	name: "Daily Brief Internship Certificate Ujjwal",
-// 	description: "About this certificate",
-// 	path: c11
-// },
 
 
 function MyImageComponent({ srcList, imgAlt }) {
@@ -94,12 +95,12 @@ function MyImageComponent({ srcList, imgAlt }) {
 export default function Certificates() {
 	const [allSlides, setAllSlides] = useState([]);
 	useEffect(() => {
-		[...certificatesJSON, ...certificatesJSON].forEach((eachImg, index) => {
+		certificatesJSON.forEach((eachImg, index) => {
 			let newSlide = <SwiperSlide key={"eachSlide" + (index + 1)}>
-				<article className={certificatesCSS.eachCertificate}>
-					<section className={certificatesCSS.eachCertificate_Inner}><img className={certificatesCSS.eachCertificateImg} src={eachImg.path} alt={eachImg.name} /></section>
-					<section className={certificatesCSS.eachCertificate_Details}>
-						<section className={certificatesCSS.eachCertificate_Inner_Name}>{eachImg.name}</section>
+				<article className={style.eachCertificate}>
+					<section className={style.eachCertificate_Inner}><img className={style.eachCertificateImg} src={eachImg.path} alt={eachImg.name} /></section>
+					<section className={style.eachCertificate_Details}>
+						<section className={style.eachCertificate_Inner_Name}>{eachImg.name}</section>
 					</section>
 				</article>
 			</SwiperSlide>
@@ -118,19 +119,22 @@ export default function Certificates() {
 	};
 	const numberedPagination = {
 		clickable: true,
-		dynamicBullets: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + " " + style.swiperPaginationBullet + '">' + (index + 1) + '</span>';
+		},
 	};
 
+
 	return (
-		<div className={[certificatesCSS.certificates, "parallelBackgroundImage bg-Image1"].join(" ")}>
+		<div className={[style.certificates, "parallelBackgroundImage bg-Image1"].join(" ")}>
 			<Suspense fallback={<h1>Loading Special Certificates...</h1>}>
-				<h1 className={certificatesCSS.sectionHeading}>Special Certificates</h1>
-				<div className={certificatesCSS.specialCertificates}>
+				<h1 className={style.sectionHeading}>Special Certificates</h1>
+				<div className={style.specialCertificates}>
 					<MyImageComponent srcList='https://i.pinimg.com/originals/ba/77/67/ba77677b7be504b25ee2a8ea05c0a385.jpg' imgAlt="My first ever certificate F-Tech" />
 					<MyImageComponent srcList='https://i.pinimg.com/originals/53/dd/ee/53ddeeca3ebe2859ebce42c28673da6b.jpg' imgAlt="3-year Web development specialization certificate From NIIT" />
 				</div>
 			</Suspense>
-			<h1 className={certificatesCSS.sectionHeading}>Dedicated Certifications</h1>
+			<h1 className={style.sectionHeading}>Dedicated Certifications</h1>
 			<Swiper
 				centeredSlides={true}
 				spaceBetween={60}
@@ -159,13 +163,13 @@ export default function Certificates() {
 				autoplay={{ delay: 4000, disableOnInteraction: false }}
 				pagination={numberedPagination}
 				navigation={true}
-				hashNavigation={{ watchState: true }}
+				hashNavigation={{ watchState: false }}
 				keyboard={{ enabled: true }}
 				modules={[Autoplay, Pagination, Navigation, HashNavigation, Keyboard]}
 				onAutoplayTimeLeft={onAutoplayTimeLeft}
 				className="mySwiper">
 				{allSlides}
-				<div className={certificatesCSS.autoplay_progress} slot="container-end">
+				<div className={style.autoplay_progress} slot="container-end">
 					<svg viewBox="0 0 48 48" ref={progressCircle}><circle cx="24" cy="24" r="20"></circle></svg>
 					<span ref={progressContent}></span>
 				</div>

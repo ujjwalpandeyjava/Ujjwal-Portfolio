@@ -10,19 +10,20 @@ function WhatICanDo() {
 			<h1>My proficiency</h1>
 			<div className={style.abilities}>
 				<div className={style.eachAbilities}>
-					<img src={backend} alt="Server-side coding" />
+					<img src={backend} alt="Backend Development" />
 					<div>Backend Development</div>
 					<p>
-						I have mastered spring boot with Java to deliver industry-standard, fast, robust server to keep backbone of application strong. 
+						Experienced in building industry-standard, fast, and robust backend systems using Spring Boot with Java, ensuring a strong and scalable application backbone.
 						<hr />
-						<strong>Technologies:</strong> Java, Spring Boot, multiple modules of Spring
+						<strong>Technologies:</strong> Java, Spring Boot, and various Spring modules
 					</p>
 				</div>
 				<div className={style.eachAbilities}>
-					<img src={frontEnd} alt="Client-side coding" />
+					<img src={frontEnd} alt="Frontend Development" />
 					<div>Frontend Development</div>
 					<p>
-						Proficient in creating immersive and user-friendly experience, developing visually stunning and intuitive UI.
+						Skilled in crafting immersive, user-friendly experiences with visually appealing and intuitive UI designs.
+						Passionate about building responsive and dynamic web applications.
 						<hr />
 						<strong>Technologies:</strong> HTML, CSS, JavaScript, TypeScript, <b>ReactJS</b>, SCSS, and various modern libraries.
 					</p>
@@ -40,9 +41,9 @@ function WhatICanDo() {
 					<img src={mobileApp} alt="" />
 					<div>Mobile App Development</div>
 					<p>
-						I am an occasional mobile app developer I code for Android and iOS both, with React Native, kotlin, swift.
+						I am a mobile app developer with experience in building Android application.
 						<hr />
-						<strong>Technologies:</strong> React Native, Swift, and Kotlin
+						<strong>Technologies:</strong> Kotlin, React Native
 					</p>
 				</div>
 			</div>

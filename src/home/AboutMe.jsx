@@ -57,11 +57,12 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td>Job Status</td>
-								<td>Working at Intellylabs Technologies</td>
+								<td style={{ textDecoration: "underline dotted", fontStyle: 'italic', fontWeight: "bold" }}>Working at <a href="https://www.intellylabs.com/">Intellylabs Technologies</a></td>
 							</tr>
 							<tr>
 								<td>Job Profile</td>
-								<td>Product Engineering, Full Stack Developer <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java, JavaScript and Typescript</u></td>
+								{/* <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java, JavaScript and Typescript</u> */}
+								<td>Senior Product Developer</td>
 							</tr>
 						</tbody>
 					</table>
