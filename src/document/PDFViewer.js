@@ -4,7 +4,7 @@ import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { Document, Page, pdfjs } from "react-pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
-import pdfFile from '../Resume_CV/ujjwal_full_stack_C_V.pdf';
+import pdfFile from '../Resume_CV/SimpleCV.pdf';
 import useDocumentTitle from "../assets/useDocumentTitle";
 import style from './PDFViewer.module.css';
 
