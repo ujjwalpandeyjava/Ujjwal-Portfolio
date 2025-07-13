@@ -35,14 +35,17 @@ export default function EducationExperience() {
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Senior Product Developer'>IntellyLabs Technologies<span className={eeCSS.time}> (June/2024-Present)</span></div>
-						<div className={eeCSS.someDetails}>Service Based with Own Product on AI</div>
-						<details className={eeCSS.responsibilities}>
+						<div className={eeCSS.someDetails}>AI Product + Service Based + Consulting</div>
+						<details className={eeCSS.responsibilities} open>
 							<summary>Responsibilities</summary>
 							<ul>
+								<li>- Developing the AI-powered product 'IntellyMind' including chat widget, admin panel, and live Support system  using Spring Boot micro services and React with TS, enabling real-time chat and live insights with 99% up-time.</li>
+								{/* <li>- Developed micro-service-based Backend for, RepairingCompany.com - repair and tracking web application, LyncWyze - car pooling mobile apps.</li> */}
+								{/* <li>- Currently developing a Customer Support Portal for Intellymind with Next.js (TS) and Spring Boot, expected to reduce ticket resolution time by 25%.</li> */}
 								<li>- Developed React-based frontend applications using JavaScript (JS) and TypeScript (TS).  </li>
 								<li>- Built and maintained backend microservices using Spring Boot.</li>
 								<li>- Designed and developed Android applications using Kotlin.</li>
-								<li>- Led a development team in building and delivering high-quality software solutions.</li>
+								<li>- Developed and delivering high-quality software solutions.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Senior Product Developer</div>
@@ -51,7 +54,7 @@ export default function EducationExperience() {
 
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='2 years 4 months'>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024) (2 years 4 months)</span> </div>
-						<div className={eeCSS.someDetails}>Tele-Medicine Home-Based Health-Care company, originated from Canada.</div>
+						<div className={eeCSS.someDetails}>Healthcare Product Based, from Canada.</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
@@ -67,7 +70,7 @@ export default function EducationExperience() {
 
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Nov/2021-Jan/022) (3 months)</span> </div>
-						<div className={eeCSS.someDetails}>Government product based company</div>
+						<div className={eeCSS.someDetails}>Service to India Government</div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
@@ -85,7 +88,7 @@ export default function EducationExperience() {
 
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Part-Time<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
-						<div className={eeCSS.someDetails}>Education and Part time</div>
+						<div className={eeCSS.someDetails}>Educational Product Based</div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>
 							<ul>
