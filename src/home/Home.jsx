@@ -6,10 +6,10 @@ import PreviewPDFs from '../contact/resume/previewPDFs';
 import floatingImage from '../images/developer1.svg';
 import style from './Home.module.css';
 
-const AboutMe = lazy(() => import("./AboutMe"));
+const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
 const Skills = lazy(() => import("../learnings/Skills"));
 const WhatICanDo = lazy(() => import("./WhatICanDo"));
-const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
+const AboutMe = lazy(() => import("./AboutMe"));
 
 
 export default function Home() {

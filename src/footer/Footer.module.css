@@ -4,12 +4,15 @@
 	padding: 16px 0 12px 0;
 	text-align: center;
 	font-size: 14px;
+	margin-top: 1em;
 }
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
 .link {
 	color: #f0f0f0;
 	text-decoration: none;
@@ -17,6 +20,7 @@
 	font-weight: bold;
 	transition: color 0.3s ease;
 }
+
 .link:hover {
 	color: #00bcd4;
 }

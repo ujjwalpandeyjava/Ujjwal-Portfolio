@@ -8,8 +8,11 @@ export default function EducationExperience() {
 				<div className={eeCSS.subHeading}>My Education</div>
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='Masters of Compute Application'>MCA - ML & AI <span className={eeCSS.time}>(2023 - 2025 pursuing)</span> </div>
-						<div className={eeCSS.someDetails}>Flexibly concentrating on skills, academic, and job.</div>
+						<div className={eeCSS.name} title='Masters of Compute Application'>MCA - ML & AI <span className={eeCSS.time}>(2023 - 2025)</span> </div>
+						<div className={eeCSS.someDetails}>
+							Successfully completed with a strong focus on skills, academics, and job readiness. Achieved 8 CGPA.
+							Developed a solid understanding of how Artificial Intelligence and Machine Learning algorithms work, including work experience on IntellyMind.
+						</div>
 						<div className={eeCSS.type}>Masters from Amity University Online</div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
@@ -81,7 +84,7 @@ export default function EducationExperience() {
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Freelance<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
+						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Part-Time<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
 						<div className={eeCSS.someDetails}>Education and Part time</div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>

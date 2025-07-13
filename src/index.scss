@@ -9,29 +9,25 @@
   scroll-behavior: smooth;
   font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
 }
+
 div::selection {
-  color: rgb(47, 92, 180);
-  background-color: rgb(255, 255, 132);
+  background-color: rgb(0, 76, 255);
+  color: rgb(216, 216, 216);
 }
-:root {
-  --fontSize10: 10px;
-  --fontSize12: 12px;
-  --fontSize15: 15px;
-  --fontSize20: 20px;
-  --fontSize25: 25px;
-  --fontSize30: 30px;
-  --fontSize35: 35px;
-  --fontSize40: 40px;
-}
+
+// :root {}
+
 body {
   min-width: 375px;
   overflow-x: auto;
   background-color: white;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
 }
@@ -43,6 +39,7 @@ ul {
   font-size: 1.45em;
   word-spacing: 8px;
 }
+
 .alignIconText {
   display: inline-flex;
   align-items: center;

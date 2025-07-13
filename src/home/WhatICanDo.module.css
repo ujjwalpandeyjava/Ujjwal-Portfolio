@@ -2,13 +2,12 @@
 	text-align: center;
 	padding: 1rem 2rem 3rem 2rem;
 	box-shadow: inset 0 15px 15px 0 #ddddff;
-	background: linear-gradient(
-		180deg,
-		rgba(221, 221, 255, 1) 0%,
-		rgba(211, 145, 254, 0.3501050078234419) 40%,
-		rgba(69, 223, 252, 0.28567923751531865) 100%
-	);
+	background: linear-gradient(180deg,
+			rgba(221, 221, 255, 1) 0%,
+			rgba(211, 145, 254, 0.3501050078234419) 40%,
+			rgba(69, 223, 252, 0.28567923751531865) 100%);
 }
+
 .abilitiesSection h1 {
 	margin: auto;
 	margin-bottom: 1.5em;
@@ -21,6 +20,7 @@
 		3px 2px 2px #4798bf;
 	color: rgb(17, 17, 57);
 }
+
 .abilities {
 	display: flex;
 	width: 100%;
@@ -44,50 +44,62 @@
 		rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
 		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
 .eachAbilities:hover {
 	box-shadow:
 		rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
 		rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+
 .eachAbilities img {
 	min-height: 200px;
 	transform: translate(0, -20px);
 	max-height: 200px;
 	animation: moveIconUpDown 20s infinite both;
 }
-.eachAbilities img + div {
+
+.eachAbilities img+div {
 	text-decoration: underline;
 	text-decoration-color: #4753bf8a;
 	text-decoration-style: dotted;
 	margin-bottom: 0.3em;
 }
+
 .eachAbilities:nth-child(2n) img {
 	animation-delay: 1s;
 }
+
 .eachAbilities div {
 	color: black;
 	font-weight: bold;
 	font-size: 1.4em;
 }
-.eachAbilities p {
+
+.eachAbilities .content {
 	padding-top: 8px;
 	color: slategray;
+	font-size: 1em;
 }
+
 .eachAbilities hr {
 	margin: 1em 0;
 }
 
 @keyframes moveIconUpDown {
+
 	0%,
 	100% {
 		transform: translate(0, 0px);
 	}
+
 	25% {
 		transform: translate(-20px, -10px);
 	}
+
 	50% {
 		transform: translate(3px, 3px);
 	}
+
 	75% {
 		transform: translate(20px, -30px);
 	}
