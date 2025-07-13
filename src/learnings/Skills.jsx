@@ -1,7 +1,6 @@
 import { SiApachekafka, SiJirasoftware, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSpringboot } from "react-icons/si";
 import { FaAngleDown, FaAngleUp, FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
-import { VscSymbolInterface } from "react-icons/vsc";
 import { FaJava, FaReact } from "react-icons/fa6";
 import { useEffect } from 'react';
 import { GrMysql } from "react-icons/gr";
