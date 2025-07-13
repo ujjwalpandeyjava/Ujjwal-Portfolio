@@ -46,6 +46,7 @@
 	place-content: center;
 	aspect-ratio: 1/1;
 	margin-bottom: 12px;
+	border: none;
 }
 
 .previousSkill:hover,

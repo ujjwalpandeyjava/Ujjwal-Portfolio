@@ -18,9 +18,9 @@ export default function AboutMe() {
 			<div className={style.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 
 			<div className={style.someDetails}>
-				<span className="myName">Hello, I'm Ujjwal Pandey!</span><br />
-				I am a Product Engineering, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
-				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs) <b>with over 3 years 8+ Months</b> of hands-on experience. Do occasional Android development with Kotlin and Swift.
+				<span className="myName">I am Ujjwal Pandey!</span><br />
+				A Product Engineering, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
+				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs, NextJs) <b>with over 4 years 2 Months</b> of hands-on experience. Do occasional Android development with Kotlin.
 			</div>
 
 			<div className={style.otherDetails}>

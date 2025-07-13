@@ -10,12 +10,11 @@
 	align-items: center;
 	/* flex-end */
 	box-shadow: 0 15px 15px 0 #e3e3e3;
-	min-height: 90dvh;
+	min-height: 88dvh;
 }
 
 @media (max-width: 800px) {
 	.home {
-		/* height: 90dvh; */
 		align-items: flex-end;
 	}
 }

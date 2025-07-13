@@ -1,7 +1,7 @@
 import mobileApp from "../images/mobileApp.png";
 import frontEnd from "../images/whatICanDo/FrontEnd.png";
 import backend from "../images/whatICanDo/FrontEnd2.png";
-import microService from "../images/whatICanDo/microService.jpg";
+import microService from "../images/whatICanDo/microServiceSmall.png";
 import dataBase from "../images/whatICanDo/buildServer.png";
 import style from './WhatICanDo.module.css';
 

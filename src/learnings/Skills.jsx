@@ -206,8 +206,8 @@ export default function Skills() {
 					</div> */}
 				</div>
 				<div className={style.previousNextAction}>
-					<div className={style.previousSkill} onClick={() => scrollSkills(0)}><FaAngleUp size="1.75em" /></div>
-					<div className={style.nextSkill} onClick={() => scrollSkills(1)}><FaAngleDown size="1.75em" /></div>
+					<button className={style.previousSkill} onClick={() => scrollSkills(0)}><FaAngleUp size="1.75em" /></button>
+					<button className={style.nextSkill} onClick={() => scrollSkills(1)}><FaAngleDown size="1.75em" /></button>
 				</div>
 			</div>
 		</div>
