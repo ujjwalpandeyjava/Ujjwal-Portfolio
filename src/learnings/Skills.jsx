@@ -3,6 +3,7 @@ import { FaAngleDown, FaAngleUp, FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSi
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
 import { FaJava, FaReact } from "react-icons/fa6";
 import { useEffect } from 'react';
+import { GrSystem } from 'react-icons/gr';
 import { GrMysql } from "react-icons/gr";
 import style from './Skills.module.css';
 
@@ -83,6 +84,16 @@ export default function Skills() {
 							Redis helps me manage caching, sessions, and real-time analytics. Its in-memory data structure makes it super fast and efficient for performance-critical apps.
 						</div>
 					</div>
+
+					<div className={style.eachSkill}>
+						<GrSystem className={style.skillIcon} />
+						<div>System Architecture</div>
+						<div className={style.eachSkillDescription}>
+							I understand how to design scalable, decoupled, and efficient system architectures using microservices, APIs, message queues, databases, and caching. I'm experienced in balancing performance, reliability, and maintainability.
+						</div>
+					</div>
+
+
 
 
 					<div className={style.division}>DataBase</div>
