@@ -12,7 +12,7 @@ export const email = "ujjwalpandey.aps@gmail.com";
 export const copyEmailToClipboard = () => {
 	navigator.clipboard.writeText(email)
 		.then(() => {
-			alert(`Email copied!:\n${email}`);
+			// alert(`Email copied!:\n${email}`);
 			toast.success("Email copied successfully!");
 		});
 };
