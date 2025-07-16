@@ -1,16 +1,21 @@
-import { useState } from "react";
-import { FaRegAddressCard } from "react-icons/fa";
+// https://techouts.com/ --  use this link for UI development
+
+
 import { IoCall, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import { RxOpenInNewWindow } from "react-icons/rx";
+import { FaRegAddressCard } from "react-icons/fa";
 import EmailService from "../EmailService/EmailService";
+import { useState } from "react";
 import contactPic from '../images/contact.png';
-import './contactMe.scss';
 import { email } from "../assets/Utilities";
+import './contactMe.scss';
+
 
 
 export default function ContactMe() {
 	const [emailModal, setEmailModal] = useState(false);
 	const toggleEmailModal = () => { setEmailModal(previous => !previous); }
+
 
 
 	return (
