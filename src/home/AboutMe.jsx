@@ -20,7 +20,7 @@ export default function AboutMe() {
 			<div className={style.someDetails}>
 				<span className="myName">I am Ujjwal Pandey!</span><br />
 				A Product Engineering, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
-				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs, NextJs) <b>with over 4 years 2 Months</b> of hands-on experience. Do occasional Android development with Kotlin.
+				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs, NextJs) <b>with over 4 years 2+ Months</b> of hands-on experience. Occasionally contribute to Android development using Kotlin.
 			</div>
 
 			<div className={style.otherDetails}>

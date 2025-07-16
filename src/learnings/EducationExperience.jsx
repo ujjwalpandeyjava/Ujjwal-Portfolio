@@ -13,17 +13,19 @@ export default function EducationExperience() {
 							Successfully completed with a strong focus on skills, academics, and job readiness. Achieved 8 CGPA.
 							Developed a solid understanding of how Artificial Intelligence and Machine Learning algorithms work, including work experience on IntellyMind.
 						</div>
-						<div className={eeCSS.type}>Masters from Amity University Online</div>
+						<div className={eeCSS.type}><a href="https://amityonline.com/master-of-computer-applications-online" target="_blank" rel="noopener noreferrer">Masters from Amity University Online</a></div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Cloud and mobile software engineering'>GNIIT <span className={eeCSS.time}>(2019 - 2022)</span> </div>
 						<div className={eeCSS.someDetails}>Dedicated 3 years boot-camp, learning full-stack Web development with java and javaScript from NIIT. I scored in top 10 with CGPA of 9.</div>
-						<div className={eeCSS.type}>Web development Specialization</div>
+						<div className={eeCSS.type}><a href="https://www.niit.com/india/course/gniit-digital-be-real-world-ready/" target="_blank" rel="noopener noreferrer">Web Development Specialization</a></div>
+						<br />
+						<div className={eeCSS.type}><a href='https://www.niit.com/india/' target='_blank' rel="noopener noreferrer">National Institute of Information and Technologies</a></div>
 					</div>
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Bachelors of Computer Application'>BCA <span className={eeCSS.time}>(2018 - 2021)</span> </div>
 						<div className={eeCSS.someDetails}>Acquired basic development skills and attended the GNIIT regularly to enhance my Web development skill.</div>
-						<div className={eeCSS.type}>Graduation from IGNOU</div>
+						<div className={eeCSS.type}><a href="https://www.ignouhelp.in/ignou-bca-syllabus-structure/" target="_blank" rel="noopener noreferrer">Graduation from IGNOU</a></div>
 					</div>
 				</div>
 			</div>
@@ -34,8 +36,8 @@ export default function EducationExperience() {
 
 				<div className={eeCSS.details}>
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='Senior Product Developer'>IntellyLabs Technologies<span className={eeCSS.time}> (June/2024-Present)</span></div>
-						<div className={eeCSS.someDetails}>AI Product + Service Based + Consulting</div>
+						<div className={eeCSS.name} title='Senior Product Developer'>IntellyLabs Technologies<span className={eeCSS.time}> (June/2024-Present) (1 year 2+ months)</span></div>
+						<div className={eeCSS.someDetails}>AI Product + Service Based + Consulting <sub>(Full-Time)</sub></div>
 						<details className={eeCSS.responsibilities} open>
 							<summary>Responsibilities</summary>
 							<ul>
@@ -54,11 +56,11 @@ export default function EducationExperience() {
 
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='2 years 4 months'>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024) (2 years 4 months)</span> </div>
-						<div className={eeCSS.someDetails}>Healthcare Product Based, from Canada.</div>
+						<div className={eeCSS.someDetails}>Product Based <sub>(Full-Time)</sub></div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>- Development and refinement of APIs and User Interfaces.</li>
+								<li>- Development and refinement of APIs and User Interfaces for in-house Telemedicine home-based Health care products.</li>
 								<li>- Super-headed development and managed of the projects to oversee the production.</li>
 								<li>- Developed high-processing front-end for dedicated low powered hardwares.</li>
 								<li>- Integrated enterprise chat-bots, Appointment bots with AIs for web apps.</li>
@@ -69,8 +71,8 @@ export default function EducationExperience() {
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Nov/2021-Jan/022) (3 months)</span> </div>
-						<div className={eeCSS.someDetails}>Service to India Government</div>
+						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Oct/2021-Jan/022) (3 months)</span> </div>
+						<div className={eeCSS.someDetails}>Service to India Government <sub>(Full-Time)</sub></div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
@@ -87,8 +89,8 @@ export default function EducationExperience() {
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>Part-Time<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
-						<div className={eeCSS.someDetails}>Educational Product Based</div>
+						<div className={eeCSS.name} title='6 months- While pursuing BCA and GNIIT'>NIIT<span className={eeCSS.time}> (May/2021-Oct/2021) (6 months)</span> </div>
+						<div className={eeCSS.someDetails}>Educational Product Based  <sub>(Part-Time)</sub></div>
 						<details className={eeCSS.responsibilities}>
 							<summary title='Click to expand'>Responsibilities</summary>
 							<ul>
