@@ -45,3 +45,41 @@ ul {
   align-items: center;
   gap: 0.5rem;
 }
+
+// App
+.baseApp {
+  // max-width: 1200px;
+}
+
+.newSection {
+  padding: 1em 3em 0 3em;
+  background-color: #f0f0f091;
+}
+
+// Utilities
+.heading1,
+.heading2 {
+  margin: auto;
+  margin-bottom: 1.5em;
+  width: max-content;
+  border-bottom: 2px solid rgb(5, 5, 183);
+  font-size: 2rem;
+  padding: 2px 10px;
+  text-shadow:
+    1px 1px 2px #c14d4d,
+    3px 2px 2px #4798bf;
+  color: #111139;
+}
+
+.heading2 {
+  border-bottom: 2px solid red;
+  color: #3c3cff;
+}
+
+.headingHint {
+  font-size: 1.25rem;
+  color: #828282;
+  margin-bottom: 1em;
+  margin-top: -1.5em;
+  text-align: center;
+}

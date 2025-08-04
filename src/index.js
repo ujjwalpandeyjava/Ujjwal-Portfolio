@@ -1,19 +1,20 @@
-import React, { lazy, Suspense, useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider, useNavigate } from 'react-router-dom';
+import { lazy, Suspense, useEffect } from 'react';
 import { ToastContainer, Zoom } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { ComponentLoading } from './assets/Loadings';
-import { homePath } from './assets/Utilities';
 import ContactMePage from './contact/ContactMePage';
-import PDFViewer from './document/PDFViewer';
-import Footer from "./footer/Footer";
-import './index.scss';
 import ConnectView from './navbar/ConnectView';
+import { homePath } from './assets/Utilities';
+import PDFViewer from './document/PDFViewer';
+import ReactDOM from 'react-dom/client';
+import Footer from "./footer/Footer";
 import Navbar from "./navbar/Navbar";
+import Home from "./home/Home";
+import "react-toastify/dist/ReactToastify.css";
+import './index.scss';
+import './index.css';
 
 
-const Home = lazy(() => import("./home/Home"));
 const PageNotFound = lazy(() => import("./pageNotFound/PageNotFound"));
 const SkillsProjects = lazy(() => import("./learnings/SkillsProjects"));
 const SummaryCard = lazy(() => import("./tiltEffect/summaryTilt"));
@@ -28,7 +29,7 @@ function ToHome() {
 }
 function BaseApp() {
   return (
-    <>
+    <div className='baseApp'>
       <Navbar />
       <ConnectView />
       <div className='sectionBody'>
@@ -38,7 +39,7 @@ function BaseApp() {
           rtl={false} theme="light" transition={Zoom} closeOnClick pauseOnFocusLoss pauseOnHover />
       </div >
       <Footer />
-    </>
+    </div>
   )
 }
 
@@ -47,7 +48,7 @@ const routesWithJSX = createBrowserRouter(
     <Route path="" element={<Outlet />}>
       <Route path="" element={<ToHome />} />
       <Route path={homePath} element={<BaseApp />}>
-        <Route path="" element={<Suspense fallback={<ComponentLoading />}><Home /></Suspense>} />
+        <Route path="" element={<Home />} />
         <Route path="skills_projects" element={<Suspense fallback={<ComponentLoading />}><SkillsProjects /></Suspense>} />
         <Route path="rundown" element={<Suspense fallback={<ComponentLoading />}><SummaryCard /></Suspense>} />
         <Route path="resume" element={<Suspense fallback={<ComponentLoading />}><PDFViewer /></Suspense>} />

@@ -5,6 +5,7 @@ import workingImg from '../images/working_on_laptop.png';
 import styles from "./ExperienceLearning.module.css";
 import ProjectsByMe from './ProjectsByMe';
 import Skills from './Skills';
+import EducationExperience from "./EducationExperience";
 
 
 function SkillsProjects() {
@@ -32,6 +33,7 @@ function SkillsProjects() {
 					<SiNextra size="0.75rem" />My journey is a testament to my passion for fullstack web development holding fire for future!
 				</p>
 			</div>
+			<EducationExperience />
 			<ProjectsByMe />
 			<Skills />
 		</>

@@ -1,0 +1,26 @@
+.journey-timeline {
+	.vertical-timeline-element-content {
+		// box-shadow: 0px 2px 5px gray;
+
+		p {
+			font-size: 0.9em;
+			color: #7b7b7b;
+
+			.tags {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+
+				.tag {
+					color: #002c46;
+					background: #c7eaff;
+					border-radius: 1em;
+					padding: 4px 20px;
+					display: inline-block;
+					margin-top: 1em;
+				}
+			}
+		}
+	}
+}
