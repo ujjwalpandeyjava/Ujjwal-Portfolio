@@ -1,5 +1,5 @@
 import { SiApachekafka, SiDocker, SiJirasoftware, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSpringboot } from "react-icons/si";
-import { FaAngleDown, FaAngleUp, FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
+import { FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
 import { FaJava, FaReact } from "react-icons/fa6";
 import { useEffect } from 'react';
@@ -15,17 +15,17 @@ export default function Skills() {
 		document.documentElement.style.setProperty('--eachSkillHeightWidth', scrollHeight + 'px');
 	}, []);
 
-	const scrollSkills = (scrollTo) => {
-		let container = document.getElementById('skillShowCase');
-		if (scrollTo === 0) {
-			container.scrollTop -= scrollHeight;
-		} else {
-			container.scrollTop += scrollHeight;
-			if (container.scrollTop > container.scrollHeight - container.clientHeight) {
-				container.scrollTop = container.scrollHeight - container.clientHeight;
-			}
-		}
-	}
+	// const scrollSkills = (scrollTo) => {
+	// 	let container = document.getElementById('skillShowCase');
+	// 	if (scrollTo === 0) {
+	// 		container.scrollTop -= scrollHeight;
+	// 	} else {
+	// 		container.scrollTop += scrollHeight;
+	// 		if (container.scrollTop > container.scrollHeight - container.clientHeight) {
+	// 			container.scrollTop = container.scrollHeight - container.clientHeight;
+	// 		}
+	// 	}
+	// }
 
 
 
@@ -82,10 +82,10 @@ export default function Skills() {
 					{/* <AnimatedSkill icon={<SiExpress />} title="Express" description="I used Express.js a Node.js framework to simplify the development of web server APIs and add helpful features." /> */}
 					{/* <AnimatedSkill icon={<FaSalesforce />} title="Salesforce" description="I have worked with the Salesforce team to develop and deploy custom application on there platform." /> */}
 				</div>
-				<div className={style.previousNextAction}>
+				{/* <div className={style.previousNextAction}>
 					<button className={style.previousSkill} onClick={() => scrollSkills(0)}><FaAngleUp size="1.75em" /></button>
 					<button className={style.nextSkill} onClick={() => scrollSkills(1)}><FaAngleDown size="1.75em" /></button>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	)
