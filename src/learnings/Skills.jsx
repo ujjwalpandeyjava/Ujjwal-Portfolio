@@ -3,7 +3,6 @@ import { FaAngleDown, FaAngleUp, FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSi
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
 import { FaJava, FaReact } from "react-icons/fa6";
 import { useEffect } from 'react';
-import { GrSystem } from 'react-icons/gr';
 import { GrMysql } from "react-icons/gr";
 import style from './Skills.module.css';
 import AnimatedSkill from "./newJourney/eachSkill/AnimatedSkillProps";
