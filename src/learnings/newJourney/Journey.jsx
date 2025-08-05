@@ -2,11 +2,11 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 // https://stephane-monnot.github.io/react-vertical-timeline/#/
 import { MdOutlineWorkHistory } from "react-icons/md";
 import { FaGraduationCap } from "react-icons/fa6";
+import BlockContainer from '../../assets/taging/BlockContainer';
 import { GiJourney } from "react-icons/gi";
+import Tag from '../../assets/taging/Tag';
 import 'react-vertical-timeline-component/style.min.css';
 import "./Journey.scss";
-import BlockContainer from '../../assets/taging/BlockContainer';
-import Tag from '../../assets/taging/Tag';
 
 
 
