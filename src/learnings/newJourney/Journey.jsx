@@ -7,6 +7,7 @@ import { GiJourney } from "react-icons/gi";
 import Tag from '../../assets/taging/Tag';
 import 'react-vertical-timeline-component/style.min.css';
 import "./Journey.scss";
+import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 
 
@@ -44,15 +45,6 @@ const Journey = () => {
 
 				{/* Work Experience */}
 				<VerticalTimelineElement date="May 2024 - August 2024" {...commonProps.vtElement0}>
-					<BlockContainer element="span" margin={["mb"]}>
-						<Tag c="gray">Java</Tag>
-						<Tag c="gray">Spring Boot</Tag>
-						<Tag c="gray">MicroService</Tag>
-						<Tag c="gray">JavaScript</Tag>
-						<Tag c="gray">TypeScript</Tag>
-						<Tag c="gray">React</Tag>
-						<Tag c="gray">Next</Tag>
-					</BlockContainer>
 					<h3 className="vertical-timeline-element-title">Senior Product Developer</h3>
 					<h4 className="vertical-timeline-element-subtitle">IntellyLabs Technologies</h4>
 					<div className='content'>
@@ -68,6 +60,17 @@ const Journey = () => {
 							<li> Developed and delivering high-quality software solutions.</li>
 						</ul>
 					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue"><a href="https://intellylabs.com/" target="_blank" rel="noopener noreferrer">IntellyLabs</a></Tag>
+						<Tag c="lightblue">Work from Home</Tag>
+						<Tag c="gray">Java</Tag>
+						<Tag c="gray">Spring Boot</Tag>
+						<Tag c="gray">MicroService</Tag>
+						<Tag c="gray">JavaScript</Tag>
+						<Tag c="gray">TypeScript</Tag>
+						<Tag c="gray">React</Tag>
+						<Tag c="gray">Next</Tag>
+					</BlockContainer>
 				</VerticalTimelineElement>
 
 				<VerticalTimelineElement date="February 2022 - May 2024" {...commonProps.vtElement1}>
@@ -85,6 +88,15 @@ const Journey = () => {
 							<li> Worked with the QA team and authored comprehensive product documentation</li>
 						</ul>
 					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue">Hybrid</Tag>
+						<Tag c="gray">Java</Tag>
+						<Tag c="gray">Spring Boot</Tag>
+						<Tag c="gray">MonoLithic</Tag>
+						<Tag c="gray">MicroService</Tag>
+						<Tag c="gray">JavaScript</Tag>
+						<Tag c="gray">React</Tag>
+					</BlockContainer>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement date="July 2023 - June 2025" {...commonProps.vtElement2}>
 					<h3 className="vertical-timeline-element-title">Master of Computer Applications - ML & AI</h3>
@@ -98,18 +110,19 @@ const Journey = () => {
 						</p>
 					</div>
 					<BlockContainer element="span" margin={["mt"]}>
-						{/* <Tag c='lightblue'>Cloud and mobile software engineering</Tag> */}
 						<Tag c="lightblue"><a href="https://amityonline.com/master-of-computer-applications-online" target="_blank" rel="noopener noreferrer">Masters from Amity University</a></Tag>
 						<Tag c="lightblue">Online</Tag>
-						<Tag c="lightblue">8.17 CGPA</Tag>
+						<Tag c="green">AI</Tag>
+						<Tag c="green">Web Development</Tag>
+						<Tag c="yellow">8.17 CGPA</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
 
 				<VerticalTimelineElement date="October 2021 - January 022" {...commonProps.vtElement1}>
 					<h3 className="vertical-timeline-element-title">Java Developer Trainee</h3>
-					<h4 className="vertical-timeline-element-subtitle">Net Creative Mind Solutions</h4>
+					<h4 className="vertical-timeline-element-subtitle">Net CreativeMind Solutions</h4>
 					<div className="content">
-						<h5 className="vertical-timeline-element-subtitle">Service to Indian Government <sub>(Full-Time)</sub></h5>
+						<h5 className="vertical-timeline-element-subtitle">Staffing, Service to Indian Government <sub>(Full-Time)</sub></h5>
 						<h4>Responsibilities</h4>
 						<ul>
 							<li> Worked on project, as team member in building Digitization software for government documents keeping with NewGen's software, including OmniDoc, OmniScanner.</li>
@@ -118,6 +131,13 @@ const Journey = () => {
 							<li> Develop Figma into JSP, HTML, CSS code.</li>
 						</ul>
 					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue"><a href="https://www.netcreativemind.com/" target="_blank" rel="noopener noreferrer">Net CreativeMind Solutions</a></Tag>
+						<Tag c="lightblue">Work from Office</Tag>
+						<Tag c="gray">Java, Advanced Java</Tag>
+						<Tag c="gray">Figma</Tag>
+						<Tag c="gray">HTML, CSS, JSP</Tag>
+					</BlockContainer>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement date="October 2021 - January 022" {...commonProps.vtElement1}>
 					<h3 className="vertical-timeline-element-title">Front-end Developer</h3>
@@ -126,10 +146,16 @@ const Journey = () => {
 						<h5 className="vertical-timeline-element-subtitle">Educational Product Based <sub>(Part-Time)</sub></h5>
 						<h4>Responsibilities</h4>
 						<ul>
-							<li> Create Ui with HTML, CSS, and JS for projects assigned in NIIT with teachers and developers.</li>
+							<li> Create UI with HTML, CSS, and JS for projects assigned in NIIT with teachers and developers.</li>
 							<li> Learn java for backend, at the end of this tenure, I was able to work on backend and frontend.</li>
 						</ul>
 					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue"><a href='https://www.niit.com/india/' target='_blank' rel="noopener noreferrer">NIIT Web</a></Tag>
+						<Tag c="lightblue">Work from Office</Tag>
+						<Tag c="gray">Java, Advanced Java</Tag>
+						<Tag c="gray">HTML, CSS, ReactJs</Tag>
+					</BlockContainer>
 				</VerticalTimelineElement>
 
 				<VerticalTimelineElement date="January 2019 - December 2022" {...commonProps.vtElement2}>
@@ -140,9 +166,10 @@ const Journey = () => {
 						<p>Dedicated 3 years boot-camp, learning full-stack Web development with java and javaScript from NIIT. I scored in top 10 with CGPA of 9.</p>
 					</div>
 					<BlockContainer element="span" margin={["mt"]}>
-						<Tag c="lightblue">Regular</Tag>
-						<Tag c="lightblue">9 CGPA</Tag>
 						<Tag c="lightblue"><a href='https://www.niit.com/india/course/gniit-digital-be-real-world-ready/' target='_blank' rel="noopener noreferrer">National Institute of Information and Technologies</a></Tag>
+						<Tag c="lightblue">Regular</Tag>
+						<Tag c="green">Web Development</Tag>
+						<Tag c="yellow">9 CGPA</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
 				<VerticalTimelineElement date="July 2018 - June 2021" {...commonProps.vtElement2}>
@@ -153,19 +180,25 @@ const Journey = () => {
 						<p>Acquired basic development skills and attended the GNIIT regularly to enhance my Web development skill.</p>
 					</div>
 					<BlockContainer element="span" margin={["mt"]}>
-						<Tag c="lightblue">While NIIT</Tag>
-						<Tag c="lightblue">6.75 CGPA</Tag>
-						<Tag c="lightblue">Correspondence</Tag>
 						<Tag c="lightblue"><a href="https://www.ignouhelp.in/ignou-bca-syllabus-structure/" target="_blank" rel="noopener noreferrer">IGNOU</a></Tag>
+						<Tag c="lightblue">With NIIT</Tag>
+						<Tag c="lightblue">Correspondence</Tag>
+						<Tag c="green">Web Development</Tag>
+						<Tag c="yellow">6.75 CGPA</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
 
 				{/* Start */}
 				<VerticalTimelineElement date="2018 - present" iconStyle={{ background: '#10cc52ff', color: '#ffffff' }}
 					icon={<GiJourney />} intersectionObserverProps={{ triggerOnce: false }}>
-					<h3 className="vertical-timeline-element-title">Journey In NutShell</h3>
-					<h4 className="vertical-timeline-element-subtitle">Curiosity turning into Proficiency</h4>
-					<p>Began exploring programming, building basic projects, and developing a deep interest in technology and software development.</p>
+					{/* <h3 className="vertical-timeline-element-title">Journey In NutShell</h3> */}
+					<h3 className="vertical-timeline-element-subtitle">Curiosity turning into Proficiency</h3>
+					<div className="content">
+						<RiDoubleQuotesL />
+						Began exploring programming with basic projects, which soon turned into a deep passion for technology. <br />
+						From BCA and NIIT to an MCA in ML & AI, I've grown by mastering multiple languages and building scalable enterprise applications using microservices.
+						<RiDoubleQuotesR />
+					</div>
 				</VerticalTimelineElement>
 			</VerticalTimeline>
 		</div >
