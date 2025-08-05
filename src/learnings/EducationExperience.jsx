@@ -10,7 +10,8 @@ export default function EducationExperience() {
 					<div className={eeCSS.eachWorkSection}>
 						<div className={eeCSS.name} title='Masters of Compute Application'>MCA - ML & AI <span className={eeCSS.time}>(2023 - 2025)</span> </div>
 						<div className={eeCSS.someDetails}>
-							Successfully completed with a strong focus on skills, academics, and job readiness. Achieved 8 CGPA.
+							Successfully completed with a strong focus on skills, academics, and job readiness. Achieved 8.17 CGPA.
+							<br />
 							Developed a solid understanding of how Artificial Intelligence and Machine Learning algorithms work, including work experience on IntellyMind.
 						</div>
 						<div className={eeCSS.type}><a href="https://amityonline.com/master-of-computer-applications-online" target="_blank" rel="noopener noreferrer">Masters from Amity University Online</a></div>
@@ -55,7 +56,7 @@ export default function EducationExperience() {
 
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='2 years 4 months'>AIWizards/Safety Labs<span className={eeCSS.time}> (Feb/2022-May/2024) (2 years 4 months)</span> </div>
+						<div className={eeCSS.name} title='2 years 4 months'>AIWizards/Safety Labs Inc.<span className={eeCSS.time}> (Feb/2022-May/2024) (2 years 4 months)</span> </div>
 						<div className={eeCSS.someDetails}>Product Based <sub>(Full-Time)</sub></div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
@@ -67,22 +68,19 @@ export default function EducationExperience() {
 								<li>- Worked very close with Salesforce developers and admin teams.</li>
 							</ul>
 						</details>
-						<div className={eeCSS.type}>Java Developer &gt; Full-Stack Developer</div>
+						<div className={eeCSS.type}>Java Developer {'>'} Full-Stack Developer</div>
 					</div>
 
 					<div className={eeCSS.eachWorkSection}>
-						<div className={eeCSS.name} title='3 Months'>Net Creative mind<span className={eeCSS.time}> (Oct/2021-Jan/022) (3 months)</span> </div>
+						<div className={eeCSS.name} title='3 Months'>Net Creative Mind Solutions<span className={eeCSS.time}> (Oct/2021-Jan/022) (3 months)</span> </div>
 						<div className={eeCSS.someDetails}>Service to India Government <sub>(Full-Time)</sub></div>
 						<details className={eeCSS.responsibilities}>
 							<summary>Responsibilities</summary>
 							<ul>
-								<li>- Worked on project, as team member in building Digitization software for government documents keeping.</li>
+								<li>- Worked on project, as team member in building Digitization software for government documents keeping with NewGen's software, including OmniDoc, OmniScanner.</li>
 								<li>- Worked on DRDO and CEMILAC projects.</li>
-								<li>- Identify and add validations in Java APIs and fix bugs for smooth transition of work.</li>
-								<li>- Created flows and implemented them on NewGen's software, including OmniDoc, OmniScanner.</li>
-								<li>- Developing Java APIs live following thorough validations & testing.</li>
-								<li>- Handled UI/UX development using Figma and coding them in JSP, HTML, CSS.</li>
-								<li>- Bug fixing to ensure the project online smoothly.</li>
+								<li>- Create APIs and bug fixing for smooth transition of work.</li>
+								<li>- Develop Figma into JSP, HTML, CSS code.</li>
 							</ul>
 						</details>
 						<div className={eeCSS.type}>Java Developer Trainee</div>

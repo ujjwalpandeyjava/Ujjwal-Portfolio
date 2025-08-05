@@ -1,0 +1,48 @@
+.tag {
+	display: inline-block;
+	padding: 4px 20px;
+	border-radius: 1em;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Default subtle shadow for all
+
+	&.white {
+		background: #ffffff;
+		color: #000000;
+		box-shadow: 0 2px 4px wheat; // Custom color shadow, overrides base
+	}
+
+	&.gray {
+		background: #f0f0f0;
+		color: #333333;
+		box-shadow: 0 2px 4px gray;
+	}
+
+	&.lightblue {
+		background: #c7eaff;
+		color: #002c46;
+		box-shadow: 0 2px 4px #a0d4f5;
+	}
+
+	&.red {
+		background: #ffb3b3;
+		color: #660000;
+		box-shadow: 0 2px 4px rgba(255, 0, 0, 0.5); // example red shadow
+	}
+
+	&.blue {
+		background: #c7eaff;
+		color: #002c46;
+		box-shadow: 0 2px 4px rgba(0, 100, 255, 0.4);
+	}
+
+	&.green {
+		background: #b3ffb3;
+		color: #004d00;
+		box-shadow: 0 2px 4px rgba(0, 255, 0, 0.4);
+	}
+
+	&.yellow {
+		background: #ffffb3;
+		color: #666600;
+		box-shadow: 0 2px 4px rgba(255, 255, 0, 0.4);
+	}
+}

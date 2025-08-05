@@ -6,7 +6,7 @@ import PreviewPDFs from '../contact/resume/previewPDFs';
 import floatingImage from '../images/developer1.svg';
 import style from './Home.module.css';
 
-const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
+// const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
 const Journey = lazy(() => import("../learnings/newJourney/Journey"));
 const Skills = lazy(() => import("../learnings/Skills"));
 const WhatICanDo = lazy(() => import("./WhatICanDo"));
@@ -37,8 +37,8 @@ export default function Home() {
       </div>
       <Suspense fallback={<ComponentLoading />}><AboutMe /></Suspense>
       <Suspense fallback={<ComponentLoading />}><WhatICanDo /></Suspense>
-      {/* <Suspense fallback={<ComponentLoading />}><Journey /></Suspense> */}
-      <Suspense fallback={<ComponentLoading />}><EducationExperience /></Suspense>
+      <Suspense fallback={<ComponentLoading />}><Journey /></Suspense>
+      {/* <Suspense fallback={<ComponentLoading />}><EducationExperience /></Suspense> */}
       <Suspense fallback={<ComponentLoading />}><Skills /></Suspense>
     </>
   )

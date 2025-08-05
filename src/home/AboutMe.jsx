@@ -17,6 +17,7 @@ export default function AboutMe() {
 			<div className="heading2">About Me</div>
 			<div className={style.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 
+			{/* About */}
 			<div className={style.someDetails}>
 				<span className="myName">I am Ujjwal Pandey!</span><br />
 				A Product Engineering, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
@@ -24,6 +25,9 @@ export default function AboutMe() {
 			</div>
 
 			<div className={style.otherDetails}>
+
+				{/* personal Details */}
+				{/* TODO: Remove from here and add in the contact section */}
 				<div className={style.personalDetails}>
 					<h2 >Personal Details</h2>
 					<table>
@@ -66,6 +70,9 @@ export default function AboutMe() {
 						</tbody>
 					</table>
 				</div>
+
+				{/* Interests */}
+				{/* TODO: Update to a full section and the block to be bigger with flip and short details on them */}
 				<div className={style.myInterest}>
 					<h2>My Interests</h2>
 					<div className={style.myInterestBlocks}>
@@ -99,6 +106,7 @@ export default function AboutMe() {
 						</div> */}
 					</div>
 				</div>
+
 			</div>
 
 			<div style={{ textAlign: 'center' }}>
