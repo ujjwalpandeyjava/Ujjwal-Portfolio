@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "./Footer.scss";
-import { email } from "../assets/Utilities";
 import { FaEnvelope, FaGithub, FaInstagramSquare } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { email } from "../assets/Utilities";
+import { Link } from "react-router-dom";
+import styles from "./Footer.scss";
 
 
 const Footer = () => {
