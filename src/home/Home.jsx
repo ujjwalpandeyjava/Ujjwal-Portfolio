@@ -1,12 +1,13 @@
 import { lazy, Suspense, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { ComponentLoading } from '../assets/Loadings';
 import useDocumentTitle from '../assets/useDocumentTitle';
-import PreviewPDFs from '../contact/resume/previewPDFs';
 import floatingImage from '../images/developer1.svg';
+import { Link } from 'react-router-dom';
 import style from './Home.module.css';
 
+
 // const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
+// const PreviewPDFs = lazy(() => import('../contact/resume/previewPDFs'));
 const Journey = lazy(() => import("../learnings/newJourney/Journey"));
 const Skills = lazy(() => import("../learnings/Skills"));
 const WhatICanDo = lazy(() => import("./WhatICanDo"));
@@ -28,8 +29,9 @@ export default function Home() {
           <div className={style.nameIm}>I'm <span>Ujjwal Pandey</span></div>
           <div className={style.nameWebD}>I am a Web Developer</div>
           <div className={style.actionContainer}>
-            <button id="downloadCV" onClick={toggleViewPreview} >Resume</button>
-            {viewPreview && <PreviewPDFs close={toggleViewPreview} />}
+            <Link id="downloadCV" target='_blank' to="https://drive.google.com/open?id=1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr">Resume</Link>
+            {/* <button id="downloadCV" onClick={toggleViewPreview}>Resume</button> */}
+            {/* {viewPreview && <PreviewPDFs close={toggleViewPreview} />} */}
             <Link to="contact">Contact me</Link>
           </div>
         </div>
