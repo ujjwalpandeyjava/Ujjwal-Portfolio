@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState } from 'react';
 import { ComponentLoading } from '../assets/Loadings';
+import { lazy, Suspense } from 'react';
 import useDocumentTitle from '../assets/useDocumentTitle';
 import floatingImage from '../images/developer1.svg';
 import { Link } from 'react-router-dom';
@@ -17,8 +17,8 @@ const AboutMe = lazy(() => import("./AboutMe"));
 export default function Home() {
   useDocumentTitle("Ujjwal pandey");
 
-  const [viewPreview, setViewPreview] = useState(false);
-  const toggleViewPreview = () => setViewPreview(old => !old)
+  // const [viewPreview, setViewPreview] = useState(false);
+  // const toggleViewPreview = () => setViewPreview(old => !old)
 
 
   return (
