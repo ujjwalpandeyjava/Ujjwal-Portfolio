@@ -7,6 +7,7 @@ import { GrMysql } from "react-icons/gr";
 import style from './Skills.module.css';
 import AnimatedSkill from "./newJourney/eachSkill/AnimatedSkillProps";
 import { MdOutlineDesignServices } from "react-icons/md";
+import { SiJenkins } from 'react-icons/si';
 
 
 const scrollHeight = 250;
@@ -50,7 +51,6 @@ export default function Skills() {
 					<AnimatedSkill icon={<SiApachekafka />} title="Kafka" description="I use Kafka to build real-time data pipelines and streaming applications. It ensures high-throughput, fault-tolerant messaging across distributed systems." />
 					<AnimatedSkill icon={<SiRedis />} title="Redis" description="Redis helps me manage caching, sessions, and real-time analytics. Its in-memory data structure makes it super fast and efficient for performance-critical apps." />
 					<AnimatedSkill icon={<MdOutlineDesignServices />} title="System Architecture" description="I understand how to design scalable, decoupled, and efficient system architectures using microservices, APIs, message queues, databases, and caching. I'm experienced in balancing performance, reliability, and maintainability." />
-					<AnimatedSkill icon={<SiDocker />} title="Docker" description="Docker allows packaging applications into containers for portability, consistency, and scalability. It accelerates deployment, isolates dependencies, and simplifies management in cloud and microservices environments." />
 
 
 					<div className={style.division}>DataBase</div>
@@ -74,7 +74,8 @@ export default function Skills() {
 					<AnimatedSkill icon={<SiPostman />} title="Postman" description="I always use it to know how my API is behaving and performing, Postman is a tool for building, testing, and modifying APIs, simplifying API development." />
 					<AnimatedSkill icon={<FaTasks />} title="Agile Methodologies" description="I follow Agile practices like Scrum and Kanban to ensure iterative development, continuous feedback, and fast delivery cycles." />
 					<AnimatedSkill icon={<SiJirasoftware />} title="Jira" description="I use Jira to manage tasks, sprints, and project tracking efficiently, ensuring clarity and accountability across the team." />
-
+					<AnimatedSkill icon={<SiDocker />} title="Docker" description="Docker allows packaging applications into containers for portability, consistency, and scalability. It accelerates deployment, isolates dependencies, and simplifies management in cloud and microservices environments." />
+					<AnimatedSkill icon={<SiJenkins />} title="CI/CD" description="I implement CI/CD pipelines using Jenkins/GitHub Actions/GitLab to automate builds, tests, and deployments, ensuring faster and reliable delivery of software." />
 
 					{/* <AnimatedSkill icon={<SiHibernate />} title="Hibernate" description="Hibernate simplifies SQL interactions by enabling Java-based queries with POJOs. It seamlessly maps Java objects to database tables, enhancing simplicity in data handling." /> */}
 					{/* <AnimatedSkill icon={<SiJquery />} title="jQuery" description="Simplified JavaScript library to fasten up the JavaScript work." /> */}

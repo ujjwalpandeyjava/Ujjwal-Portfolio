@@ -32,7 +32,7 @@ export default function Home() {
             <Link id="downloadCV" target='_blank' to="https://drive.google.com/open?id=1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr">Resume</Link>
             {/* <button id="downloadCV" onClick={toggleViewPreview}>Resume</button> */}
             {/* {viewPreview && <PreviewPDFs close={toggleViewPreview} />} */}
-            <Link to="contact">Contact me</Link>
+            <Link to="contact">Hire me</Link>
           </div>
         </div>
         <img id={style.myAvatar} src={floatingImage} alt="It's me" />

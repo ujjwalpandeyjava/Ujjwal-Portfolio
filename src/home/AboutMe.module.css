@@ -1,6 +1,8 @@
 .aboutMeCSS {
 	background-color: rgba(250, 250, 250, 0.54);
 	padding: 2.6rem 4rem;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .paperIcon {

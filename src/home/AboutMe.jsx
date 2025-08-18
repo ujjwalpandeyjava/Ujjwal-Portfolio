@@ -19,9 +19,9 @@ export default function AboutMe() {
 
 			{/* About */}
 			<div className={style.someDetails}>
-				<span className="myName">I am Ujjwal Pandey!</span><br />
-				A Product Engineering, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Sr. Product Developer.<br />
-				I am proficient in developing robust <span>Spring boot (Java-server),</span> JavaScript and Typescript (Frontend - ReactJs, NextJs) <b>with over 4 years 2+ Months</b> of hands-on experience. Occasionally contribute to Android development using Kotlin.
+				<span className="myName">A Software Developer Engineer!</span><br />
+				I am Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Senior Product Developer.<br />
+				I am proficient in <span>Java + React Fullstack Development,</span> <b>with over 4 years</b> of extensive hands-on experience. Occasionally contributing to Android development using Kotlin.
 			</div>
 
 			<div className={style.otherDetails}>

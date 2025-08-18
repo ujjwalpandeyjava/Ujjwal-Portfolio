@@ -10,7 +10,7 @@ function ContactMePage() {
 
 	return (
 		<>
-			<h1 className={styles.sectionTitle}>Contact Me</h1>
+			<h1 className={styles.sectionTitle}>Hire Me</h1>
 			<img src={connectImg} style={{ maxHeight: "45vh", margin: 'auto', display: 'block' }} alt='Connect me' />
 			<ContactMe />
 		</>

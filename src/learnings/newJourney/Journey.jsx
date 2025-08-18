@@ -44,7 +44,7 @@ const Journey = () => {
 			<VerticalTimeline animate={true} className="journey-timeline" lineColor="#3d50bdff">
 
 				{/* Work Experience */}
-				<VerticalTimelineElement date="May 2024 - August 2024" {...commonProps.vtElement0}>
+				<VerticalTimelineElement date="May 2024 - August 2025" {...commonProps.vtElement0}>
 					<h3 className="vertical-timeline-element-title">Senior Product Developer</h3>
 					<h4 className="vertical-timeline-element-subtitle">IntellyLabs Technologies</h4>
 					<div className='content'>
@@ -72,7 +72,25 @@ const Journey = () => {
 						<Tag c="gray">Next</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
-
+				<VerticalTimelineElement date="July 2023 - August 2025" {...commonProps.vtElement2}>
+					<h3 className="vertical-timeline-element-title">Master of Computer Applications - ML & AI</h3>
+					<h4 className="vertical-timeline-element-subtitle">Postgraduate Degree</h4>
+					<div className="content">
+						{/* <h4 className="vertical-timeline-element-subtitle"></h4> */}
+						<p>
+							Successfully completed with a strong focus on academics, job ready skills with AI and Web development. Achieved 8.17 CGPA.
+							<br />
+							Developed a solid understanding of how Artificial Intelligence and Machine Learning algorithms work, including work experience on IntellyMind.
+						</p>
+					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue"><a href="https://amityonline.com/master-of-computer-applications-online" target="_blank" rel="noopener noreferrer">Masters from Amity University</a></Tag>
+						<Tag c="lightblue">Online</Tag>
+						<Tag c="green">AI</Tag>
+						<Tag c="green">Web Development</Tag>
+						<Tag c="yellow">8.17 CGPA</Tag>
+					</BlockContainer>
+				</VerticalTimelineElement>
 				<VerticalTimelineElement date="February 2022 - May 2024" {...commonProps.vtElement1}>
 					<h3 className="vertical-timeline-element-title">Java Developer {'>'} Full Stack Developer</h3>
 					<h4 className="vertical-timeline-element-subtitle">AIWizards/Safety Labs Inc.</h4>
@@ -98,27 +116,8 @@ const Journey = () => {
 						<Tag c="gray">React</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
-				<VerticalTimelineElement date="July 2023 - June 2025" {...commonProps.vtElement2}>
-					<h3 className="vertical-timeline-element-title">Master of Computer Applications - ML & AI</h3>
-					<h4 className="vertical-timeline-element-subtitle">Postgraduate Degree</h4>
-					<div className="content">
-						{/* <h4 className="vertical-timeline-element-subtitle"></h4> */}
-						<p>
-							Successfully completed with a strong focus on academics, job ready skills with AI and Web development. Achieved 8.17 CGPA.
-							<br />
-							Developed a solid understanding of how Artificial Intelligence and Machine Learning algorithms work, including work experience on IntellyMind.
-						</p>
-					</div>
-					<BlockContainer element="span" margin={["mt"]}>
-						<Tag c="lightblue"><a href="https://amityonline.com/master-of-computer-applications-online" target="_blank" rel="noopener noreferrer">Masters from Amity University</a></Tag>
-						<Tag c="lightblue">Online</Tag>
-						<Tag c="green">AI</Tag>
-						<Tag c="green">Web Development</Tag>
-						<Tag c="yellow">8.17 CGPA</Tag>
-					</BlockContainer>
-				</VerticalTimelineElement>
 
-				<VerticalTimelineElement date="October 2021 - January 022" {...commonProps.vtElement1}>
+				<VerticalTimelineElement date="October 2021 - January 2022" {...commonProps.vtElement1}>
 					<h3 className="vertical-timeline-element-title">Java Developer Trainee</h3>
 					<h4 className="vertical-timeline-element-subtitle">Net CreativeMind Solutions</h4>
 					<div className="content">
@@ -139,8 +138,8 @@ const Journey = () => {
 						<Tag c="gray">HTML, CSS, JSP</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
-				<VerticalTimelineElement date="October 2021 - January 022" {...commonProps.vtElement1}>
-					<h3 className="vertical-timeline-element-title">Front-end Developer</h3>
+				<VerticalTimelineElement date="September 2021 - October 2021" {...commonProps.vtElement1}>
+					<h3 className="vertical-timeline-element-title">Student Intern</h3>
 					<h4 className="vertical-timeline-element-subtitle">NIIT - National Institute of Information Technologies</h4>
 					<div className="content">
 						<h5 className="vertical-timeline-element-subtitle">Educational Product Based <sub>(Part-Time)</sub></h5>
