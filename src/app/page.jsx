@@ -1,9 +1,8 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div id="home-page">
-
+    <div id="home-page" style={{minHeight: "200vh"}}>
+      HOme page
     </div>
   );
 }

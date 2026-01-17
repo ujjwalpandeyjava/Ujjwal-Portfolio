@@ -1,5 +1,11 @@
+import { Navbar } from "@/components/navbar/Navbar";
+import "@/styles/globals.scss";
+import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from "@mantine/core";
+import '@mantine/core/styles.css';
+import { Notifications } from "@mantine/notifications";
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/style/globals.scss";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,9 +24,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+    <html lang="en" {...mantineHtmlProps}>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ margin: "auto" }}>
+        <MantineProvider>
+          <Notifications />
+          <Navbar />
+          {children}  {/* Always CSR */}
+        </MantineProvider>
       </body>
     </html>
   );

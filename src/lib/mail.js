@@ -34,7 +34,7 @@ export const sendEmail = async ({ to, subject, html, bcc, replyTo, priority = 'n
 	}
 	// 2. Build the email configuration object
 	const mailOptions = {
-		from: `"Drevita Olympiad" <${process.env.EMAIL_USER}>`,
+		from: `"Ujjwal Pandey" <${process.env.EMAIL_USER}>`,
 		to,
 		subject,
 		html,

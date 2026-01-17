@@ -8,8 +8,9 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   reactCompiler: true,
   sassOptions: {
-    includePaths: [path.join(__dirname, 'src/statics')],
-    prependData: `@use "variables_utils" as *;
-    `,
+    includePaths: [path.join(__dirname, 'src/styles')],
+    prependData: `@use "_variables_utils" as *;`,
   },
 };
+
+export default nextConfig;
