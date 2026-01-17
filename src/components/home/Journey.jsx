@@ -1,13 +1,14 @@
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-// https://stephane-monnot.github.io/react-vertical-timeline/#/
-import { MdOutlineWorkHistory } from "react-icons/md";
+"use client"
+
+import BlockContainer from '@/components/taging/BlockContainer';
+import Tag from '@/components/taging/Tag';
+import "@/styles/journey.scss";
 import { FaGraduationCap } from "react-icons/fa6";
-import BlockContainer from '../../assets/taging/BlockContainer';
 import { GiJourney } from "react-icons/gi";
-import Tag from '../../assets/taging/Tag';
-import 'react-vertical-timeline-component/style.min.css';
-import "./Journey.scss";
+import { MdOutlineWorkHistory } from "react-icons/md";
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 
 
@@ -37,12 +38,10 @@ const commonProps = {
 }
 const Journey = () => {
 	return (
-		<div className="newSection">
+		<div>
 			<h1 className='g-heading2'>My Learning Journey</h1>
 			<div className="g-headingHint">Working and Educational Experience.</div>
-
 			<VerticalTimeline animate={true} className="journey-timeline" lineColor="#3d50bdff">
-
 				{/* Work Experience */}
 				<VerticalTimelineElement date="May 2024 - August 2025" {...commonProps.vtElement0}>
 					<h3 className="vertical-timeline-element-title">Senior Product Developer</h3>
@@ -52,7 +51,6 @@ const Journey = () => {
 						<h4>Responsibilities:</h4>
 						<ul>
 							<li> Developing the AI-powered product 'IntellyMind' including chat widget, admin panel, and live Support system  using Spring Boot micro services and React with TS, enabling real-time chat and live insights with 99% up-time.</li>
-							{/* <li>- Developed micro-service-based Backend for, RepairingCompany.com - repair and tracking web application, LyncWyze - car pooling mobile apps.</li> */}
 							<li> Developing a Customer Support Portal for Intellymind with Next.js (TS) and Spring Boot, expected to reduce ticket resolution time by 25%.</li>
 							<li> Developed React-based frontend applications using JavaScript (JS) and TypeScript (TS).  </li>
 							<li> Built and maintained backend microservices using Spring Boot.</li>
@@ -72,6 +70,7 @@ const Journey = () => {
 						<Tag c="gray">Next</Tag>
 					</BlockContainer>
 				</VerticalTimelineElement>
+
 				<VerticalTimelineElement date="July 2023 - August 2025" {...commonProps.vtElement2}>
 					<h3 className="vertical-timeline-element-title">Master of Computer Applications - ML & AI</h3>
 					<h4 className="vertical-timeline-element-subtitle">Postgraduate Degree</h4>
@@ -187,7 +186,6 @@ const Journey = () => {
 					</BlockContainer>
 				</VerticalTimelineElement>
 
-				{/* Start */}
 				<VerticalTimelineElement date="2018 - present" iconStyle={{ background: '#10cc52ff', color: '#ffffff' }}
 					icon={<GiJourney />} intersectionObserverProps={{ triggerOnce: false }}>
 					{/* <h3 className="vertical-timeline-element-title">Journey In NutShell</h3> */}

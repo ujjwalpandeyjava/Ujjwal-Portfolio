@@ -1,17 +1,18 @@
+"use client"
+
 import floatingImage from '@/statics/images/developer1.svg';
 import '@/styles/home.scss';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Next.js dynamic imports replace React.lazy
 const ComponentLoading = () => <div className="loading">Loading...</div>; // Replace with your actual loader
-
-// const Journey = dynamic(() => import("../learnings/newJourney/Journey"), { loading: () => <ComponentLoading /> });
-// const Skills = dynamic(() => import("../learnings/Skills"), { loading: () => <ComponentLoading /> });
-// const WhatICanDo = dynamic(() => import("./WhatICanDo"), { loading: () => <ComponentLoading /> });
+const Journey = dynamic(() => import('@/components/home/Journey'), { loading: () => <ComponentLoading /> });
+const WhatICanDo = dynamic(() => import("@/components/home/whatICanDo"), { loading: () => <ComponentLoading /> });
 const AboutMe = dynamic(() => import("@/components/home/aboutMe"), { loading: () => <ComponentLoading /> });
-// import Journey from './../../second/src/learnings/newJourney/Journey';
+const Skills = dynamic(() => import("@/components/home/skills"), { loading: () => <ComponentLoading /> });
+const FooterLinks = dynamic(() => import("@/components/navbar/FooterLinks"), { loading: () => <ComponentLoading /> });
+
 
 export default function Home() {
   return (
@@ -34,13 +35,10 @@ export default function Home() {
       </div>
 
       <AboutMe />
-      What I can do<br />
-      Journey <br />
-      Skills <br />
-
-      {/* <WhatICanDo />
+      <WhatICanDo />
       <Journey />
-      <Skills /> */}
+      <Skills />
+      <FooterLinks />
     </>
   );
 }

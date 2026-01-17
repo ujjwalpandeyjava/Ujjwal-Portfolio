@@ -1,0 +1,24 @@
+.block-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	font-size: 0.8em;
+
+	&.mt {
+		margin-top: 0.75rem;
+	}
+
+	&.mb {
+		margin-bottom: 0.75rem;
+	}
+
+	&.ml {
+		margin-left: 0.75rem;
+	}
+
+	&.mr {
+		margin-right: 0.75rem;
+
+	}
+}

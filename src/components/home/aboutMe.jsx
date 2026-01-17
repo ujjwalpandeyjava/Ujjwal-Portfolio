@@ -1,21 +1,15 @@
-"use client"
+"server-only"
 
-import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
-import { IoGameController } from "react-icons/io5";
-// import PreviewPDFs from "../contact/resume/previewPDFs";
 import aboutAvatar from "@/statics/images/SiteLogo.jpg";
-import { useState } from "react";
 import style from '@/styles/AboutMe.module.css';
-import Image from "next/image";
 import HeadingUnderLine from "@/utils/HeadingUnderLine";
+import Image from "next/image";
+import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
+import { GiDistraction } from "react-icons/gi";
+import { IoGameController } from "react-icons/io5";
 
 
 export default function AboutMe() {
-	const [viewPreview, setViewPreview] = useState(false);
-	const toggleViewPreview = () => setViewPreview(old => !old)
-
-
-
 	return (
 		<div className={style.aboutMeCSS}>
 			<HeadingUnderLine txt="About me" />
@@ -95,10 +89,10 @@ export default function AboutMe() {
 							<IoGameController size="2em" />
 							<div>Game</div>
 						</div>
-						{/* <div className={style.eachInterest}>
+						<div className={style.eachInterest}>
 							<GiDistraction size="2em" />
 							<div>Anime</div>
-						</div> */}
+						</div>
 						{/*<div className={style.eachInterest}>
 							<CgGym size="2em" />
 							<div>Gym</div>
@@ -109,10 +103,8 @@ export default function AboutMe() {
 			</div>
 
 			<div style={{ textAlign: 'center' }}>
-				<button className={style.resumeDownload} onClick={toggleViewPreview}>Download CV <FaDownload /></button>
+				<button className={style.resumeDownload}>Download CV <FaDownload /></button>
 			</div>
-
-			{/* {viewPreview && <PreviewPDFs close={toggleViewPreview} />} */}
 		</div>
 	)
 }

@@ -14,7 +14,7 @@ export default function AboutMe() {
 
 	return (
 		<div className={style.aboutMeCSS}>
-			<div className="heading2">About Me</div>
+			<div className="g-heading2">About Me</div>
 			<div className={style.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 
 			{/* About */}
