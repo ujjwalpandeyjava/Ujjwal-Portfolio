@@ -1,0 +1,49 @@
+.eachSkill {
+	text-align: left;
+	padding: 8px 5px 8px 13px;
+	scroll-snap-align: center;
+	background-color: rgba(242, 231, 251, 0.795);
+	min-width: var(--eachSkillHeightWidth);
+	max-width: var(--eachSkillHeightWidth);
+	max-height: calc(var(--eachSkillHeightWidth) * 1.1);
+	aspect-ratio: 1/0.9;
+	overflow: auto;
+	border-radius: 7px;
+	color: orangered;
+	color: #3e3e3e;
+	border: 1px solid rgb(176, 176, 176);
+	box-shadow:
+		rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: box-shadow 200ms ease-in-out, opacity 500ms ease-in-out, transform 650ms ease-in-out;
+
+	&::-webkit-scrollbar {
+		visibility: hidden;
+	}
+
+	&:hover {
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	}
+
+	.skillIcon {
+		font-size: 3em;
+		margin-bottom: 6px;
+	}
+
+	.eachSkillDescription {
+		color: gray;
+		font-size: 0.85em;
+	}
+}
+
+.fadeIn {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.fadeOut {
+	opacity: 0;
+	transform: translateY(20px);
+}

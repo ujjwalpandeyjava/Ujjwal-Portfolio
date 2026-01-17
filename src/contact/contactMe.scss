@@ -1,0 +1,117 @@
+#contactMeSection {
+	background-color: #f0fffb;
+	padding: 0.7rem;
+	text-align: center;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	.sectionHeading {
+		border-bottom: 1px solid #333;
+		filter: drop-shadow(0px 0px 0.5px #161616);
+		padding-bottom: 5px;
+		color: #0088ff;
+	}
+	#firstInContactMe {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		padding: 12px;
+		width: 100%;
+		& > div {
+			padding: 4px 15px;
+			border-radius: 15px;
+			transition: all 0.65s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+			&:first-child {
+				margin-bottom: 15px;
+				display: none;
+				&:hover {
+					background-color: wheat;
+					padding: 6px;
+				}
+				img {
+					height: 100%;
+					max-height: 90px;
+					max-width: 90px;
+					width: 100%;
+					background-color: initial;
+					border-radius: 0;
+				}
+			}
+		}
+		#connect {
+			min-width: 260px;
+			width: 75%;
+			overflow: hidden;
+			padding: 0 !important;
+			cursor: pointer;
+			.connect-title {
+				display: none;
+				border-bottom: 1px solid gray;
+				font-size: 1.4em;
+				height: auto;
+				padding: 7px;
+				font-weight: bold;
+			}
+			cursor: text;
+			.connect-ways {
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				& > div,
+				& > address {
+					padding: 5px;
+					padding: 10px;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					gap: 7px;
+					border-bottom: 1px solid #ccc;
+					justify-content: space-between;
+				}
+				a:active,
+				a:hover,
+				a:link,
+				a:visited,
+				address {
+					text-decoration: none;
+					color: #1b1b1b;
+					&:hover {
+						color: black;
+						font-weight: bold;
+					}
+				}
+				address {
+					cursor: text;
+				}
+			}
+			.connect-directMail {
+				padding: 0 7px 7px;
+			}
+		}
+	}
+}
+.directMessageBtn {
+	border: 0;
+	outline: 1px solid rgb(71 88 143);
+	background: linear-gradient(to right, rgba(83, 200, 239, 0.8) 0%, rgba(81, 106, 204, 0.8) 96%);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	padding: 12px 16px;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 15px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "Jost", sans-serif;
+	transition: 0.3s;
+	&:hover {
+		outline: 1px dotted rgb(50, 55, 103);
+	}
+}
