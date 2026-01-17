@@ -9,7 +9,7 @@ const nextConfig = {
   reactCompiler: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
-    prependData: `@use "_variables_utils" as *;`,
+    prependData: `@use "variables_utils" as *;`,
   },
 };
 

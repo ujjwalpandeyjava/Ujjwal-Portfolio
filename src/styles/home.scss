@@ -1,0 +1,76 @@
+.home-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 80vh;
+	padding: 0 5%;
+
+	.who-i-am {
+		.name-calling {
+			font-size: 1.5rem;
+			color: #555;
+		}
+
+		.name-im {
+			font-size: 3rem;
+			font-weight: bold;
+
+			span {
+				color: #1c7ed6; // Example color
+			}
+		}
+
+		.name-web-d {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+		}
+
+		.action-container {
+			display: flex;
+			gap: 1rem;
+
+			a {
+				padding: 0.8rem 2rem;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 500;
+				transition: all 0.3s ease;
+				border: 1px solid #1c7ed6;
+
+				&#downloadCV {
+					background-color: #1c7ed6;
+					color: white;
+				}
+
+				&:not(#downloadCV) {
+					color: #1c7ed6;
+				}
+
+				&:hover {
+					transform: translateY(-3px);
+					box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+	}
+
+	.myAvatar {
+		object-fit: contain;
+		// Your floating animation could go here
+		animation: float 3s ease-in-out infinite;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0px);
+	}
+}
