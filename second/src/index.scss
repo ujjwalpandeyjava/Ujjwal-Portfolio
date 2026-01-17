@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&family=Quicksand&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
+}
+
+div::selection {
+  background-color: rgb(0, 76, 255);
+  color: rgb(216, 216, 216);
+}
+
+// :root {}
+
+body {
+  min-width: 375px;
+  overflow-x: auto;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.myName {
+  color: #f63b54;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.45em;
+  word-spacing: 8px;
+}
+
+.alignIconText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+// App
+.baseApp {
+  // max-width: 1200px;
+}
+
+.newSection {
+  padding: 1em 3em 0 3em;
+  background-color: #f0f0f091;
+}
+
+// Utilities
+.heading1,
+.heading2 {
+  margin: auto;
+  margin-bottom: 1.5em;
+  width: max-content;
+  border-bottom: 2px solid rgb(5, 5, 183);
+  font-size: 2rem;
+  padding: 2px 10px;
+  text-shadow:
+    1px 1px 2px #c14d4d,
+    3px 2px 2px #4798bf;
+  color: #111139;
+}
+
+.heading2 {
+  border-bottom: 2px solid red;
+  color: #3c3cff;
+}
+
+.headingHint {
+  font-size: 1.25rem;
+  color: #828282;
+  margin-bottom: 1em;
+  margin-top: -1.5em;
+  text-align: center;
+}
