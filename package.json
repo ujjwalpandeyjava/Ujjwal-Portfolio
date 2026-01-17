@@ -1,0 +1,28 @@
+{
+  "name": "ujjwal-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "i": "npm install",
+    "dev": "next dev",
+    "dev:turbopack": "next dev --turbopack",
+    "devt": "next dev --turbopack -p 3101 ",
+    "build": "next build",
+    "start": "next start",
+    "start:port": "next start -p 3101",
+    "lint": "next lint",
+    "export": "next export",
+    "clean": "rimraf .next node_modules"
+  },
+  "dependencies": {
+    "next": "16.1.3",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.3",
+    "sass": "^1.97.2"
+  }
+}
