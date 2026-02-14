@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Poppins&family=Quicksand&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Rubik", "Quicksand", "Varela Round", sans-serif;
+}
+
+div::selection {
+  background-color: rgb(0, 76, 255);
+  color: rgb(216, 216, 216);
+}
+
+// :root {}
+
+body {
+  min-width: 375px;
+  overflow-x: auto;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.myName {
+  color: #f63b54;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.45em;
+  word-spacing: 8px;
+}
+
+.alignIconText {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+// App
+.baseApp {
+  // max-width: 1200px;
+}
+
+.newSection {
+  padding: 1em 3em 0 3em;
+  background-color: #f0f0f091;
+}
+
+// Utilities
+.heading1,
+.heading2 {
+  margin: auto;
+  margin-bottom: 1.5em;
+  width: max-content;
+  border-bottom: 2px solid rgb(5, 5, 183);
+  font-size: 2rem;
+  padding: 2px 10px;
+  text-shadow:
+    1px 1px 2px #c14d4d,
+    3px 2px 2px #4798bf;
+  color: #111139;
+}
+
+.heading2 {
+  border-bottom: 2px solid red;
+  color: #3c3cff;
+}
+
+.headingHint {
+  font-size: 1.25rem;
+  color: #828282;
+  margin-bottom: 1em;
+  margin-top: -1.5em;
+  text-align: center;
+}
+
+
+
+
+
+// Buttons
+
+.resumeDownload {
+  appearance: button;
+  background-color: #4d4ae8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  border: 1px solid #4d4ae8;
+  border-radius: 1rem;
+  box-shadow:
+    rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: none;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.resumeDownload:focus:not(:focus-visible),
+.resumeDownload:focus {
+  outline: 0;
+}
+
+.resumeDownload:hover {
+  background-color: #3733e5;
+  border-color: #3733e5;
+}
+
+.resumeDownload:focus {
+  background-color: #413fc5;
+  border-color: #3e3bba;
+  box-shadow:
+    rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+    rgba(46, 54, 80, 0.075) 0 1px 1px,
+    rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.resumeDownload:active {
+  background-color: #3e3bba;
+  background-image: none;
+  border-color: #3a38ae;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.resumeDownload:active:focus {
+  box-shadow:
+    rgba(46, 54, 80, 0.125) 0 3px 5px inset,
+    rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.resumeDownload:disabled {
+  background-image: none;
+  box-shadow: none;
+  opacity: 0.65;
+  pointer-events: none;
+}

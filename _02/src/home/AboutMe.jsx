@@ -1,20 +1,16 @@
-import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
+import { FaCode, FaHeadphones } from "react-icons/fa";
 import { IoGameController } from "react-icons/io5";
-import PreviewPDFs from "../contact/resume/previewPDFs";
 import aboutAvatar from "../images/ujjwalAvatar3.png";
-import { useState } from "react";
 import style from './AboutMe.module.css';
 
 
 export default function AboutMe() {
-	const [viewPreview, setViewPreview] = useState(false);
-	const toggleViewPreview = () => setViewPreview(old => !old)
 
 
 
 	return (
 		<div className={style.aboutMeCSS}>
-			<div className="g-heading2">About Me</div>
+			<div className="heading2">About Me</div>
 			<div className={style.paperIcon}><img src={aboutAvatar} alt="Me telling details" /></div>
 
 			{/* About */}
@@ -106,14 +102,7 @@ export default function AboutMe() {
 						</div> */}
 					</div>
 				</div>
-
 			</div>
-
-			<div style={{ textAlign: 'center' }}>
-				<button className={style.resumeDownload} onClick={toggleViewPreview}>Download CV <FaDownload /></button>
-			</div>
-
-			{viewPreview && <PreviewPDFs close={toggleViewPreview} />}
 		</div>
 	)
 }

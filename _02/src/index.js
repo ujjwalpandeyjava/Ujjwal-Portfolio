@@ -3,6 +3,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import { ToastContainer, Zoom } from "react-toastify";
 import { ComponentLoading } from './assets/Loadings';
 import ContactMePage from './contact/ContactMePage';
+// import ConnectView from './navbar/ConnectView';
 import { homePath } from './assets/Utilities';
 import PDFViewer from './document/PDFViewer';
 import ReactDOM from 'react-dom/client';
@@ -36,7 +37,7 @@ function BaseApp() {
         <ToastContainer position="top-right" style={{ position: "fixed", zIndex: "1000" }}
           autoClose={2500} limit={12} hideProgressBar={false} draggable newestOnTop={true}
           rtl={false} theme="light" transition={Zoom} closeOnClick pauseOnFocusLoss pauseOnHover />
-      </div>
+      </div >
       <Footer />
     </div>
   )

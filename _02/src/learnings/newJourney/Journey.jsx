@@ -38,8 +38,8 @@ const commonProps = {
 const Journey = () => {
 	return (
 		<div className="newSection">
-			<h1 className='g-heading2'>My Learning Journey</h1>
-			<div className="g-headingHint">Working and Educational Experience.</div>
+			<h1 className='heading2'>My Learning Journey</h1>
+			<div className="headingHint">Working and Educational Experience.</div>
 
 			<VerticalTimeline animate={true} className="journey-timeline" lineColor="#3d50bdff">
 
