@@ -28,7 +28,8 @@
 	color: $text-primary;
 	margin-bottom: 1.5rem;
 	position: relative;
-	display: inline-block;
+	display: block;
+	width: 100%;
 
 	// Optional: Add a small underline detail
 	&::after {
