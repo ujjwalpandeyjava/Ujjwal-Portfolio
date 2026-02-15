@@ -50,7 +50,7 @@ const Journey = () => {
 						<h5 className="vertical-timeline-element-subtitle">AI Product + Service Based + Consulting <sub>(Full-Time)</sub></h5>
 						<h4>Responsibilities:</h4>
 						<ul>
-							<li> Developing the AI-powered product 'IntellyMind' including chat widget, admin panel, and live Support system  using Spring Boot micro services and React with TS, enabling real-time chat and live insights with 99% up-time.</li>
+							<li> Developing the AI-powered product &apos;IntellyMind&apos; including chat widget, admin panel, and live Support system  using Spring Boot micro services and React with TS, enabling real-time chat and live insights with 99% up-time.</li>
 							<li> Developing a Customer Support Portal for Intellymind with Next.js (TS) and Spring Boot, expected to reduce ticket resolution time by 25%.</li>
 							<li> Developed React-based frontend applications using JavaScript (JS) and TypeScript (TS).  </li>
 							<li> Built and maintained backend microservices using Spring Boot.</li>
@@ -123,7 +123,7 @@ const Journey = () => {
 						<h5 className="vertical-timeline-element-subtitle">Staffing, Service to Indian Government <sub>(Full-Time)</sub></h5>
 						<h4>Responsibilities</h4>
 						<ul>
-							<li> Worked on project, as team member in building Digitization software for government documents keeping with NewGen's software, including OmniDoc, OmniScanner.</li>
+							<li> Worked on project, as team member in building Digitization software for government documents keeping with NewGen&apos;s software, including OmniDoc, OmniScanner.</li>
 							<li> Worked on DRDO and CEMILAC projects.</li>
 							<li> Create APIs and bug fixing for smooth transition of work.</li>
 							<li> Develop Figma into JSP, HTML, CSS code.</li>
@@ -193,7 +193,7 @@ const Journey = () => {
 					<div className="content">
 						<RiDoubleQuotesL />
 						Began exploring programming with basic projects, which soon turned into a deep passion for technology. <br />
-						From BCA and NIIT to an MCA in ML & AI, I've grown by mastering multiple languages and building scalable enterprise applications using microservices.
+						From BCA and NIIT to an MCA in ML & AI, I&apos;ve grown by mastering multiple languages and building scalable enterprise applications using microservices.
 						<RiDoubleQuotesR />
 					</div>
 				</VerticalTimelineElement>

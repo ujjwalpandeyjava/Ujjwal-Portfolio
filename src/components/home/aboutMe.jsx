@@ -1,109 +1,105 @@
 "server-only"
 
 import aboutAvatar from "@/statics/images/SiteLogo.jpg";
-import style from '@/styles/AboutMe.module.css';
-import HeadingUnderLine from "@/utils/HeadingUnderLine";
+import css from '@/styles/about.module.scss';
+import { HeadingHalfUnderLine, HeadingUnderLine } from "@/utils/Headings";
 import Image from "next/image";
-import { FaCode, FaDownload, FaHeadphones } from "react-icons/fa";
-import { GiDistraction } from "react-icons/gi";
+import { FaCode, FaHeadphones } from "react-icons/fa";
+import { GrTechnology } from "react-icons/gr";
 import { IoGameController } from "react-icons/io5";
-
 
 export default function AboutMe() {
 	return (
-		<div className={style.aboutMeCSS}>
+		<div className={css.aboutMeCSS}>
 			<HeadingUnderLine txt="About me" />
-			<div className={style.paperIcon}><Image src={aboutAvatar} alt="Me telling details" /></div>
 
-			<div className={style.someDetails}>
-				<span className={style.myName}>A Software Developer Engineer!</span><br />
-				I am Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.intellylabs.com/" target="_blank" rel="noreferrer">Intellylabs Technologies</a> as Senior Product Developer.<br />
+			<div className={css.paperIcon}><Image src={aboutAvatar} alt="Me telling details" /></div>
+
+			<div className={css.someDetails}>
+				<span className={css.myName}>A Software Developer Engineer!</span><br />
+				I am Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.coforge.com" target="_blank" rel="noreferrer">Coforge</a> as Senior Software Engineer.<br />
 				I am proficient in <span>Java + React Fullstack Development,</span> <b>with over 4 years</b> of extensive hands-on experience. Occasionally contributing to Android development using Kotlin.
 			</div>
 
-			<div className={style.otherDetails}>
-				<div className={style.personalDetails}>
-					<h2 >Personal Details</h2>
+			<div className={css.otherDetails}>
+				<div className={css.personalDetails}>
+					<HeadingHalfUnderLine txt="Personal Details" />
 					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th></th>
-							</tr>
-						</thead>
 						<tbody>
 							<tr>
-								<td>Phone</td>
-								<td>+91 8375990500</td>
+								<td className={css.label}>Phone</td>
+								<td className={css.value}>+91 8375990500</td>
 							</tr>
 							<tr>
-								<td>Email</td>
-								<td>ujjwapandey.aps@gmail.com</td>
+								<td className={css.label}>Email</td>
+								<td className={css.value}>ujjwapandey.aps@gmail.com</td>
 							</tr>
 							<tr>
-								<td>BirthDate</td>
-								<td>31 May 1999</td>
+								<td className={css.label}>BirthDate</td>
+								<td className={css.value}>31 May 1999</td>
 							</tr>
 							<tr>
-								<td>Address</td>
-								<td>Devoli, New Delhi, India, 110080</td>
+								<td className={css.label}>Address</td>
+								<td className={css.value}>Devoli, New Delhi, India, 110080</td>
 							</tr>
 							<tr>
-								<td>Languages</td>
-								<td>English | Hindi</td>
+								<td className={css.label}>Languages</td>
+								<td className={css.value}>English | Hindi</td>
 							</tr>
 							<tr>
-								<td>Job Status</td>
-								<td style={{ textDecoration: "underline dotted", fontStyle: 'italic', fontWeight: "bold" }}>Working at <a href="https://www.intellylabs.com/">Intellylabs Technologies</a></td>
+								<td className={css.label}>Job Status</td>
+								<td className={css.value}><a style={{ color: 'inherit' }} href="https://www.coforge.com/" target="_blank" rel="noreferrer">Working at Coforge</a></td>
 							</tr>
 							<tr>
-								<td>Job Profile</td>
-								{/* <u style={{ textDecoration: "underline dotted", fontStyle: 'italic' }}>Java, JavaScript and Typescript</u> */}
+								<td className={css.label}>Job Profile</td>
 								<td>Senior Product Developer</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 
-
-				<div className={style.myInterest}>
-					<h2>My Interests</h2>
-					<div className={style.myInterestBlocks}>
-						<div className={style.eachInterest}>
-							<FaCode size="2em" />
-							<div>Code</div>
+				<div className={css.myInterest}>
+					<HeadingHalfUnderLine txt="My Interests" />
+					<div className={css.myInterestBlocks}>
+						<div className={css.eachInterest}>
+							<div className={css.iconWrapper}>
+								<FaCode size="1.5em" />
+							</div>
+							<div className={css.textWrapper}>
+								<h3>Code</h3>
+								<p>Problem-solving, Web Dev, Java, & Next.js.</p>
+							</div>
 						</div>
-						{/* <div className={style.eachInterest}>
-							<GiTakeMyMoney size="2em" />
-							<div>Money</div>
-						</div> */}
-						<div className={style.eachInterest}>
-							<FaHeadphones size="2em" />
-							<div>Music</div>
+						<div className={css.eachInterest}>
+							<div className={css.iconWrapper}>
+								<FaHeadphones size="1.5em" />
+							</div>
+							<div className={css.textWrapper}>
+								<h3>Music</h3>
+								<p>Listening, acoustics, and finding new beats.</p>
+							</div>
 						</div>
-						{/* <div className={style.eachInterest}>
-							<MdMovieCreation size="2em" />
-							<div>Cinema</div>
-						</div> */}
-						<div className={style.eachInterest}>
-							<IoGameController size="2em" />
-							<div>Game</div>
+						<div className={css.eachInterest}>
+							<div className={css.iconWrapper}>
+								<GrTechnology size="1.5em" />
+							</div>
+							<div className={css.textWrapper}>
+								<h3>Tech</h3>
+								<p>Exploring new gadgets, AI, and innovations.</p>
+							</div>
 						</div>
-						<div className={style.eachInterest}>
-							<GiDistraction size="2em" />
-							<div>Anime</div>
+						<div className={css.eachInterest}>
+							<div className={css.iconWrapper}>
+								<IoGameController size="1.5em" />
+							</div>
+							<div className={css.textWrapper}>
+								<h3>Game</h3>
+								<p>Strategy, RPGs, and competitive gaming.</p>
+							</div>
 						</div>
-						{/*<div className={style.eachInterest}>
-							<CgGym size="2em" />
-							<div>Gym</div>
-						</div> */}
 					</div>
 				</div>
 
-			</div>
-
-			<div style={{ textAlign: 'center' }}>
-				<button className={style.resumeDownload}>Download CV <FaDownload /></button>
 			</div>
 		</div>
 	)

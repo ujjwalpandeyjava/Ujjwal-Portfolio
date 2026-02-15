@@ -1,26 +1,47 @@
 import dataBase from "@/statics/images/buildServer.png";
 import frontEnd from "@/statics/images/FrontEnd.png";
-import backend from "@/statics/images/FrontEnd2.png";
+import webDev from "@/statics/images/FrontEnd2.png";
 import microService from "@/statics/images/microServiceSmall.png";
 import mobileApp from "@/statics/images/mobileApp.png";
 import '@/styles/whatICanDo.scss';
-import HeadingUnderLine from "@/utils/HeadingUnderLine";
+import { HeadingUnderLine } from "@/utils/Headings";
+import { Space } from "@mantine/core";
 import Image from "next/image";
 
 
 export default function WhatICanDo() {
 	return (
 		<div className="abilitiesSection">
+			<Space h={20} />
 			<HeadingUnderLine txt="My proficiency" />
-			<h1 className="heading1">My proficiency</h1>
+			<Space h={36} />
+
 			<div className="abilities">
 				<div className="eachAbilities">
-					<Image src={backend} alt="Backend Development" />
+					<Image src={mobileApp} alt="" />
+					<div>Mobile App Development</div>
+					<div className="content">
+						I am a mobile app developer with experience in building Android application.
+						<hr />
+						<strong>Technologies:</strong> React Native
+					</div>
+				</div>
+				<div className="eachAbilities">
+					<Image src={webDev} alt="Web Development" />
+					<div>Website Development</div>
+					<div className="content">
+						I build scalable, high-performance web applications using modern frontend frameworks and robust backend systems.
+						<hr />
+						<strong>Technologies:</strong> Java, Next.js, Angular, TypeScript
+					</div>
+				</div>
+				<div className="eachAbilities">
+					<Image src={dataBase} alt="Backend Development" />
 					<div>Backend Development</div>
 					<div className="content">
-						Experienced in building industry-standard, fast, and robust backend systems using Spring Boot with Java, ensuring a strong and scalable application backbone.
+						Experienced in building industry-standard, fast, and robust backend systems using Spring Boot with Java, ensuring a strong and scalable application backbone with maintainable Database.
 						<hr />
-						<strong>Technologies:</strong> Java, Spring Boot, and various Spring modules
+						<strong>Technologies:</strong> Java, Spring Boot, and various Spring modules, MySQl, and MongoDB.
 					</div>
 				</div>
 				<div className="eachAbilities">
@@ -30,7 +51,7 @@ export default function WhatICanDo() {
 						Skilled in crafting immersive, user-friendly experiences with visually appealing and intuitive UI designs.
 						Passionate about building responsive and dynamic web applications.
 						<hr />
-						<strong>Technologies:</strong> HTML, CSS, JavaScript, TypeScript, <b>ReactJS</b>, SCSS, and various modern libraries.
+						<strong>Technologies:</strong> HTML, CSS, JavaScript, TypeScript, <b>ReactJS, Next.js</b>, SCSS, and various modern libraries.
 					</div>
 				</div>
 				<div className="eachAbilities">
@@ -41,24 +62,6 @@ export default function WhatICanDo() {
 						Focused on separation of concerns, service isolation, and seamless communication between services.
 						<hr />
 						<strong>Technologies:</strong> Java, Spring Boot, REST APIs, Kafka, Docker, Redis, MySQL, MongoDB, and API Gateway tools.
-					</div>
-				</div>
-				<div className="eachAbilities">
-					<Image src={dataBase} alt="Database development coding" />
-					<div>Database Management</div>
-					<div className="content">
-						Creating and maintaining the database for best performance is one of my best when come to backend development.
-						<hr />
-						<strong>Technologies:</strong> SQL: MySQl and NoSQL: MongoDB
-					</div>
-				</div>
-				<div className="eachAbilities">
-					<Image src={mobileApp} alt="" />
-					<div>Mobile App Development</div>
-					<div className="content">
-						I am a mobile app developer with experience in building Android application.
-						<hr />
-						<strong>Technologies:</strong> Kotlin, React Native
 					</div>
 				</div>
 			</div>

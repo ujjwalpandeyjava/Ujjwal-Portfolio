@@ -19,8 +19,14 @@ const Navbar = () => {
 
 	return (
 		<>
+
+			{/* Donate */}
 			<Modal opened={opened} onClose={closeModal} centered size="md" radius="lg" withCloseButton={false} padding={0}><DonateUs callBackFun={closeModal} /></Modal>
+
+			{/* To decide the width */}
 			<div ref={navbarSize} className='widthCheck'></div>
+
+			{/* Navigation */}
 			{!isMobile ? <DesktopNav openModal={openModal} /> : <MobileNav openModal={openModal} />}
 		</>
 	)

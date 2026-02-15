@@ -1,0 +1,285 @@
+@use "./_variables_utils.scss" as *;
+
+
+.aboutMeCSS {
+	background-color: rgba(250, 250, 250, 0.54);
+	/* padding: 2.6rem 4rem; */
+	max-width: 1200px;
+	margin: auto;
+}
+
+.paperIcon {
+	max-width: 150px;
+	margin: 1rem auto 1.8rem auto;
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+	display: grid;
+	place-items: center;
+	padding: 4px;
+	background-color: rgb(174, 215, 255);
+	box-shadow: 0 0 8px rgb(155, 202, 249), 0 0 4px rgb(80, 162, 244);
+	transition: all 650ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.paperIcon:hover {
+	margin-top: 0.5rem;
+	background-color: rgb(24, 125, 226);
+}
+
+.paperIcon>img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.someDetails {
+	font-weight: 400;
+	font-size: 1.22rem;
+	line-height: 2.6ch;
+	color: rgb(9 9 36);
+
+	.myName {
+		color: $accent-color-pink;
+	}
+}
+
+.someDetails::first-letter {
+	initial-letter: 3;
+	font-weight: bold;
+	margin-right: 4px;
+}
+
+.otherDetails {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	row-gap: 2em;
+	margin-block: 2rem 1rem;
+}
+
+.otherDetails>div {
+	flex: 1;
+	padding: 10px;
+	min-width: 400px;
+	overflow: auto;
+}
+
+@media all and (max-width: 500px) {
+	.otherDetails>div {
+		min-width: 245px;
+	}
+}
+
+.otherDetails h2 {
+	color: black;
+	margin-bottom: 0.75em;
+}
+
+.resumeDownload {
+	appearance: button;
+	background-color: #4d4ae8;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+	border: 1px solid #4d4ae8;
+	border-radius: 1rem;
+	box-shadow:
+		rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+		rgba(46, 54, 80, 0.075) 0 1px 1px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Inter, sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	text-transform: none;
+	transition:
+		color 0.15s ease-in-out,
+		background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out,
+		box-shadow 0.15s ease-in-out;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+}
+
+.resumeDownload:focus:not(:focus-visible),
+.resumeDownload:focus {
+	outline: 0;
+}
+
+.resumeDownload:hover {
+	background-color: #3733e5;
+	border-color: #3733e5;
+}
+
+.resumeDownload:focus {
+	background-color: #413fc5;
+	border-color: #3e3bba;
+	box-shadow:
+		rgba(255, 255, 255, 0.15) 0 1px 0 inset,
+		rgba(46, 54, 80, 0.075) 0 1px 1px,
+		rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.resumeDownload:active {
+	background-color: #3e3bba;
+	background-image: none;
+	border-color: #3a38ae;
+	box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+}
+
+.resumeDownload:active:focus {
+	box-shadow:
+		rgba(46, 54, 80, 0.125) 0 3px 5px inset,
+		rgba(104, 101, 235, 0.5) 0 0 0 0.2rem;
+}
+
+.resumeDownload:disabled {
+	background-image: none;
+	box-shadow: none;
+	opacity: 0.65;
+	pointer-events: none;
+}
+
+
+.otherDetails {
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 2rem 0;
+
+	// Layout for larger screens (Side by Side)
+	@media (min-width: 768px) {
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 4rem;
+	}
+}
+
+// --- Personal Details Styling ---
+.personalDetails {
+	flex: 1;
+	color: black; // Base color from your second block
+
+	table {
+		width: 100%;
+		table-layout: fixed; // Helps align columns perfectly
+		border-collapse: separate;
+		border-spacing: 0 12px; // Keeps the nice spacing between rows
+
+		td {
+			padding-bottom: 6px;
+			vertical-align: top;
+		}
+
+		// Styles for the Label (First Column)
+		// Targets both the class .label and the first child to be safe
+		.label,
+		td:nth-child(1) {
+			font-weight: 600;
+			color: darkblue; // Explicit color you requested
+			width: 120px; // Fixed width to align the second column
+			padding-right: 20px;
+			letter-spacing: 1px;
+		}
+
+		// Styles for the Value (Second Column)
+		.value,
+		td:nth-child(2) {
+			color: $text-secondary; // Or use specific hex if preferred
+			line-height: 1.5;
+			letter-spacing: 1.4px;
+
+			a {
+				color: $accent-color;
+				text-decoration: none;
+				font-weight: 500;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+
+.myInterestBlocks {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.eachInterest {
+		// --- Layout: Icon Left, Text Right ---
+		display: flex;
+		flex-direction: row; // Keeps items side-by-side
+		align-items: center; // Vertically centers icon with text
+		justify-content: flex-start; // Aligns content to the left
+
+		// --- Sizing ---
+		flex: 1 1 300px; // Allows cards to grow but maintain a min-width (responsive)
+		padding: 1rem;
+
+		// --- Visuals ---
+		background-color: $card-bg;
+		border: 1px solid $card-border;
+		border-radius: 12px;
+		cursor: default;
+		transition: all 0.2s ease-in-out;
+		font-family: "Poppins", sans-serif;
+		text-align: left; // Resets text alignment to left
+
+		// --- Hover Effect ---
+		&:hover {
+			transform: translateY(-2px);
+			background-color: #ffffff;
+			border-color: $card-border;
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+				0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		}
+
+		.iconWrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			// Fixed size for the icon box
+			min-width: 50px;
+			height: 50px;
+
+			background-color: $icon-bg;
+			color: $icon-color;
+			border-radius: 10px;
+			margin-right: 1rem; // Spacing between Icon and Text
+			flex-shrink: 0; // Prevents icon from shrinking if text is long
+		}
+
+		.textWrapper {
+			display: flex;
+			flex-direction: column;
+
+			h3 {
+				font-size: 1.1rem;
+				font-weight: 700;
+				color: $text-primary;
+				margin: 0 0 0.25rem 0;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+
+			p {
+				font-size: 0.9rem;
+				color: $text-secondary;
+				margin: 0;
+				line-height: 1.4;
+			}
+		}
+	}
+}

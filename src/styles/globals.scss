@@ -1,3 +1,4 @@
+@use "./_variables_utils.scss" as *;
 // :root {
 //   --background: #ffffff;
 //   --foreground: #171717;
@@ -44,8 +45,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .button-icon-center {
   display: inline-flex;
   align-items: center;
@@ -54,27 +53,27 @@ a {
 }
 
 .color-accent {
-  color: $accent-color !important;
+  color: $accent-color;
 }
 
 .primary-color {
-  color: $primary-color !important;
+  color: $primary-color;
 }
 
 .theme-icon-blue-color {
-  color: $icon-color-blue !important;
+  color: $icon-color-blue;
 }
 
 .text-decoration-color-accent-color {
-  text-decoration-color: $accent-color !important;
+  text-decoration-color: $accent-color;
 }
 
 .text-decoration-color-primary-color {
-  text-decoration-color: $primary-color !important;
+  text-decoration-color: $primary-color;
 }
 
 .text-decoration-color-blue-color {
-  text-decoration-color: $icon-color-blue !important;
+  text-decoration-color: $icon-color-blue;
 }
 
 
@@ -129,7 +128,6 @@ a {
   }
 }
 
-.heading1,
 .g-heading2 {
   margin: auto;
   margin-bottom: 1.5em;

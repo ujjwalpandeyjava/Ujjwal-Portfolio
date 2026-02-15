@@ -1,6 +1,6 @@
-import "@/styles/duoToneHeading.scss";
+import "@/styles/headings.scss";
 
-export default function DuoToneHeading({
+function DuoToneHeading({
 	txt1, txt1Color, txt1LineBreak,
 	txt2, txt2Color, txt2LineBreak,
 	txt3, txt3Color, txt3LineBreak
@@ -21,3 +21,33 @@ export default function DuoToneHeading({
 		</h2>
 	);
 }
+
+function HeadingUnderLine({ txt, txtClass }) {
+	return (
+		<h1 className={`main-title-2 ${txtClass ? txtClass : ""}`}>
+			{txt}
+		</h1>
+	);
+}
+
+function HeadingHalfUnderLine({ txt }) {
+	return (
+		<h1 className="main-title-half-underline">
+			{txt}
+		</h1>
+	);
+}
+
+function HighlightBlock({ heading, text1, text2 }) {
+	return (
+		<div className="mission-highlight">
+			<div className="highlight-text">
+				<h3>{heading}</h3>
+				<p>{text1}</p>
+				{text2 && <p>{text2}</p>}
+			</div>
+		</div>
+	);
+}
+
+export { DuoToneHeading, HeadingUnderLine, HeadingHalfUnderLine, HighlightBlock }

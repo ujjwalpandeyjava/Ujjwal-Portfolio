@@ -4,6 +4,7 @@ import useDocumentTitle from '../assets/useDocumentTitle';
 import floatingImage from '../images/developer1.svg';
 import { Link } from 'react-router-dom';
 import style from './Home.module.css';
+import Image from 'next/image';
 
 
 // const EducationExperience = lazy(() => import("../learnings/EducationExperience"));
@@ -30,12 +31,10 @@ export default function Home() {
           <div className={style.nameWebD}>I am a Web Developer</div>
           <div className={style.actionContainer}>
             <Link id="downloadCV" target='_blank' to="https://drive.google.com/open?id=1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr">Resume</Link>
-            {/* <button id="downloadCV" onClick={toggleViewPreview}>Resume</button> */}
-            {/* {viewPreview && <PreviewPDFs close={toggleViewPreview} />} */}
             <Link to="contact">Hire me</Link>
           </div>
         </div>
-        <img id={style.myAvatar} src={floatingImage} alt="It's me" />
+        <Image id={style.myAvatar} src={floatingImage} alt="It's me" />
       </div>
       <Suspense fallback={<ComponentLoading />}><AboutMe /></Suspense>
       <Suspense fallback={<ComponentLoading />}><WhatICanDo /></Suspense>

@@ -1,6 +1,11 @@
+@use "./_variables_utils.scss" as *;
+
+
 .journey-timeline {
+
 	.vertical-timeline-element-content {
 		background-color: #f1f1f1;
+
 		.content {
 			font-size: 0.9em;
 			color: #7b7b7b;

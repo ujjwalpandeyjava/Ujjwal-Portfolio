@@ -1,3 +1,5 @@
+"use client"
+
 import style from '@/styles/Skills.module.scss';
 import { useEffect } from 'react';
 import { FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";

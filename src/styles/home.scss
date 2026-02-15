@@ -1,9 +1,20 @@
+@use "./_variables_utils.scss" as *;
+
+
+#main {
+	padding-inline: 3.5em;
+}
+
 .home-container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 80vh;
-	padding: 0 5%;
+	gap: 0.5em;
+
+	&>div {
+		flex: 1;
+	}
 
 	.who-i-am {
 		.name-calling {
@@ -36,6 +47,7 @@
 				font-weight: 500;
 				transition: all 0.3s ease;
 				border: 1px solid #1c7ed6;
+				white-space: nowrap;
 
 				&#downloadCV {
 					background-color: #1c7ed6;

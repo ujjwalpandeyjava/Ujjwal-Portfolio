@@ -1,3 +1,4 @@
+import FooterLinks from "@/components/navbar/FooterLinks";
 import { Navbar } from "@/components/navbar/Navbar";
 import "@/styles/globals.scss";
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from "@mantine/core";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
           <Notifications />
           <Navbar />
           {children}  {/* Always CSR */}
+          <FooterLinks />
         </MantineProvider>
       </body>
     </html>

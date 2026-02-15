@@ -1,11 +1,26 @@
-$max-screen-width: 14200px;
-$background: #ffffff;
-$primary-color: #1a1a2e;
-$accent-color: #e91e63; // Pink/Red
-$accent-color-darken: #c2185b; // Darker Pink/Red
-$bg-color: #f8f9fc; // Light Background
-$text-muted: #6c757d;
-$text-muted2: #2c2f31;
-$bg-light: #f8f9fc;
-$icon-bg: #edeafc; // Light Purple
-$icon-color-blue: #5a4bda; // Deep Purple
+// --- Layout ---
+$max-screen-width: 1420px;
+
+// --- Backgrounds ---
+$bg-color: #ffffff; // Main page background
+$bg-light: #f8f9fc; // Secondary background (sections)
+$card-bg: #f9fafb; // Card specific background
+
+// --- Text ---
+$text-primary: #1f2937; // Main Headings (Dark Gray)
+$text-secondary: #6b7280; // Descriptions/Muted text (Medium Gray)
+
+// --- Theme Colors ---
+$primary-color: #1a1a2e; // Deep Dark Blue (Original primary)
+$accent-color: #2563eb; // Blue (Links & Active states)
+$accent-color-pink: #e91e63;
+$accent-pink-dark: #c2185b;
+$card-border: #e5e7eb; // Subtle borders
+
+// --- Icon Styling ---
+$icon-color: #4f46e5; // Indigo
+$icon-bg: #e0e7ff; // Light Indigo tint
+
+
+//
+$icon-color-blue: #2563eb; // Blue (Icons)
