@@ -157,7 +157,7 @@
 					&:hover {
 						transform: translateY(-2px);
 						background-color: #ffffff;
-						border-color: darken($card-border, 10%);
+						border-color: $card-border;
 						box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 					}
 

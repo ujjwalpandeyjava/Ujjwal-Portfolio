@@ -1,5 +1,6 @@
 "server-only"
 
+import ContactMe from '@/components/contact/ContactMe';
 import AboutMe from '@/components/home/aboutMe';
 import Hero from '@/components/home/hero';
 // import Journey from '@/components/home/Journey';
@@ -18,6 +19,7 @@ export default function Home() {
       <Space h={30} />
       <Skills />
       <Space h={30} />
+      <ContactMe />
       {/* <Journey /> */}
       {/* <Space h={30} /> */}
     </div>
