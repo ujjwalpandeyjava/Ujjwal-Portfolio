@@ -13,11 +13,6 @@ export const navLinks = [
 	{ link: '/resume', label: 'Resume', icon: FaCircleInfo, showIcon: true },
 	{ link: '/contact', label: 'Contact', icon: IoPersonSharp, showIcon: true },
 ];
-
-export const projectLinks = [
-	{ label: 'Education programs', link: '/gallery' },
-	{ label: 'Success story', link: '/gallery' },
-]
 export const office = {
 	address: { title: "Registered office", label: 'H.No,184,Main Road Ibrahimganj Bhopal 462001 Madhya Pradesh', link: '#footer' },
 	coordinates: {

@@ -1,32 +1,27 @@
-import { navLinks, office, projectLinks } from '@/components/Constants';
+import { navLinks, office } from '@/components/Constants';
 import SiteLogo from '@/components/navbar/SiteLogo';
 import classes from '@/styles/FooterLinks.module.scss';
-import { ActionIcon, Container, Divider, Group, Text } from '@mantine/core';
+import { ActionIcon, Container, Group, Text } from '@mantine/core';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 
 export default function FooterLinks() {
 	return (
-		<div id={classes.footer} className={classes.footer}>
+		<div id={classes.footer}>
 			<Container className={`${classes.inner} ${classes.groups}`}>
 				<div>
 					<SiteLogo />
-					<Text size="xs" c="dimmed" mt="md" maw={250}>Build fully functional accessible web applications faster than ever</Text>
+					<Text size="xs" c="dimmed" mt="md" maw={250}>Build fully functional accessible business ready products.</Text>
 				</div>
 				<div>
 					<Text className={classes.title} fw={500}>Quick Links</Text>
-					{navLinks.map((link, index) => <Text key={index} className={classes.link} component="a" href={link.link}>{link.label}</Text >)}
+					{navLinks.map((link, index) => <Text c="blue.1" key={index} className={classes.link} component="a" href={link.link}>{link.label}</Text >)}
 				</div>
-				<div>
-					<Text className={classes.title} fw={500}>Project</Text>
-					{projectLinks.map((link, index) => <Text key={index} className={classes.link} component="a" href={link.link}>{link.label}</Text >)}
-				</div>
-			</Container>
+			</Container >
 			<Container className={`${classes.inner} ${classes.groups}`} my="xl">
 				<div className={classes.officeAddresses}>
 					<Text className={classes.title} fw={500}>{office.address.title}</Text>
-					<Text size='md' component="span">{office.address.label}</Text >
-					<Divider my="md" />
+					<Text size='md' component="span" >{office.address.label}</Text >
 				</div>
 				<iframe className={classes.officeCoordinates} src={`https://maps.google.com/maps?q=${office.coordinates.latitude},${office.coordinates.longitude}&z=15&output=embed`} loading="lazy" />
 			</Container>
@@ -41,6 +36,6 @@ export default function FooterLinks() {
 					</ActionIcon>
 				</Group>
 			</Container>
-		</div>
+		</div >
 	);
 }
