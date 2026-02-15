@@ -1,6 +1,6 @@
 "use client";
 
-import { RAZORPAY_KEY_ID_CONST_UI } from '@/components/Constants';
+import { RAZORPAY_KEY_ID_CONST_UI } from '@/utils/Constants';
 import siteLog from '@/statics/images/SiteLogo.jpg';
 import "@/styles/donate-us.scss";
 import { Button, Container, SimpleGrid, Text, TextInput, Title } from '@mantine/core';

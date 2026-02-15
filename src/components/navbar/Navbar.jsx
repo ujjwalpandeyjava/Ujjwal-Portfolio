@@ -1,6 +1,6 @@
 'use client';
 
-import { navLinks } from '@/components/Constants';
+import { navLinks } from '@/utils/Constants';
 import DonateUs from '@/components/DonateUs'; // Import your component
 import SiteLogo from '@/components/navbar/SiteLogo';
 import "@/styles/navbar.scss";
@@ -37,7 +37,7 @@ const DesktopNav = ({ openModal }) => {
 			<SiteLogo />
 			<Flex className="" align="center" gap="lg">
 				{navLinks.map(({ link, label, icon: Icon, showIcon }) => (showIcon && <Link key={link} href={link} className="navLink"><Icon size={18} /><span>{label}</span></Link>))}
-				<Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Give Coffee</Button>
+				<Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button>
 			</Flex>
 		</div>
 	);
@@ -67,7 +67,7 @@ const MobileNav = ({ openModal }) => {
 				</nav>
 
 				<div className="mobile-action-area">
-					<Button fullWidth leftSection={<IoHeart />} color="pink" radius="md" size="md" onClick={() => { openModal(); setOpen(false); }}>Give Coffee</Button>
+					<Button fullWidth leftSection={<IoHeart />} color="pink" radius="md" size="md" onClick={() => { openModal(); setOpen(false); }}>Get a Coffee</Button>
 				</div>
 			</aside>
 		</>

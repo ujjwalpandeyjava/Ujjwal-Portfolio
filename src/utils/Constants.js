@@ -1,6 +1,5 @@
-import { FaCircleInfo } from "react-icons/fa6";
-import { IoHome, IoPersonSharp } from "react-icons/io5";
 import { GiJourney } from "react-icons/gi";
+import { IoHome, IoPersonSharp } from "react-icons/io5";
 
 
 export const OFFICIAL_SUPPORT_EMAIL = process.env.EMAIL_USER
@@ -10,7 +9,6 @@ export const RAZORPAY_KEY_SECRET_CONST = process.env.RAZORPAY_KEY_SECRET
 export const navLinks = [
 	{ link: '/', label: 'Home', icon: IoHome, showIcon: false },
 	{ link: '/journey', label: 'Journey', icon: GiJourney, showIcon: true },
-	{ link: '/resume', label: 'Resume', icon: FaCircleInfo, showIcon: true },
 	{ link: '/contact', label: 'Contact', icon: IoPersonSharp, showIcon: true },
 ];
 export const office = {

@@ -1,4 +1,4 @@
-import { OFFICIAL_SUPPORT_EMAIL } from '@/components/Constants';
+import { OFFICIAL_SUPPORT_EMAIL } from '@/utils/Constants';
 import { sendEmail } from '@/lib/mail';
 import { NextResponse } from 'next/server';
 

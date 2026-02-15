@@ -1,4 +1,4 @@
-import { navLinks, office } from '@/components/Constants';
+import { navLinks, office } from '@/utils/Constants';
 import SiteLogo from '@/components/navbar/SiteLogo';
 import classes from '@/styles/FooterLinks.module.scss';
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
