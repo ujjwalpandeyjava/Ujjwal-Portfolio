@@ -2,18 +2,16 @@
 
 import AnimatedSkill from "@/components/home/AnimatedSkillProps";
 import style from '@/styles/Skills.module.scss';
-import { useEffect, useState } from 'react';
+import { HeadingHalfUnderLine, HeadingUnderLine } from '@/utils/Headings';
+import { useState } from 'react';
 import { FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
 import { FaJava, FaReact } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { SiApachekafka, SiDocker, SiJenkins, SiJirasoftware, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSpringboot } from "react-icons/si";
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
-import { HeadingHalfUnderLine, HeadingUnderLine } from '@/utils/Headings';
 
-const scrollHeight = 250;
 
-// 1. Organize data for easier filtering
 const skillsData = [
 	// --- Backend ---
 	{ type: "Backend", title: "Java", icon: <FaJava />, desc: "Object Oriented Programming language used to write logic for applications server and JSP." },
@@ -46,72 +44,27 @@ const skillsData = [
 	{ type: "Others", title: "Docker", icon: <SiDocker />, desc: "Docker allows packaging applications into containers for portability, consistency, and scalability." },
 	{ type: "Others", title: "CI/CD", icon: <SiJenkins />, desc: "I implement CI/CD pipelines using Jenkins/GitHub Actions/GitLab to automate builds, tests, and deployments." },
 ];
-
 const categories = ["Backend", "DataBase", "Frontend", "Others"];
 
 export default function Skills() {
 	const [activeTab, setActiveTab] = useState("All");
 
-	useEffect(() => {
-		document.documentElement.style.setProperty('--eachSkillHeightWidth', scrollHeight + 'px');
-	}, []);
-
 	return (
 		<div className={style.skillSection}>
-			<HeadingUnderLine txt="Skill-Set" />
 
-			{/* 2. Filter Buttons */}
 			<div className={style.filterTabs}>
-				<button
-					className={activeTab === "All" ? style.activeBtn : ""}
-					onClick={() => setActiveTab("All")}
-				>
-					All
-				</button>
-				{categories.map((cat) => (
-					<button
-						key={cat}
-						className={activeTab === cat ? style.activeBtn : ""}
-						onClick={() => setActiveTab(cat)}
-					>
-						{cat}
-					</button>
-				))}
+				<HeadingUnderLine txt="Skill-Set" />&emsp;&emsp;
+				<button className={activeTab === "All" ? style.activeBtn : ""} onClick={() => setActiveTab("All")}>All</button>
+				{categories.map((cat) => <button key={cat} className={activeTab === cat ? style.activeBtn : ""} onClick={() => setActiveTab(cat)}>{cat}</button>)}
 			</div>
 
 			<div id='skillShowCase' className={style.allSkills}>
-				{/* 3. Conditional Rendering Logic */}
-				{activeTab === "All" ? (
-					// Logic A: Show ALL with Headings
-					categories.map((category) => (
-						<div key={category} className={style.categoryGroup}>
-							<HeadingHalfUnderLine txt={category} />
-							{skillsData
-								.filter(skill => skill.type === category)
-								.map((skill, index) => (
-									<AnimatedSkill
-										key={index}
-										icon={skill.icon}
-										title={skill.title}
-										description={skill.desc}
-									/>
-								))
-							}
-						</div>
-					))
-				) : (
-					// Logic B: Show ONLY selected items, NO Headings
-					skillsData
-						.filter(skill => skill.type === activeTab)
-						.map((skill, index) => (
-							<AnimatedSkill
-								key={index}
-								icon={skill.icon}
-								title={skill.title}
-								description={skill.desc}
-							/>
-						))
-				)}
+				{activeTab === "All" ?
+					categories.map((category) => <div key={category} className={style.categoryGroup}>
+						<HeadingHalfUnderLine txt={category} />
+						{skillsData.filter(skill => skill.type === category).map((skill, index) => <AnimatedSkill key={index} icon={skill.icon} title={skill.title} description={skill.desc} />)}
+					</div>) :
+					skillsData.filter(skill => skill.type === activeTab).map((skill, index) => <AnimatedSkill key={index} icon={skill.icon} title={skill.title} description={skill.desc} />)}
 			</div>
 		</div>
 	)

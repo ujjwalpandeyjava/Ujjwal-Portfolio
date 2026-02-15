@@ -1,45 +1,73 @@
-@use "./_variables_utils.scss" as *;
+@use "./variables_utils" as *;
 
 .eachSkill {
-	text-align: left;
-	padding: 8px 5px 8px 13px;
-	scroll-snap-align: center;
-	background-color: rgba(242, 231, 251, 0.795);
-	min-width: var(--eachSkillHeightWidth);
-	max-width: var(--eachSkillHeightWidth);
-	max-height: calc(var(--eachSkillHeightWidth) * 1.1);
-	aspect-ratio: 1/0.9;
-	overflow: auto;
-	border-radius: 7px;
-	color: orangered;
-	color: #3e3e3e;
-	border: 1px solid rgb(176, 176, 176);
-	box-shadow:
-		rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+	// --- Main Layout: Left Block | Right Block ---
+	display: flex;
+	flex-direction: row;
+	align-items: center; // Vertically center content
+	gap: 1.5rem; // Gap between the icon block and description
+	// --- Box Styling ---
+	padding: 1rem 1.5rem;
+	background-color: rgba(242, 231, 251, 0.795); // Light purple tint
+	border-radius: 12px;
+	border: 1px solid rgb(220, 220, 220);
+	width: 100%;
+	max-width: 420px;
+	min-height: 100px;
+
+	// --- Shadow & Transition ---
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
 		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
 	opacity: 0;
 	transform: translateY(20px);
-	transition: box-shadow 200ms ease-in-out, opacity 500ms ease-in-out, transform 650ms ease-in-out;
-
-	&::-webkit-scrollbar {
-		visibility: hidden;
-	}
+	transition: all 500ms ease-in-out;
 
 	&:hover {
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+		transform: translateY(-3px);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+			rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+		background-color: #ffffff; // Brighten on hover
 	}
 
-	.skillIcon {
-		font-size: 3em;
-		margin-bottom: 6px;
+	// --- LEFT SIDE: Icon & Name ---
+	.skillLeft {
+		display: flex;
+		flex-direction: column; // Stack Icon above Name
+		align-items: center;
+		justify-content: center;
+		min-width: 90px; // Ensure all left sides are same width
+		text-align: center;
+		flex-shrink: 0; // Prevent shrinking
+
+		.skillIcon {
+			font-size: 2.5em;
+			color: #4f46e5; // Indigo accent
+			margin-bottom: 0.5rem;
+			display: flex; // Center icon svg
+		}
+
+		.skillTitle {
+			font-weight: 700;
+			font-size: 0.9rem;
+			color: #1f2937;
+			line-height: 1.2;
+		}
 	}
 
+	// --- RIGHT SIDE: Description ---
 	.eachSkillDescription {
-		color: gray;
-		font-size: 0.85em;
+		flex: 1; // Take up remaining space
+		color: #4b5563; // Dark Gray
+		font-size: 0.95rem;
+		line-height: 1.6;
+		text-align: left;
+		border-left: 2px solid rgba(0, 0, 0, 0.05); // Optional: Vertical separator line
+		padding-left: 1.5rem; // Space from separator
 	}
 }
 
+// --- Animation Classes ---
 .fadeIn {
 	opacity: 1;
 	transform: translateY(0);

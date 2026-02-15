@@ -13,12 +13,15 @@ export default function AboutMe() {
 		<div className={css.aboutMeCSS}>
 			<HeadingUnderLine txt="About me" />
 
-			<div className={css.paperIcon}><Image src={aboutAvatar} alt="Me telling details" /></div>
-
-			<div className={css.someDetails}>
-				<span className={css.myName}>A Software Developer Engineer!</span><br />
-				I am Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.coforge.com" target="_blank" rel="noreferrer">Coforge</a> as Senior Software Engineer.<br />
-				I am proficient in <span>Java + React Fullstack Development,</span> <b>with over 4 years</b> of extensive hands-on experience. Occasionally contributing to Android development using Kotlin.
+			<div className={css.profileBlock}>
+				<div className={css.paperIcon}>
+					<Image src={aboutAvatar} alt="Me telling details" />
+				</div>
+				<div className={css.someDetails}>
+					<span className={css.myName}>I am Software Developer Engineer!</span>
+					Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.coforge.com" target="_blank" rel="noreferrer">Coforge</a> as Senior Software Engineer.<br />
+					I am proficient in <span>Java + React, Next.Js Fullstack Development,</span> <b>with over 4+ years</b> of extensive hands-on experience. Contributing to mobile app development.
+				</div>
 			</div>
 
 			<div className={css.otherDetails}>
