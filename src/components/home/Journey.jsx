@@ -42,12 +42,37 @@ const Journey = () => {
 			<h1 className='g-heading2'>My Learning Journey</h1>
 			<div className="g-headingHint">Working and Educational Experience.</div>
 			<VerticalTimeline animate={true} className="journey-timeline" lineColor="#3d50bdff">
-				{/* Work Experience */}
-				<VerticalTimelineElement date="May 2024 - August 2025" {...commonProps.vtElement0}>
+				<VerticalTimelineElement date="August 2025 - Present" {...commonProps.vtElement0}>
+					<h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+					<h4 className="vertical-timeline-element-subtitle">Coforge</h4>
+					<div className='content'>
+						<h5 className="vertical-timeline-element-subtitle">Service Based + MNC</h5>
+						<h4>Responsibilities:</h4>
+						<ul>
+							<li>Worked in Software development team for client Sabre.</li>
+							<li>Worked in Airline and payment domains.</li>
+							<li>Work on payment applications using Java, Spring Boot, and Angular.</li>
+						</ul>
+					</div>
+					<BlockContainer element="span" margin={["mt"]}>
+						<Tag c="lightblue"><a href="https://coforge.com/" target="_blank" rel="noopener noreferrer">Coforge</a></Tag>
+						<Tag c="lightblue">Hybrid</Tag>
+						<Tag c="gray">Java</Tag>
+						<Tag c="gray">Spring Boot</Tag>
+						<Tag c="gray">MicroService</Tag>
+						<Tag c="gray">JUnit</Tag>
+						<Tag c="gray">Cucumber</Tag>
+						<Tag c="gray">JavaScript</Tag>
+						<Tag c="gray">Angular</Tag>
+					</BlockContainer>
+				</VerticalTimelineElement>
+
+
+				<VerticalTimelineElement date="May 2024 - August 2025" {...commonProps.vtElement1}>
 					<h3 className="vertical-timeline-element-title">Senior Product Developer</h3>
 					<h4 className="vertical-timeline-element-subtitle">IntellyLabs Technologies</h4>
 					<div className='content'>
-						<h5 className="vertical-timeline-element-subtitle">AI Product + Service Based + Consulting <sub>(Full-Time)</sub></h5>
+						<h5 className="vertical-timeline-element-subtitle">AI Product + Service Based + Consulting</h5>
 						<h4>Responsibilities:</h4>
 						<ul>
 							<li> Developing the AI-powered product &apos;IntellyMind&apos; including chat widget, admin panel, and live Support system  using Spring Boot micro services and React with TS, enabling real-time chat and live insights with 99% up-time.</li>
