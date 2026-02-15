@@ -1,26 +1,27 @@
+import { OFFICIAL_SUPPORT_EMAIL } from '@/components/Constants';
+import { sendEmail } from '@/lib/mail';
 import { NextResponse } from 'next/server';
 
 export async function POST(request) {
 	try {
 		const body = await request.json();
-		const { name, email, message, token } = body;
+		console.log(body);
+		const { name, email, message } = body;
 
-		// 1. Verify the token with Google
-		const secretKey = process.env.RECAPTCHA_SECRET_KEY;
-
-		const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
-		const recaptchaRes = await fetch(verifyUrl, { method: 'POST' });
-		const recaptchaData = await recaptchaRes.json();
-
-		if (!recaptchaData.success) {
-			return NextResponse.json({ message: 'Invalid Captcha' }, { status: 400 });
-		}
-
-		// 2. (Optional) Send Email here using Nodemailer or Resend
-		console.log("Verified User:", name, email, message);
-
-		return NextResponse.json({ message: 'Success!' }, { status: 200 });
-
+		const resp = await sendEmail({
+			to: [OFFICIAL_SUPPORT_EMAIL],
+			replyTo: [email],
+			subject: `Message from ${name}`,
+			html: `
+			<p>Dear Ujjwal Pandey,</p>
+			<p>${name} has contacted us with the following message:</p>
+			<p>${message}</p>
+			`
+		});
+		return NextResponse.json({
+			success: true,
+			message: email ? resp.messageId : "No email"
+		}, { status: resp.success ? 200 : 500 });
 	} catch (error) {
 		return NextResponse.json({ message: 'Server Error' }, { status: 500 });
 	}

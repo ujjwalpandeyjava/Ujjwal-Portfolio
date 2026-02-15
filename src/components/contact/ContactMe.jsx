@@ -1,61 +1,38 @@
-"use client"; // Required for App Router
+"use client";
 
 import style from "@/styles/contact.module.scss"; // Your existing styles
 import { HeadingUnderLine } from "@/utils/Headings";
-import { useRef, useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { useFormStatus } from "react-dom";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function ContactMe() {
-	const [captchaToken, setCaptchaToken] = useState(null);
-	const [loading, setLoading] = useState(false);
-	const recaptchaRef = useRef(null);
-
-	const handleCaptchaChange = (token) => {
-		setCaptchaToken(token);
-	};
+	const { pending } = useFormStatus();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		setLoading(true);
-
-		if (!captchaToken) {
-			alert("Please complete the captcha.");
-			setLoading(false);
-			return;
-		}
-
 		const formData = {
 			name: e.target[0].value,
 			email: e.target[1].value,
 			message: e.target[2].value,
-			token: captchaToken, // Send token to backend
 		};
 
 		try {
-			// Create this API route (see Step 2 below)
 			const res = await fetch("/api/contact", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(formData),
 			});
-
 			const data = await res.json();
 
 			if (res.ok) {
 				alert("Message sent successfully!");
 				e.target.reset();
-				recaptchaRef.current.reset(); // Reset captcha
-				setCaptchaToken(null);
-			} else {
+			} else
 				alert("Error: " + data.message);
-			}
 		} catch (error) {
 			alert("Something went wrong.");
-		} finally {
-			setLoading(false);
 		}
 	};
 
@@ -83,13 +60,8 @@ export default function ContactMe() {
 							<textarea placeholder="Enter your message" rows={5} required></textarea>
 						</div>
 
-						{/* ReCAPTCHA Component */}
-						<div className={style.recaptchaWrapper}>
-							<ReCAPTCHA ref={recaptchaRef} sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} onChange={handleCaptchaChange} />
-						</div>
-						{/* disabled={!captchaToken || loading} */}
-						<button type="submit" className={style.sendBtn} >
-							{loading ? "Sending..." : "Send Message"} <SiMinutemailer />
+						<button type="submit" className={style.sendBtn} disabled={pending}>
+							{pending ? "Sending..." : "Send Message"} <SiMinutemailer />
 						</button>
 					</form>
 				</div>
@@ -117,12 +89,14 @@ export default function ContactMe() {
 							</div>
 						</div>
 					</div>
+
 					<div className={style.socialRow}>
-						<a href="#" className={style.socialIcon}><FaGithub /></a>
-						<a href="#" className={style.socialIcon}><FaLinkedinIn /></a>
-						<a href="#" className={style.socialIcon}><FaTwitter /></a>
-						<a href="#" className={style.socialIcon}><FaFacebookF /></a>
+						<a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noreferrer" className={style.socialIcon}><FaGithub /></a>
+						<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noreferrer" className={style.socialIcon}><FaLinkedinIn /></a>
+						<a href="https://instagram.com/ujjwal__pandeyy" target="_blank" rel="noreferrer" className={style.socialIcon}><FaInstagram /></a>
+						<a href="https://wa.me/918375990500" target="_blank" rel="noreferrer" className={style.socialIcon}><FaWhatsapp /></a>
 					</div>
+
 					<div className={style.verticalLine}>
 						<span>CONTACT</span>
 					</div>
