@@ -12,6 +12,11 @@
 	min-height: 80vh;
 	gap: 0.5em;
 
+	@media (max-width: 850px) {
+		flex-direction: column;
+		margin-block: 1em;
+	}
+
 	&>div {
 		flex: 1;
 	}
@@ -68,6 +73,8 @@
 
 	.myAvatar {
 		object-fit: contain;
+		width: 100%;
+		max-width: 500px;
 		// Your floating animation could go here
 		// animation: float 3s ease-in-out infinite;
 	}

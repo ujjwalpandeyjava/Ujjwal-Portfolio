@@ -18,8 +18,8 @@ export default function Hero() {
 				</div>
 			</div>
 
-			<div id="myAvatar-wrapper">
-				<Image src={floatingImage} alt="It's me" priority width={500} height={500} className="myAvatar" />
+			<div>
+				<Image src={floatingImage} alt="It's me" priority className="myAvatar" />
 			</div>
 		</div>
 	)
