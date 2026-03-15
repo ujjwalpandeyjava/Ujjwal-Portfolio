@@ -14,8 +14,8 @@ export const navLinks = [
 export const office = {
 	address: { title: "Registered office", label: 'H.No,184,Main Road Ibrahimganj Bhopal 462001 Madhya Pradesh', link: '#footer' },
 	coordinates: {
-		latitude: 23.319672780699857,
-		longitude: 77.41139570085053
+		latitude: 28.501146,
+		longitude: 77.234408
 	}
 }
 

@@ -2,13 +2,15 @@
 
 import style from "@/styles/contact.module.scss"; // Your existing styles
 import { HeadingUnderLine } from "@/utils/Headings";
-import { useFormStatus } from "react-dom";
+import { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function ContactMe() {
-	const { pending } = useFormStatus();
+	const [pending, setPending] = useState(false);
+
+
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -19,11 +21,13 @@ export default function ContactMe() {
 		};
 
 		try {
+			setPending(true);
 			const res = await fetch("/api/contact", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(formData),
 			});
+
 			const data = await res.json();
 
 			if (res.ok) {
@@ -33,6 +37,8 @@ export default function ContactMe() {
 				alert("Error: " + data.message);
 		} catch (error) {
 			alert("Something went wrong.");
+		} finally {
+			setPending(false);
 		}
 	};
 

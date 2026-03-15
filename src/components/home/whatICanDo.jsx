@@ -28,9 +28,9 @@ export default function WhatICanDo() {
 				</div>
 				<div className="eachAbilities">
 					<Image src={webDev} alt="Web Development" />
-					<div>Website Development</div>
+					<div>Web Development</div>
 					<div className="content">
-						I build scalable, high-performance web applications using modern frontend frameworks and robust backend systems.
+						Get Your Website Built<br /> I build scalable, high-performance web applications using modern frontend frameworks and robust backend systems.
 						<hr />
 						<strong>Technologies:</strong> Java, Next.js, Angular, TypeScript
 					</div>

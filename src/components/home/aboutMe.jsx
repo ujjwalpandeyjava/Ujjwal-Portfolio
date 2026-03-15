@@ -51,7 +51,7 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td className={css.label}>Job Status</td>
-								<td className={css.value}><a style={{ color: 'inherit' }} href="https://www.coforge.com/" target="_blank" rel="noreferrer">Working at Coforge</a></td>
+								<td className={css.value}><a style={{ color: 'inherit' }} href="https://www.coforge.com/" target="_blank" rel="noreferrer">Working at Coforge in (Payments)</a></td>
 							</tr>
 							<tr>
 								<td className={css.label}>Job Profile</td>
@@ -97,7 +97,7 @@ export default function AboutMe() {
 							</div>
 							<div className={css.textWrapper}>
 								<h3>Game</h3>
-								<p>Strategy, RPGs, and competitive gaming.</p>
+								<p>Adventure, Strategy, RPGs, and competitive gaming.</p>
 							</div>
 						</div>
 					</div>
