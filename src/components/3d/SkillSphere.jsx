@@ -65,7 +65,7 @@ function SkillSphere({ word, size, color }) {
 
 			{/* Kept only ONE material to allow the texture to paint correctly */}
 			<meshStandardMaterial roughness={0.6} metalness={0.4}>
-				<RenderTexture attach="map" anisotropy={16} frames={1}>
+				<RenderTexture attach="map" anisotropy={16} frames={5}>
 					<PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
 					<color attach="background" args={[color || '#c7c7c7']} />
 					<Text fontSize={0.4} color="black" anchorX="center" anchorY="middle" fontWeight="bold">{word}</Text>
