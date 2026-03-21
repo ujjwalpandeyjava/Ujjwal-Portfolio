@@ -57,6 +57,7 @@ const categories = ["Backend", "Mobile", "Frontend", "DataBase", "Others"];
 export default function Skills() {
 	const [activeTab, setActiveTab] = useState("All");
 
+
 	return (
 		<div className={style.skillSection}>
 
@@ -67,7 +68,7 @@ export default function Skills() {
 				{categories.map((cat) => <button key={cat} className={activeTab === cat ? style.activeBtn : ""} onClick={() => setActiveTab(cat)}>{cat}</button>)}
 			</div>
 
-			<SkillSphere listOfSkills={skillsData} />
+			<SkillSphere listOfSkills={skillsData.filter(e => (activeTab === "All" || e.type === activeTab))} />
 
 			<div id='skillShowCase' className={style.allSkills}>
 				{activeTab === "All" ?

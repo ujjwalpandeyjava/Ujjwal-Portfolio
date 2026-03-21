@@ -1,7 +1,7 @@
 import { Physics, useSphere } from '@react-three/cannon';
 import { PerspectiveCamera, RenderTexture, Text } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { useEffect, useMemo, useRef } from 'react';
+import { Suspense, useEffect, useMemo, useRef } from 'react';
 import { skillsData } from '../home/skills';
 
 // Performant global flag to track mouse clicks without triggering React re-renders
@@ -52,7 +52,7 @@ function SkillSphere({ word, size, color }) {
 		const forceY = -y * pullStrength;
 		const forceZ = -z * pullStrength;
 
-		const swirlStrength = 1.5;
+		const swirlStrength = 0.6;
 		const swirlX = -z * swirlStrength;
 		const swirlZ = x * swirlStrength;
 
@@ -60,12 +60,12 @@ function SkillSphere({ word, size, color }) {
 	});
 
 	return (
-		<mesh ref={ref} castShadow receiveShadow>
-			<sphereGeometry args={[size, 64, 64]} />
+		<mesh ref={ref}>
+			<sphereGeometry args={[size, 24, 24]} />
 
 			{/* Kept only ONE material to allow the texture to paint correctly */}
 			<meshStandardMaterial roughness={0.6} metalness={0.4}>
-				<RenderTexture attach="map" anisotropy={16}>
+				<RenderTexture attach="map" anisotropy={16} frames={1}>
 					<PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
 					<color attach="background" args={[color || '#c7c7c7']} />
 					<Text fontSize={0.4} color="black" anchorX="center" anchorY="middle" fontWeight="bold">{word}</Text>
@@ -78,13 +78,14 @@ function SkillSphere({ word, size, color }) {
 export default function Skills({ listOfSkills }) {
 	return (
 		<div style={{ marginBlock: "2em", width: '100%', height: '500px', backgroundColor: "#ffffff", cursor: 'pointer' }}>
-			<Canvas camera={{ position: [0, 0, 45], fov: 50 }}>
-				<ambientLight intensity={1.5} />
-				<directionalLight position={[10, 10, 10]} intensity={2} castShadow />
-
-				<Physics gravity={[0, 0, 0]} iterations={20}>
-					{listOfSkills.map((skill, index) => <SkillSphere key={index} word={skill.title} size={skill.size} color={skill.color} />)}
-				</Physics>
+			<Canvas camera={{ position: [0, 0, 45], fov: 50 }} dpr={[1, 1.5]}>
+				<ambientLight intensity={1} />
+				<directionalLight position={[10, 10, 10]} intensity={2} />
+				<Suspense fallback={null}>
+					<Physics gravity={[0, 0, 0]} iterations={5}>
+						{listOfSkills.map((skill, index) => <SkillSphere key={skill.title} word={skill.title} size={skill.size} color={skill.color} />)}
+					</Physics>
+				</Suspense>
 			</Canvas>
 		</div>
 	);
