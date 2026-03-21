@@ -2,11 +2,13 @@ import floatingImage from '@/statics/images/developer1.svg';
 import '@/styles/home.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import ParticleBg from '@/components/ParticleBg';
 
 
-export default function Hero() {
+const Hero = () => {
 	return (
 		<div className="home-container">
+			<ParticleBg />
 			<div className="who-i-am">
 				<div className="name-calling">Hi There!!</div>
 				<div className="name-im">I am <span>Ujjwal Pandey</span></div>
@@ -24,3 +26,4 @@ export default function Hero() {
 		</div>
 	)
 };
+export default Hero;
