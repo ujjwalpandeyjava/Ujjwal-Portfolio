@@ -1,8 +1,8 @@
+import { useBoundStore } from '@/store/useBoundStore';
 import { Physics, useSphere } from '@react-three/cannon';
 import { PerspectiveCamera, RenderTexture, Text } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Suspense, useEffect, useMemo, useRef } from 'react';
-import { skillsData } from '../home/skills';
 
 // Performant global flag to track mouse clicks without triggering React re-renders
 let isMouseDown = false;
@@ -11,6 +11,26 @@ if (typeof window !== 'undefined') {
 	window.addEventListener('mouseup', () => (isMouseDown = false));
 	window.addEventListener('touchstart', () => (isMouseDown = true)); // For mobile
 	window.addEventListener('touchend', () => (isMouseDown = false));
+}
+
+export default function Skills({ listOfSkills }) {
+	const show3D = useBoundStore((state) => state.show3DModel);
+	console.log({ show3D });
+
+	if (!show3D) return null;
+	return (
+		<div style={{ marginBlock: "2em", width: '100%', height: '500px', backgroundColor: "#ffffff", cursor: 'pointer' }}>
+			<Canvas camera={{ position: [0, 0, 45], fov: 50 }} dpr={[1, 1.5]}>
+				<ambientLight intensity={1} />
+				<directionalLight position={[10, 10, 10]} intensity={2} />
+				<Suspense fallback={null}>
+					<Physics gravity={[0, 0, 0]} iterations={5}>
+						{listOfSkills.map((skill, index) => <SkillSphere key={skill.title} word={skill.title} size={skill.size} color={skill.color} />)}
+					</Physics>
+				</Suspense>
+			</Canvas>
+		</div>
+	);
 }
 
 function SkillSphere({ word, size, color }) {
@@ -27,7 +47,7 @@ function SkillSphere({ word, size, color }) {
 		position: startPos,
 		args: [size + 0.2],
 		linearDamping: 0.9,
-		angularDamping: 0.1,
+		angularDamping: 0.01,
 		angularFactor: [0, 0.01, 0],
 	}));
 
@@ -65,28 +85,12 @@ function SkillSphere({ word, size, color }) {
 
 			{/* Kept only ONE material to allow the texture to paint correctly */}
 			<meshStandardMaterial roughness={0.6} metalness={0.4}>
-				<RenderTexture attach="map" anisotropy={16} frames={5}>
+				<RenderTexture attach="map" anisotropy={16} frames={3}>
 					<PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
 					<color attach="background" args={[color || '#c7c7c7']} />
-					<Text fontSize={0.4} color="black" anchorX="center" anchorY="middle" fontWeight="bold">{word}</Text>
+					<Text fontSize={0.35} color="black" anchorX="center" anchorY="middle" fontWeight="bold">{word}</Text>
 				</RenderTexture>
 			</meshStandardMaterial>
 		</mesh>
-	);
-}
-
-export default function Skills({ listOfSkills }) {
-	return (
-		<div style={{ marginBlock: "2em", width: '100%', height: '500px', backgroundColor: "#ffffff", cursor: 'pointer' }}>
-			<Canvas camera={{ position: [0, 0, 45], fov: 50 }} dpr={[1, 1.5]}>
-				<ambientLight intensity={1} />
-				<directionalLight position={[10, 10, 10]} intensity={2} />
-				<Suspense fallback={null}>
-					<Physics gravity={[0, 0, 0]} iterations={5}>
-						{listOfSkills.map((skill, index) => <SkillSphere key={skill.title} word={skill.title} size={skill.size} color={skill.color} />)}
-					</Physics>
-				</Suspense>
-			</Canvas>
-		</div>
 	);
 }

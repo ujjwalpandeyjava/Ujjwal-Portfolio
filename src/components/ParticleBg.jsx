@@ -8,7 +8,9 @@ import { useEffect, useMemo, useState } from 'react';
 const ParticleBg = () => {
 	const [init, setInit] = useState(false);
 
-	const particlesLoaded = (container) => { console.log("particlesLoaded:", container); };
+	const particlesLoaded = (container) => {
+		console.log("particlesLoaded:", container);
+	};
 
 
 	const options = useMemo(() => ({

@@ -3,10 +3,12 @@
 import ContactMe from '@/components/contact/ContactMe';
 import AboutMe from '@/components/home/aboutMe';
 import Hero from '@/components/home/hero';
-// import Journey from '@/components/home/Journey';
-import Skills from '@/components/home/skills';
+import Skills, { skillsData } from '@/components/home/skills';
 import WhatICanDo from '@/components/home/whatICanDo';
+import SkillsMarquee from '@/components/home/SkillsMarquee';
 import { Space } from '@mantine/core';
+import PerformanceModal from '@/components/3d/PerformanceModal';
+
 
 export default function Home() {
   return (
@@ -15,13 +17,15 @@ export default function Home() {
       <Space h="lg" />
       <AboutMe />
       <Space h={30} />
+      <SkillsMarquee direction={true} skills={skillsData} />
+      <SkillsMarquee direction={false} skills={skillsData} />
+      <Space h={30} />
       <WhatICanDo />
       <Space h={30} />
       <Skills />
       <Space h={30} />
       <ContactMe />
-      {/* <Journey /> */}
-      {/* <Space h={30} /> */}
+      <PerformanceModal />
     </div>
   );
 }

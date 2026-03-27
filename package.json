@@ -50,7 +50,8 @@
     "react-intersection-observer": "^10.0.2",
     "react-vertical-timeline-component": "^3.5.3",
     "recharts": "^3.6.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "zustand": "^5.0.12"
   },
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",

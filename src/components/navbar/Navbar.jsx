@@ -37,7 +37,7 @@ const DesktopNav = ({ openModal }) => {
 			<SiteLogo />
 			<Flex className="" align="center" gap="lg">
 				{navLinks.map(({ link, label, icon: Icon, showIcon }) => (showIcon && <Link key={link} href={link} className="navLink"><Icon size={18} /><span>{label}</span></Link>))}
-				<Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button>
+				{/* <Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button> */}
 			</Flex>
 		</div>
 	);
@@ -46,30 +46,32 @@ const MobileNav = ({ openModal }) => {
 	const [open, setOpen] = useState(false);
 	return (
 		<>
+			{/* Top navbar */}
 			<div className='mobileNavHeader'>
 				<SiteLogo />
 				<RxHamburgerMenu size={28} className="mobileNavIcon" onClick={() => setOpen(true)} />
 			</div>
-			{open && <div className="menuOverlay" onClick={() => setOpen(false)} />}
 
-			<aside id="mobileSidebar" className={open ? "open" : ""}>
-				<div className="sidebarHeader">
-					<SiteLogo />
-					<RxCross2 size={28} onClick={() => setOpen(false)} style={{ cursor: 'pointer' }} />
-				</div>
+			{open && <div className="menuOverlay" onClick={() => setOpen(false)}>
+				<aside id="mobileSidebar" className={open ? "open" : ""}>
+					<div className="sidebarHeader">
+						<SiteLogo />
+						<RxCross2 size={28} onClick={() => setOpen(false)} style={{ cursor: 'pointer' }} />
+					</div>
 
-				<nav className="mobileLinks">
-					{navLinks.map(({ link, label, icon: Icon }) =>
-						<Link key={link} href={link} className="mobile-nav-item" onClick={() => setOpen(false)}>
-							<Icon size={20} />
-							<span>{label}</span>
-						</Link>)}
-				</nav>
+					<nav className="mobileLinks">
+						{navLinks.map(({ link, label, icon: Icon }) =>
+							<Link key={link} href={link} className="mobile-nav-item" onClick={() => setOpen(false)}>
+								<Icon size={20} />
+								<span>{label}</span>
+							</Link>)}
+					</nav>
 
-				<div className="mobile-action-area">
+					{/* <div className="mobile-action-area">
 					<Button fullWidth leftSection={<IoHeart />} color="pink" radius="md" size="md" onClick={() => { openModal(); setOpen(false); }}>Get a Coffee</Button>
-				</div>
-			</aside>
+				</div> */}
+				</aside>
+			</div>}
 		</>
 	);
 };

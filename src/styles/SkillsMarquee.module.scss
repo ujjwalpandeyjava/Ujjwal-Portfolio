@@ -1,0 +1,51 @@
+// SkillsMarquee.module.scss
+.container {
+	overflow: hidden;
+	user-select: none;
+	display: flex;
+	padding: 20px 0;
+	// Soft fade edges
+	mask-image: linear-gradient(to right,
+			transparent,
+			black 15%,
+			black 85%,
+			transparent);
+}
+
+.scroll {
+	display: flex;
+	flex-shrink: 0;
+	gap: var(--gap);
+	// Ensure the track is at least 200% width (100% per SkillList)
+	min-width: max-content;
+	animation: scroll-anim 80s linear infinite;
+
+	// Pause logic: pauses the entire track when any child is hovered
+	&:hover {
+		animation-play-state: paused;
+	}
+}
+
+.reverse {
+	animation-direction: reverse;
+}
+
+.skillBadge {
+	cursor: help;
+	transition: transform 0.2s ease, background-color 0.2s ease;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+@keyframes scroll-anim {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		/* Move by exactly one full set (including the gap) */
+		transform: translateX(calc(-50% - (var(--gap) / 2)));
+	}
+}
