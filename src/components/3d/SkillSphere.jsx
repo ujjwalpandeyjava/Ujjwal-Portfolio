@@ -2,7 +2,7 @@ import { useBoundStore } from '@/store/useBoundStore';
 import { Physics, useSphere } from '@react-three/cannon';
 import { PerspectiveCamera, RenderTexture, Text } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Suspense, useEffect, useMemo, useRef } from 'react';
+import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 
 // Performant global flag to track mouse clicks without triggering React re-renders
 let isMouseDown = false;
@@ -34,6 +34,8 @@ export default function Skills({ listOfSkills }) {
 }
 
 function SkillSphere({ word, size, color }) {
+	const [hovered, setHovered] = useState(false); // Track hover state locally
+
 	// 1. Random start position
 	const startPos = useMemo(() => [
 		(Math.random() - 0.5) * 20,
@@ -41,14 +43,14 @@ function SkillSphere({ word, size, color }) {
 		(Math.random() - 0.5) * 20
 	], []);
 
-	// 2. Physics setup
+	// 2. Physics setup - Increased angularFactor to allow manual spin
 	const [ref, api] = useSphere(() => ({
 		mass: 1,
 		position: startPos,
 		args: [size + 0.2],
 		linearDamping: 0.9,
-		angularDamping: 0.01,
-		angularFactor: [0, 0.01, 0],
+		angularDamping: 0.01, // Lowered slightly so it keeps spinning a bit after hover
+		angularFactor: [0, 0.01, 0], // Allow rotation on Y axis (middle value)
 	}));
 
 	// 3. Track accurate physics position
@@ -58,37 +60,56 @@ function SkillSphere({ word, size, color }) {
 		return unsubscribe;
 	}, [api]);
 
-	// 4. Movement Logic
+	// 4. Movement & Spin Logic
 	useFrame(() => {
 		const [x, y, z] = pos.current;
 		const distanceFromCenter = Math.sqrt(x * x + y * y + z * z);
 
-		// If mouse is down, push them away (-200). If up, pull them in (150).
-		// The ternary operator includes a safety boundary (distanceFromCenter < 35) so they don't get lost forever.
 		let pullStrength = 12;
 		if (isMouseDown) pullStrength = distanceFromCenter < 35 ? -7 : 0;
 
 		const forceX = -x * pullStrength;
 		const forceY = -y * pullStrength;
 		const forceZ = -z * pullStrength;
-
 		const swirlStrength = 0.6;
 		const swirlX = -z * swirlStrength;
 		const swirlZ = x * swirlStrength;
 
 		api.applyForce([forceX + swirlX, forceY, forceZ + swirlZ], [x, y, z]);
+
+		// DIRECT SPEED CONTROL
+		if (hovered) {
+			api.angularVelocity.set(0, -70, 0);
+		} else {
+			api.angularVelocity.set(0, -10, 0);
+		}
 	});
 
-	return (
-		<mesh ref={ref}>
-			<sphereGeometry args={[size, 24, 24]} />
 
-			{/* Kept only ONE material to allow the texture to paint correctly */}
-			<meshStandardMaterial roughness={0.6} metalness={0.4}>
-				<RenderTexture attach="map" anisotropy={16} frames={3}>
+	return (
+		<mesh
+			ref={ref}
+			onPointerOver={(e) => {
+				e.stopPropagation(); // Prevents hovering multiple spheres at once
+				setHovered(true);
+			}}
+			onPointerOut={() => setHovered(false)}
+		>
+			<sphereGeometry args={[size, 24, 24]} />
+			<meshStandardMaterial
+				roughness={0.6}
+				metalness={0.4}
+				// Visual feedback: brighten the ball slightly when hovered
+				emissive={hovered ? color : 'black'}
+				emissiveIntensity={hovered ? 0.2 : 0}
+			>
+				{/* Increase frames to Infinity when hovered for smooth text rotation */}
+				<RenderTexture attach="map" anisotropy={16} frames={hovered ? Infinity : 3}>
 					<PerspectiveCamera makeDefault manual aspect={1 / 1} position={[0, 0, 5]} />
 					<color attach="background" args={[color || '#c7c7c7']} />
-					<Text fontSize={0.35} color="black" anchorX="center" anchorY="middle" fontWeight="bold">{word}</Text>
+					<Text fontSize={0.35} color="black" anchorX="center" anchorY="middle" fontWeight="bold">
+						{word}
+					</Text>
 				</RenderTexture>
 			</meshStandardMaterial>
 		</mesh>
