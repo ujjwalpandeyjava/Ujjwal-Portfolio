@@ -8,6 +8,7 @@ import WhatICanDo from '@/components/home/whatICanDo';
 import SkillsMarquee from '@/components/home/SkillsMarquee';
 import { Space } from '@mantine/core';
 import PerformanceModal from '@/components/3d/PerformanceModal';
+import LivingSystem from '@/components/home/LivingSystem';
 
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
       <SkillsMarquee direction={false} skills={skillsData} />
       <Space h={30} />
       <WhatICanDo />
+      <Space h={30} />
+      <LivingSystem />
       <Space h={30} />
       <Skills />
       <Space h={30} />

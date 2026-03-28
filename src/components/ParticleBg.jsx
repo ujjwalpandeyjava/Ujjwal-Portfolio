@@ -8,9 +8,9 @@ import { useEffect, useMemo, useState } from 'react';
 const ParticleBg = () => {
 	const [init, setInit] = useState(false);
 
-	const particlesLoaded = (container) => {
-		console.log("particlesLoaded:", container);
-	};
+	// const particlesLoaded = (container) => {
+	// 	console.log("particlesLoaded:", container);
+	// };
 
 
 	const options = useMemo(() => ({
@@ -65,7 +65,7 @@ const ParticleBg = () => {
 	}, []);
 
 
-	return (init && <Particles id="tsParticles" particlesLoaded={particlesLoaded} options={options} className="particles-bg" />);
+	return (init && <Particles id="tsParticles" options={options} className="particles-bg" />);
 };
 
 export default ParticleBg;

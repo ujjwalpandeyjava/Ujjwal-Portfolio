@@ -1,0 +1,81 @@
+.container {
+	position: relative;
+	padding: 4px; // The border width
+	border-radius: 22px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+
+	// The Animated Glowing Border
+	&::before {
+		content: '';
+		position: absolute;
+		width: 150%;
+		height: 150%;
+		background: conic-gradient(transparent,
+				var(--mantine-color-blue-4),
+				var(--mantine-color-cyan-3),
+				var(--mantine-color-indigo-5),
+				transparent 40%);
+		animation: rotate 6s linear infinite;
+		z-index: 0;
+	}
+
+	// The "Nice Blue" Interior Background
+	&::after {
+		content: '';
+		position: absolute;
+		inset: 3px; // Slight inset for border visibility
+		background: radial-gradient(circle at center,
+				#1a2b4b 0%, // Deep Navy
+				#0a0f1e 100% // Midnight
+			);
+		border-radius: 21px;
+		z-index: 1;
+	}
+}
+
+.content {
+	position: relative;
+	z-index: 2;
+	padding: 60px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.visualWrapper {
+	font-size: 100px;
+	// Dynamic glow behind the icon
+	filter: drop-shadow(0 0 30px var(--mantine-color-blue-8));
+	animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pulse {
+
+	0%,
+	100% {
+		transform: scale(1);
+		opacity: 0.9;
+	}
+
+	50% {
+		transform: scale(1.05);
+		opacity: 1;
+	}
+}
