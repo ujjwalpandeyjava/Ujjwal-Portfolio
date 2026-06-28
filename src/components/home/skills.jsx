@@ -2,18 +2,19 @@
 
 import SkillSphere from "@/components/3d/SkillSphere";
 import AnimatedSkill from "@/components/home/AnimatedSkillProps";
+import { useBoundStore } from '@/store/useBoundStore';
 import style from '@/styles/Skills.module.scss';
 import { HeadingHalfUnderLine, HeadingUnderLine } from '@/utils/Headings';
+import { Text } from "@mantine/core";
 import { useState } from 'react';
 import { BiSolidFileJson } from "react-icons/bi";
+import { BsFiletypeXml } from "react-icons/bs";
 import { FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
 import { FaAngular, FaJava, FaReact } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { SiApachekafka, SiCucumber, SiDocker, SiExpo, SiJenkins, SiJirasoftware, SiJunit5, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSpringboot, SiXml } from "react-icons/si";
+import { SiApachekafka, SiCucumber, SiDocker, SiExpo, SiJenkins, SiJirasoftware, SiJunit5, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSaopaulometro, SiSpringboot, SiXml } from "react-icons/si";
 import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
-import { BsFiletypeXml } from "react-icons/bs";
-import { SiSaopaulometro } from "react-icons/si";
 
 
 export const skillsData = [
@@ -67,9 +68,12 @@ export const skillsData = [
 const categories = [...new Set(skillsData.map(skill => skill.type))];
 
 export default function Skills() {
+	const show3D = useBoundStore((state) => state.show3DModel);
+
 	const [activeTab, setActiveTab] = useState("All");
 	const visibleSkills = skillsData.filter((skill) => activeTab === "All" || skill.type === activeTab);
 
+	console.log({ show3D });
 
 	return (
 		<div className={style.skillSection}>
@@ -79,9 +83,9 @@ export default function Skills() {
 				{categories.map((cat) => <button key={cat} className={activeTab === cat ? style.activeBtn : ""} onClick={() => setActiveTab(cat)}>{cat}</button>)}
 			</div>
 
-			<div className={style.sphereStage}>
-				<SkillSphere listOfSkills={visibleSkills} />
-			</div>
+			{show3D ?
+				<SkillSphere listOfSkills={visibleSkills} /> :
+				<Text size="sm">3D model paused due to system constraints</Text>}
 
 			<div id='skillShowCase' className={style.allSkills}>
 				{activeTab === "All" ?

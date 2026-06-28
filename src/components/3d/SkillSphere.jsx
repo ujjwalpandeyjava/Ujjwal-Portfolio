@@ -1,4 +1,4 @@
-import { useBoundStore } from '@/store/useBoundStore';
+import style from '@/styles/Skills.module.scss';
 import { Physics, useSphere } from '@react-three/cannon';
 import { PerspectiveCamera, RenderTexture, Text } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
@@ -14,12 +14,8 @@ if (typeof window !== 'undefined') {
 }
 
 export default function Skills({ listOfSkills }) {
-	const show3D = useBoundStore((state) => state.show3DModel);
-	console.log({ show3D });
-
-	if (!show3D) return null;
 	return (
-		<div style={{ marginBlock: "2em", width: '100%', height: '500px', backgroundColor: "#ffffff", cursor: 'pointer' }}>
+		<div className={style.sphereStage}>
 			<Canvas camera={{ position: [0, 0, 45], fov: 50 }} dpr={[1, 1.5]}>
 				<ambientLight intensity={1} />
 				<directionalLight position={[10, 10, 10]} intensity={2} />
