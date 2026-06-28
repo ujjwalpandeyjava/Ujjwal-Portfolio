@@ -68,6 +68,7 @@ const categories = [...new Set(skillsData.map(skill => skill.type))];
 
 export default function Skills() {
 	const [activeTab, setActiveTab] = useState("All");
+	const visibleSkills = skillsData.filter((skill) => activeTab === "All" || skill.type === activeTab);
 
 
 	return (
@@ -78,7 +79,9 @@ export default function Skills() {
 				{categories.map((cat) => <button key={cat} className={activeTab === cat ? style.activeBtn : ""} onClick={() => setActiveTab(cat)}>{cat}</button>)}
 			</div>
 
-			<SkillSphere listOfSkills={skillsData.filter(e => (activeTab === "All" || e.type === activeTab))} />
+			<div className={style.sphereStage}>
+				<SkillSphere listOfSkills={visibleSkills} />
+			</div>
 
 			<div id='skillShowCase' className={style.allSkills}>
 				{activeTab === "All" ?

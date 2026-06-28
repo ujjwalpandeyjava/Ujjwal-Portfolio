@@ -1,13 +1,13 @@
 "use client";
 
 import { RAZORPAY_KEY_ID_CONST_UI } from '@/utils/Constants';
-import siteLog from '@/statics/images/SiteLogo.jpg';
 import "@/styles/donate-us.scss";
 import { Button, Container, SimpleGrid, Text, TextInput, Title } from '@mantine/core';
 import { notifications } from '@mantine/notifications';
 import Script from 'next/script';
 import { useState } from 'react';
 import { IoCashOutline, IoHeartOutline } from "react-icons/io5";
+import { PROFILE_IMAGE } from '@/utils/siteAssets';
 
 export default function DonateUs({ callBackFun }) {
 	const [selectedAmount, setSelectedAmount] = useState(500);
@@ -55,7 +55,7 @@ export default function DonateUs({ callBackFun }) {
 				currency: "INR",
 				name: "Ujjwal Pandey",
 				description: `Ujjwal Pandey - Received Donation from: ${amount}`,
-				image: siteLog,
+				image: PROFILE_IMAGE,
 				order_id: orderData.id || orderData.receipt,
 				handler: async function (response) { // successful payment
 					await sendNotificationEmail(response.razorpay_payment_id, amount, donarName_, optional.email);

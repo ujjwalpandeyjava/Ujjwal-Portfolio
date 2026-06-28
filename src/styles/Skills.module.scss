@@ -46,6 +46,23 @@
 	padding-bottom: 0;
 }
 
+.sphereStage {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin: 2rem auto 0;
+	overflow: hidden;
+	border-radius: 28px;
+	border: 1px solid rgba(37, 99, 235, 0.14);
+	background:
+		radial-gradient(circle at top left, rgba(37, 99, 235, 0.14), transparent 32%),
+		radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.12), transparent 28%),
+		linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+	box-shadow: 0 24px 55px rgba(15, 23, 42, 0.08);
+	touch-action: none;
+	user-select: none;
+}
+
 
 .previousNextAction {
 	padding-left: 10px;

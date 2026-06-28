@@ -1,12 +1,12 @@
 "server-only"
 
-import aboutAvatar from "@/statics/images/SiteLogo.jpg";
 import css from '@/styles/about.module.scss';
 import { HeadingHalfUnderLine, HeadingUnderLine } from "@/utils/Headings";
 import Image from "next/image";
 import { FaCode, FaHeadphones } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import { IoGameController } from "react-icons/io5";
+import { PROFILE_IMAGE } from "@/utils/siteAssets";
 
 export default function AboutMe() {
 	return (
@@ -15,7 +15,7 @@ export default function AboutMe() {
 
 			<div className={css.profileBlock}>
 				<div className={css.paperIcon}>
-					<Image src={aboutAvatar} alt="Me telling details" />
+					<Image src={PROFILE_IMAGE} alt="Portrait of Ujjwal Pandey" fill sizes="(max-width: 768px) 160px, 180px" />
 				</div>
 				<div className={css.someDetails}>
 					<span className={css.myName}>I am Software Developer Engineer!</span>
