@@ -1,9 +1,9 @@
-import ContactMe from "@/components/contact/ContactMe"
+import ContactPage from "@/components/contact/ContactPage"
 
-export default function page() {
+export default function Page() {
 	return (
 		<>
-			<ContactMe />
+			<ContactPage />
 		</>
 	)
 }

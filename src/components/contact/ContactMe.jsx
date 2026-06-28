@@ -7,18 +7,12 @@ import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 
-export default function ContactMe() {
+export default function ContactMe({ showHeading = true, showIntro = true, showDecor = true }) {
 	const [pending, setPending] = useState(false);
-
-
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const formData = {
-			name: e.target[0].value,
-			email: e.target[1].value,
-			message: e.target[2].value,
-		};
+		const formData = Object.fromEntries(new FormData(e.currentTarget));
 
 		try {
 			setPending(true);
@@ -44,26 +38,25 @@ export default function ContactMe() {
 
 	return (
 		<div className={style.contactSection}>
-			<HeadingUnderLine txt="Contact Me" />
+			{showHeading && <HeadingUnderLine txt="Contact Me" />}
 
 			<div className={style.contactWrapper}>
 				<div className={style.formCard}>
-					<p className={style.formIntro}>If you have any questions, please don&apos;t hesitate to contact me.</p>
-
+					{showIntro && <p className={style.formIntro}>If you have any questions, please don&apos;t hesitate to contact me.</p>}
 					<form className={style.contactForm} onSubmit={handleSubmit}>
 						<div className={style.inputGroup}>
-							<label>Your Name:</label>
-							<input type="text" placeholder="Enter your name" required />
+							<label htmlFor="contact-name">Your Name:</label>
+							<input id="contact-name" name="name" type="text" placeholder="Enter your name" required />
 						</div>
 
 						<div className={style.inputGroup}>
-							<label>Your Email:</label>
-							<input type="email" placeholder="Enter your email" required />
+							<label htmlFor="contact-email">Your Email:</label>
+							<input id="contact-email" name="email" type="email" placeholder="Enter your email" required />
 						</div>
 
 						<div className={style.inputGroup}>
-							<label>Your Message:</label>
-							<textarea placeholder="Enter your message" rows={5} required></textarea>
+							<label htmlFor="contact-message">Your Message:</label>
+							<textarea id="contact-message" name="message" placeholder="Enter your message" rows={5} required></textarea>
 						</div>
 
 						<button type="submit" className={style.sendBtn} disabled={pending}>
@@ -95,17 +88,13 @@ export default function ContactMe() {
 							</div>
 						</div>
 					</div>
-
 					<div className={style.socialRow}>
 						<a href="https://github.com/ujjwalpandeyjava" target="_blank" rel="noreferrer" className={style.socialIcon}><FaGithub /></a>
 						<a href="https://www.linkedin.com/in/ujjwal-pandey-8bb562138/" target="_blank" rel="noreferrer" className={style.socialIcon}><FaLinkedinIn /></a>
 						<a href="https://instagram.com/ujjwal__pandeyy" target="_blank" rel="noreferrer" className={style.socialIcon}><FaInstagram /></a>
 						<a href="https://wa.me/918375990500" target="_blank" rel="noreferrer" className={style.socialIcon}><FaWhatsapp /></a>
 					</div>
-
-					<div className={style.verticalLine}>
-						<span>CONTACT</span>
-					</div>
+					{showDecor && <div className={style.verticalLine}>CONTACT</div>}
 				</div>
 			</div>
 		</div>
