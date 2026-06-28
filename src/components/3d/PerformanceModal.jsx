@@ -72,7 +72,6 @@ const PerformanceModal = () => {
 				},
 				content: {
 					backgroundColor: '#f8fafc',
-					minWidth: 600
 				}
 			}}
 			overlayProps={{
