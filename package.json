@@ -51,6 +51,8 @@
     "react-vertical-timeline-component": "^3.5.3",
     "recharts": "^3.6.0",
     "server-only": "^0.0.1",
+    "three": "^0.185.1",
+    "vanta": "^0.5.24",
     "zustand": "^5.0.12"
   },
   "devDependencies": {
