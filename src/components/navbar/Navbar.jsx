@@ -58,18 +58,13 @@ const DesktopNav = ({ isScrolled, openModal }) => {
 				<SiteLogo />
 				<Flex align="center" gap="xs" className="desktopNavLinks">
 					{navLinks.map(({ link, label, icon: Icon, showIcon }) => (
-						showIcon && (
-							<Link key={link} href={link} className="navLink">
-								<Icon size={18} />
-								<span>{label}</span>
-							</Link>
-						)
-					))}
+						showIcon && <Link key={link} href={link} className="navLink">
+							<Icon size={18} />
+							<span>{label}</span>
+						</Link>))}
 					{/* <Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button> */}
 				</Flex>
-				<Button className="navCta" variant="light" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>
-					Get a Coffee
-				</Button>
+				{/* <Button className="navCta" variant="light" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button> */}
 			</div>
 		</div>
 	);
