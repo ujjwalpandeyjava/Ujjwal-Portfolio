@@ -5,10 +5,10 @@ import AboutMe from '@/components/home/aboutMe';
 import Hero from '@/components/home/hero';
 import Skills, { skillsData } from '@/components/home/skills';
 import WhatICanDo from '@/components/home/whatICanDo';
+import ContactServices from '@/components/home/ContactServices';
 import SkillsMarquee from '@/components/home/SkillsMarquee';
 import { Space } from '@mantine/core';
 import PerformanceModal from '@/components/3d/PerformanceModal';
-import LivingSystem from '@/components/home/LivingSystem';
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       <Space h={30} />
       <WhatICanDo />
       <Space h={30} />
-      <LivingSystem />
+      <ContactServices />
       <Space h={30} />
       <Skills />
       <Space h={30} />

@@ -17,22 +17,16 @@ export default function LivingSystem() {
     const isVisible = entry?.isIntersecting;
 
     return (
-        <Container size="md" py={100} ref={ref}>
+        <Container size="md" pt="0.5em" pb="1em" ref={ref}>
             <section className={classes.container}>
                 <div className={classes.content}>
-                    {/* The icon now has a conditional 'active' class */}
-                    <div className={`${classes.visualWrapper} ${isVisible ? classes.active : ''}`}>
-                        💠
-                    </div>
+                    <div className={`${classes.visualWrapper} ${isVisible ? classes.active : ''}`}>💠</div>
 
-                    <Title order={2} size="h1" fw={900} style={{ color: 'white', letterSpacing: '-1px' }}>
-                        Systems that feel alive.
-                    </Title>
+                    <Title order={2} size="h1" fw={900} style={{ color: 'white', letterSpacing: '-1px' }}>Systems that feel alive.</Title>
 
                     <Text size="xl" style={{ color: 'rgba(255, 255, 255, 0.7)' }} maw={600}>
-                        We bridge the gap between static code and cognitive experiences.<br />
-                        By implementing intelligent feedback loops and high-performance Next.js and Spring Boot architectures. <br />
-                        With me your software breathes with your users.
+                        Have a project, a bug, or an idea?<br />
+                        Connect with me to bridge the gap between static code and cognitive experiences, for dedicated professional services tailored to your needs.
                     </Text>
                 </div>
             </section>
