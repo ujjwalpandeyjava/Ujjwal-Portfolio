@@ -1,70 +1,149 @@
 @use "./variables_utils" as *;
 
-.eachSkill {
-	// --- Main Layout: Left Block | Right Block ---
-	display: flex;
-	flex-direction: row;
-	align-items: center; // Vertically center content
-	gap: 1.5rem; // Gap between the icon block and description
+.eachSkillCard {
 	// --- Box Styling ---
-	padding: 1rem 1.5rem;
-	background-color: rgba(242, 231, 251, 0.795); // Light purple tint
-	border-radius: 12px;
-	border: 1px solid rgb(220, 220, 220);
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(229, 231, 235, 0.5);
+	border-radius: 20px;
+	padding: 1.8rem;
 	width: 100%;
-	max-width: 420px;
+	max-width: 360px;
 	min-width: 280px;
-	min-height: 100px;
-
-	// --- Shadow & Transition ---
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-		rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 	opacity: 0;
-	transform: translateY(20px);
-	transition: all 500ms ease-in-out;
+	transform: translateY(25px);
+
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		border-radius: 20px;
+		border: 2px solid var(--skill-color);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		pointer-events: none;
+	}
 
 	&:hover {
-		transform: translateY(-3px);
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-			rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-		background-color: #ffffff; // Brighten on hover
+		transform: translateY(-6px);
+		box-shadow: 
+			0 20px 35px rgba(0, 0, 0, 0.06),
+			0 4px 20px -4px var(--skill-color);
+		background: #ffffff;
+		border-color: transparent;
+
+		&::after {
+			opacity: 0.15;
+		}
+
+		.skillIconWrapper {
+			transform: scale(1.08) rotate(3deg);
+			background-color: var(--skill-color);
+			color: #ffffff;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+		}
+
+		.progressBarInner {
+			animation: shimmer 1.5s infinite;
+		}
 	}
 
-	// --- LEFT SIDE: Icon & Name ---
-	.skillLeft {
+	// --- CARD HEADER ---
+	.cardHeader {
 		display: flex;
-		flex-direction: column; // Stack Icon above Name
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 1.25rem;
+	}
+
+	.skillIconWrapper {
+		width: 52px;
+		height: 52px;
+		border-radius: 14px;
+		background-color: rgba(37, 99, 235, 0.08); // fallback light background
+		// Use skill color with opacity for custom backgrounds
+		background-color: color-mix(in srgb, var(--skill-color) 12%, transparent);
+		color: var(--skill-color);
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		min-width: 90px; // Ensure all left sides are same width
-		text-align: center;
-		flex-shrink: 0; // Prevent shrinking
+		font-size: 1.6rem;
+		transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		flex-shrink: 0;
 
-		.skillIcon {
-			font-size: 2.5em;
-			color: #4f46e5; // Indigo accent
-			margin-bottom: 0.5rem;
-			display: flex; // Center icon svg
-		}
-
-		.skillTitle {
-			font-weight: 700;
-			font-size: 0.9rem;
-			color: #1f2937;
-			line-height: 1.2;
+		svg {
+			display: block;
 		}
 	}
 
-	// --- RIGHT SIDE: Description ---
-	.eachSkillDescription {
-		flex: 1; // Take up remaining space
-		color: #4b5563; // Dark Gray
-		font-size: 0.95rem;
-		line-height: 1.6;
+	.levelBadge {
+		font-size: 0.7rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.8px;
+		color: var(--skill-color);
+		background-color: color-mix(in srgb, var(--skill-color) 8%, transparent);
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+	}
+
+	// --- CONTENT ---
+	.skillTitle {
+		font-size: 1.25rem;
+		font-weight: 750;
+		color: $text-primary;
+		margin: 0 0 0.5rem 0;
 		text-align: left;
-		border-left: 2px solid rgba(0, 0, 0, 0.05); // Optional: Vertical separator line
-		padding-left: 1.25rem; // Space from separator
+	}
+
+	.skillDesc {
+		font-size: 0.92rem;
+		color: $text-secondary;
+		line-height: 1.55;
+		margin: 0 0 1.5rem 0;
+		text-align: left;
+		flex-grow: 1;
+	}
+
+	// --- PROFICIENCY TRACKER ---
+	.proficiencyTracker {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.trackerLabel {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.75rem;
+		font-weight: 600;
+		color: $text-secondary;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.progressBarOuter {
+		width: 100%;
+		height: 6px;
+		background-color: #f1f5f9;
+		border-radius: 10px;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.progressBarInner {
+		height: 100%;
+		background: var(--skill-color);
+		border-radius: 10px;
+		transition: width 1s cubic-bezier(0.34, 1.56, 0.64, 1);
 	}
 }
 
@@ -76,5 +155,17 @@
 
 .fadeOut {
 	opacity: 0;
-	transform: translateY(20px);
+	transform: translateY(25px);
+}
+
+@keyframes shimmer {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 1;
+	}
 }

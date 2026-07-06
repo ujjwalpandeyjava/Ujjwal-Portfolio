@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import style from "@/styles/ContactServices.module.scss";
 import { HeadingUnderLine } from "@/utils/Headings";
-import { FaBug, FaCloud, FaDatabase, FaLaptopCode, FaMobileScreenButton, FaServer } from "react-icons/fa6";
+import { FaBug, FaCloud, FaDatabase, FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaServer } from "react-icons/fa6";
+import { MdSystemUpdateAlt } from "react-icons/md";
 import LivingSystem from "./LivingSystem";
 
 const services = [
@@ -54,6 +55,22 @@ const services = [
 		badge: "CI/CD & Cloud",
 		desc: "Integrating third-party APIs, setting up Jenkins/GitHub Actions automated pipelines, Docker containerization, and cloud deployment.",
 		template: "Hi Ujjwal, I need help with API integrations / deployment / DevOps setup. "
+	},
+	{
+		id: "gcp",
+		icon: <FaGoogleDrive />,
+		title: "Google Cloud Platform",
+		badge: "GCP & Infra",
+		desc: "Setting up and managing Google Cloud services — Compute Engine, Cloud Run, Cloud Storage, Firebase, BigQuery, and serverless architectures for production workloads.",
+		template: "Hi Ujjwal, I need help with Google Cloud Platform setup and management. "
+	},
+	{
+		id: "system-upgrade",
+		icon: <MdSystemUpdateAlt />,
+		title: "Upgrade Your System",
+		badge: "Modernize & Scale",
+		desc: "Migrating legacy codebases to modern stacks, upgrading frameworks, improving performance bottlenecks, refactoring monoliths to microservices, and future-proofing your architecture.",
+		template: "Hi Ujjwal, I want to upgrade/modernize my existing system and tech stack. "
 	}
 ];
 
