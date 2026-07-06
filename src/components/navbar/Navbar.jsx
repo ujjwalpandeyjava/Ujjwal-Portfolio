@@ -83,7 +83,7 @@ const MobileNav = ({ isScrolled, openModal }) => {
 			<div className={isScrolled ? 'mobileNavHeader mobileNavHeader--floating' : 'mobileNavHeader mobileNavHeader--top'}>
 				<SiteLogo />
 				<div className="mobileNavActions">
-					<Button className="mobileCta" variant="light" radius="xl" size="xs" onClick={openModal}>Coffee</Button>
+					{/* <Button className="mobileCta" variant="light" radius="xl" size="xs" onClick={openModal}>Coffee</Button> */}
 					<RxHamburgerMenu size={28} className="mobileNavIcon" onClick={() => setOpen(true)} />
 				</div>
 			</div>

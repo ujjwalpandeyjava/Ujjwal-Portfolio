@@ -12,7 +12,10 @@ export const navLinks = [
 	{ link: '/contact', label: 'Contact', icon: IoPersonSharp, showIcon: true },
 ];
 export const office = {
-	address: { title: "Registered office", label: 'H.No,184,Main Road Ibrahimganj Bhopal 462001 Madhya Pradesh', link: '#footer' },
+	address: {
+		title: "Registered working location",
+		label: 'Devli, near holi chawk, New Delhi 110080', link: '#footer'
+	},
 	coordinates: {
 		latitude: 28.501146,
 		longitude: 77.234408
