@@ -82,7 +82,7 @@ export default function Skills() {
 			const currentIndex = allTabs.indexOf(activeTab);
 			const nextIndex = (currentIndex + 1) % allTabs.length;
 			setActiveTab(allTabs[nextIndex]);
-		}, 6000); // Switch every 6 seconds
+		}, 10000);
 
 		return () => clearTimeout(timer);
 	}, [activeTab, isPaused]);
