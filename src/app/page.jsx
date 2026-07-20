@@ -14,6 +14,7 @@ import PerformanceModal from '@/components/3d/PerformanceModal';
 export default function Home() {
   return (
     <div id='main'>
+      {/* TODO: Add a 3D */}
       <Hero />
       <Space h="lg" />
       <AboutMe />

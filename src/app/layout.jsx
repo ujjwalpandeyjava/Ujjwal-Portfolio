@@ -6,8 +6,7 @@ import '@mantine/core/styles.css';
 import { Notifications } from "@mantine/notifications";
 import { Geist, Geist_Mono } from "next/font/google";
 import { PROFILE_IMAGE } from "@/utils/siteAssets";
-
-
+import IntroAnimateWrapper from "@/components/home/IntroAnimateWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +36,11 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ margin: "auto" }}>
         <MantineProvider>
           <Notifications />
-          <Navbar />
-          {children}  {/* Always CSR */}
-          <FooterLinks />
+          <IntroAnimateWrapper>
+            <Navbar />
+            {children}  {/* Always CSR */}
+            <FooterLinks />
+          </IntroAnimateWrapper>
         </MantineProvider>
       </body>
     </html>

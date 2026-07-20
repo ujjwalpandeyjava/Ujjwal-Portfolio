@@ -1,0 +1,214 @@
+.loaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circlesStage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vmax;
+  height: 100vmax;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center center;
+  animation: growCircle 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes growCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+  }
+}
+
+.transitionalStage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c0c1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  z-index: 10;
+}
+
+.transitionalStageExit {
+  animation: fadeOutStage 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes fadeOutStage {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+.logoContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 24px;
+}
+
+.outerRing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(37, 99, 235, 0.4);
+  border-radius: 50%;
+  animation: spinRing 8s linear infinite;
+}
+
+.innerRing {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2px solid transparent;
+  border-top-color: #e91e63;
+  border-bottom-color: #06b6d4;
+  border-radius: 50%;
+  animation: spinRingInverse 4s cubic-bezier(0.68, -0.6, 0.32, 1.6) infinite;
+}
+
+.logoText {
+  font-family: var(--font-geist-sans), sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: 2;
+  letter-spacing: -1px;
+  text-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+  animation: pulseLogo 1.5s ease-in-out infinite alternate;
+}
+
+.loadingBarContainer {
+  width: 200px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.loadingBarProgress {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #e91e63, #06b6d4);
+  animation: fillProgress 1.5s ease-in-out forwards;
+  transform-origin: left;
+}
+
+.textGlow {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 12px;
+  animation: textGlitch 1.5s infinite alternate;
+}
+
+@keyframes spinRing {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinRingInverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(0.95);
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+  }
+
+  100% {
+    transform: scale(1.05);
+    text-shadow: 0 0 30px rgba(233, 30, 99, 0.8), 0 0 10px rgba(6, 182, 212, 0.5);
+  }
+}
+
+@keyframes fillProgress {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes textGlitch {
+  0% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 1px 0 0 rgba(233, 30, 99, 0.5), -1px 0 0 rgba(6, 182, 212, 0.5);
+  }
+}
+
+/* Page content entry overlay fade */
+.mainUIReveal {
+  animation: revealContent 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes revealContent {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
