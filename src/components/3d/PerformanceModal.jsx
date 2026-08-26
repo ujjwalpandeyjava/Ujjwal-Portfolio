@@ -2,12 +2,16 @@
 import { useBoundStore } from '@/store/useBoundStore';
 import { Button, Group, Modal, Stack, Text } from '@mantine/core';
 import { useEffect, useState } from 'react';
-import { BsRobot, BsLightningChargeFill } from "react-icons/bs";
+import { BsRobot, BsLightningChargeFill, BsEyeFill, BsPauseCircleFill } from "react-icons/bs";
 
 const PerformanceModal = () => {
-	const [opened, setOpened] = useState(false);
 	const [isHydrated, setIsHydrated] = useState(false);
 
+	const isModalOpen = useBoundStore((state) => state.isPerformanceModalOpen);
+	const openModal = useBoundStore((state) => state.openPerformanceModal);
+	const closeModal = useBoundStore((state) => state.closePerformanceModal);
+	const show3D = useBoundStore((state) => state.show3DModel);
+	const enable3D = useBoundStore((state) => state.enable3D);
 	const disable3D = useBoundStore((state) => state.disable3D);
 	const isLowPerf = useBoundStore((state) => state.isLowPerformanceMode);
 
@@ -16,17 +20,22 @@ const PerformanceModal = () => {
 		setIsHydrated(true);
 	}, []);
 
-	// 2. Logic to show modal
+	// 2. Logic to auto-prompt suggestion after 8 seconds if 3D is running smoothly
 	useEffect(() => {
-		if (isHydrated && !isLowPerf) {
-			const timer = setTimeout(() => setOpened(true), 8000);
+		if (isHydrated && !isLowPerf && show3D) {
+			const timer = setTimeout(() => openModal(), 8000);
 			return () => clearTimeout(timer);
 		}
-	}, [isHydrated, isLowPerf]);
+	}, [isHydrated, isLowPerf, show3D, openModal]);
 
-	const handleConfirmLag = () => {
+	const handleEnable3D = () => {
+		enable3D();
+		closeModal();
+	};
+
+	const handleDisable3D = () => {
 		disable3D();
-		setOpened(false);
+		closeModal();
 	};
 
 	// Don't render anything until hydrated to prevent SSR/CSR mismatch
@@ -34,8 +43,8 @@ const PerformanceModal = () => {
 
 	return (
 		<Modal
-			opened={opened}
-			onClose={() => setOpened(false)}
+			opened={isModalOpen}
+			onClose={closeModal}
 			title={
 				<Group gap="sm" style={{ padding: '0.25rem 0' }}>
 					<div style={{
@@ -51,8 +60,8 @@ const PerformanceModal = () => {
 						<BsRobot size={22} />
 					</div>
 					<div>
-						<Text fw={750} size="md" style={{ color: '#0f172a', lineHeight: '1.2' }}>Performance Check</Text>
-						<Text size="xs" style={{ color: '#64748b', fontWeight: '500' }}>A quick suggestion for this page</Text>
+						<Text fw={750} size="md" style={{ color: '#0f172a', lineHeight: '1.2' }}>Performance Center</Text>
+						<Text size="xs" style={{ color: '#64748b', fontWeight: '500' }}>Customize rendering & visual fidelity</Text>
 					</div>
 				</Group>
 			}
@@ -81,7 +90,9 @@ const PerformanceModal = () => {
 			<Stack gap="md">
 				{/* Gradient Card */}
 				<div style={{
-					background: 'linear-gradient(135deg, #0b2545 0%, #134074 50%, #1d4e89 100%)',
+					background: show3D 
+						? 'linear-gradient(135deg, #0b2545 0%, #134074 50%, #1d4e89 100%)'
+						: 'linear-gradient(135deg, #1e1e38 0%, #2e2a72 50%, #4338ca 100%)',
 					borderRadius: '20px',
 					padding: '1.5rem',
 					position: 'relative',
@@ -112,7 +123,7 @@ const PerformanceModal = () => {
 							color: '#f1f5f9',
 							backdropFilter: 'blur(4px)',
 						}}>
-							Keep the page smooth
+							{show3D ? '3D Active Mode' : 'Lightweight / 2D Mode'}
 						</span>
 
 						<div style={{
@@ -131,16 +142,20 @@ const PerformanceModal = () => {
 						</div>
 					</Group>
 
-					<Text fw={800} style={{ fontSize: '1.55rem', lineHeight: '1.25', color: '#ffffff', marginBottom: '12px' }}>
-						Want to pause the 3D model for a lighter experience?
+					<Text fw={800} style={{ fontSize: '1.4rem', lineHeight: '1.25', color: '#ffffff', marginBottom: '12px' }}>
+						{show3D 
+							? 'Want to pause the 3D model for a lighter experience?' 
+							: 'Enable interactive 3D physics & animations?'}
 					</Text>
 
 					<Text size="sm" style={{ color: 'rgba(255, 255, 255, 0.75)', lineHeight: '1.5' }}>
-						If you want to reduce motion or keep the interface feeling lighter, you can pause the 3D spheres for this session.
+						{show3D 
+							? 'If you experience frame drops or prefer a calmer interface, you can pause the 3D sphere anytime.'
+							: 'Unlock full real-time interactive physics, inertia drag, and 3D skill orbit in your browser.'}
 					</Text>
 				</div>
 
-				{/* Why Pause Card */}
+				{/* Detail Card */}
 				<div style={{
 					backgroundColor: '#ffffff',
 					border: '1px solid #f1f5f9',
@@ -149,40 +164,74 @@ const PerformanceModal = () => {
 					boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01)',
 				}}>
 					<Text fw={750} size="sm" style={{ color: '#0f172a', marginBottom: '6px' }}>
-						Why pause it?
+						{show3D ? 'Why pause 3D?' : 'Why enable 3D?'}
 					</Text>
 					<Text size="xs" style={{ color: '#64748b', lineHeight: '1.5', fontWeight: '500' }}>
-						It can make the page feel calmer and reduce animation on lower-powered devices or simply when you prefer a simpler view.
+						{show3D
+							? 'Pausing reduces GPU power usage and motion on lower-spec hardware or mobile devices.'
+							: 'Experience interactive physics with responsive cursor repulsion and kinetic inertia.'}
 					</Text>
 				</div>
 
 				{/* Action Buttons */}
 				<Group grow gap="md" mt="xs">
-					<Button
-						size="md"
-						radius="xl"
-						style={{
-							backgroundColor: '#1d81e2',
-							fontWeight: '600',
-							boxShadow: '0 4px 12px rgba(29, 129, 226, 0.15)',
-						}}
-						onClick={() => setOpened(false)}
-					>
-						Keep 3D
-					</Button>
+					{show3D ? (
+						<>
+							<Button
+								size="md"
+								radius="xl"
+								variant="default"
+								style={{
+									fontWeight: '600',
+								}}
+								onClick={closeModal}
+							>
+								Keep 3D Active
+							</Button>
 
-					<Button
-						size="md"
-						radius="xl"
-						style={{
-							backgroundColor: '#6366f1',
-							fontWeight: '600',
-							boxShadow: '0 4px 12px rgba(99, 102, 241, 0.15)',
-						}}
-						onClick={handleConfirmLag}
-					>
-						Pause 3D
-					</Button>
+							<Button
+								size="md"
+								radius="xl"
+								leftSection={<BsPauseCircleFill size={16} />}
+								style={{
+									backgroundColor: '#ef4444',
+									fontWeight: '600',
+									boxShadow: '0 4px 12px rgba(239, 68, 68, 0.25)',
+								}}
+								onClick={handleDisable3D}
+							>
+								Pause 3D
+							</Button>
+						</>
+					) : (
+						<>
+							<Button
+								size="md"
+								radius="xl"
+								variant="default"
+								style={{
+									fontWeight: '600',
+								}}
+								onClick={closeModal}
+							>
+								Stay in 2D Mode
+							</Button>
+
+							<Button
+								size="md"
+								radius="xl"
+								leftSection={<BsEyeFill size={16} />}
+								style={{
+									background: 'linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)',
+									fontWeight: '600',
+									boxShadow: '0 4px 14px rgba(37, 99, 235, 0.3)',
+								}}
+								onClick={handleEnable3D}
+							>
+								Enable 3D Experience
+							</Button>
+						</>
+					)}
 				</Group>
 			</Stack>
 		</Modal>

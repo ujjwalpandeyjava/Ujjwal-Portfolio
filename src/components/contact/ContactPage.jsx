@@ -31,7 +31,7 @@ export default function ContactPage() {
 					<h1>Let&apos;s make the next conversation useful.</h1>
 					<p>
 						If you have an idea, a challenge, or a product that needs a sharper experience, this is a good place to start.
-						I usually respond best to clear goals, rough ideas, or even "I am not sure yet, but I know something is off."
+						I usually respond best to clear goals, rough ideas, or even &quot;I am not sure yet, but I know something is off.&quot;
 					</p>
 
 					<div className={style.heroPills}>

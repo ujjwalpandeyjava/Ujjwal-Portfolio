@@ -5,16 +5,19 @@ import AnimatedSkill from "@/components/home/AnimatedSkillProps";
 import { useBoundStore } from '@/store/useBoundStore';
 import style from '@/styles/Skills.module.scss';
 import { HeadingHalfUnderLine, HeadingUnderLine } from '@/utils/Headings';
-import { Text } from "@mantine/core";
-import { useState, useEffect } from 'react';
+import { Button } from "@mantine/core";
+import { useEffect, useState } from 'react';
 import { BiSolidFileJson } from "react-icons/bi";
-import { BsFiletypeXml } from "react-icons/bs";
+import { BsFiletypeXml, BsGearFill, BsLightningChargeFill, BsPauseCircleFill, BsPlayFill } from "react-icons/bs";
 import { FaBitbucket, FaCss3Alt, FaGithub, FaHtml5, FaSitemap, FaTasks } from "react-icons/fa";
 import { FaAngular, FaJava, FaReact } from "react-icons/fa6";
 import { GrMysql } from "react-icons/gr";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { SiApachekafka, SiCucumber, SiDocker, SiExpo, SiJenkins, SiJirasoftware, SiJunit5, SiMongodb, SiNextdotjs, SiPostman, SiRedis, SiRedux, SiSaopaulometro, SiSpringboot, SiXml } from "react-icons/si";
-import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb";
+import { SiApachekafka, SiCucumber, SiDocker, SiExpo, SiJenkins, SiJirasoftware, SiJunit5, SiMongodb, SiNextdotjs, SiPostman, SiPostgresql, SiRedis, SiRedux, SiSaopaulometro, SiSpringboot, SiXml } from "react-icons/si";
+import { TbBrandJavascript, TbBrandTypescript, TbCube3dSphere, TbPackages } from "react-icons/tb";
+import GravityPills from '@/components/home/GravityPills';
+
+
 
 
 export const skillsData = [
@@ -42,6 +45,7 @@ export const skillsData = [
 	{ type: "Frontend", size: 8, title: "CSS / SCSS", icon: <FaCss3Alt />, desc: "I craft responsive, pixel-perfect layouts using advanced CSS and SCSS. Comfortable with flex, grid, animations.", color: "#339af0" },
 
 	// --- DataBase ---
+	{ type: "DataBase", size: 8, title: "PostgreSQL", icon: <SiPostgresql />, desc: "Advanced open-source relational database used for complex queries, indexing, JSON operations, and ACID compliance.", color: "#22d3ee" },
 	{ type: "DataBase", size: 8, title: "MySQL", icon: <GrMysql />, desc: "I have leveraged MySQL database skill, employing structured queries to efficiently store and manage data.", color: "#22d3ee" },
 	{ type: "DataBase", size: 7, title: "MongoDB", icon: <SiMongodb />, desc: "I proficiently utilize MongoDB as my NoSQL database, crafting queries through Spring JPA repositories.", color: "#22d3ee" },
 
@@ -69,6 +73,9 @@ const categories = [...new Set(skillsData.map(skill => skill.type))];
 
 export default function Skills() {
 	const show3D = useBoundStore((state) => state.show3DModel);
+	const enable3D = useBoundStore((state) => state.enable3D);
+	const disable3D = useBoundStore((state) => state.disable3D);
+	const openPerformanceModal = useBoundStore((state) => state.openPerformanceModal);
 
 	const [activeTab, setActiveTab] = useState("All");
 	const [isPaused, setIsPaused] = useState(false);
@@ -86,8 +93,6 @@ export default function Skills() {
 
 		return () => clearTimeout(timer);
 	}, [activeTab, isPaused]);
-
-	console.log({ show3D });
 
 	return (
 		<div
@@ -126,9 +131,99 @@ export default function Skills() {
 				))}
 			</div>
 
-			{show3D ?
-				<SkillSphere listOfSkills={visibleSkills} /> :
-				<Text size="sm">3D model paused due to system constraints</Text>}
+			{show3D ? (
+				<div className={style.sphereStageWrapper}>
+					<div className={style.sphereTopBar}>
+						<div className={style.statusPill}>
+							<span className={style.pulseDot} />
+							<span>3D Cosmos Active</span>
+						</div>
+						<div className={style.topActions}>
+							<Button
+								size="xs"
+								radius="xl"
+								variant="default"
+								leftSection={<BsGearFill size={13} />}
+								onClick={openPerformanceModal}
+								style={{
+									backgroundColor: 'rgba(255, 255, 255, 0.85)',
+									backdropFilter: 'blur(8px)',
+									color: '#334155',
+									fontWeight: 600,
+								}}
+							>
+								Settings
+							</Button>
+							<Button
+								size="xs"
+								radius="xl"
+								color="red"
+								variant="light"
+								leftSection={<BsPauseCircleFill size={14} />}
+								onClick={disable3D}
+								style={{
+									backgroundColor: 'rgba(254, 242, 242, 0.9)',
+									backdropFilter: 'blur(8px)',
+									fontWeight: 600,
+								}}
+							>
+								Pause 3D
+							</Button>
+						</div>
+					</div>
+
+					<SkillSphere listOfSkills={visibleSkills} />
+
+					<div className={style.sphereTip}>
+						<span>Drag to spin • Hover spheres to inspect</span>
+					</div>
+				</div>
+			) : (
+				<>
+					<div className={style.paused3DCard}>
+						<div className={style.pausedIconWrapper}>
+							<TbCube3dSphere size={32} />
+						</div>
+						<div className={style.pausedBadge}>
+							<BsLightningChargeFill size={12} />
+							<span>Eco / 2D Mode Active</span>
+						</div>
+						<h3 className={style.pausedTitle}>Interactive 3D Skill Sphere is Paused</h3>
+						<p className={style.pausedDesc}>
+							Lightweight 2D view is currently enabled for maximum responsiveness and battery conservation. You can launch the interactive 3D physics cosmos anytime.
+						</p>
+						<div className={style.pausedActions}>
+							<Button
+								size="md"
+								radius="xl"
+								leftSection={<BsPlayFill size={20} />}
+								onClick={enable3D}
+								style={{
+									background: 'linear-gradient(135deg, #2563eb 0%, #4f46e5 100%)',
+									boxShadow: '0 4px 16px rgba(37, 99, 235, 0.28)',
+									fontWeight: 600,
+								}}
+							>
+								Launch 3D Experience
+							</Button>
+							<Button
+								size="md"
+								radius="xl"
+								variant="default"
+								leftSection={<BsGearFill size={15} />}
+								onClick={openPerformanceModal}
+								style={{
+									fontWeight: 600,
+									color: '#475569',
+								}}
+							>
+								Performance Options
+							</Button>
+						</div>
+					</div>
+					<GravityPills />
+				</>
+			)}
 
 			<div id='skillShowCase' className={style.allSkills}>
 				{activeTab === "All" ?
