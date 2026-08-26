@@ -17,7 +17,7 @@ export default function IntroAnimateWrapper({ children }) {
     if (isLoaded) {
       const timer = setTimeout(() => {
         setAnimationFinished(true);
-      }, 850); // Slightly more than the 0.8s animation duration
+      }, 550); // Matches the 0.5s animation duration
       return () => clearTimeout(timer);
     }
   }, [isLoaded]);
