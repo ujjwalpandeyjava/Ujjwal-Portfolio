@@ -1,6 +1,7 @@
 "use client";
 
 import style from "@/styles/contact.module.scss"; // Your existing styles
+import { MY_EMAIL_ID } from "@/utils/Constants";
 import { HeadingUnderLine } from "@/utils/Headings";
 import { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
@@ -70,7 +71,7 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 							<div className={style.iconCircle}><MdEmail /></div>
 							<div className={style.infoText}>
 								<span>Email</span>
-								<a href="mailto:ujjwapandey.aps@gmail.com">ujjwapandey.aps@gmail.com</a>
+								<a href={`mailto:${MY_EMAIL_ID}`}>{MY_EMAIL_ID}</a>
 							</div>
 						</div>
 						<div className={style.infoItem}>
@@ -84,7 +85,7 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 							<div className={style.iconCircle}><MdLocationOn /></div>
 							<div className={style.infoText}>
 								<span>Location</span>
-								<p>Devoli, New Delhi, India, 110080</p>
+								<p>Devli, New Delhi, India, 110080</p>
 							</div>
 						</div>
 					</div>

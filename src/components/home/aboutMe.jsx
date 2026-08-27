@@ -1,12 +1,36 @@
 "server-only"
 
 import css from '@/styles/about.module.scss';
+import { MY_EMAIL_ID } from '@/utils/Constants';
 import { HeadingHalfUnderLine, HeadingUnderLine } from "@/utils/Headings";
+import { PROFILE_IMAGE } from "@/utils/siteAssets";
 import Image from "next/image";
 import { FaCode, FaHeadphones } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import { IoGameController } from "react-icons/io5";
-import { PROFILE_IMAGE } from "@/utils/siteAssets";
+
+export const interestsList = [
+	{
+		title: "Code",
+		desc: "Problem-solving, Web Dev, Java, & Next.js.",
+		icon: <FaCode size="1.5em" />,
+	},
+	{
+		title: "Tech",
+		desc: "Exploring new gadgets, AI, and innovations.",
+		icon: <GrTechnology size="1.5em" />,
+	},
+	{
+		title: "Music",
+		desc: "Listening, acoustics, and finding new beats.",
+		icon: <FaHeadphones size="1.5em" />,
+	},
+	{
+		title: "Game",
+		desc: "Adventure, Strategy, RPGs, and competitive gaming.",
+		icon: <IoGameController size="1.5em" />,
+	},
+];
 
 export default function AboutMe() {
 	return (
@@ -35,7 +59,7 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td className={css.label}>Email</td>
-								<td className={css.value}>ujjwapandey.aps@gmail.com</td>
+								<td className={css.value}>{MY_EMAIL_ID}</td>
 							</tr>
 							<tr>
 								<td className={css.label}>BirthDate</td>
@@ -43,7 +67,7 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td className={css.label}>Address</td>
-								<td className={css.value}>Devoli, New Delhi, India, 110080</td>
+								<td className={css.value}>Devli, New Delhi, India, 110080</td>
 							</tr>
 							<tr>
 								<td className={css.label}>Languages</td>
@@ -51,7 +75,7 @@ export default function AboutMe() {
 							</tr>
 							<tr>
 								<td className={css.label}>Job Status</td>
-								<td className={css.value}><a style={{ color: 'inherit' }} href="https://www.coforge.com/" target="_blank" rel="noreferrer">Working at Coforge in (Payments)</a></td>
+								<td className={css.value}><a style={{ color: 'inherit' }} href="https://www.coforge.com/" target="_blank" rel="noreferrer">Working at Coforge in (FinTech)</a></td>
 							</tr>
 							<tr>
 								<td className={css.label}>Job Profile</td>
@@ -64,42 +88,17 @@ export default function AboutMe() {
 				<div className={css.myInterest}>
 					<HeadingHalfUnderLine txt="My Interests" />
 					<div className={css.myInterestBlocks}>
-						<div className={css.eachInterest}>
-							<div className={css.iconWrapper}>
-								<FaCode size="1.5em" />
+						{interestsList.map((item, index) => (
+							<div key={item.title || index} className={css.eachInterest}>
+								<div className={css.iconWrapper}>
+									{item.icon}
+								</div>
+								<div className={css.textWrapper}>
+									<h3>{item.title}</h3>
+									<p>{item.desc}</p>
+								</div>
 							</div>
-							<div className={css.textWrapper}>
-								<h3>Code</h3>
-								<p>Problem-solving, Web Dev, Java, & Next.js.</p>
-							</div>
-						</div>
-						<div className={css.eachInterest}>
-							<div className={css.iconWrapper}>
-								<FaHeadphones size="1.5em" />
-							</div>
-							<div className={css.textWrapper}>
-								<h3>Music</h3>
-								<p>Listening, acoustics, and finding new beats.</p>
-							</div>
-						</div>
-						<div className={css.eachInterest}>
-							<div className={css.iconWrapper}>
-								<GrTechnology size="1.5em" />
-							</div>
-							<div className={css.textWrapper}>
-								<h3>Tech</h3>
-								<p>Exploring new gadgets, AI, and innovations.</p>
-							</div>
-						</div>
-						<div className={css.eachInterest}>
-							<div className={css.iconWrapper}>
-								<IoGameController size="1.5em" />
-							</div>
-							<div className={css.textWrapper}>
-								<h3>Game</h3>
-								<p>Adventure, Strategy, RPGs, and competitive gaming.</p>
-							</div>
-						</div>
+						))}
 					</div>
 				</div>
 

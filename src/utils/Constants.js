@@ -5,6 +5,7 @@ import { IoHome, IoPersonSharp } from "react-icons/io5";
 export const OFFICIAL_SUPPORT_EMAIL = process.env.EMAIL_USER
 export const RAZORPAY_KEY_ID_CONST_UI = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID_FE
 export const RAZORPAY_KEY_SECRET_CONST = process.env.RAZORPAY_KEY_SECRET
+export const MY_EMAIL_ID = process.env.NEXT_PUBLIC_MY_EMAIL_ID
 
 export const navLinks = [
 	{ link: '/', label: 'Home', icon: IoHome, showIcon: false },
