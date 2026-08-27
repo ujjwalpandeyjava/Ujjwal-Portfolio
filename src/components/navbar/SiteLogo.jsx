@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function SiteLogo() {
 	return (
-		<Link href="/" aria-label="Go to homepage" className="siteLogoLink">
+		<Link href="/" aria-label="Go to homepage" className="siteLogoLink" prefetch={true}>
 			<Flex align="center" gap="sm" id="logoSection">
 				<span className="logoAvatar">
 					<Image src={PROFILE_IMAGE} alt="Portrait of Ujjwal Pandey" fill sizes="(max-width: 968px) 40px, 52px" className="logoImage" priority />

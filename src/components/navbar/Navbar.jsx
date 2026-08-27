@@ -7,6 +7,7 @@ import "@/styles/navbar.scss";
 import { Button, Flex, Modal } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { IoHeart } from "react-icons/io5";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
@@ -14,9 +15,17 @@ import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
 const scrollThreshold = 24;
 
 const Navbar = () => {
+	const router = useRouter();
 	const [opened, { open: openModal, close: closeModal }] = useDisclosure(false);
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		// Eagerly prefetch primary pages into client cache
+		router.prefetch('/');
+		router.prefetch('/journey');
+		router.prefetch('/contact');
+	}, [router]);
 
 	useEffect(() => {
 		const updateState = () => {
@@ -58,7 +67,7 @@ const DesktopNav = ({ isScrolled, openModal }) => {
 				<SiteLogo />
 				<Flex align="center" gap="xs" className="desktopNavLinks">
 					{navLinks.map(({ link, label, icon: Icon, showIcon }) => (
-						showIcon && <Link key={link} href={link} className="navLink">
+						showIcon && <Link key={link} href={link} className="navLink" prefetch={true}>
 							<Icon size={18} />
 							<span>{label}</span>
 						</Link>))}
@@ -93,7 +102,7 @@ const MobileNav = ({ isScrolled, openModal }) => {
 
 						<nav className="mobileLinks">
 							{navLinks.map(({ link, label, icon: Icon }) => (
-								<Link key={link} href={link} className="mobile-nav-item" onClick={() => setOpen(false)}>
+								<Link key={link} href={link} className="mobile-nav-item" onClick={() => setOpen(false)} prefetch={true}>
 									<Icon size={20} />
 									<span>{label}</span>
 								</Link>

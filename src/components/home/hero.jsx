@@ -16,7 +16,7 @@ const Hero = () => {
 
 				<div className="action-container">
 					<Link id="downloadCV" target="_blank" href="https://drive.google.com/open?id=1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr" >Resume</Link>
-					<Link href="/contact">Contact me</Link>
+					<Link href="/contact" prefetch={true}>Contact me</Link>
 				</div>
 			</div>
 

@@ -1,7 +1,10 @@
-import { navLinks, office } from '@/utils/Constants';
+'use client';
+
 import SiteLogo from '@/components/navbar/SiteLogo';
 import classes from '@/styles/FooterLinks.module.scss';
+import { navLinks, office } from '@/utils/Constants';
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
+import Link from 'next/link';
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function FooterLinks() {
@@ -46,7 +49,7 @@ export default function FooterLinks() {
 				<div className={classes.linksBlock}>
 					<Text className={classes.title} fw={500}>Quick Links</Text>
 					<div className={classes.linkList}>{navLinks.map(link =>
-						<Text key={link.link} className={classes.link} component="a" href={link.link}>{link.label}</Text>
+						<Link key={link.link} href={link.link} prefetch={true} className={classes.link}>{link.label}</Link>
 					)}</div>
 				</div>
 
