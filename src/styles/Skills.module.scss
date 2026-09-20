@@ -3,11 +3,7 @@
 .skillSection {
 	padding: 3rem 2rem 5rem;
 	text-align: center;
-	box-shadow: inset 0 15px 15px 0 rgba(200, 210, 255, 0.6);
-	background: linear-gradient(180deg,
-			rgba(210, 218, 255, 0.85) 0%,
-			rgba(180, 140, 250, 0.22) 40%,
-			rgba(80, 200, 240, 0.18) 100%);
+	background: var(--bg-light);
 
 	&>* {
 		max-width: 1200px;
@@ -22,7 +18,7 @@
 
 	.skillsSubtitle {
 		font-size: 1.05rem;
-		color: $text-secondary;
+		color: var(--text-secondary);
 		max-width: 600px;
 		margin: 1rem auto 0 auto;
 		line-height: 1.6;
@@ -40,7 +36,7 @@
 		gap: 0.5rem;
 		padding: 0.85rem 2rem;
 		border-radius: 999px;
-		background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
+		background: linear-gradient(135deg, var(--accent-color) 0%, #4f46e5 100%);
 		color: #ffffff;
 		font-weight: 700;
 		font-size: 0.95rem;

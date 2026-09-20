@@ -1,7 +1,7 @@
 @use "./variables_utils" as *;
 
 .aboutMeCSS {
-	background-color: rgba(250, 250, 250, 0.54);
+	background-color: transparent;
 	max-width: 1200px;
 	margin: auto;
 	padding: 1rem;
@@ -58,7 +58,7 @@
 			font-weight: 400;
 			font-size: 1.05rem;
 			line-height: 1.85;
-			color: rgb(9, 9, 36);
+			color: var(--text-primary);
 			max-width: 600px; // Keeps line length readable
 
 			.myName {
@@ -107,7 +107,7 @@
 
 				.label {
 					font-weight: 600;
-					color: darkblue;
+					color: var(--accent-color);
 					width: 120px;
 					padding-right: 20px;
 				}
@@ -158,7 +158,7 @@
 
 					&:hover {
 						transform: translateY(-2px);
-						background-color: #ffffff;
+						background-color: var(--bg-color);
 						border-color: $card-border;
 						box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 					}

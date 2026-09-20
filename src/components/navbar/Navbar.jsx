@@ -4,13 +4,14 @@ import { navLinks } from '@/utils/Constants';
 import DonateUs from '@/components/DonateUs';
 import SiteLogo from '@/components/navbar/SiteLogo';
 import "@/styles/navbar.scss";
-import { Button, Flex, Modal } from '@mantine/core';
+import { Button, Flex, Modal, ActionIcon, useMantineColorScheme } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { IoHeart } from "react-icons/io5";
 import { RxCross2, RxHamburgerMenu } from "react-icons/rx";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const scrollThreshold = 24;
 
@@ -60,6 +61,7 @@ const Navbar = () => {
 
 const DesktopNav = ({ isScrolled, openModal }) => {
 	const navClassName = isScrolled ? 'desktopNav desktopNav--floating' : 'desktopNav desktopNav--top';
+	const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
 	return (
 		<div className="desktopNavShell">
@@ -71,9 +73,17 @@ const DesktopNav = ({ isScrolled, openModal }) => {
 							<Icon size={18} />
 							<span>{label}</span>
 						</Link>))}
-					{/* <Button variant="light" color="pink" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button> */}
+					<ActionIcon 
+						variant="default" 
+						size="lg" 
+						radius="xl" 
+						onClick={() => toggleColorScheme()}
+						title="Toggle color scheme"
+						style={{ marginLeft: '10px' }}
+					>
+						{colorScheme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
+					</ActionIcon>
 				</Flex>
-				{/* <Button className="navCta" variant="light" leftSection={<IoHeart size={16} />} radius="xl" onClick={openModal}>Get a Coffee</Button> */}
 			</div>
 		</div>
 	);
@@ -81,13 +91,21 @@ const DesktopNav = ({ isScrolled, openModal }) => {
 
 const MobileNav = ({ isScrolled, openModal }) => {
 	const [open, setOpen] = useState(false);
+	const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
 	return (
 		<>
 			<div className={isScrolled ? 'mobileNavHeader mobileNavHeader--floating' : 'mobileNavHeader mobileNavHeader--top'}>
 				<SiteLogo />
-				<div className="mobileNavActions">
-					{/* <Button className="mobileCta" variant="light" radius="xl" size="xs" onClick={openModal}>Coffee</Button> */}
+				<div className="mobileNavActions" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+					<ActionIcon 
+						variant="default" 
+						size="lg" 
+						radius="xl" 
+						onClick={() => toggleColorScheme()}
+					>
+						{colorScheme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
+					</ActionIcon>
 					<RxHamburgerMenu size={28} className="mobileNavIcon" onClick={() => setOpen(true)} />
 				</div>
 			</div>

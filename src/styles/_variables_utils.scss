@@ -2,25 +2,24 @@
 $max-screen-width: 1420px;
 
 // --- Backgrounds ---
-$bg-color: #ffffff; // Main page background
-$bg-light: #f8f9fc; // Secondary background (sections)
-$card-bg: #f9fafb; // Card specific background
+$bg-color: var(--bg-color); // Main page background
+$bg-light: var(--bg-light); // Secondary background (sections)
+$card-bg: var(--card-bg); // Card specific background
 
 // --- Text ---
-$text-primary: #1f2937; // Main Headings (Dark Gray)
-$text-secondary: #6b7280; // Descriptions/Muted text (Medium Gray)
+$text-primary: var(--text-primary); // Main Headings
+$text-secondary: var(--text-secondary); // Descriptions/Muted text
 
 // --- Theme Colors ---
-$primary-color: #1a1a2e; // Deep Dark Blue (Original primary)
-$accent-color: #2563eb; // Blue (Links & Active states)
+$primary-color: var(--primary-color); // Deep Dark Blue
+$accent-color: var(--accent-color); // Blue (Links & Active states)
 $accent-color-pink: #e91e63;
 $accent-pink-dark: #c2185b;
-$card-border: #e5e7eb; // Subtle borders
+$card-border: var(--card-border); // Subtle borders
 
 // --- Icon Styling ---
 $icon-color: #4f46e5; // Indigo
-$icon-bg: #e0e7ff; // Light Indigo tint
-
+$icon-bg: var(--icon-bg); // Light Indigo tint
 
 //
 $icon-color-blue: #2563eb; // Blue (Icons)

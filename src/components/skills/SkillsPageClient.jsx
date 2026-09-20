@@ -1,6 +1,6 @@
 'use client';
 
-import VantaBirds from '@/components/3d/VantaBirds';
+import VantaHero from '@/components/3d/VantaHero';
 import SkillShowcase from '@/components/home/SkillShowcase';
 import { categories, skillsData } from '@/components/home/skills';
 import SkillsMarquee from '@/components/home/SkillsMarquee';
@@ -19,16 +19,16 @@ export default function SkillsPageClient() {
 
 	return (
 		<div className={style.pageContainer}>
-			<VantaBirds>
-				<div className={style.heroBadge}>
-					<BsGrid1X2Fill size={13} />
-					<span>Expertise &amp; Tech Matrix</span>
-				</div>
-				<h1 className={style.heroTitle}>Technical Skills Showcase</h1>
-				<p className={style.heroSubtitle}>
-					A comprehensive, deep-dive directory of modern web technologies, scalable backend architectures, database engines, and devops tooling I architect with.
-				</p>
-				<div className={style.heroActions}>
+			<VantaHero 
+				title="Technical Skills Showcase"
+				subtitle="A comprehensive, deep-dive directory of modern web technologies, scalable backend architectures, database engines, and devops tooling I architect with."
+				badge={
+					<>
+						<BsGrid1X2Fill size={13} />
+						<span>Expertise &amp; Tech Matrix</span>
+					</>
+				}
+				action={
 					<Link href="/#skills" style={{ textDecoration: 'none' }}>
 						<Button
 							size="sm"
@@ -45,8 +45,8 @@ export default function SkillsPageClient() {
 							Interactive 3D Cosmos
 						</Button>
 					</Link>
-				</div>
-			</VantaBirds>
+				}
+			/>
 
 			<Space h={30} />
 			<SkillsMarquee direction={true} skills={skillsData} />

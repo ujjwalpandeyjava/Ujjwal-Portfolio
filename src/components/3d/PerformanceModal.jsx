@@ -51,17 +51,17 @@ const PerformanceModal = () => {
 						width: '42px',
 						height: '42px',
 						borderRadius: '50%',
-						backgroundColor: '#ebf4ff',
+						backgroundColor: 'var(--icon-bg)',
 						display: 'flex',
 						alignItems: 'center',
 						justifyContent: 'center',
-						color: '#3b82f6'
+						color: 'var(--accent-color)'
 					}}>
 						<BsRobot size={22} />
 					</div>
 					<div>
-						<Text fw={750} size="md" style={{ color: '#0f172a', lineHeight: '1.2' }}>Performance Center</Text>
-						<Text size="xs" style={{ color: '#64748b', fontWeight: '500' }}>Customize rendering & visual fidelity</Text>
+						<Text fw={750} size="md" style={{ color: 'var(--text-primary)', lineHeight: '1.2' }}>Performance Center</Text>
+						<Text size="xs" style={{ color: 'var(--text-secondary)', fontWeight: '500' }}>Customize rendering & visual fidelity</Text>
 					</div>
 				</Group>
 			}
@@ -71,16 +71,17 @@ const PerformanceModal = () => {
 			size="md"
 			styles={{
 				header: {
-					borderBottom: '1px solid #f1f5f9',
+					borderBottom: '1px solid var(--card-border)',
 					paddingBottom: '14px',
 					marginBottom: '16px',
+					backgroundColor: 'var(--card-bg)',
 				},
 				close: {
-					color: '#64748b',
+					color: 'var(--text-secondary)',
 					borderRadius: '50%',
 				},
 				content: {
-					backgroundColor: '#f8fafc',
+					backgroundColor: 'var(--card-bg)',
 				}
 			}}
 			overlayProps={{
@@ -157,16 +158,16 @@ const PerformanceModal = () => {
 
 				{/* Detail Card */}
 				<div style={{
-					backgroundColor: '#ffffff',
-					border: '1px solid #f1f5f9',
+					backgroundColor: 'var(--bg-light)',
+					border: '1px solid var(--card-border)',
 					borderRadius: '16px',
 					padding: '1.25rem',
-					boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01)',
+					boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.05)',
 				}}>
-					<Text fw={750} size="sm" style={{ color: '#0f172a', marginBottom: '6px' }}>
+					<Text fw={750} size="sm" style={{ color: 'var(--text-primary)', marginBottom: '6px' }}>
 						{show3D ? 'Why pause 3D?' : 'Why enable 3D?'}
 					</Text>
-					<Text size="xs" style={{ color: '#64748b', lineHeight: '1.5', fontWeight: '500' }}>
+					<Text size="xs" style={{ color: 'var(--text-secondary)', lineHeight: '1.5', fontWeight: '500' }}>
 						{show3D
 							? 'Pausing reduces GPU power usage and motion on lower-spec hardware or mobile devices.'
 							: 'Experience interactive physics with responsive cursor repulsion and kinetic inertia.'}

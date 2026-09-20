@@ -1,34 +1,46 @@
 @use "./_variables_utils.scss" as *;
-// :root {
-//   --background: #ffffff;
-//   --foreground: #171717;
-// }
-// background-color: var(--background);
-// color: var(--foreground);
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-// }
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-// }
 
+:root, :root[data-mantine-color-scheme="light"] {
+  --bg-color: #ffffff;
+  --bg-light: #f8f9fc;
+  --card-bg: #f9fafb;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --card-border: #e5e7eb;
+  --icon-bg: #e0e7ff;
+  --primary-color: #1a1a2e;
+  --accent-color: #2563eb;
+  
+  --foreground: var(--text-primary);
+  --background: var(--bg-color);
+}
+
+:root[data-mantine-color-scheme="dark"] {
+  --bg-color: #0a0f1e; // Near-black requested by user
+  --bg-light: #111827; // Gray 900
+  --card-bg: #1e293b;
+  --text-primary: #f8fafc; // Slate 50
+  --text-secondary: #94a3b8; // Slate 400
+  --card-border: #334155; // Slate 700
+  --icon-bg: rgba(79, 70, 229, 0.2);
+  --primary-color: #3b82f6;
+  --accent-color: #60a5fa;
+
+  --foreground: var(--text-primary);
+  --background: var(--bg-color);
+}
 
 html,
 body {
   margin: auto;
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: var(--bg-color) !important;
   max-width: $max-screen-width;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--text-primary) !important;
+  background: var(--bg-color) !important;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
