@@ -1,6 +1,7 @@
 'use client';
 
 import SkillSphere from '@/components/3d/SkillSphere';
+import SkillsFilterBar from '@/components/skills/SkillsFilterBar';
 import { useBoundStore } from '@/store/useBoundStore';
 import style from '@/styles/Skill3DView.module.scss';
 import { Button } from '@mantine/core';
@@ -52,29 +53,14 @@ export default function Skill3DView({ skillsData = [], categories: customCategor
 			onMouseEnter={() => setIsPaused(true)}
 			onMouseLeave={() => setIsPaused(false)}
 		>
-			<div className={style.filterTabs}>
-				<button
-					className={activeTab === 'All' ? style.activeBtn : ''}
-					onClick={() => setActiveTab('All')}
-				>
-					All
-					{activeTab === 'All' && (
-						<span className={`${style.progressCover} ${isPaused ? style.paused : ''}`} />
-					)}
-				</button>
-				{categories.map((cat) => (
-					<button
-						key={cat}
-						className={activeTab === cat ? style.activeBtn : ''}
-						onClick={() => setActiveTab(cat)}
-					>
-						{cat}
-						{activeTab === cat && (
-							<span className={`${style.progressCover} ${isPaused ? style.paused : ''}`} />
-						)}
-					</button>
-				))}
-			</div>
+			<SkillsFilterBar
+				activeCategory={activeTab}
+				onSelectCategory={setActiveTab}
+				categories={categories}
+				skillsData={skillsData}
+				showProgressSweep={true}
+				isPaused={isPaused}
+			/>
 
 			<div className={style.sphereStageWrapper}>
 				<div className={style.sphereTopBar}>

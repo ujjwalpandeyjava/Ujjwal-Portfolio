@@ -3,8 +3,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from 'react';
-
-
 import { useMantineColorScheme } from '@mantine/core';
 
 const ParticleBg = () => {
@@ -13,7 +11,11 @@ const ParticleBg = () => {
 	const isDark = colorScheme === 'dark';
 
 	const options = useMemo(() => ({
-		background: { color: { value: isDark ? "#0a0f1e" : "#cbf5fe" } },
+		background: {
+			color: {
+				value: isDark ? "#0a0f1e" : "#e0f2fe"
+			}
+		},
 		fpsLimit: 60,
 		interactivity: {
 			events: {
@@ -26,12 +28,14 @@ const ParticleBg = () => {
 			},
 		},
 		particles: {
-			color: { value: isDark ? "#60a5fa" : "#1c7ed6" },
+			color: {
+				value: isDark ? "#60a5fa" : "#2563eb"
+			},
 			links: {
-				color: isDark ? "#3b82f6" : "#49a1ee",
+				color: isDark ? "#3b82f6" : "#60a5fa",
 				distance: 150,
 				enable: true,
-				opacity: isDark ? 0.3 : 0.5,
+				opacity: isDark ? 0.4 : 0.5,
 				width: 1,
 			},
 			move: {
@@ -39,16 +43,18 @@ const ParticleBg = () => {
 				enable: true,
 				outModes: { default: "bounce" },
 				random: false,
-				speed: 3,
+				speed: 2.5,
 				straight: false,
 			},
 			number: {
 				density: { enable: true },
-				value: 80,
+				value: 70,
 			},
-			opacity: { value: isDark ? 0.3 : 0.5 },
+			opacity: {
+				value: isDark ? 0.6 : 0.5
+			},
 			shape: { type: "circle" },
-			size: { value: { min: 1, max: 5 } },
+			size: { value: { min: 1, max: 4 } },
 		},
 		detectRetina: false,
 		fullScreen: false

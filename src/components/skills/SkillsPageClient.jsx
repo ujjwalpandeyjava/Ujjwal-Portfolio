@@ -4,11 +4,12 @@ import VantaHero from '@/components/3d/VantaHero';
 import SkillShowcase from '@/components/home/SkillShowcase';
 import { categories, skillsData } from '@/components/home/skills';
 import SkillsMarquee from '@/components/home/SkillsMarquee';
+import SkillsFilterBar from '@/components/skills/SkillsFilterBar';
 import style from '@/styles/SkillsPage.module.scss';
 import { Button, Container, Space } from '@mantine/core';
 import Link from 'next/link';
 import { useState } from 'react';
-import { BsArrowLeft, BsFilter, BsGrid1X2Fill } from 'react-icons/bs';
+import { BsArrowLeft, BsGrid1X2Fill } from 'react-icons/bs';
 
 /**
  * SkillsPageClient Component
@@ -54,32 +55,12 @@ export default function SkillsPageClient() {
 			<Space h={40} />
 
 			<Container size="xl" className={style.contentWrapper}>
-				<div className={style.filterBar}>
-					<div className={style.filterBarHeader}>
-						<BsFilter size={18} />
-						<span>Filter by Domain:</span>
-					</div>
-					<div className={style.filterPills}>
-						<button
-							className={`${style.filterPill} ${activeCategory === 'All' ? style.activePill : ''}`}
-							onClick={() => setActiveCategory('All')}
-						>
-							All Disciplines ({skillsData.length})
-						</button>
-						{categories.map((category) => {
-							const count = skillsData.filter((s) => s.type === category).length;
-							return (
-								<button
-									key={category}
-									className={`${style.filterPill} ${activeCategory === category ? style.activePill : ''}`}
-									onClick={() => setActiveCategory(category)}
-								>
-									{category} ({count})
-								</button>
-							);
-						})}
-					</div>
-				</div>
+				<SkillsFilterBar
+					activeCategory={activeCategory}
+					onSelectCategory={setActiveCategory}
+					categories={categories}
+					skillsData={skillsData}
+				/>
 
 				<SkillShowcase
 					activeTab={activeCategory}
