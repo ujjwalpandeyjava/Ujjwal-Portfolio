@@ -5,16 +5,15 @@ import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useMemo, useState } from 'react';
 
 
+import { useMantineColorScheme } from '@mantine/core';
+
 const ParticleBg = () => {
 	const [init, setInit] = useState(false);
-
-	// const particlesLoaded = (container) => {
-	// 	console.log("particlesLoaded:", container);
-	// };
-
+	const { colorScheme } = useMantineColorScheme();
+	const isDark = colorScheme === 'dark';
 
 	const options = useMemo(() => ({
-		background: { color: { value: "#cbf5fe" } },
+		background: { color: { value: isDark ? "#0a0f1e" : "#cbf5fe" } },
 		fpsLimit: 60,
 		interactivity: {
 			events: {
@@ -27,12 +26,12 @@ const ParticleBg = () => {
 			},
 		},
 		particles: {
-			color: { value: "#1c7ed6" },
+			color: { value: isDark ? "#60a5fa" : "#1c7ed6" },
 			links: {
-				color: "#49a1ee",
+				color: isDark ? "#3b82f6" : "#49a1ee",
 				distance: 150,
 				enable: true,
-				opacity: 0.5,
+				opacity: isDark ? 0.3 : 0.5,
 				width: 1,
 			},
 			move: {
@@ -47,13 +46,13 @@ const ParticleBg = () => {
 				density: { enable: true },
 				value: 80,
 			},
-			opacity: { value: 0.5 },
+			opacity: { value: isDark ? 0.3 : 0.5 },
 			shape: { type: "circle" },
 			size: { value: { min: 1, max: 5 } },
 		},
 		detectRetina: false,
 		fullScreen: false
-	}), []);
+	}), [isDark]);
 
 	useEffect(() => {
 		initParticlesEngine(async (engine) => {
