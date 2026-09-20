@@ -32,9 +32,9 @@
 			display: grid;
 			place-items: center;
 			padding: 6px;
-			background: linear-gradient(145deg, #dbeafe 0%, #eff6ff 55%, #bfdbfe 100%);
-			border: 1px solid rgba(37, 99, 235, 0.12);
-			box-shadow: 0 20px 45px rgba(37, 99, 235, 0.18);
+			background: var(--profile-gradient, linear-gradient(145deg, #dbeafe 0%, #eff6ff 55%, #bfdbfe 100%));
+			border: 1px solid var(--profile-border, rgba(37, 99, 235, 0.12));
+			box-shadow: 0 20px 45px var(--profile-shadow, rgba(37, 99, 235, 0.18));
 			transition: transform 350ms ease, box-shadow 350ms ease, border-color 350ms ease;
 			overflow: hidden;
 
@@ -48,8 +48,8 @@
 
 			&:hover {
 				transform: translateY(-2px) scale(1.03);
-				box-shadow: 0 24px 54px rgba(37, 99, 235, 0.24);
-				border-color: rgba(37, 99, 235, 0.24);
+				box-shadow: 0 24px 54px var(--profile-shadow-hover, rgba(37, 99, 235, 0.24));
+				border-color: var(--profile-border-hover, rgba(37, 99, 235, 0.24));
 			}
 		}
 
@@ -63,7 +63,7 @@
 
 			.myName {
 				font-size: 1.3rem;
-				color: $accent-color-pink;
+				color: var(--accent-color);
 				font-weight: 800;
 				display: block; // Makes the name title stand out
 				margin-bottom: 0.5rem;
@@ -113,11 +113,11 @@
 				}
 
 				.value {
-					color: $text-secondary;
+					color: var(--text-secondary);
 					word-break: break-all;
 
 					a {
-						color: $accent-color; // e.g., #2563eb
+						color: var(--accent-color);
 						text-decoration: none;
 						font-weight: 500;
 
@@ -148,8 +148,8 @@
 
 					// Styling
 					padding: 1rem;
-					background-color: $card-bg;
-					border: 1px solid $card-border;
+					background-color: var(--card-bg);
+					border: 1px solid var(--card-border);
 					border-radius: 12px;
 					cursor: default;
 					transition: all 0.2s ease-in-out;
@@ -159,7 +159,7 @@
 					&:hover {
 						transform: translateY(-2px);
 						background-color: var(--bg-color);
-						border-color: $card-border;
+						border-color: var(--card-border);
 						box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 					}
 
@@ -169,8 +169,8 @@
 						justify-content: center;
 						min-width: 50px;
 						height: 50px;
-						background-color: $icon-bg;
-						color: $icon-color;
+						background-color: var(--icon-bg);
+						color: var(--accent-color);
 						border-radius: 10px;
 						margin-right: 1rem;
 						flex-shrink: 0;
@@ -180,7 +180,7 @@
 						h3 {
 							font-size: 1.1rem;
 							font-weight: 700;
-							color: $text-primary;
+							color: var(--text-primary);
 							margin: 0 0 0.25rem 0;
 							text-transform: uppercase;
 							letter-spacing: 0.5px;
@@ -188,7 +188,7 @@
 
 						p {
 							font-size: 0.9rem;
-							color: $text-secondary;
+							color: var(--text-secondary);
 							margin: 0;
 							line-height: 1.4;
 						}
