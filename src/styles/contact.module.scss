@@ -67,8 +67,9 @@
 		textarea {
 			padding: 0.8rem 1rem;
 			border-radius: 8px;
-			border: 1px solid #e5e7eb;
-			background-color: #ffffff;
+			border: 1px solid var(--card-border);
+			background-color: var(--card-bg);
+			color: var(--text-primary);
 			font-family: inherit;
 			font-size: 0.95rem;
 			outline: none;
@@ -91,8 +92,8 @@
 		align-items: center;
 		gap: 0.8rem;
 		padding: 1rem;
-		background: white;
-		border: 1px solid #e5e7eb;
+		background: var(--card-bg);
+		border: 1px solid var(--card-border);
 		border-radius: 6px;
 		width: fit-content;
 		margin-bottom: 0.5rem;
@@ -105,7 +106,7 @@
 
 		label {
 			font-size: 0.9rem;
-			color: #555;
+			color: var(--text-primary);
 			margin-right: 1rem;
 		}
 
@@ -222,8 +223,8 @@
 			width: 45px;
 			height: 45px;
 			border-radius: 50%;
-			background-color: white;
-			border: 1px solid #e5e7eb;
+			background-color: var(--card-bg);
+			border: 1px solid var(--card-border);
 			color: $text-secondary;
 			display: flex;
 			align-items: center;

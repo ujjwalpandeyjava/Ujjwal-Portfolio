@@ -16,24 +16,26 @@ const commonProps = {
 	vtElement0: {
 		intersectionObserverProps: { triggerOnce: false, rootMargin: '0px 0px -40px 0px' },
 		icon: <MdOutlineWorkHistory />,
-		iconStyle: { background: '#2196f3ff', color: '#ffffff' },
+		iconStyle: { background: '#2196f3', color: '#ffffff' },
 		className: "vertical-timeline-element--work",
-		contentStyle: { background: '#3fa5f96c', color: '#000000ff' },
-		contentArrowStyle: { borderRight: '7px solid  #3fa5f96c' },
+		contentStyle: { background: 'rgba(59, 130, 246, 0.15)', color: 'var(--text-primary)' },
+		contentArrowStyle: { borderRight: '7px solid rgba(59, 130, 246, 0.15)' },
 	},
 	vtElement1: {
 		intersectionObserverProps: { triggerOnce: false },
 		className: "vertical-timeline-element--work",
 		iconStyle: { background: 'rgb(33, 150, 243)', color: '#ffffff' },
 		icon: <MdOutlineWorkHistory />,
-		contentStyle: { background: '#ffffffff', color: '#000000ff' },
-		contentArrowStyle: { borderRight: '7px solid  #ffffffff' },
+		contentStyle: { background: 'var(--card-bg)', color: 'var(--text-primary)' },
+		contentArrowStyle: { borderRight: '7px solid var(--card-bg)' },
 	},
 	vtElement2: {
 		intersectionObserverProps: { triggerOnce: false },
 		className: "vertical-timeline-element--education",
-		iconStyle: { background: '#e91e63ff', color: '#ffffff' },
-		icon: <FaGraduationCap />
+		iconStyle: { background: '#e91e63', color: '#ffffff' },
+		icon: <FaGraduationCap />,
+		contentStyle: { background: 'var(--card-bg)', color: 'var(--text-primary)' },
+		contentArrowStyle: { borderRight: '7px solid var(--card-bg)' },
 	}
 }
 const Journey = () => {

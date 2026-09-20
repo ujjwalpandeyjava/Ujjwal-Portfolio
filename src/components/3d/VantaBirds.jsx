@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMantineColorScheme } from '@mantine/core';
 
 export default function VantaBirds({ children, className = "" }) {
 	const vantaRef = useRef(null);
 	const [vantaEffect, setVantaEffect] = useState(null);
+	const { colorScheme } = useMantineColorScheme();
 
 	useEffect(() => {
 		let effect = null;
@@ -35,7 +37,7 @@ export default function VantaBirds({ children, className = "" }) {
 						minWidth: 200,
 						scale: 1.0,
 						scaleMobile: 1.0,
-						backgroundColor: 0x0a0f1e,
+						backgroundColor: colorScheme === 'dark' ? 0x0a0f1e : 0xffffff,
 						color1: 0x2563eb,
 						color2: 0x9333ea,
 						colorMode: "variance",
@@ -60,6 +62,14 @@ export default function VantaBirds({ children, className = "" }) {
 			if (effect) effect.destroy();
 		};
 	}, []);
+
+	useEffect(() => {
+		if (vantaEffect) {
+			vantaEffect.setOptions({
+				backgroundColor: colorScheme === 'dark' ? 0x0a0f1e : 0xffffff,
+			});
+		}
+	}, [colorScheme, vantaEffect]);
 
 	return (
 		<div
