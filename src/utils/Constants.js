@@ -1,3 +1,4 @@
+import { FaCode } from "react-icons/fa";
 import { GiJourney } from "react-icons/gi";
 import { IoHome, IoPersonSharp } from "react-icons/io5";
 
@@ -9,6 +10,7 @@ export const MY_EMAIL_ID = process.env.NEXT_PUBLIC_MY_EMAIL_ID
 
 export const navLinks = [
 	{ link: '/', label: 'Home', icon: IoHome, showIcon: false },
+	{ link: '/skills', label: 'Skills', icon: FaCode, showIcon: true },
 	{ link: '/journey', label: 'Journey', icon: GiJourney, showIcon: true },
 	{ link: '/contact', label: 'Contact', icon: IoPersonSharp, showIcon: true },
 ];
