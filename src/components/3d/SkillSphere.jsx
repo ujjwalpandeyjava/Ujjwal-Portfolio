@@ -1,4 +1,4 @@
-import style from '@/styles/Skills.module.scss';
+import style from '@/styles/Skill3DView.module.scss';
 import { Physics, useSphere } from '@react-three/cannon';
 import { PerspectiveCamera, RenderTexture, Text } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';

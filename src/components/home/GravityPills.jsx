@@ -513,7 +513,7 @@ export default function GravityPills({
 
 		try {
 			canvas.setPointerCapture(e.pointerId);
-		} catch (_) {}
+		} catch (_) { }
 
 		const rect = canvas.getBoundingClientRect();
 		const scaleX = rect.width ? container.clientWidth / rect.width : 1;
@@ -599,7 +599,7 @@ export default function GravityPills({
 		if (canvas && e.pointerId) {
 			try {
 				canvas.releasePointerCapture(e.pointerId);
-			} catch (_) {}
+			} catch (_) { }
 		}
 
 		const mouse = mouseRef.current;
@@ -644,7 +644,7 @@ export default function GravityPills({
 
 			<div className={style.topHint}>
 				<BsCursorFill size={11} color="#38bdf8" />
-				<span>Click & drag pills to throw • Move cursor to push</span>
+				<span>Click & drag pills to throw</span>
 			</div>
 
 			<canvas

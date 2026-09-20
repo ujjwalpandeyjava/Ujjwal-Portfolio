@@ -14,14 +14,10 @@ import PerformanceModal from '@/components/3d/PerformanceModal';
 export default function Home() {
   return (
     <div id='main'>
-      {/* TODO: Add a 3D */}
       <Hero />
-      <Space h="lg" />
-      <AboutMe />
-      <Space h={30} />
       <SkillsMarquee direction={true} skills={skillsData} />
       <SkillsMarquee direction={false} skills={skillsData} />
-      <Space h={30} />
+      <AboutMe />
       <WhatICanDo />
       <Space h={30} />
       <ContactServices />
