@@ -27,7 +27,16 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 		if (!name || !email || !message) {
 			notifications.show({
 				title: 'Missing Details',
-				message: 'Please complete all required fields.',
+				message: 'Please complete all fields before sending.',
+				color: 'red',
+			});
+			return;
+		}
+
+		if (name.length < 2) {
+			notifications.show({
+				title: 'Name Too Short',
+				message: 'Please enter a valid name (at least 2 characters).',
 				color: 'red',
 			});
 			return;
@@ -37,6 +46,15 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 			notifications.show({
 				title: 'Invalid Email',
 				message: 'Please enter a valid email address.',
+				color: 'red',
+			});
+			return;
+		}
+
+		if (message.length < 5) {
+			notifications.show({
+				title: 'Message Too Short',
+				message: 'Please provide a bit more detail in your message.',
 				color: 'red',
 			});
 			return;
@@ -85,7 +103,7 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 			<div className={style.contactWrapper}>
 				<div className={style.formCard}>
 					{showIntro && <p className={style.formIntro}>If you have any questions, please don&apos;t hesitate to contact me.</p>}
-					<form className={style.contactForm} onSubmit={handleSubmit}>
+					<form className={style.contactForm} onSubmit={handleSubmit} >
 						{/* Honeypot field hidden from real humans to catch automated bot spammers */}
 						<div style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }} aria-hidden="true">
 							<input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />

@@ -1,6 +1,7 @@
 @use "./_variables_utils.scss" as *;
 
-:root, :root[data-mantine-color-scheme="light"] {
+:root,
+:root[data-mantine-color-scheme="light"] {
   --bg-color: #ffffff;
   --bg-light: #f8f9fc;
   --card-bg: #f9fafb;
@@ -10,7 +11,7 @@
   --icon-bg: #e0e7ff;
   --primary-color: #1a1a2e;
   --accent-color: #2563eb;
-  
+
   --foreground: var(--text-primary);
   --background: var(--bg-color);
 }

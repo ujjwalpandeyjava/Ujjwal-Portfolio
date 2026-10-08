@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar/Navbar";
 import "@/styles/globals.scss";
 import { ColorSchemeScript, MantineProvider, mantineHtmlProps } from "@mantine/core";
 import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
 import { Notifications } from "@mantine/notifications";
 import { Geist, Geist_Mono } from "next/font/google";
 import { PROFILE_IMAGE } from "@/utils/siteAssets";
