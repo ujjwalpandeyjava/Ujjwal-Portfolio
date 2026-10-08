@@ -13,28 +13,30 @@ const CIRCLE_COLORS = [
   "#10b981", // Emerald
   "#0c0c1e", // Final slate/dark blue background
 ];
-
+const time1 = 500;
+const time2 = 400;
+const time3 = 200;
 export default function RevealingLoader({ onComplete }) {
   const [stage, setStage] = useState("circles"); // "circles" | "transitional" | "exiting" | "done"
 
   useEffect(() => {
-    // Stage 1 (Circles): Expand circles over ~1.1s (reduced from 1.8s)
+    // Stage 1 (Circles): Expand circles over ~0.55s
     const timer1 = setTimeout(() => {
       setStage("transitional");
-    }, 1080);
+    }, time1);
 
-    // Stage 2 (Transitional): Show animating element for 0.9s (reduced from 1.5s)
+    // Stage 2 (Transitional): Show animating element for 0.4s
     const timer2 = setTimeout(() => {
       setStage("exiting");
-    }, 1080 + 900);
+    }, time1 + time2);
 
-    // Stage 3 (Exiting): Fade out loader component (0.3s transition, reduced from 0.5s)
+    // Stage 3 (Exiting): Fade out loader component (0.2s transition)
     const timer3 = setTimeout(() => {
       setStage("done");
       if (onComplete) {
         onComplete();
       }
-    }, 1080 + 900 + 300);
+    }, time1 + time2 + time3);
 
     return () => {
       clearTimeout(timer1);
@@ -56,7 +58,7 @@ export default function RevealingLoader({ onComplete }) {
               className={styles.circle}
               style={{
                 backgroundColor: color,
-                animationDelay: `${index * 84}ms`,
+                animationDelay: `${index * (time2 / 10)}ms`,
                 zIndex: index + 1,
               }}
             />

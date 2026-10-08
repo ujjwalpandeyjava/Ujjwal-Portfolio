@@ -26,7 +26,7 @@
 		.paperIcon {
 			flex-shrink: 0; // Prevents image from getting squashed
 			position: relative;
-			width: clamp(150px, 18vw, 190px);
+			width: clamp(225px, 18vw, 190px);
 			aspect-ratio: 1 / 1;
 			border-radius: 50%;
 			display: grid;

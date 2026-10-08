@@ -1,19 +1,46 @@
 "use client";
 
-import style from "@/styles/contact.module.scss"; // Your existing styles
+import style from "@/styles/contact.module.scss";
 import { MY_EMAIL_ID } from "@/utils/Constants";
 import { HeadingUnderLine } from "@/utils/Headings";
+import { notifications } from "@mantine/notifications";
 import { useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
+
+const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
 
 export default function ContactMe({ showHeading = true, showIntro = true, showDecor = true }) {
 	const [pending, setPending] = useState(false);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const formData = Object.fromEntries(new FormData(e.currentTarget));
+		const form = e.currentTarget;
+		const formData = Object.fromEntries(new FormData(form));
+
+		// Client-side quick verification
+		const name = (formData.name || '').trim();
+		const email = (formData.email || '').trim();
+		const message = (formData.message || '').trim();
+
+		if (!name || !email || !message) {
+			notifications.show({
+				title: 'Missing Details',
+				message: 'Please complete all required fields.',
+				color: 'red',
+			});
+			return;
+		}
+
+		if (!EMAIL_REGEX.test(email)) {
+			notifications.show({
+				title: 'Invalid Email',
+				message: 'Please enter a valid email address.',
+				color: 'red',
+			});
+			return;
+		}
 
 		try {
 			setPending(true);
@@ -23,15 +50,29 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 				body: JSON.stringify(formData),
 			});
 
-			const data = await res.json();
+			const data = await res.json().catch(() => ({}));
 
-			if (res.ok) {
-				alert("Message sent successfully!");
-				e.target.reset();
-			} else
-				alert("Error: " + data.message);
+			if (res.ok && data.success) {
+				notifications.show({
+					title: 'Message Sent!',
+					message: data.message || 'Thank you for reaching out. I will get back to you soon.',
+					color: 'green',
+				});
+				form.reset();
+			} else {
+				notifications.show({
+					title: 'Submission Failed',
+					message: data.message || 'Unable to submit your message. Please try again.',
+					color: 'red',
+				});
+			}
 		} catch (error) {
-			alert("Something went wrong.");
+			console.error("Submission error:", error);
+			notifications.show({
+				title: 'Network Error',
+				message: 'Could not connect to the server. Please check your internet connection.',
+				color: 'red',
+			});
 		} finally {
 			setPending(false);
 		}
@@ -45,9 +86,14 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 				<div className={style.formCard}>
 					{showIntro && <p className={style.formIntro}>If you have any questions, please don&apos;t hesitate to contact me.</p>}
 					<form className={style.contactForm} onSubmit={handleSubmit}>
+						{/* Honeypot field hidden from real humans to catch automated bot spammers */}
+						<div style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }} aria-hidden="true">
+							<input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" />
+						</div>
+
 						<div className={style.inputGroup}>
 							<label htmlFor="contact-name">Your Name:</label>
-							<input id="contact-name" name="name" type="text" placeholder="Enter your name" required maxLength={100} />
+							<input id="contact-name" name="name" type="text" placeholder="Enter your name" required minLength={2} maxLength={100} />
 						</div>
 
 						<div className={style.inputGroup}>
@@ -57,7 +103,7 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 
 						<div className={style.inputGroup}>
 							<label htmlFor="contact-message">Your Message:</label>
-							<textarea id="contact-message" name="message" placeholder="Enter your message" rows={5} required maxLength={5000}></textarea>
+							<textarea id="contact-message" name="message" placeholder="Enter your message" rows={5} required minLength={5} maxLength={3000}></textarea>
 						</div>
 
 						<button type="submit" className={style.sendBtn} disabled={pending}>

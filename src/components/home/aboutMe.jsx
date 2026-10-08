@@ -39,7 +39,7 @@ export default function AboutMe() {
 
 			<div className={css.profileBlock}>
 				<div className={css.paperIcon}>
-					<Image src={PROFILE_IMAGE} alt="Portrait of Ujjwal Pandey" fill sizes="(max-width: 768px) 160px, 180px" />
+					<Image src="/professional-portrait.jpeg" alt="Professional Portrait of Ujjwal Pandey in Modern Office" fill sizes="(max-width: 768px) 160px, 180px" />
 				</div>
 				<div className={css.someDetails}>
 					<span className={css.myName}>Hi, I&apos;m Ujjwal Pandey!</span>
