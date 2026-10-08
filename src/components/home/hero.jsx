@@ -1,9 +1,7 @@
-import floatingImage from '@/statics/images/developer1.svg';
 import '@/styles/home.scss';
-import Image from 'next/image';
 import Link from 'next/link';
 import ParticleBg from '@/components/ParticleBg';
-
+import InteractiveAvatar from './InteractiveAvatar';
 
 const Hero = () => {
 	return (
@@ -20,8 +18,8 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<div>
-				<Image src={floatingImage} alt="It's me" priority className="myAvatar" />
+			<div className="hero-avatar-wrapper">
+				<InteractiveAvatar />
 			</div>
 		</div>
 	)

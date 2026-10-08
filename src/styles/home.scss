@@ -89,13 +89,13 @@
 		}
 	}
 
-	.myAvatar {
-		object-fit: contain;
+	.hero-avatar-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		max-width: 500px;
-		user-select: none;
-		// Your floating animation could go here
-		// animation: float 3s ease-in-out infinite;
+		margin: 0 auto;
 	}
 }
 
