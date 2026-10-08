@@ -42,9 +42,9 @@ export default function AboutMe() {
 					<Image src={PROFILE_IMAGE} alt="Portrait of Ujjwal Pandey" fill sizes="(max-width: 768px) 160px, 180px" />
 				</div>
 				<div className={css.someDetails}>
-					<span className={css.myName}>I am Software Developer Engineer!</span>
-					Ujjwal Pandey, <b>specialized in Full-stack Web development,</b> Working at <a href="https://www.coforge.com" target="_blank" rel="noreferrer">Coforge</a> as Senior Software Engineer.<br />
-					I am proficient in <span>Java + React, Next.Js Fullstack Development,</span> <b>with over 4+ years</b> of extensive hands-on experience. Contributing to mobile app development.
+					<span className={css.myName}>Hi, I&apos;m Ujjwal Pandey!</span>
+					I am a Software Development Engineer <b>specializing in Full-Stack Web Development,</b> currently working at <a href="https://www.coforge.com" target="_blank" rel="noreferrer">Coforge</a> as a Senior Software Engineer.<br />
+					I am highly proficient in building scalable applications using <span>Java, React, and Next.js,</span> and I bring <b>over 5 years</b> of extensive hands-on experience to the table, alongside a strong background in cross-platform mobile app development.
 				</div>
 			</div>
 

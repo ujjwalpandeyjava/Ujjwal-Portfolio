@@ -101,7 +101,7 @@
 	}
 }
 
-:global(:root[data-mantine-color-scheme="dark"]) {
+:root[data-mantine-color-scheme="dark"] {
 	.abilitiesSection {
 		box-shadow: none;
 		background: var(--bg-light);
