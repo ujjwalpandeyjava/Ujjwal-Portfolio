@@ -3,6 +3,16 @@ import { sendEmail } from '@/lib/mail';
 import { NextResponse } from 'next/server';
 
 
+const escapeHtml = (unsafe) => {
+	if (typeof unsafe !== 'string') return '';
+	return unsafe
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#039;");
+};
+
 /**
  * Handle POST requests for the contact form.
  * @param {Request} request - The incoming request object containing the contact form data.
@@ -20,12 +30,24 @@ export async function POST(request) {
 			);
 		}
 
+		// Length validation to prevent payload abuse
+		if (name.length > 100 || email.length > 150 || message.length > 5000) {
+			return NextResponse.json(
+				{ success: false, message: 'Input length exceeds maximum allowed limits' },
+				{ status: 400 }
+			);
+		}
+
+		// Sanitize inputs to prevent XSS / HTML Injection in the email client
+		const safeName = escapeHtml(name);
+		const safeEmail = escapeHtml(email);
+		const safeMessage = escapeHtml(message);
 
 		const resp = await sendEmail({
 			to: [OFFICIAL_SUPPORT_EMAIL],
-			replyTo: [email],
-			subject: `Message from ${name}`,
-			html: generateSupportEmailHtml(name, email, message)
+			replyTo: [email], // Use original email for the Reply-To header to ensure it's a valid email format, Nodemailer handles header injection
+			subject: `Message from ${safeName}`,
+			html: generateSupportEmailHtml(safeName, safeEmail, safeMessage)
 		});
 
 		return NextResponse.json({

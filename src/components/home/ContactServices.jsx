@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import style from "@/styles/ContactServices.module.scss";
 import { HeadingUnderLine } from "@/utils/Headings";
-import { FaBug, FaCloud, FaDatabase, FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaServer } from "react-icons/fa6";
+import { FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaServer } from "react-icons/fa6";
 import { MdSystemUpdateAlt } from "react-icons/md";
 import LivingSystem from "./LivingSystem";
 
@@ -11,17 +11,17 @@ const services = [
 	{
 		id: "web-dev",
 		icon: <FaLaptopCode />,
-		title: "Web Development",
-		badge: "Frontend & SEO",
-		desc: "Building premium, fully responsive, high-performance web applications using modern React, Next.js, and clean CSS/SCSS styling.",
+		title: "Frontend Engineering",
+		badge: "React & Next.js",
+		desc: "Building premium, highly interactive, and SEO-optimized web applications with lightning-fast load times and stunning UI/UX.",
 		template: "Hi Ujjwal, I would like to connect with you regarding a web development project. "
 	},
 	{
 		id: "server-dev",
 		icon: <FaServer />,
-		title: "Server Development",
+		title: "Backend Architecture",
 		badge: "Scalable & Secure",
-		desc: "Designing robust, scale-optimized backend architectures, secure RESTful APIs, and database structures using Java and Spring Boot microservices.",
+		desc: "Designing robust, highly scalable backend architectures and secure RESTful APIs using Java, Spring Boot, and microservices.",
 		template: "Hi Ujjwal, I need support with server/backend development for my application. "
 	},
 	{
@@ -29,47 +29,23 @@ const services = [
 		icon: <FaMobileScreenButton />,
 		title: "Mobile App Development",
 		badge: "iOS & Android",
-		desc: "Developing smooth, native-like cross-platform mobile applications for Android & iOS using React Native and Expo.",
+		desc: "Developing smooth, native-like cross-platform mobile applications for both Android and iOS ecosystems using React Native.",
 		template: "Hi Ujjwal, I am looking to develop a cross-platform mobile app. "
-	},
-	{
-		id: "bug-fixes",
-		icon: <FaBug />,
-		title: "Bug Fixes & Code Audit",
-		badge: "Fix & Optimize",
-		desc: "Untangling legacy code issues, resolving memory leaks, fixing layout breaks, and optimising slow database queries or API endpoints.",
-		template: "Hi Ujjwal, I have some bugs/performance issues in my app that need fixing. "
-	},
-	{
-		id: "db-opt",
-		icon: <FaDatabase />,
-		title: "Database Optimization",
-		badge: "Speed & Caching",
-		desc: "Structuring high-speed MySQL/MongoDB schemas, setting up caching with Redis, and ensuring data consistency and query performance.",
-		template: "Hi Ujjwal, I would like to design/optimize our database schema. "
-	},
-	{
-		id: "api-devops",
-		icon: <FaCloud />,
-		title: "API & DevOps Setup",
-		badge: "CI/CD & Cloud",
-		desc: "Integrating third-party APIs, setting up Jenkins/GitHub Actions automated pipelines, Docker containerization, and cloud deployment.",
-		template: "Hi Ujjwal, I need help with API integrations / deployment / DevOps setup. "
 	},
 	{
 		id: "gcp",
 		icon: <FaGoogleDrive />,
 		title: "Google Cloud Platform",
-		badge: "GCP & Infra",
-		desc: "Setting up and managing Google Cloud services — Compute Engine, Cloud Run, Cloud Storage, Firebase, BigQuery, and serverless architectures for production workloads.",
+		badge: "Cloud Infra",
+		desc: "Setting up, scaling, and managing cloud infrastructure using GCP services like Compute Engine, Cloud Run, and serverless architectures.",
 		template: "Hi Ujjwal, I need help with Google Cloud Platform setup and management. "
 	},
 	{
 		id: "system-upgrade",
 		icon: <MdSystemUpdateAlt />,
-		title: "Upgrade Your System",
-		badge: "Modernize & Scale",
-		desc: "Migrating legacy codebases to modern stacks, upgrading frameworks, improving performance bottlenecks, refactoring monoliths to microservices, and future-proofing your architecture.",
+		title: "System Modernization",
+		badge: "Upgrade & Scale",
+		desc: "Migrating legacy codebases to modern tech stacks, resolving performance bottlenecks, and future-proofing your entire system architecture.",
 		template: "Hi Ujjwal, I want to upgrade/modernize my existing system and tech stack. "
 	}
 ];

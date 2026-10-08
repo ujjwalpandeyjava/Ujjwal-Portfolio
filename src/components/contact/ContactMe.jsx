@@ -47,17 +47,17 @@ export default function ContactMe({ showHeading = true, showIntro = true, showDe
 					<form className={style.contactForm} onSubmit={handleSubmit}>
 						<div className={style.inputGroup}>
 							<label htmlFor="contact-name">Your Name:</label>
-							<input id="contact-name" name="name" type="text" placeholder="Enter your name" required />
+							<input id="contact-name" name="name" type="text" placeholder="Enter your name" required maxLength={100} />
 						</div>
 
 						<div className={style.inputGroup}>
 							<label htmlFor="contact-email">Your Email:</label>
-							<input id="contact-email" name="email" type="email" placeholder="Enter your email" required />
+							<input id="contact-email" name="email" type="email" placeholder="Enter your email" required maxLength={150} />
 						</div>
 
 						<div className={style.inputGroup}>
 							<label htmlFor="contact-message">Your Message:</label>
-							<textarea id="contact-message" name="message" placeholder="Enter your message" rows={5} required></textarea>
+							<textarea id="contact-message" name="message" placeholder="Enter your message" rows={5} required maxLength={5000}></textarea>
 						</div>
 
 						<button type="submit" className={style.sendBtn} disabled={pending}>
