@@ -1,11 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
 import style from "@/styles/ContactServices.module.scss";
-import { HeadingUnderLine } from "@/utils/Headings";
-import { FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaServer } from "react-icons/fa6";
-import { MdSystemUpdateAlt } from "react-icons/md";
-import LivingSystem from "./LivingSystem";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef, useState } from "react";
+import { FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaRocket, FaServer } from "react-icons/fa6";
+
+if (typeof window !== "undefined") {
+	gsap.registerPlugin(ScrollTrigger);
+}
 
 const services = [
 	{
@@ -42,16 +45,93 @@ const services = [
 	},
 	{
 		id: "system-upgrade",
-		icon: <MdSystemUpdateAlt />,
-		title: "System Modernization",
-		badge: "Upgrade & Scale",
-		desc: "Migrating legacy codebases to modern tech stacks, resolving performance bottlenecks, and future-proofing your entire system architecture.",
-		template: "Hi Ujjwal, I want to upgrade/modernize my existing system and tech stack. "
+		icon: <FaRocket />,
+		title: "We Deliver What We Say",
+		badge: "High Ownership & Impact",
+		desc: "Have a codebase? Need a product? let's get together and settle the bottlenecks? I take end-to-end technical ownership to engineer clean, maintainable, and high-performance solutions that scale effortlessly.",
+		template: "Hi Ujjwal, I have an ambitious project / system modernization need. I'd love to discuss technical ownership and next steps."
 	}
 ];
 
 export default function ContactServices() {
 	const [selectedId, setSelectedId] = useState(null);
+	const containerRef = useRef(null);
+	const stageRef = useRef(null);
+	const cardRefs = useRef([]);
+
+	useEffect(() => {
+		if (typeof window === "undefined" || !stageRef.current) return;
+
+		const cards = cardRefs.current.filter(Boolean);
+		if (!cards.length) return;
+
+		const ctx = gsap.context(() => {
+			// Initialize card states
+			cards.forEach((card, index) => {
+				if (index === 0) {
+					gsap.set(card, { yPercent: 0, scale: 1, opacity: 1, zIndex: 1 });
+				} else {
+					gsap.set(card, { yPercent: 120, scale: 0.95, opacity: 0, zIndex: index + 1 });
+				}
+			});
+
+			const scrollDistance = (cards.length - 1) * 450;
+
+			// Master scrub timeline pinned to the section boundary
+			const tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: containerRef.current,
+					start: "top top",
+					end: `+=${scrollDistance}`,
+					pin: true,
+					pinSpacing: true,
+					scrub: 0.5,
+					invalidateOnRefresh: true,
+				}
+			});
+
+			cards.forEach((card, i) => {
+				if (i === 0) return;
+
+				// Current card slides up into focus
+				tl.to(card, {
+					yPercent: 0,
+					scale: 1,
+					opacity: 1,
+					duration: 1,
+					ease: "power1.inOut",
+				});
+
+				// Preceding card scales down, shifts upward, dims into an underlapping card
+				tl.to(cards[i - 1], {
+					scale: 0.93,
+					yPercent: -8,
+					opacity: 0.3,
+					duration: 1,
+					ease: "power1.inOut",
+				}, "<");
+
+				// Two cards back fades out completely
+				if (i > 1) {
+					tl.to(cards[i - 2], {
+						opacity: 0,
+						scale: 0.86,
+						duration: 1,
+						ease: "power1.inOut",
+					}, "<");
+				}
+			});
+		}, containerRef);
+
+		const timer = setTimeout(() => {
+			ScrollTrigger.refresh();
+		}, 500);
+
+		return () => {
+			clearTimeout(timer);
+			ctx.revert();
+		};
+	}, []);
 
 	const handleConnect = (id, template) => {
 		setSelectedId(id);
@@ -75,34 +155,63 @@ export default function ContactServices() {
 	};
 
 	return (
-		<section className={style.servicesSection}>
-			<HeadingUnderLine txt="Collaborate & Build" />
+		<section ref={containerRef} className={style.servicesSection}>
+			<div className={style.splitLayout}>
+				{/* Left Side: Cards Animation */}
+				<div className={style.cardsSide}>
+					<div ref={stageRef} className={style.cardsStage}>
+						{services.map((service, index) => {
+							const isSelected = selectedId === service.id;
+							const isLast = index === services.length - 1;
+							return (
+								<div key={service.id} ref={(el) => (cardRefs.current[index] = el)} className={`${style.card} ${isLast ? style.finalCard : ""} ${isSelected ? style.selected : ""}`}>
+									<div className={style.cardHeader}>
+										<div className={`${style.iconWrapper} ${isLast ? style.finalIcon : ""}`}>{service.icon}</div>
+										<div className={style.cardMeta}>
+											<span className={`${style.badge} ${isLast ? style.finalBadge : ""}`}>{service.badge}</span>
+											<h3>{service.title}</h3>
+										</div>
+										<span className={style.cardNumber}>0{index + 1} / 0{services.length}</span>
+									</div>
 
-			<LivingSystem />
+									<p className={style.desc}>{service.desc}</p>
 
-			<div className={style.grid}>
-				{services.map((service) => {
-					const isSelected = selectedId === service.id;
-					return (
-						<div 
-							key={service.id} 
-							className={`${style.card} ${isSelected ? style.selected : ""}`}
-						>
-							<div className={style.iconWrapper}>
-								{service.icon}
+									{isLast && <div className={style.trustPills}>
+										<span>⚡ High-Velocity Ownership</span>
+										<span>🛡️ 100% Scalable Code</span>
+									</div>}
+
+									<div className={style.cardFooter}>
+										<button className={`${style.connectBtn} ${isLast ? style.finalConnectBtn : ""}`}
+											onClick={() => handleConnect(service.id, service.template)}>
+											{isSelected ? "Message Prefilled! 💬" : isLast ? "Let's Build Together 🚀" : "Start Project →"}
+										</button>
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				</div>
+
+				{/* Right Side: Big Sticky Text Section */}
+				<div className={style.textSide}>
+					<div className={style.stickyContent}>
+						<span className={style.kicker}>SERVICES &amp; ARCHITECTURE</span>
+						<h2 className={style.bigHeadline}>Collaborate <span>&amp; Build.</span></h2>
+						<p className={style.headlineDesc}>Systems that feel alive. Bridging the gap between scalable full-stack engineering and cognitive experiences for high-impact web and mobile applications.</p>
+
+						<div className={style.textHighlights}>
+							<div className={style.highlightBox}>
+								<span className={style.highlightNumber}>05</span>
+								<span className={style.highlightLabel}>Core Capabilities</span>
 							</div>
-							<span className={style.badge}>{service.badge}</span>
-							<h3>{service.title}</h3>
-							<p className={style.desc}>{service.desc}</p>
-							<button
-								className={style.connectBtn}
-								onClick={() => handleConnect(service.id, service.template)}
-							>
-								{isSelected ? "Message Prefilled! 💬" : "Start Project"}
-							</button>
+							<div className={style.highlightBox}>
+								<span className={style.highlightNumber}>100%</span>
+								<span className={style.highlightLabel}>Scale &amp; Performance</span>
+							</div>
 						</div>
-					);
-				})}
+					</div>
+				</div>
 			</div>
 		</section>
 	);

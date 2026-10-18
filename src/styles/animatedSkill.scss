@@ -15,9 +15,9 @@
 	min-width: 280px;
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
 	position: relative;
-	transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-	opacity: 0;
-	transform: translateY(25px);
+	transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+	will-change: transform, opacity;
+	transform-style: preserve-3d;
 
 	&::after {
 		content: "";
@@ -31,11 +31,9 @@
 	}
 
 	&:hover {
-		transform: translateY(-6px);
 		box-shadow: 
 			0 20px 35px rgba(0, 0, 0, 0.06),
 			0 4px 20px -4px var(--skill-color);
-		background: var(--card-bg);
 		border-color: var(--accent-color);
 
 		&::after {
@@ -45,7 +43,7 @@
 		.skillIconWrapper {
 			transform: scale(1.08) rotate(3deg);
 			background-color: var(--skill-color);
-			color: #ffffff; /* Contrast against the colored icon block */
+			color: #ffffff;
 			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 		}
 

@@ -21,53 +21,53 @@ import { TbBrandJavascript, TbBrandTypescript, TbPackages } from "react-icons/tb
 
 export const skillsData = [
 	// --- Backend ---
-	{ type: "Backend", size: 9, title: "Java", icon: <FaJava />, desc: "Object Oriented Programming language used to write logic for applications server and JSP.", color: "#2ecc71" },
-	{ type: "Backend", size: 8, title: "Spring Boot", icon: <SiSpringboot />, desc: "I choose Spring-Boot for rapid development of server with microservice environment.", color: "#2ecc71" },
-	{ type: "Backend", size: 7, title: "Microservices", icon: <TbPackages />, desc: "I design scalable and modular systems using microservices. This approach helps isolate functionality and improves maintainability.", color: "#2ecc71" },
-	{ type: "Backend", size: 8, title: "REST APIs", icon: <FaSitemap />, desc: "REST APIs for applications to let front end interaction with server.", color: "#2ecc71" },
-	{ type: "Backend", size: 6, title: "Kafka", icon: <SiApachekafka />, desc: "I use Kafka to build real-time data pipelines and streaming applications.", color: "#231F20" },
-	{ type: "Backend", size: 7, title: "Redis", icon: <SiRedis />, desc: "Redis helps me manage caching, sessions, and real-time analytics. Its in-memory data structure makes it super fast.", color: "#DC382D" },
-	{ type: "Backend", size: 7, title: "System Architecture", icon: <MdOutlineDesignServices />, desc: "I understand how to design scalable, decoupled, and efficient system architectures using microservices and APIs.", color: "#6366F1" },
+	{ type: "Backend", size: 7, title: "Java", icon: <FaJava />, desc: "Object Oriented Programming language used to write logic for applications server and JSP.", color: "#2ecc71" },
+	{ type: "Backend", size: 6, title: "Spring Boot", icon: <SiSpringboot />, desc: "I choose Spring-Boot for rapid development of server with microservice environment.", color: "#2ecc71" },
+	{ type: "Backend", size: 5, title: "Microservices", icon: <TbPackages />, desc: "I design scalable and modular systems using microservices. This approach helps isolate functionality and improves maintainability.", color: "#2ecc71" },
+	{ type: "Backend", size: 6, title: "REST APIs", icon: <FaSitemap />, desc: "REST APIs for applications to let front end interaction with server.", color: "#2ecc71" },
+	{ type: "Backend", size: 4, title: "Kafka", icon: <SiApachekafka />, desc: "I use Kafka to build real-time data pipelines and streaming applications.", color: "#231F20" },
+	{ type: "Backend", size: 5, title: "Redis", icon: <SiRedis />, desc: "Redis helps me manage caching, sessions, and real-time analytics. Its in-memory data structure makes it super fast.", color: "#DC382D" },
+	{ type: "Backend", size: 5, title: "System Architecture", icon: <MdOutlineDesignServices />, desc: "I understand how to design scalable, decoupled, and efficient system architectures using microservices and APIs.", color: "#6366F1" },
 
 	// --- Mobile app ---
-	{ type: "Mobile", size: 8, title: "React Native", icon: <FaReact />, desc: "I have experience in building cross-platform mobile applications using React Native.", color: "#339af0" },
-	{ type: "Mobile", size: 6, title: "Expo", icon: <SiExpo />, desc: "I have experience in building cross-platform mobile applications using Expo.", color: "#339af0" },
+	{ type: "Mobile", size: 6, title: "React Native", icon: <FaReact />, desc: "I have experience in building cross-platform mobile applications using React Native.", color: "#339af0" },
+	{ type: "Mobile", size: 4, title: "Expo", icon: <SiExpo />, desc: "I have experience in building cross-platform mobile applications using Expo.", color: "#339af0" },
 
 	// --- Frontend ---
-	{ type: "Frontend", size: 9, title: "JavaScript", icon: <TbBrandJavascript />, desc: "The All rounder, allowing me to code anything and everything in one language, I rank myself 9.5/10 in JS.", color: "#339af0" },
-	{ type: "Frontend", size: 8, title: "TypeScript", icon: <TbBrandTypescript />, desc: "Super set of Javascript to write most secure, and statically typed code.", color: "#339af0" },
-	{ type: "Frontend", size: 9, title: "ReactJs", icon: <FaReact />, desc: "My mastery of SPA technology ReactJs gives me the ability to write class & function-based components.", color: "#339af0" },
-	{ type: "Frontend", size: 9, title: "Next.js", icon: <SiNextdotjs />, desc: "I use Next.js to build fast, SEO-friendly, and production-ready React applications with SSR and SSG.", color: "#339af0" },
-	{ type: "Frontend", size: 6, title: "Angular", icon: <FaAngular />, desc: "I have experience in building dynamic web applications using Angular.", color: "#339af0" },
-	{ type: "Frontend", size: 7, title: "Redux / Zustand", icon: <SiRedux />, desc: "I manage application state efficiently using Redux for complex logic and Zustand for lightweight state handling.", color: "#339af0" },
-	{ type: "Frontend", size: 8, title: "HTML / JSX / TSX", icon: <FaHtml5 />, desc: "I structure web UIs using HTML and its modern variants like JSX and TSX in React/TypeScript projects.", color: "#339af0" },
-	{ type: "Frontend", size: 8, title: "CSS / SCSS", icon: <FaCss3Alt />, desc: "I craft responsive, pixel-perfect layouts using advanced CSS and SCSS. Comfortable with flex, grid, animations.", color: "#339af0" },
+	{ type: "Frontend", size: 7, title: "JavaScript", icon: <TbBrandJavascript />, desc: "The All rounder, allowing me to code anything and everything in one language, I rank myself 9.5/10 in JS.", color: "#339af0" },
+	{ type: "Frontend", size: 6, title: "TypeScript", icon: <TbBrandTypescript />, desc: "Super set of Javascript to write most secure, and statically typed code.", color: "#339af0" },
+	{ type: "Frontend", size: 7, title: "ReactJs", icon: <FaReact />, desc: "My mastery of SPA technology ReactJs gives me the ability to write class & function-based components.", color: "#339af0" },
+	{ type: "Frontend", size: 7, title: "Next.js", icon: <SiNextdotjs />, desc: "I use Next.js to build fast, SEO-friendly, and production-ready React applications with SSR and SSG.", color: "#339af0" },
+	{ type: "Frontend", size: 4, title: "Angular", icon: <FaAngular />, desc: "I have experience in building dynamic web applications using Angular.", color: "#339af0" },
+	{ type: "Frontend", size: 5, title: "Redux / Zustand", icon: <SiRedux />, desc: "I manage application state efficiently using Redux for complex logic and Zustand for lightweight state handling.", color: "#339af0" },
+	{ type: "Frontend", size: 6, title: "HTML / JSX / TSX", icon: <FaHtml5 />, desc: "I structure web UIs using HTML and its modern variants like JSX and TSX in React/TypeScript projects.", color: "#339af0" },
+	{ type: "Frontend", size: 6, title: "CSS / SCSS", icon: <FaCss3Alt />, desc: "I craft responsive, pixel-perfect layouts using advanced CSS and SCSS. Comfortable with flex, grid, animations.", color: "#339af0" },
 
 	// --- DataBase ---
-	{ type: "DataBase", size: 8, title: "PostgreSQL", icon: <SiPostgresql />, desc: "Advanced open-source relational database used for complex queries, indexing, JSON operations, and ACID compliance.", color: "#336791" },
-	{ type: "DataBase", size: 8, title: "MySQL", icon: <GrMysql />, desc: "I have leveraged MySQL database skill, employing structured queries to efficiently store and manage data.", color: "#00758F" },
-	{ type: "DataBase", size: 7, title: "MongoDB", icon: <SiMongodb />, desc: "I proficiently utilize MongoDB as my NoSQL database, crafting queries through Spring JPA repositories.", color: "#13AA52" },
+	{ type: "DataBase", size: 6, title: "PostgreSQL", icon: <SiPostgresql />, desc: "Advanced open-source relational database used for complex queries, indexing, JSON operations, and ACID compliance.", color: "#336791" },
+	{ type: "DataBase", size: 6, title: "MySQL", icon: <GrMysql />, desc: "I have leveraged MySQL database skill, employing structured queries to efficiently store and manage data.", color: "#00758F" },
+	{ type: "DataBase", size: 5, title: "MongoDB", icon: <SiMongodb />, desc: "I proficiently utilize MongoDB as my NoSQL database, crafting queries through Spring JPA repositories.", color: "#13AA52" },
 
 	// --- Testing ---
-	{ type: "Testing", size: 6, title: "Cucumber", icon: <SiCucumber />, desc: "Tool for BDD (Behavior Driven Development) that supports writing tests in plain-text Gherkin syntax.", color: "#94a3b8" },
-	{ type: "Testing", size: 7, title: "JUnit", icon: <SiJunit5 />, desc: "A programmer-oriented unit testing framework for the Java programming language.", color: "#94a3b8" },
+	{ type: "Testing", size: 4, title: "Cucumber", icon: <SiCucumber />, desc: "Tool for BDD (Behavior Driven Development) that supports writing tests in plain-text Gherkin syntax.", color: "#94a3b8" },
+	{ type: "Testing", size: 5, title: "JUnit", icon: <SiJunit5 />, desc: "A programmer-oriented unit testing framework for the Java programming language.", color: "#94a3b8" },
 
 	// --- Data ---
-	{ type: "Data", size: 9, title: "JSON", icon: <BiSolidFileJson />, desc: "Use JSON for data interchange between the client and server.", color: "#94a3b8" },
-	{ type: "Data", size: 8, title: "Postman", icon: <SiPostman />, desc: "I always use it to know how my API is behaving and performing. Postman is a tool for building and testing APIs.", color: "#94a3b8" },
-	{ type: "Data", size: 7, title: "XML", icon: <BsFiletypeXml />, desc: "Extensible Markup Language used for storing and transporting structured data across systems.", color: "#94a3b8" },
-	{ type: "Data", size: 6, title: "SOAP", icon: <SiXml />, desc: "Experience with SOAP web services for building and consuming enterprise-level APIs.", color: "#94a3b8" },
-	{ type: "Data", size: 6, title: "SoapUI", icon: <SiSaopaulometro />, desc: "The world's most widely used automated testing tool for SOAP and REST APIs.", color: "#94a3b8" },
+	{ type: "Data", size: 7, title: "JSON", icon: <BiSolidFileJson />, desc: "Use JSON for data interchange between the client and server.", color: "#94a3b8" },
+	{ type: "Data", size: 6, title: "Postman", icon: <SiPostman />, desc: "I always use it to know how my API is behaving and performing. Postman is a tool for building and testing APIs.", color: "#94a3b8" },
+	{ type: "Data", size: 5, title: "XML", icon: <BsFiletypeXml />, desc: "Extensible Markup Language used for storing and transporting structured data across systems.", color: "#94a3b8" },
+	{ type: "Data", size: 4, title: "SOAP", icon: <SiXml />, desc: "Experience with SOAP web services for building and consuming enterprise-level APIs.", color: "#94a3b8" },
+	{ type: "Data", size: 4, title: "SoapUI", icon: <SiSaopaulometro />, desc: "The practical automated testing tool for SOAP and REST APIs.", color: "#94a3b8" },
 
 	// --- Others ---
-	{ type: "Others", size: 9, title: "Git", icon: <FaGitAlt />, desc: "Distributed version control for branch management, interactive rebasing, merge conflict resolution, and history tracking.", color: "#F05032" },
-	{ type: "Others", size: 8, title: "GitHub", icon: <FaGithub />, desc: "Centralized code hosting, pull request reviews, CI/CD Actions workflows, and open-source collaboration.", color: "#24292e" },
-	{ type: "Others", size: 7, title: "BitBucket", icon: <FaBitbucket />, desc: "Version control system designed and developed with organizations need.", color: "#0052CC" },
-	{ type: "Others", size: 7, title: "Agile Methods", icon: <FaTasks />, desc: "I follow Agile practices like Scrum and Kanban to ensure iterative development and fast delivery cycles.", color: "#10B981" },
-	{ type: "Others", size: 7, title: "Jira", icon: <SiJirasoftware />, desc: "I use Jira to manage tasks, sprints, and project tracking efficiently, ensuring clarity across the team.", color: "#2684FF" },
-	{ type: "Others", size: 7, title: "Docker", icon: <SiDocker />, desc: "Docker allows packaging applications into containers for portability, consistency, and scalability.", color: "#2496ED" },
-	{ type: "Others", size: 7, title: "CI/CD", icon: <SiJenkins />, desc: "I implement CI/CD pipelines using Jenkins/GitHub Actions/GitLab to automate builds, tests, and deployments.", color: "#D24939" },
-	{ type: "Others", size: 6, title: "Google Cloud (GCP)", icon: <SiGooglecloud />, desc: "Foundational cloud services including Cloud Run, Compute Engine, IAM, and Cloud Storage for application hosting.", color: "#4285F4" },
+	{ type: "Others", size: 7, title: "Git", icon: <FaGitAlt />, desc: "Distributed version control for branch management, interactive rebasing, merge conflict resolution, and history tracking.", color: "#F05032" },
+	{ type: "Others", size: 6, title: "GitHub", icon: <FaGithub />, desc: "Centralized code hosting, pull request reviews, CI/CD Actions workflows, and open-source collaboration.", color: "#24292e" },
+	{ type: "Others", size: 5, title: "BitBucket", icon: <FaBitbucket />, desc: "Version control system designed and developed with organizations need.", color: "#0052CC" },
+	{ type: "Others", size: 5, title: "Agile Methods", icon: <FaTasks />, desc: "I follow Agile practices like Scrum and Kanban to ensure iterative development and fast delivery cycles.", color: "#10B981" },
+	{ type: "Others", size: 5, title: "Jira", icon: <SiJirasoftware />, desc: "I use Jira to manage tasks, sprints, and project tracking efficiently, ensuring clarity across the team.", color: "#2684FF" },
+	{ type: "Others", size: 5, title: "Docker", icon: <SiDocker />, desc: "Docker allows packaging applications into containers for portability, consistency, and scalability.", color: "#2496ED" },
+	{ type: "Others", size: 5, title: "CI/CD", icon: <SiJenkins />, desc: "I implement CI/CD pipelines using Jenkins/GitHub Actions/GitLab to automate builds, tests, and deployments.", color: "#D24939" },
+	{ type: "Others", size: 4, title: "Google Cloud (GCP)", icon: <SiGooglecloud />, desc: "Foundational cloud services including Cloud Run, Compute Engine, IAM, and Cloud Storage for application hosting.", color: "#4285F4" },
 ];
 
 export const categories = [...new Set(skillsData.map(skill => skill.type))];
