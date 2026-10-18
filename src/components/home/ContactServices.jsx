@@ -182,9 +182,20 @@ export default function ContactServices() {
 									</div>}
 
 									<div className={style.cardFooter}>
-										<button className={`${style.connectBtn} ${isLast ? style.finalConnectBtn : ""}`}
-											onClick={() => handleConnect(service.id, service.template)}>
-											{isSelected ? "Message Prefilled! 💬" : isLast ? "Let's Build Together 🚀" : "Start Project →"}
+										<button
+											className={`${style.connectBtn} ${isLast ? style.finalConnectBtn : ""}`}
+											onClick={() => handleConnect(service.id, service.template)}
+										>
+											<span>
+												{isSelected
+													? "Message Prefilled! 💬"
+													: isLast
+													? "Let's Build Together 🚀"
+													: "Start Project"}
+											</span>
+											{!isSelected && !isLast && (
+												<span className={style.btnArrow}>&rarr;</span>
+											)}
 										</button>
 									</div>
 								</div>
