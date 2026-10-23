@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "start:port": "next start -p 3101",
-    "lint": "next lint",
+    "lint": "eslint .",
     "clean": "rimraf .next node_modules"
   },
   "dependencies": {
@@ -41,7 +41,7 @@
     "embla-carousel": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "gsap": "^3.15.0",
-    "next": "^16.4.0",
+    "next": "^16.4.3",
     "nodemailer": "^10.0.16",
     "razorpay": "^2.9.8",
     "react": "19.2.3",
@@ -58,10 +58,13 @@
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "^16.4.0",
+    "eslint-config-next": "^16.4.3",
     "postcss": "^8.5.29",
     "postcss-preset-mantine": "^1.18.0",
     "postcss-simple-vars": "^7.0.1",
     "sass": "^1.105.1"
+  },
+  "overrides": {
+    "follow-redirects": "^1.16.1"
   }
 }
