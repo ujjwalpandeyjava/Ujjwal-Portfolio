@@ -20,8 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ujjwal Pandey | Full-stack Engineer",
-  description: "Portfolio of Ujjwal Pandey, a Full-stack Software Engineer focused on Java, React, Next.js, and mobile app development.",
+  title: "Ujjwal Pandey | Senior Full Stack & AI Engineer",
+  description: "Portfolio of Ujjwal Pandey, a Senior Full Stack & AI Engineer with 5+ years of experience architecting enterprise microservices, dynamic web applications, and intelligent AI solutions (Spring Boot, React, Next.js, Spring AI, RAG).",
   icons: {
     icon: PROFILE_IMAGE,
     apple: PROFILE_IMAGE,

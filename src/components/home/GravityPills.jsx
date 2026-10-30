@@ -11,6 +11,9 @@ import style from '@/styles/GravityPills.module.scss';
  * HTML5 pointer capture, smooth kinetic throw momentum, and high-DPI rendering.
  */
 export const defaultTopSkills = [
+	{ text: "Spring AI", color: "#c084fc", bg: "rgba(38, 22, 60, 0.95)" },
+	{ text: "RAG / LLMs", color: "#c084fc", bg: "rgba(38, 22, 60, 0.95)" },
+	{ text: "Vector Search", color: "#c084fc", bg: "rgba(38, 22, 60, 0.95)" },
 	{ text: "Java", color: "#4ade80", bg: "rgba(20, 38, 28, 0.95)" },
 	{ text: "Spring Boot", color: "#4ade80", bg: "rgba(20, 38, 28, 0.95)" },
 	{ text: "Microservices", color: "#4ade80", bg: "rgba(20, 38, 28, 0.95)" },

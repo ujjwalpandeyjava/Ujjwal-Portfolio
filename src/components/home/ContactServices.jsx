@@ -4,7 +4,7 @@ import style from "@/styles/ContactServices.module.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
-import { FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaRocket, FaServer } from "react-icons/fa6";
+import { FaBrain, FaGoogleDrive, FaLaptopCode, FaMobileScreenButton, FaRocket, FaServer } from "react-icons/fa6";
 
 if (typeof window !== "undefined") {
 	gsap.registerPlugin(ScrollTrigger);
@@ -12,20 +12,28 @@ if (typeof window !== "undefined") {
 
 const services = [
 	{
-		id: "web-dev",
-		icon: <FaLaptopCode />,
-		title: "Frontend Engineering",
-		badge: "React & Next.js",
-		desc: "Building premium, highly interactive, and SEO-optimized web applications with lightning-fast load times and stunning UI/UX.",
-		template: "Hi Ujjwal, I would like to connect with you regarding a web development project. "
+		id: "ai-systems",
+		icon: <FaBrain />,
+		title: "AI & Intelligent Systems",
+		badge: "Spring AI & RAG",
+		desc: "Engineering enterprise-grade AI solutions, including Retrieval-Augmented Generation (RAG) pipelines, LLM integrations (OpenAI/Hugging Face), Spring AI, vector search, and AI orchestration.",
+		template: "Hi Ujjwal, I would like to connect regarding integrating AI / RAG / LLM solutions into our systems. "
 	},
 	{
 		id: "server-dev",
 		icon: <FaServer />,
 		title: "Backend Architecture",
 		badge: "Scalable & Secure",
-		desc: "Designing robust, highly scalable backend architectures and secure RESTful APIs using Java, Spring Boot, and microservices.",
+		desc: "Designing robust, highly scalable backend architectures and secure RESTful APIs using Java, Spring Boot, Spring Cloud, and microservices.",
 		template: "Hi Ujjwal, I need support with server/backend development for my application. "
+	},
+	{
+		id: "web-dev",
+		icon: <FaLaptopCode />,
+		title: "Frontend Engineering",
+		badge: "React & Next.js",
+		desc: "Building premium, highly interactive, and SEO-optimized web applications with lightning-fast load times and stunning UI/UX.",
+		template: "Hi Ujjwal, I would like to connect with you regarding a web development project. "
 	},
 	{
 		id: "mobile-dev",
@@ -115,17 +123,16 @@ export default function ContactServices() {
 				if (i > 1) {
 					tl.to(cards[i - 2], {
 						opacity: 0,
-						scale: 0.86,
-						duration: 1,
-						ease: "power1.inOut",
+						duration: 0.5,
 					}, "<");
 				}
 			});
 		}, containerRef);
 
+		// Trigger recalculation after DOM settle
 		const timer = setTimeout(() => {
 			ScrollTrigger.refresh();
-		}, 500);
+		}, 300);
 
 		return () => {
 			clearTimeout(timer);
@@ -213,7 +220,7 @@ export default function ContactServices() {
 
 						<div className={style.textHighlights}>
 							<div className={style.highlightBox}>
-								<span className={style.highlightNumber}>05</span>
+								<span className={style.highlightNumber}>06</span>
 								<span className={style.highlightLabel}>Core Capabilities</span>
 							</div>
 							<div className={style.highlightBox}>

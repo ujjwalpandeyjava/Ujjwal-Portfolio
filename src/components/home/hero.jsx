@@ -10,10 +10,10 @@ const Hero = () => {
 			<div className="who-i-am">
 				<div className="name-calling">Hi There!!</div>
 				<div className="name-im">I am <span>Ujjwal Pandey</span></div>
-				<div className="name-web-d">I am a Web Developer</div>
+				<div className="name-web-d">Full Stack &amp; AI Engineer</div>
 
 				<div className="action-container">
-					<Link id="downloadCV" target="_blank" href="https://drive.google.com/open?id=1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr" >Resume</Link>
+					<Link id="downloadCV" target="_blank" href="https://drive.google.com/file/d/1Fd1J4wcibypnPVL8RmYCfhVo0LVIMbJr/view" >Resume</Link>
 					<Link href="/contact" prefetch={true}>Contact me</Link>
 				</div>
 			</div>

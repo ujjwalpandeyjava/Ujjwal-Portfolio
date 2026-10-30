@@ -16,11 +16,11 @@ export default function Home() {
     <div id='main'>
       <Hero />
       <SkillsMarquee direction={true} skills={skillsData} />
-      <SkillsMarquee direction={false} skills={skillsData} />
       <AboutMe />
-      <WhatICanDo />
-      <Space h={30} />
+      <SkillsMarquee direction={false} skills={skillsData} />
       <ContactServices />
+      <Space h={30} />
+      <WhatICanDo />
       <Space h={30} />
       <Skills />
       <Space h={30} />
