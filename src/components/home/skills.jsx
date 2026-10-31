@@ -18,11 +18,11 @@ import { TbBrandJavascript, TbBrandTypescript, TbPackages, TbVectorTriangle } fr
 
 export const skillsData = [
 	// --- AI & Intelligent Systems ---
-	{ type: "AI", size: 3, title: "Spring AI", icon: <SiSpringboot />, desc: "Integration of enterprise AI capabilities, embeddings, and chat models into Spring Boot microservices.", color: "#8b5cf6" },
-	{ type: "AI", size: 4, title: "RAG Systems", icon: <FaBrain />, desc: "Architecting Retrieval-Augmented Generation pipelines for context-grounded, high-accuracy conversational AI.", color: "#a855f7" },
-	{ type: "AI", size: 4, title: "LLMs & LangChain", icon: <SiHuggingface />, desc: "Integrating OpenAI and Hugging Face models into production workflows with LangChain and prompt engineering.", color: "#ec4899" },
-	{ type: "AI", size: 3, title: "Vector Search", icon: <TbVectorTriangle />, desc: "Vector indexing, embeddings generation, and similarity search for low-latency semantic knowledge retrieval.", color: "#6366f1" },
-	{ type: "AI", size: 3, title: "AI Orchestration", icon: <FaRobot />, desc: "Multi-agent coordination, automated chat engines (Eva talk, AION), and live support bots.", color: "#3b82f6" },
+	{ type: "AI", size: 6, title: "Spring AI", icon: <SiSpringboot />, desc: "Integration of enterprise AI capabilities, embeddings, and chat models into Spring Boot microservices.", color: "#8b5cf6" },
+	{ type: "AI", size: 7, title: "RAG Systems", icon: <FaBrain />, desc: "Architecting Retrieval-Augmented Generation pipelines for context-grounded, high-accuracy conversational AI.", color: "#a855f7" },
+	{ type: "AI", size: 6, title: "LLMs & LangChain", icon: <SiHuggingface />, desc: "Integrating OpenAI and Hugging Face models into production workflows with LangChain and prompt engineering.", color: "#ec4899" },
+	{ type: "AI", size: 5, title: "Vector Search", icon: <TbVectorTriangle />, desc: "Vector indexing, embeddings generation, and similarity search for low-latency semantic knowledge retrieval.", color: "#6366f1" },
+	{ type: "AI", size: 5, title: "AI Orchestration", icon: <FaRobot />, desc: "Multi-agent coordination, automated chat engines (Eva talk, AION), and live support bots.", color: "#3b82f6" },
 
 	// --- Backend ---
 	{ type: "Backend", size: 7, title: "Java", icon: <FaJava />, desc: "Core language used for enterprise microservices, fintech payment processing, and high-load servers.", color: "#2ecc71" },

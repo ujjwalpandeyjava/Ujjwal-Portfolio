@@ -7,7 +7,8 @@
     "dev": "next dev",
     "dev:turbopack": "next dev --turbopack",
     "devt": "next dev --turbopack -p 3101 ",
-    "build": "next build",
+    "build": "next build --webpack",
+    "build:turbopack": "next build",
     "start": "next start",
     "start:port": "next start -p 3101",
     "lint": "eslint .",
@@ -65,6 +66,6 @@
     "sass": "^1.105.1"
   },
   "overrides": {
-    "follow-redirects": "^1.16.1"
+    "minimatch": "^11.0.3"
   }
 }

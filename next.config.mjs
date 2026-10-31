@@ -15,7 +15,6 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactCompiler: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],
     additionalData: `@use "variables_utils" as *;`,

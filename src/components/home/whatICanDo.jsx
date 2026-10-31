@@ -18,12 +18,30 @@ export default function WhatICanDo() {
 
 			<div className="abilities">
 				<div className="eachAbilities">
+					<Image src={webDev} alt="Web Development" />
+					<div>Full-Stack Web Dev</div>
+					<div className="content">
+						Building scalable, high-performance web applications using modern frontend frameworks and robust backend microservices with SSR/SSG.
+						<hr />
+						<strong>Technologies:</strong> Java, React, Next.js, TypeScript, Angular
+					</div>
+				</div>
+				<div className="eachAbilities">
 					<Image src={aiBrain} alt="AI & Intelligent Systems" />
 					<div>AI &amp; Intelligent Systems</div>
 					<div className="content">
 						Architecting enterprise AI solutions, including Retrieval-Augmented Generation (RAG) systems, LLM integrations, and intelligent multi-agent workflows.
 						<hr />
 						<strong>Technologies:</strong> Spring AI, LLMs (OpenAI, Hugging Face), RAG, LangChain, Vector Search
+					</div>
+				</div>
+				<div className="eachAbilities">
+					<Image src={frontEnd} alt="Frontend Development" />
+					<div>Frontend Engineering</div>
+					<div className="content">
+						Crafting responsive, immersive user interfaces with state management, pixel-perfect styling, and micro-interactions.
+						<hr />
+						<strong>Technologies:</strong> React, Next.js, TypeScript, Redux, Zustand, SCSS, HTML5
 					</div>
 				</div>
 				<div className="eachAbilities">
@@ -36,30 +54,12 @@ export default function WhatICanDo() {
 					</div>
 				</div>
 				<div className="eachAbilities">
-					<Image src={webDev} alt="Web Development" />
-					<div>Full-Stack Web Dev</div>
-					<div className="content">
-						Building scalable, high-performance web applications using modern frontend frameworks and robust backend microservices with SSR/SSG.
-						<hr />
-						<strong>Technologies:</strong> Java, React, Next.js, TypeScript, Angular
-					</div>
-				</div>
-				<div className="eachAbilities">
 					<Image src={microService} alt="Microservice Development" />
 					<div>Microservices &amp; Cloud</div>
 					<div className="content">
 						Designing decoupled microservice architectures, event-driven pipelines with Kafka, Docker containerization, and GCP cloud deployments.
 						<hr />
 						<strong>Technologies:</strong> Microservices, Kafka, Docker, GCP, CI/CD, Redis, REST APIs
-					</div>
-				</div>
-				<div className="eachAbilities">
-					<Image src={frontEnd} alt="Frontend Development" />
-					<div>Frontend Engineering</div>
-					<div className="content">
-						Crafting responsive, immersive user interfaces with state management, pixel-perfect styling, and micro-interactions.
-						<hr />
-						<strong>Technologies:</strong> React, Next.js, TypeScript, Redux, Zustand, SCSS, HTML5
 					</div>
 				</div>
 				<div className="eachAbilities">
